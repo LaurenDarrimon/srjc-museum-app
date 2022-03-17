@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a1ff6c0f.css",
+    "main.js": "/static/js/main.c1862c48.js",
+    "static/media/srjc-museum-logo.jpg": "/static/media/srjc-museum-logo.c81e904acc19eb0fd0df.jpg",
+    "static/media/play-btn.png": "/static/media/play-btn.3c56030082969fcc831e.png",
+    "index.html": "/index.html",
+    "main.a1ff6c0f.css.map": "/static/css/main.a1ff6c0f.css.map",
+    "main.c1862c48.js.map": "/static/js/main.c1862c48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1ff6c0f.css",
+    "static/js/main.c1862c48.js"
+  ]
+}

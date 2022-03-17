@@ -23,3 +23,12 @@ body{
 h1, h2, h3, h4 {
     font-family: 'Pangolin', cursive;
 }
+
+.home {
+    background-color: var(--srjc-blue);
+    color: var(--light-gray);
+}
+
+.home-footer{
+    background-color: var(--srjc-red);
+}

@@ -1,0 +1,9 @@
+{
+    "short_name": "SRJC Museum Game",
+    "name": "E-learning story and scavenger hunt game for the Santa Rosa Junior College Multi-Cultural Museum.",
+    "icons": [],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }
