@@ -1,0 +1,25 @@
+:root {
+
+    /* SRJC colors */
+    --srjc-blue: #182952;
+    --srjc-red: #801518;
+    --light-gray: #e6e7e8;
+
+    /* GAME colors */
+    --rust: #c24744;
+    --purple: #2E234a;
+    --gold: #CA9938; 
+    --tan: #D9A86C; 
+    --teal: #4C9BA8; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Pangolin&display=swap');
+
+body{   
+    font-family: 'Lato', sans-serif;
+    font-family: 'Pangolin', cursive;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Pangolin', cursive;
+}
