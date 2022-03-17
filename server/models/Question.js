@@ -1,14 +1,10 @@
 const { Schema, model } = require("mongoose");
 
 const questionSchema = new Schema({
-  title: {
-    type: String,
-  },
-  teachingText: {
-    type: String,
-  },
+  title: { type: String },
+  teachingText: { type: String },
   questionText: { type: String },
-
+  region: { type: String },
   options: [
     {
       choice: {
@@ -16,7 +12,7 @@ const questionSchema = new Schema({
       },
     },
   ],
-  rightAnswerIndex: Number,
+  rightAnswerIndex: { type: Number },
 });
 
 const Question = model("Question", questionSchema);

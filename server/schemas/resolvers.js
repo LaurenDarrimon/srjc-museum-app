@@ -1,6 +1,6 @@
 const { AuthenticationError } = require("apollo-server-express");
 const { User, Question } = require("../models");
-//const { signToken } = require("../utils/auth");
+const { signToken } = require("../utils/auth");
 
 const resolvers = {
   Query: {
@@ -20,8 +20,8 @@ const resolvers = {
   Mutation: {
     addUser: async (_parent, { username, password }) => {
       const user = await User.create({ username, password });
-      //const token = signToken(user);
-      //return { token, user };
+      const token = signToken(user);
+      return { token, user };
     },
 
     login: async (_parent, { unsername, password }) => {
@@ -37,17 +37,19 @@ const resolvers = {
         throw new AuthenticationError("Incorrect username or password");
       }
 
-      //const token = signToken(user);
-      //return { token, user };
+      const token = signToken(user);
+      return { token, user };
     },
+
+    //Fill these in later. 
 
     addQuestion: async (
       _parent,
-      { title, teachingText, questionText, options, rightAnswerIndex }
+      { title, teachingText, questionText, region, options, rightAnswerIndex }
     ) => {},
     updateQuestion: async (
       _parent,
-      { title, teachingText, questionText, options, rightAnswerIndex }
+      { title, teachingText, questionText, region, options, rightAnswerIndex }
     ) => {},
 
     removeQuestion: async (parent, { questionId }) => {
