@@ -3,7 +3,7 @@
 import React, { useState, UseEffect } from "react";
 //import Nav from "./components/Nav";
 import Home from "./pages/Home";
-// import About from "./pages/About";
+import About from "./pages/About";
 // import DragDrop from "./pages/DragDrop";
 // import Fish from "./pages/Fish";
 // import Pottery from "./pages/Pottery";
@@ -22,7 +22,7 @@ export default function Game() {
   //renders a different component
   const renderPage = () => {
     if (currentPage === "Home") {
-      return <Home />;
+      return <Home/>;
     }
     // if (currentPage === "Intro") {
     //   return <Intro />;

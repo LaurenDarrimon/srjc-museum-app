@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import logo from "../assets/images/srjc-museum-logo.jpg";
 import play from "../assets/images/play-btn.png";
 
-const Home = () => {
+
+//this is the loading page 
+const Loading = () => {
   return (
     //loading or intro screen and homepage
     <main className="home">
@@ -20,4 +22,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Loading;
