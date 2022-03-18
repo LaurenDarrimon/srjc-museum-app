@@ -1,35 +1,53 @@
 :root {
+  /* SRJC colors */
+  --srjc-blue: #182952;
+  --srjc-red: #801518;
+  --light-gray: #e6e7e8;
 
-    /* SRJC colors */
-    --srjc-blue: #182952;
-    --srjc-red: #801518;
-    --light-gray: #e6e7e8;
-
-    /* GAME colors */
-    --rust: #c24744;
-    --purple: #2E234a;
-    --gold: #CA9938; 
-    --tan: #D9A86C; 
-    --teal: #4C9BA8; 
+  /* GAME colors */
+  --rust: #c24744;
+  --purple: #2e234a;
+  --gold: #ca9938;
+  --tan: #d9a86c;
+  --teal: #4c9ba8;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Pangolin&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Pangolin&display=swap");
 
-body{   
-    font-family: 'Lato', sans-serif;
-    font-family: 'Pangolin', cursive;
+
+/* NOTE: I am trying to to make the app always fill the vertical height  */
+
+
+body {
+  font-family: "Lato", sans-serif;
+  font-family: "Pangolin", cursive;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Pangolin', cursive;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Pangolin", cursive;
 }
 
 .home {
-    background-color: var(--srjc-blue);
-    color: var(--light-gray);
+  background-color: var(--srjc-blue);
+  color: var(--light-gray);
 }
 
-.home-footer{
-    background-color: var(--srjc-red);
+.home-footer {
+  background-color: var(--srjc-red);
 }
 
+.logo{
+    height: auto;
+    max-height: 350px;
+    width: auto;
+    max-width: 350px;
+}
+
+footer {
+  background-color: var(--srjc-red);
+  border-top: white solid 4px;
+  height: 100px;
+}

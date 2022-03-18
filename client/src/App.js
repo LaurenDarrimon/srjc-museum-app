@@ -1,8 +1,8 @@
 //This is the overall wrapper for the Game, that all the other components will live inside
 
 import React, { useState, UseEffect } from "react";
-//import Nav from "./components/Nav";
-import Home from "./pages/Home";
+import Navigation from "./components/Nav";
+import Loading from "./pages/Loading";
 import About from "./pages/About";
 // import DragDrop from "./pages/DragDrop";
 // import Fish from "./pages/Fish";
@@ -14,7 +14,7 @@ import About from "./pages/About";
 //import './assets/css/fonts.css';
 import './index.css';
 
-export default function Game() {
+export default function App() {
   const [currentPage, setCurrentPage] = useState("Home");
 
   //render the component of the page user is on
@@ -22,7 +22,7 @@ export default function Game() {
   //renders a different component
   const renderPage = () => {
     if (currentPage === "Home") {
-      return <Home/>;
+      return <Loading/>;
     }
     // if (currentPage === "Intro") {
     //   return <Intro />;
@@ -53,7 +53,7 @@ export default function Game() {
   //pass the state (current page) and the function to update it to JSX to render component
   return (
     <div>
-      {/* <Nav currentPage={currentPage} handlePageChange={handlePageChange} /> */}
+      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
     </div>
   );
