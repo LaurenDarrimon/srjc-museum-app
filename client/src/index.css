@@ -14,14 +14,14 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Pangolin&display=swap");
 
-
 /* NOTE: I am trying to to make the app always fill the vertical height  */
-
 
 body {
   font-family: "Lato", sans-serif;
   font-family: "Pangolin", cursive;
+  background-color: var(--srjc-blue);
 }
+
 
 h1,
 h2,
@@ -33,21 +33,29 @@ h4 {
 .home {
   background-color: var(--srjc-blue);
   color: var(--light-gray);
+  min-height: 100vh; 
 }
 
 .home-footer {
   background-color: var(--srjc-red);
 }
 
-.logo{
-    height: auto;
-    max-height: 350px;
-    width: auto;
-    max-width: 350px;
+.logo {
+  height: auto;
+  max-height: 350px;
+  width: auto;
+  max-width: 350px;
 }
 
 footer {
   background-color: var(--srjc-red);
   border-top: white solid 4px;
+  position: absolute;
+  bottom: 0px;
   height: 100px;
+}
+
+.navigation {
+  background-color: var(--srjc-blue);
+  color: var(--light-gray) !important;
 }

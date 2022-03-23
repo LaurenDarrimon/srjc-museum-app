@@ -6,12 +6,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 //this is the loading page
-const Loading = () => {
+const Home = () => {
   return (
     //loading or intro screen and homepage
     <Container fluid className="home">
-      <Row className="d-flex justify-content-center text-center p-4">
-        <Col >
+      <Row className="d-flex justify-content-center text-center p-5">
+        <Col className="align-items-center py-5">
           <img
             src={logo}
             className="col-md-5 p-4 logo"
@@ -34,4 +34,4 @@ const Loading = () => {
   );
 };
 
-export default Loading;
+export default Home;

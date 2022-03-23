@@ -6,15 +6,16 @@ const Navigation = () => {
 
   //return JSX
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg" className="navigation navbar-dark ">
       <Container>
-        <Navbar.Brand href="#home">Home</Navbar.Brand>
+        {/* <Navbar.Brand href="#home" className="navigation">Start Over</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#help">Help</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+          <Nav.Link href="#home" className="navigation">Start Over</Nav.Link>
+            <Nav.Link href="#about" className="navigation">About</Nav.Link>
+            <Nav.Link href="#instructions" className="navigation">Help</Nav.Link>
+            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -24,7 +25,7 @@ const Navigation = () => {
               <NavDropdown.Item href="#action/3.4">
                 Separated link
               </NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
