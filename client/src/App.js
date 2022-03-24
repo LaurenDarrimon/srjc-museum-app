@@ -1,60 +1,83 @@
 //This is the overall wrapper for the Game, that all the other components will live inside
 
 import React, { useState, UseEffect } from "react";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from "@apollo/client";
+import { setContext } from "@apollo/client/link/context";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Row, Col, Button } from "react-bootstrap";
+
 import Navigation from "./components/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About";
-// import DragDrop from "./pages/DragDrop";
+import Instructions from "./pages/Instructions";
+import DragDrop from "./pages/DragDrop";
+import Overview from "./pages/Overview";
 // import Fish from "./pages/Fish";
 // import Pottery from "./pages/Pottery";
 // import GreatPlains from "./pages/GreatPlains";
-// import Instructions from "./pages/Instructions";
+
 // import Progress from "./pages/Progress";
 
-//import './assets/css/fonts.css';
-import './index.css';
+import "./index.css";
 
-export default function App() {
-  const [currentPage, setCurrentPage] = useState("Home");
+// Construct our main GraphQL API endpoint
+const httpLink = createHttpLink({
+  uri: "/graphql",
+});
 
-  //render the component of the page user is on
-  //instead of using href to link to a different page, our Handle page change fxn
-  //renders a different component
-  const renderPage = () => {
-    if (currentPage === "Home") {
-      return <Home/>;
-    }
-    // if (currentPage === "Intro") {
-    //   return <Intro />;
-    // }
-    // if (currentPage === "Instructions") {
-    //   return <Instructions />;
-    // }
-    // if (currentPage === "DragDrop") {
-    //   return <DragDrop />;
-    // }
-    // if (currentPage === "GreatPlains") {
-    //   return <GreatPlains />;
-    // }
-    // if (currentPage === "Fish") {
-    //   return <Fish />;
-    // }
-    // if (currentPage === "Pottery") {
-    //   return <Pottery />;
-    // }
-    // if (currentPage === "Progress") {
-    //   return <Progress />;
-    // }
-    // return <About />;
+// Construct request middleware that will attach the JWT token to every request as an `authorization` header
+const authLink = setContext((_, { headers }) => {
+  // get the authentication token from local storage if it exists
+  const token = localStorage.getItem("id_token");
+  // return the headers to the context so httpLink can read them
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : "",
+    },
   };
+});
 
-  const handlePageChange = (page) => setCurrentPage(page);
+const client = new ApolloClient({
+  // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache(),
+  onError: (e) => {
+    console.log(e);
+  },
+});
 
-  //pass the state (current page) and the function to update it to JSX to render component
+function App() {
   return (
-    <div>
-      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
-    </div>
+    <ApolloProvider client={client}>
+      <Router>
+        <Container fluid className="flex-column justify-flex-start min-100-vh">
+          <Navigation />
+          <Row>
+            <Routes>
+              <Route path="/" element={<Home />} />
+
+              <Route path="/overview" element={<Overview />} />
+
+              <Route path="/instructions" element={<Instructions />} />
+
+              <Route path="/overview" element={<Overview />} />
+
+              <Route path="/dragdrop" element={<DragDrop />} />
+
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </Row>
+        </Container>
+      </Router>
+    </ApolloProvider>
   );
 }
+
+export default App;

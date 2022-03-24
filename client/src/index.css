@@ -22,7 +22,6 @@ body {
   background-color: var(--srjc-blue);
 }
 
-
 h1,
 h2,
 h3,
@@ -30,14 +29,19 @@ h4 {
   font-family: "Pangolin", cursive;
 }
 
-.home {
+#root {
   background-color: var(--srjc-blue);
   color: var(--light-gray);
-  min-height: 100vh; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw !important;
+  justify-content: space-between;
 }
 
-.home-footer {
-  background-color: var(--srjc-red);
+.site-content {
+  flex: 1;
+  min-width: 100vw !important;
 }
 
 .logo {
@@ -47,15 +51,37 @@ h4 {
   max-width: 350px;
 }
 
-footer {
+.footer {
   background-color: var(--srjc-red);
   border-top: white solid 4px;
   position: absolute;
   bottom: 0px;
   height: 100px;
+  min-width: 100vw !important;
 }
 
 .navigation {
   background-color: var(--srjc-blue);
   color: var(--light-gray) !important;
+}
+
+.speech-bubble-md {
+  border: 2px solid var(--purple);
+  border-radius: 10px;
+  padding: 3em;
+  /*still figuring out how to make this appear on the right side of the screen like the mock-up*/
+  margin: 1em auto 1em auto;
+}
+.speech-bubble-md p,
+.speech-bubble-md h2 {
+  padding: 1em 0 1em 0;
+}
+.speech-bubble-md h1 {
+  padding: 0 0 0.5em 0;
+}
+.big-round-GO-btn {
+  padding: 2em;
+}
+.mascot-container {
+  padding: 1em 2em 2em 3em;
 }
