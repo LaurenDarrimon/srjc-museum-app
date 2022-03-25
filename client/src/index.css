@@ -85,3 +85,13 @@ h4 {
 .mascot-container {
   padding: 1em 2em 2em 3em;
 }
+
+#answers span {
+  background-color: var(--rust);
+  color: white;
+  display:inline-block;
+  padding:30px;
+  margin:15px;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+}

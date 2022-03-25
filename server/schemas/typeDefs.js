@@ -35,8 +35,8 @@ const typeDefs = gql`
   type Mutation {
     addUser(username: String!, password: String!): Auth
     login(username: String!, password: String!): Auth
-    addQuestion(title: String!, teachingText: String!, questionText: String, region: String, options: [Choice], rightAnswerIndex: Int, ): Question
-    updateQuestion(title: String!, teachingText: String!, questionText: String, region: String, options: [Choice], rightAnswerIndex: Int, ): Question
+    addQuestion(title: String!, teachingText: String!, questionText: String, region: String, options: [String], rightAnswerIndex: Int, ): Question
+    updateQuestion(title: String!, teachingText: String!, questionText: String, region: String, options: [String], rightAnswerIndex: Int, ): Question
     removeQuestion(_id: ID!): Question
   }
 `;
