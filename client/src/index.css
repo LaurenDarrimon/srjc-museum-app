@@ -1,3 +1,5 @@
+
+
 :root {
   /* SRJC colors */
   --srjc-blue: #182952;
@@ -65,6 +67,27 @@ h4 {
   color: var(--light-gray) !important;
 }
 
+
+/* =============== LAUREN'S SECTION ============================= */
+
+
+#answers span {
+  background-color: var(--rust);
+  color: white;
+  display:inline-block;
+  padding:30px;
+  margin:15px;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+}
+
+
+/* =============== END LAUREN'S SECTION ============================= */
+
+
+
+/* =============== ERIN'S SECTION ============================= */
+
 .speech-bubble-md {
   border: 2px solid var(--purple);
   border-radius: 10px;
@@ -86,12 +109,7 @@ h4 {
   padding: 1em 2em 2em 3em;
 }
 
-#answers span {
-  background-color: var(--rust);
-  color: white;
-  display:inline-block;
-  padding:30px;
-  margin:15px;
-  aspect-ratio: 1 / 1;
-  border-radius: 100%;
-}
+
+
+/* =============== END ERIN'S SECTION ============================= */
+
