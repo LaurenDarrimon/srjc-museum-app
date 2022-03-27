@@ -71,8 +71,8 @@ h4 {
 /* =============== LAUREN'S SECTION ============================= */
 
 
-#answers span {
-  background-color: var(--rust);
+.answers {
+  background-color: var(--rust) !important;
   color: white;
   display:inline-block;
   padding:30px;

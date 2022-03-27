@@ -5,8 +5,10 @@ export const quiz = [
       question: "The museum is located in the ancestral homelands of which tribal nation?",
       mainImage: "california/sonoma-county.png", 
       options: ["Ohlone", "Pomo", "Yokuts", "Cheyenne"],
-      right_answer: 1,
-      background_pic: "./assets/images/california/sonoma-county.png",
+      right_answer: "Pomo",
+      correctMessage: "That's right! The Pomo Nation has continuously inhabited this land since long before Europeans arrived until today. ",
+      wrongMessage: "That tribal nation's homelands are located nearby but are not primarily associated with Sonoma County.  Please try again! ",
+
     },
     {
       number: 2,
@@ -15,7 +17,9 @@ export const quiz = [
       mainImage: "pottery.png", 
       options: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, ],
       right_answer: 1,
-      background_pic: "../assets/images/basket-background.jpg",
+      correctMessage: "That's right! This basket was used for.....",
+      wrongMessage:"That's not quite right. Keep looking, explorer!",
+    
     },
   ];
 
