@@ -12,6 +12,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
+
+
 import Navigation from "./components/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -60,19 +62,19 @@ function App() {
         <Container fluid className="flex-column justify-flex-start min-100-vh">
           <Navigation />
           <Row>
-            <Routes>
-              <Route path="/" element={<Home />} />
+              <Routes>
+                <Route path="/" element={<Home />} />
 
-              <Route path="/overview" element={<Overview />} />
+                <Route path="/overview" element={<Overview />} />
 
-              <Route path="/instructions" element={<Instructions />} />
+                <Route path="/instructions" element={<Instructions />} />
 
-              <Route path="/overview" element={<Overview />} />
+                <Route path="/overview" element={<Overview />} />
 
-              <Route path="/dragdrop" element={<DragDrop />} />
+                <Route path="/dragdrop" element={<DragDrop />} />
 
-              <Route path="/about" element={<About />} />
-            </Routes>
+                <Route path="/about" element={<About />} />
+              </Routes>
           </Row>
         </Container>
       </Router>
