@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useReducer } from "react";
 import { memo } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
