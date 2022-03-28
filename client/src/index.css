@@ -68,6 +68,12 @@ h4 {
 }
 
 
+/* || white text bubbles */
+.speech-bubble {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
 /* =============== LAUREN'S SECTION ============================= */
 
 
@@ -91,24 +97,94 @@ h4 {
 .speech-bubble-md {
   border: 2px solid var(--purple);
   border-radius: 10px;
-  padding: 3em;
-  /*still figuring out how to make this appear on the right side of the screen like the mock-up*/
+  padding: 2.5em !important;
   margin: 1em auto 1em auto;
 }
-.speech-bubble-md p,
-.speech-bubble-md h2 {
+
+.speech-bubble p,
+.speech-bubble h2 {
   padding: 1em 0 1em 0;
 }
-.speech-bubble-md h1 {
+.speech-bubble h1 {
   padding: 0 0 0.5em 0;
 }
+
 .big-round-GO-btn {
   padding: 2em;
 }
-.mascot-container {
-  padding: 1em 2em 2em 3em;
+
+/* || Overview Page */
+
+.speech-bubble-md h1, .speech-bubble-md h2{
+  padding-bottom: 1em;
 }
 
+    /*image sizing for small screens*/
+.speech-bubble-md .big-round-GO-btn img {
+  width: 100%;
+}
+
+.speech-bubble-md .big-round-GO-btn {
+  padding: 1em;
+  
+}
+
+.mascot-container {
+  padding: 0 2em 2em 3em;
+}
+
+.mascot-container img {
+  width: 70%;
+  position: relative;
+  bottom: 13.5em;
+}
+    /*image sizing for ipad */
+@media screen and (min-width: 768px) { /*md*/ 
+  .big-round-GO-btn img {
+    width: initial;
+  }
+
+  .mascot-container img {
+    width: initial;
+    height: initial;
+  }
+  
+}
+
+/* || Instructions Page*/
+.speech-bubble-fullscreen {
+  padding: 4em 4em 4em 4em !important;
+}
+
+.speech-bubble-fullscreen {
+  text-align: center;
+
+}
+
+.speech-bubble-fullscreen h1 {
+  padding-bottom: 1em;
+}
+.speech-bubble-fullscreen p, .speech-bubble-fullscreen h2 {
+  text-align: left !important;
+}
+
+.speech-bubble-fullscreen h2 {
+  padding-top: 2.5em;
+}
+
+.speech-bubble-fullscreen img {
+  padding: 1.5em;
+}
+
+.speech-bubble-fullscreen div div .big-round-GO-btn {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.speech-bubble-fullscreen div div .big-round-GO-btn img {
+  margin: 0 !important;
+  padding: 2.5em 0 0 0 !important;
+}
 
 
 /* =============== END ERIN'S SECTION ============================= */
