@@ -20,8 +20,8 @@ const DragDrop = memo(function DragDrop() {
 
     <DndProvider backend={HTML5Backend}>
       <Container fluid className="site-content">
-        <Row className="d-flex justify-content-center text-center p-5">
-          <Col className="align-items-center py-5">
+        <Row className="justify-content-center text-center p-5">
+          <Col xs={11} md={7} className="py-5">
             <h1>Question {quiz[0].number}</h1>
 
             <h2>{quiz[0].lesson}</h2>
