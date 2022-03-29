@@ -7,6 +7,7 @@ import { Dustbin } from "../components/Dustbin";
 import { OptionBox } from "../components/OptionBox";
 
 import { quiz } from "../assets/data/questions";
+import next from "../assets/images/next.png";
 
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
@@ -55,6 +56,10 @@ const DragDrop = memo(function DragDrop() {
 
             <br />
             <br />
+
+            <Link to="/fishing">
+              <img src={next} alt="white arrow play button" className="p-4" />
+            </Link>
           
           </Col>
         </Row>

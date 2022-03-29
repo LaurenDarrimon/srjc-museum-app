@@ -20,7 +20,7 @@ import About from "./pages/About";
 import Instructions from "./pages/Instructions";
 import DragDrop from "./pages/DragDrop";
 import Overview from "./pages/Overview";
-// import Fish from "./pages/Fish";
+import Fishing from "./pages/Fishing";
 // import Pottery from "./pages/Pottery";
 // import GreatPlains from "./pages/GreatPlains";
 
@@ -74,6 +74,8 @@ function App() {
                 <Route path="/dragdrop" element={<DragDrop />} />
 
                 <Route path="/about" element={<About />} />
+
+                <Route path="/fishing" element={<Fishing />} />
               </Routes>
           </Row>
         </Container>
