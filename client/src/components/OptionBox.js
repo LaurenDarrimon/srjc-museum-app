@@ -1,5 +1,6 @@
 import { useDrag } from 'react-dnd';
 import { ItemTypes } from '../utils/ItemTypes';
+
 const style = {
     padding: '1rem 1rem',
     marginRight: '1.5rem',

@@ -19,6 +19,7 @@ const DragDrop = memo(function DragDrop() {
   return (
     //loading or intro screen and homepage
 
+    /* Dnd Provider wraps the drag and drop components */
     <DndProvider backend={HTML5Backend}>
       <Container fluid className="site-content">
         <Row className="justify-content-center text-center p-5">
@@ -32,16 +33,17 @@ const DragDrop = memo(function DragDrop() {
               image={quiz[0].mainImage}
               answer={quiz[0].right_answer}
             >
+              {/* dustbin is the colored box with the image where we will drag the right answer */}
               <Dustbin
                 image={quiz[0].mainImage}
                 answer={quiz[0].right_answer}
               />
-        
             </div>
 
             <h2>{quiz[0].question}</h2>
             <br />
 
+            {/* map through the array of options to render a button for each answer option */}
             <div>
               {options.map((option) => (
                 <OptionBox
@@ -60,7 +62,6 @@ const DragDrop = memo(function DragDrop() {
             <Link to="/fishing">
               <img src={next} alt="white arrow play button" className="p-4" />
             </Link>
-          
           </Col>
         </Row>
       </Container>

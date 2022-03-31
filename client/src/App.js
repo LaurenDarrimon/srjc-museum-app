@@ -21,8 +21,9 @@ import Instructions from "./pages/Instructions";
 import DragDrop from "./pages/DragDrop";
 import Overview from "./pages/Overview";
 import Fishing from "./pages/Fishing";
+import GreatPlains from "./pages/GreatPlains";
 // import Pottery from "./pages/Pottery";
-// import GreatPlains from "./pages/GreatPlains";
+
 
 // import Progress from "./pages/Progress";
 
@@ -76,6 +77,8 @@ function App() {
                 <Route path="/about" element={<About />} />
 
                 <Route path="/fishing" element={<Fishing />} />
+
+                <Route path="/greatPlains" element={<GreatPlains />} />
               </Routes>
           </Row>
         </Container>
