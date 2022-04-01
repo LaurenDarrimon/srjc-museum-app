@@ -14,22 +14,36 @@ const style = {
 };
 export const FeatherOptions = function FeatherOptions(props) {
 
+let featherNumber = 1
+
   const [{ isDragging }, drag] = useDrag(() => ({
     type: ItemTypes.BOX,
     item: props.option,
     end: (item, monitor) => {
       const dropResult = monitor.getDropResult();
-      if (props && dropResult && props.rightAnswer) {
+
+      if (props && dropResult && props.rightAnswer && featherNumber >= 11) {
         alert(
-          `That's right! That was a deed worth or a feather in a war bonnet. `
+          `That's right! You have filled the war bonnet. Progress to the next question.  `
         );
 
-        //working here to chnage the fill color of feathers with a given class 
-        let featherToColor = document.getElementsByClassName('feather1');
+        let featherToColor = document.getElementById(`feather${featherNumber}`);
+        featherToColor.setAttribute("fill", "#c24744")
+      }
+      
+      if (props && dropResult && props.rightAnswer && featherNumber < 11) {
+        alert(
+          `That's right! That was a deed worthy of a feather in a war bonnet. Keep adding more deeds.`
+        );
+
+        //working here to change the fill color of feathers with a given class 
+        let featherToColor = document.getElementById(`feather${featherNumber}`);
 
         console.log("featherToColor:")
         console.log(featherToColor)
-        //console.log(featherToColor.attributes.fill.value)
+        featherToColor.setAttribute("fill", "#c24744")
+        //increase the feather number counter
+        featherNumber++; 
       }
 
       if (props && dropResult && !props.rightAnswer) {
