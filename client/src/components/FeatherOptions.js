@@ -3,7 +3,7 @@ import { ItemTypes } from "../utils/ItemTypes";
 
 import { Card } from "react-bootstrap";
 
-import feather from "../assets/images/great-plains/feather.png";
+import feather from "../assets/images/great-plains/single-feather.svg";
 
 const style = {
   padding: "1rem 1rem",
@@ -65,7 +65,7 @@ let featherNumber = 1
       data-testid={`box-${props.number}`}
     >
       <Card style={{ width: "16rem" }} >
-        <Card.Img variant="top" src={feather} />
+        <Card.Img variant="top" src={feather} style={{ height: "20rem" }}/>
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
           <Card.Text>

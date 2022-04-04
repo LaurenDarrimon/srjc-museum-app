@@ -8,12 +8,12 @@ import next from "../assets/images/next.png";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 
-import { BonnetDrop } from "../components/BonnetDrop";
-import { FeatherOptions } from "../components/FeatherOptions";
+import { PotteryDrop } from "../components/PotteryDrop";
+import { PotteryDesigns } from "../components/PotteryDesigns";
 
-import { featherDeeds } from "../assets/data/great-plains-data";
+import { potteryData } from "../assets/data/southwest-data";
 
-const greatPlains = () => {
+const Southwest = () => {
   //functions, hooks, state, etc go here
 
   //return JSX
@@ -23,17 +23,17 @@ const greatPlains = () => {
       <Container fluid>
         <Row className="justify-content-center p-5">
           <Col xs={12} className="text-center">
-            <h1 className="subtitle p-5">Great Plains Game</h1>
+            <h1 className="subtitle p-5">Southwest Game</h1>
           </Col>
 
           <Col xs={11} md={5}>
 
-          {featherDeeds.map((feather) => (
-                <FeatherOptions
-                  key={feather.number}
-                  title={feather.title}
-                  deed={feather.deed}
-                  rightAnswer={feather.rightAnswer}
+          {potteryData.map((design) => (
+                <PotteryDesigns
+                  key={design.number}
+                  title={design.title}
+                  description={design.description}
+                  image={design.image}
                 />
               ))}
                
@@ -41,14 +41,14 @@ const greatPlains = () => {
 
           <Col xs={11} md={5}>
 
-          <BonnetDrop />
+          <PotteryDrop />
 
           </Col>
 
           
 
           <Col xs={11} md={8} className="text-end">
-            <Link to="/southwest">
+            <Link to="/dragdrop">
               <img src={next} alt="next question" className="p-4" />
             </Link>
           </Col>
@@ -58,4 +58,4 @@ const greatPlains = () => {
   );
 };
 
-export default greatPlains;
+export default Southwest;

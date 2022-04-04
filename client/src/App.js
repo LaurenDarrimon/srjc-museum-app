@@ -22,7 +22,7 @@ import DragDrop from "./pages/DragDrop";
 import Overview from "./pages/Overview";
 import Fishing from "./pages/Fishing";
 import GreatPlains from "./pages/GreatPlains";
-// import Pottery from "./pages/Pottery";
+import Southwest from "./pages/Southwest";
 
 
 // import Progress from "./pages/Progress";
@@ -78,7 +78,9 @@ function App() {
 
                 <Route path="/fishing" element={<Fishing />} />
 
-                <Route path="/greatPlains" element={<GreatPlains />} />
+                <Route path="/greatplains" element={<GreatPlains />} />
+
+                <Route path="/southwest" element={<Southwest />} />
               </Routes>
           </Row>
         </Container>
