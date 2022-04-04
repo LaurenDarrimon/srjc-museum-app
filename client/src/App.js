@@ -23,6 +23,7 @@ import Overview from "./pages/Overview";
 import Fishing from "./pages/Fishing";
 import GreatPlains from "./pages/GreatPlains";
 // import Pottery from "./pages/Pottery";
+import PacificNW from "./pages/PacificNW";
 
 
 // import Progress from "./pages/Progress";
@@ -79,6 +80,8 @@ function App() {
                 <Route path="/fishing" element={<Fishing />} />
 
                 <Route path="/greatPlains" element={<GreatPlains />} />
+
+                <Route path="/pacificNW" element={<PacificNW />} />
               </Routes>
           </Row>
         </Container>

@@ -49,7 +49,7 @@ const greatPlains = () => {
           
 
           <Col xs={11} md={8} className="text-end">
-            <Link to="/dragdrop">
+            <Link to="/pacificNW">
               <img src={next} alt="next question" className="p-4" />
             </Link>
           </Col>
