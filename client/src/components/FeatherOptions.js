@@ -22,7 +22,7 @@ let featherNumber = 1
     end: (item, monitor) => {
       const dropResult = monitor.getDropResult();
 
-      if (props && dropResult && props.rightAnswer && featherNumber >= 11) {
+      if (props && dropResult && props.rightAnswer && featherNumber >= 6) {
         alert(
           `That's right! You have filled the war bonnet. Progress to the next question.  `
         );
@@ -31,7 +31,7 @@ let featherNumber = 1
         featherToColor.setAttribute("fill", "#c24744")
       }
       
-      if (props && dropResult && props.rightAnswer && featherNumber < 11) {
+      if (props && dropResult && props.rightAnswer && featherNumber < 6) {
         alert(
           `That's right! That was a deed worthy of a feather in a war bonnet. Keep adding more deeds.`
         );
