@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
 import next from "../assets/images/next.png";
-import mascotGuide from "../assets/images/speech-bubble-mascot-guide.png";
+import mascotGuide from "../assets/images/speech-bubble-mascot-tip-2.png";
 
 const PacificNW = () => {
   //functions, hooks, state, etc go here
@@ -22,7 +22,7 @@ const PacificNW = () => {
             </Col>
             <Row>
                 <Col xs={4}>
-                    {/*NOTE: add onclick event for instructioms modal*/}
+                    {/*NOTE: add onclick event for instructions modal*/}
                     <img src={mascotGuide} alt="You've got this!" className="img-fluid"></img>
                 </Col>
                 <Col xs={8} className="multi-choice-container">

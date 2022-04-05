@@ -59,7 +59,7 @@ const DragDrop = memo(function DragDrop() {
             <br />
             <br />
 
-            <Link to="/fishing">
+            <Link to="/lesson">
               <img src={next} alt="white arrow play button" className="p-4" />
             </Link>
           </Col>

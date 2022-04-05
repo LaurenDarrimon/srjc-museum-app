@@ -25,6 +25,7 @@ import GreatPlains from "./pages/GreatPlains";
 // import Pottery from "./pages/Pottery";
 import PacificNW from "./pages/PacificNW";
 import Southwest from "./pages/Southwest";
+import Lesson from "./pages/Lesson";
 
 
 // import Progress from "./pages/Progress";
@@ -85,6 +86,10 @@ function App() {
                 <Route path="/southwest" element={<Southwest />} />
 
                 <Route path="/pacificNW" element={<PacificNW />} />
+
+                <Route path="/lesson" element={<Lesson />} />
+
+
               </Routes>
           </Row>
         </Container>
