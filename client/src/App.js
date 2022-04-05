@@ -27,6 +27,9 @@ import PacificNW from "./pages/PacificNW";
 import Southwest from "./pages/Southwest";
 import Lesson from "./pages/Lesson";
 
+// Importing our theme provider which will make our global state available to child components
+import CountProvider from './utils/GameContext';
+
 
 // import Progress from "./pages/Progress";
 
@@ -63,6 +66,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
+      <CountProvider>
         <Container fluid className="flex-column justify-flex-start min-100-vh">
           <Navigation />
           <Row>
@@ -93,9 +97,10 @@ function App() {
               </Routes>
           </Row>
         </Container>
+        </CountProvider>
       </Router>
     </ApolloProvider>
-  );
+  ); 
 }
 
 export default App;
