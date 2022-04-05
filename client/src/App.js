@@ -24,6 +24,7 @@ import Fishing from "./pages/Fishing";
 import GreatPlains from "./pages/GreatPlains";
 // import Pottery from "./pages/Pottery";
 import PacificNW from "./pages/PacificNW";
+import Southwest from "./pages/Southwest";
 
 
 // import Progress from "./pages/Progress";
@@ -79,7 +80,9 @@ function App() {
 
                 <Route path="/fishing" element={<Fishing />} />
 
-                <Route path="/greatPlains" element={<GreatPlains />} />
+                <Route path="/greatplains" element={<GreatPlains />} />
+
+                <Route path="/southwest" element={<Southwest />} />
 
                 <Route path="/pacificNW" element={<PacificNW />} />
               </Routes>
