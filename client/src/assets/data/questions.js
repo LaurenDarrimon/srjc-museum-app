@@ -108,12 +108,12 @@ export const quiz = [
   },
   {
     number: 10,
-    lesson: "",
-    question: " ",
+    lesson: "A vibrant living culture!",
+    question: "This will be a question about current First Nations People in our area",
     mainImage: "pottery.png",
-    options: [],
-    right_answer: 6,
-    correctMessage: "",
+    options: ["a", "b", "c", "d"],
+    right_answer: "a",
+    correctMessage: "That's right!",
     wrongMessage: "That's not quite right. Keep looking, explorer!",
   },
  

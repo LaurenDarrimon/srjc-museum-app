@@ -13,8 +13,21 @@ import { PotteryDesigns } from "../components/PotteryDesigns";
 
 import { potteryData } from "../assets/data/southwest-data";
 
+// Import our custom hook
+import { useCounter } from "../utils/GameContext";
+//import game slide sequence
+import { gameData } from "../assets/data/game-data";
+
 const Southwest = () => {
   //functions, hooks, state, etc go here
+
+    //track which mini-game slide we are on
+    const { gameCounter, gameIncrement } = useCounter();
+
+   //track which slide we are on
+   const { slideCounter, setSlideIncrement } = useCounter();
+   //the next slide in the sequence
+   let nextPath = gameData[slideCounter].nextPath
 
   //return JSX
   return (
@@ -48,8 +61,8 @@ const Southwest = () => {
           
 
           <Col xs={11} md={8} className="text-end">
-            <Link to="/pacificNW">
-              <img src={next} alt="next question" className="p-4" />
+            <Link to={nextPath}>
+              <img src={next} alt="next question" className="p-4" onClick={() => gameIncrement()}/>
             </Link>
           </Col>
         </Row>

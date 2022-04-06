@@ -7,22 +7,27 @@ import { Dustbin } from "../components/Dustbin";
 import { OptionBox } from "../components/OptionBox";
 
 import { quiz } from "../assets/data/questions";
+import { gameData } from "../assets/data/game-data";
 import next from "../assets/images/next.png";
 
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 
 // Import our custom hook
-import { useCounter } from '../utils/GameContext';
+import { useCounter } from "../utils/GameContext";
 
 const DragDrop = memo(function DragDrop() {
-  
-
   // Pluck values from our ThemeContext by invoking our useCounter hook
   const { triviaCounter, triviaIncrement } = useCounter();
 
+  const { slideCounter, setSlideIncrement } = useCounter();
+  let nextPath = gameData[slideCounter].nextPath
+
   const options = quiz[triviaCounter].options;
   console.log(options);
+
+  console.log("triviacounter");
+  console.log(triviaCounter);
 
   return (
     //loading or intro screen and homepage
@@ -67,8 +72,13 @@ const DragDrop = memo(function DragDrop() {
             <br />
             <br />
 
-            <Link to="/dragdrop">
-              <img src={next} alt="white arrow play button" className="p-4" onClick={() => triviaIncrement()}/>
+            <Link to={nextPath}>
+              <img
+                src={next}
+                alt="white arrow play button"
+                className="p-4"
+                onClick={() => triviaIncrement()}
+              />
             </Link>
           </Col>
         </Row>
@@ -76,5 +86,9 @@ const DragDrop = memo(function DragDrop() {
     </DndProvider>
   );
 });
+
+{
+  /* //<Table.Cell>{ user.company !== null ?  <Link to={`/companies/${user.company._id}`}>{user.company.name}</Link> : null }</Table.Cell> */
+}
 
 export default DragDrop;

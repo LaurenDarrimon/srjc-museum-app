@@ -6,8 +6,19 @@ import { Link } from "react-router-dom";
 import waves from "../assets/images/waves.jpg";
 import next from "../assets/images/next.png";
 
+import { gameData } from "../assets/data/game-data";
+// Import our custom hook
+import { useCounter } from "../utils/GameContext";
+
 const Fishing = () => {
   //functions, hooks, state, etc go here
+
+  //track which mini-game slide we are on
+  const { gameCounter, gameIncrement } = useCounter();
+
+  //track overall game slide 
+  const { slideCounter, setSlideIncrement } = useCounter();
+  let nextPath = gameData[slideCounter].nextPath
 
   //return JSX
   return (
@@ -27,8 +38,8 @@ const Fishing = () => {
         </Col>
 
         <Col xs={11} md={8} className="text-end">
-          <Link to="/greatplains">
-            <img src={next} alt="next question" className="p-4" />
+          <Link to={nextPath}>
+            <img src={next} alt="next question" className="p-4" onClick={() => gameIncrement()} />
           </Link>
         </Col>
       </Row>
