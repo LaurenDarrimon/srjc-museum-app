@@ -16,6 +16,7 @@ export const OptionBox = function OptionBox( props ) {
             const dropResult = monitor.getDropResult();
             if (props && dropResult && props.option === props.answer) {
                 alert(`${props.correctMessage} ` );
+                //add logic to set correct key to value of true when answered correctly 
             }
 
             if (props && dropResult && props.option !== props.answer) {

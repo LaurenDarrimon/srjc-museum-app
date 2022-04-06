@@ -16,17 +16,18 @@ const Navigation = () => {
           <Nav.Link href="/overview" className="navigation">Overview</Nav.Link>
             <Nav.Link href="/about" className="navigation">About</Nav.Link>
             <Nav.Link href="/instructions" className="navigation">Help</Nav.Link>
-            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+            <NavDropdown title="Mini Games" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/fishing">California</NavDropdown.Item>
+              <NavDropdown.Item href="/pacificnw">
+                Pacific North West 
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="/southwest">Southwest</NavDropdown.Item>
+              <NavDropdown.Item href="/greatplains">Great Plains</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item href="/lesson">
+                Mini Game Lesson Template 
               </NavDropdown.Item>
-            </NavDropdown> */}
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>

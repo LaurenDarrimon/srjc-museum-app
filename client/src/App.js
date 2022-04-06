@@ -89,7 +89,7 @@ function App() {
 
                 <Route path="/southwest" element={<Southwest />} />
 
-                <Route path="/pacificNW" element={<PacificNW />} />
+                <Route path="/pacificnw" element={<PacificNW />} />
 
                 <Route path="/lesson" element={<Lesson />} />
 
