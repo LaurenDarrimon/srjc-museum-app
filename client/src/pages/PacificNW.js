@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import next from "../assets/images/next.png";
 import mascotGuide from "../assets/images/speech-bubble-mascot-tip-2.png";
+import InstructionModal from "../components/MiniGameInstModal";
 
 const PacificNW = () => {
   //functions, hooks, state, etc go here
@@ -39,6 +40,7 @@ const PacificNW = () => {
                     </ol>
               
                 </Col>
+                <InstructionModal />
             </Row>
 
             <Col xs={11} md={8} className="text-end">

@@ -103,6 +103,7 @@ h4 {
 
 /* =============== ERIN'S SECTION ============================= */
 
+/* || All pages */
 .speech-bubble-md {
   border: 2px solid var(--purple);
   border-radius: 10px;
@@ -194,6 +195,19 @@ h4 {
   margin: 0 !important;
   padding: 2.5em 0 0 0 !important;
 }
+
+
+/* || MODAL - Instructions */
+.instructions-modal {
+  width: 90%;
+  max-width: 90% !important;
+}
+
+  /*bs-react class*/
+.modal-content {
+  padding: 2em !important;
+}
+
 
 
 /* =============== END ERIN'S SECTION ============================= */
