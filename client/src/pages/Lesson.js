@@ -13,7 +13,7 @@ import { gameData } from "../assets/data/game-data";
 const Lesson = () => {
   //functions, hooks, state, etc go here
   //track which mini-game slide we are on
-  const { gameCounter, gameIncrement } = useCounter();
+  const { lessonCounter, lessonIncrement } = useCounter();
 
   //track the overall slide we are on
   const { slideCounter, setSlideIncrement } = useCounter();
@@ -41,7 +41,7 @@ const Lesson = () => {
           </p>
 
           <Link to={nextPath} className="float-end">
-            <img className="img-fluid" src={next} alt="next page" onClick={() => gameIncrement()}/>
+            <img className="img-fluid" src={next} alt="next page" onClick={() => lessonIncrement()}/>
           </Link>
         </Col>
       </Row>

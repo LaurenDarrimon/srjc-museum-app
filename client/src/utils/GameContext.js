@@ -14,7 +14,9 @@ export default function gameProvider({ children }) {
   const [triviaCounter, setTriviaCounter] = useState(0);
   //state to track the mini games
   const [gameCounter, setGameCounter] = useState(0);
-  //state to track slide number - we'll use this to determine which slide to render next 
+  //state to track the lessons
+  const [lessonCounter, setLessonCounter] = useState(0);
+  //state to track slide number - we'll use this to determine which slide to render next
   const [slideCounter, setSlideCounter] = useState(0);
   //state to track whether user is in museum or not
   const [onSite, setOnSite] = useState(true);
@@ -32,6 +34,12 @@ export default function gameProvider({ children }) {
     setSlideCounter(slideCounter + 1);
     setGameCounter(gameCounter + 1);
   };
+  const lessonIncrement = () => {
+    console.log("lesson counter incremented");
+    console.log(lessonCounter + 1);
+    setSlideCounter(slideCounter + 1);
+    setLessonCounter(lessonCounter + 1);
+  };
 
   // Method to update our state determining if user is onsite or not
   const isUserOnSite = () => {
@@ -43,7 +51,17 @@ export default function gameProvider({ children }) {
   return (
     // Both counters and methods of updating are getting provided to the child components
     <GameContext.Provider
-      value={{ triviaCounter, triviaIncrement, gameCounter, gameIncrement, onSite, isUserOnSite, slideCounter}}
+      value={{
+        triviaCounter,
+        triviaIncrement,
+        gameCounter,
+        gameIncrement,
+        lessonCounter,
+        lessonIncrement,
+        onSite,
+        isUserOnSite,
+        slideCounter,
+      }}
     >
       {children}
     </GameContext.Provider>

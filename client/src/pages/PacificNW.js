@@ -7,11 +7,14 @@ import next from "../assets/images/next.png";
 //import modal components
 import InstructionModal from "../components/MiniGameInstModal";
 import TryAgainModal from "../components/TryAgainModal";
+//ERIN import modal data
+import { modalData } from "../assets/data/modal-data";
 
 // Import our custom hook
 import { useCounter } from "../utils/GameContext";
 //import game slide sequence
 import { gameData } from "../assets/data/game-data";
+
 
 const PacificNW = () => {
   //functions, hooks, state, etc go here
@@ -23,6 +26,11 @@ const PacificNW = () => {
   const { slideCounter, setSlideIncrement } = useCounter();
   //the next slide in the sequence
   let nextPath = gameData[slideCounter].nextPath;
+
+  //ERIN get the data for the game we're on
+  const currentModal = modalData[gameCounter];
+  console.log("currentModal");
+  console.log(currentModal);
 
   //return JSX
   return (
@@ -43,7 +51,15 @@ const PacificNW = () => {
         <Row>
           <Col xs={4}>
             {/* Click for modal */}
-            <InstructionModal />
+            {/* ERIN pass in props for current instruction modal */}
+            <InstructionModal
+              title={currentModal.title}
+              p1={currentModal.p1}
+              pBold={currentModal.pBold}
+              p3={currentModal.p3}
+              imagePath={currentModal.imagePath}
+              imageDescription={currentModal.imageDescription}
+            />
           </Col>
           <Col xs={8} className="multi-choice-container">
             <ol type="A">
@@ -53,7 +69,6 @@ const PacificNW = () => {
             </ol>
           </Col>
           <TryAgainModal />
-          
         </Row>
 
         <Col xs={11} md={8} className="text-end">

@@ -50,3 +50,65 @@ export const potteryData = [
   },
 
 ];
+
+export const southwestLessonData = [
+  {
+    title:"",
+    p1:"",
+    p2:"",
+    p3:"",
+    imagePath:"",
+  },
+  {
+    title:"",
+    p1:"",
+    p2:"",
+    p3:"",
+    imagePath:"",
+  },
+  {
+    title:"",
+    p1:"",
+    p2:"",
+    p3:"",
+    imagePath:"",
+  },
+  {
+    title:"",
+    p1:"",
+    p2:"",
+    p3:"",
+    imagePath:"",
+  },
+]
+
+export const southwestModalData = [
+  {
+    title:"",
+    p1:"",
+    p2:"",
+    p3:"",
+    imagePath:"",
+  },
+  {
+    title:"",
+    p1:"",
+    p2:"",
+    p3:"",
+    imagePath:"",
+  },
+  {
+    title:"",
+    p1:"",
+    p2:"",
+    p3:"",
+    imagePath:"",
+  },
+  {
+    title:"",
+    p1:"",
+    p2:"",
+    p3:"",
+    imagePath:"",
+  },
+]
