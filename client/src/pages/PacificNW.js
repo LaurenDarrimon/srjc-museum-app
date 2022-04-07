@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
 import next from "../assets/images/next.png";
-import mascotGuide from "../assets/images/speech-bubble-mascot-tip-2.png";
+
+//import modal components
+import InstructionModal from "../components/MiniGameInstModal";
+import TryAgainModal from "../components/TryAgainModal";
 
 // Import our custom hook
 import { useCounter } from "../utils/GameContext";
@@ -39,12 +42,8 @@ const PacificNW = () => {
         </Col>
         <Row>
           <Col xs={4}>
-            {/*NOTE: add onclick event for instructions modal*/}
-            <img
-              src={mascotGuide}
-              alt="You've got this!"
-              className="img-fluid"
-            ></img>
+            {/* Click for modal */}
+            <InstructionModal />
           </Col>
           <Col xs={8} className="multi-choice-container">
             <ol type="A">
@@ -53,6 +52,8 @@ const PacificNW = () => {
               <li className="multi-choice-answer">Answer Three</li>
             </ol>
           </Col>
+          <TryAgainModal />
+          
         </Row>
 
         <Col xs={11} md={8} className="text-end">
@@ -62,7 +63,7 @@ const PacificNW = () => {
               alt="next question"
               className="p-4"
               onClick={() => gameIncrement()}
-            />
+            ></img>
           </Link>
         </Col>
       </Row>

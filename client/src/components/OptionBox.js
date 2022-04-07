@@ -18,7 +18,7 @@ export const OptionBox = function OptionBox( props ) {
                 alert(`${props.correctMessage} ` );
                 //add logic to set correct key to value of true when answered correctly 
             }
-
+            // add custom "Try Again" modal here??
             if (props && dropResult && props.option !== props.answer) {
                 alert(` ${props.wrongMessage}`);
             }

@@ -68,12 +68,7 @@ h4 {
 }
 
 
-/* || white text bubbles */
-.speech-bubble {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-}
+
 /* =============== LAUREN'S SECTION ============================= */
 
 
@@ -102,6 +97,19 @@ h4 {
 
 
 /* =============== ERIN'S SECTION ============================= */
+
+/* || Utilities */
+.bold-text {
+  font-weight: bold !important;
+}
+
+/* || All pages */
+/* || white text bubbles */
+.speech-bubble {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
 
 .speech-bubble-md {
   border: 2px solid var(--purple);
@@ -193,6 +201,23 @@ h4 {
 .speech-bubble-fullscreen div div .big-round-GO-btn img {
   margin: 0 !important;
   padding: 2.5em 0 0 0 !important;
+}
+
+
+/* || MODALS - Instructions & Try Again */
+.custom-modal {
+  max-width: 65% !important;
+  margin-top: 8vh !important;
+}
+
+  /*bs-react class*/
+.modal-content {
+  padding: 2em !important;
+}
+
+.modal-img-mascot-instructions {
+  display: block;
+  padding-top: 3.5em;
 }
 
 
