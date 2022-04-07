@@ -41,11 +41,7 @@ const Southwest = () => {
   console.log(currentModal);
 
   const options = {
-    scrollAngleRanges: [
-      { start: 30, end: 150 },
-      { start: 210, end: 330 }
-    ], 
-    enableMouseEvents: true,
+
   }
 
   //return JSX
