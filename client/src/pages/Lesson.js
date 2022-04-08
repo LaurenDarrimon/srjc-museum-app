@@ -9,11 +9,15 @@ import mascotLarge from "../assets/images/mascot-lg.png";
 import { useCounter } from "../utils/GameContext";
 //track which turn we are on and which slide is next in sequence
 import { gameData } from "../assets/data/game-data";
+import { lessonData } from "../assets/data/lesson-data";
+
 
 const Lesson = () => {
   //functions, hooks, state, etc go here
   //track which mini-game slide we are on
   const { lessonCounter, lessonIncrement } = useCounter();
+  // erin -new
+  const currentLessonSlide = lessonData[lessonCounter];
 
   //track the overall slide we are on
   const { slideCounter, setSlideIncrement } = useCounter();
@@ -25,20 +29,11 @@ const Lesson = () => {
     <Container>
       <Row xs={1} className="lesson site-content">
         <Col xs={11} md={{span: 8, offset: 3}} className="speech-bubble speech-bubble-md">
-          <h1>Misc. Lesson Pages (2 slides) </h1>
-          <img className="img-fluid" src="" alt="related image"></img>
-          <p>
-            Some edcational text describing all the things the player needs to know....etc..etc. To go
-            before scavenger hunt Q's or mini games.
-            <br/>
-            <br/>
-            Can (and probably will be multiple pages, to avoid big blocks of text on one page). Now
-            I'm just trying to fill up this space. 
-            <br/>
-            <br/>
-            Lorem ipsum dolor sit amet, consectetur adipiscing 
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          <h1>{currentLessonSlide.title}</h1>
+          <img className="img-fluid" src={currentLessonSlide.imagePath} alt={currentLessonSlide.imageDescription}></img>
+          <p>{currentLessonSlide.p1}</p>
+          <p>{currentLessonSlide.p2}</p>
+          <p>{currentLessonSlide.p3}</p>
 
           <Link to={nextPath} className="float-end">
             <img className="img-fluid" src={next} alt="next page" onClick={() => lessonIncrement()}/>
