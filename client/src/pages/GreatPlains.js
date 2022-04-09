@@ -77,6 +77,10 @@ const greatPlains = () => {
           />
         </Col>
 
+        <Button variant="primary" onClick={handleShow}>
+            Launch "You've Completed the Game!" Modal
+        </Button>
+
           <Col xs={8} md={8} className="text-end">
             <Link to={nextPath}>
               <img

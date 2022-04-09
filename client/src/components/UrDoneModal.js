@@ -3,10 +3,9 @@ import React, { useState } from 'react';
 import { Modal, Button } from "react-bootstrap";
 
 //images
-import go from "../assets/images/go-btn.png"
 import mascotTryAgain from "../assets/images/speech-bubble-mascot-tryagain.png";
 
-const TryAgainModal = () => {
+const UrDoneModal = () => {
   //full screen modal to show when user answers a question wrong
     const [show, setShow] = useState(false);
   
@@ -16,7 +15,7 @@ const TryAgainModal = () => {
     return (
       <>
         <Button variant="primary" onClick={handleShow}>
-            Launch "Try Again" Modal
+            Launch "You've Completed the Game!" Modal
         </Button>
   
         <Modal 
@@ -29,20 +28,19 @@ const TryAgainModal = () => {
             <Modal.Title as="h1">Try Again!</Modal.Title>  
           </Modal.Header>
           <Modal.Body className="instructions-modal-body">
-            <p className='bold-text'>
-              Sorry that's not the right answer.
-            </p>
-            <p>
-              Look around at the signs on the walls in the museum, and the pictures next to the artifacts. There you'll find clues to the right answer.
-            </p>
-            <img className='modal-img-mascot-instructions img-fluid' src={mascotTryAgain} alt="Click on the Mascot in the lower left corner to see these instructions again" />
+            <h1>
+              Yay! You Completed the Game!
+            </h1>
+            <img className='modal-img-mascot-instructions img-fluid' src={mascotTryAgain} alt="Mascot says 'Woohoo! Great Job'" />
             </Modal.Body>
-          <Modal.Footer>
-            <img onClick={handleClose} className='img-fluid' src={go} alt="GO!" />
-          </Modal.Footer>
-        </Modal>
+                <Modal.Footer>
+                    <Button variant="primary" onClick={handleClose}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
       </>
     );
   }
   
-  export default TryAgainModal;
+  export default UrDoneModal;
