@@ -19,10 +19,10 @@ const Overview = () => {
             Welcome to the North American Art Scavenger Hunt! Today we'll learn about native North American art while exploring the museum!
           </p>
           <p>
-            The game is intended to be played in person at the SRJC Multi-Culural Museum.
+            We'll look at art from across America, from California, the Pacific Northwest, the Southwest, and the Great Plains.
           </p>
           <p>
-            We'll look at art from across America, from California, the Pacific Northwest, the Southwest, and the Great Plains.
+            The game is intended to be played in person at the SRJC Multi-Culural Museum.
           </p>
 
           <h2 className="display-5 d-inline-block">Let's test your skills!</h2>
