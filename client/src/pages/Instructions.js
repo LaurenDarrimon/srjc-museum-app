@@ -18,23 +18,19 @@ const Instructions = () => {
         <Col xs={11} className="speech-bubble speech-bubble-fullscreen">
           <h1 className="display-5">Instructions</h1>
           <p>
-            Some text describing how the game works. Each item in the museum has a
-            small number next to it. We will show you a picture of an art piece,
-            and you'll look around to find it in the museum (along with its
-            number.)
+            Follow the prompts on the next page to find the artifacts in the museum.
           </p>
           <img className="img-fluid"
             src={potNumbers}
             alt="illustration of dragging the number onto the image of a piece of pottery"
           />
           <p>
-            <strong>Drag and Drop</strong> the item's number onto its picture when
-            you find it in the real-life exhibit.
+            <span className="bold-text">Tap or Click</span> on the right answer when you find the item in the real life exhibit.
           </p>
 
           <img className="img-fluid"
             src={mascotBubble}
-            alt='little mascot says "Hi my name is __, Ill be your guide through the game"'
+            alt='little mascot says "Hi, Ill be your guide through the game"'
           />
         <Row>
         <Col xs={6}>

@@ -55,7 +55,7 @@ const About = () => {
                 <div>
                   {/*This is for Erin*/}
                   <h3>Erin Potter</h3>
-                  <p><small><em>Web Developer | Designer</em></small></p>
+                  <p><small><em>Front End Developer | Designer</em></small></p>
                   <p>
                     <button>LinkedIn</button>
                     <button>GitHub</button>
