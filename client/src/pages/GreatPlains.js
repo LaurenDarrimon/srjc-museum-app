@@ -83,14 +83,14 @@ const greatPlains = () => {
             {/*TEMP - Click to show Modal */}
             <UrDoneModal />
         
-            <Link to={nextPath}>
+           {/*  <Link to={nextPath}>
               <img
                 src={next}
                 alt="next question"
                 className="p-4"
                 onClick={() => gameIncrement()}
               />
-            </Link>
+            </Link>*/}
           </Col>
         </Row>
       </Container>
