@@ -2,36 +2,35 @@ export const modalData = [
     //California
     
         {
-        title:"California Modal",
-        p1:"",
-        pBold:"",
-        p3:"",
+        title:"California",
+        p1:"Now that you've learned about the native people of California, lets play a game!",
+        pBold:"Let's catch a fish the traditional Californian way.",
+        p3:"Guide your fishing basket across the screen with your finger to catch as many fish as you can before they swim away.",
         },
     
     //PNW
     
         {
-        title:"PNW Modal",
-        p1:"",
-        pBold:"",
-        p3:"",
+        title:"Pacific NorthWest",
+        p1:"Now that you've learned about the native people of the Pacific NW, lets put your brain to work!",
+        pBold:"Are you ready to test your memory?",
+        p3:"Flip over 2 cards at a time. Can you find the ones that are the same?",
         },
 
     //SW
     
         {
-        title:"SW Modal",
-        p1:"",
-        pBold:"",
-        p3:"",
+        title:"SouthWest",
+        p1:"Now that you've learned about the native people of the Southwest, lets play a game!",
+        pBold:"Do you think you can design pottery like the Puebloans did?",
+        p3:"Decorate your pot by dragging a pattern onto it. Then repeat until you like what you see!",
         },
     
     //Great Plains
-
         {
-        title:"Great Plains Modal",
-        p1:"",
-        pBold:"",
-        p3:"",
+        title:"The Great Plains",
+        p1:"Now that you've learned about the people of the American Great Plains, lets put your brain to work!",
+        pBold:"What sorts of actions would earn a feather in your ceremonial Eagle Feather Headress?",
+        p3:"If a card contains a good deed or act of bravery that would earn you an eagle feather, Drag and Drop the feather inside it onto the headress on the right.",
         },
   ]
