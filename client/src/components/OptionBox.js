@@ -1,5 +1,6 @@
 import { useDrag } from 'react-dnd';
 import { ItemTypes } from '../utils/ItemTypes';
+import TryAgainModal from './TryAgainModal';
 
 const style = {
     padding: '1rem 1rem',
