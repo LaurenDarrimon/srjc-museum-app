@@ -8,6 +8,10 @@
 
   /* GAME colors */
   --rust: #c24744;
+  --rust-50: rgba(194, 68, 66, 0.5);
+  --rust-25: rgba(211, 67, 65, 0.25);
+  --rust-dark: #924140;
+  
   --purple: #2e234a;
   --gold: #ca9938;
   --tan: #d9a86c;
@@ -104,7 +108,36 @@ h4 {
 }
 
 /* || All pages */
-/* || white text bubbles */
+  /*custom style BS BUTTONS*/
+.btn-primary {
+    color: #fff;
+    background-color: var(--rust)!important;
+    border-color: black !important;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: var(--rust-dark) !important;
+  border-color: black !important;
+}
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: var(--rust-dark) !important;
+  border-color: black !important;
+}
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem var(--rust-50) !important;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+  color: #fff;
+  background-color: var(--rust);
+  border-color: black !important;
+  box-shadow: 0 0 0 0.25rem var(--rust-50) !important;
+}
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--rust-25);
+}
+  /* white text bubbles */
 .speech-bubble {
   background-color: white;
   color: black;
@@ -215,9 +248,23 @@ h4 {
   padding: 2em !important;
 }
 
+  /*instructions modal*/
 .modal-img-mascot-instructions {
   display: block;
   padding-top: 3.5em;
+}
+
+  /*your done modal*/
+
+.modal-urdone .modal-content {
+  padding: 4em !important;
+}
+
+
+.mascot-urdone {
+  padding: 6em 0;
+  text-align: center;
+  margin: 0 auto 0 auto;
 }
 
 /* || ABOUT page */
