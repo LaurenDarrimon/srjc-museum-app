@@ -41,7 +41,7 @@ const Southwest = () => {
   console.log(currentModal);
 
   const options = {
-
+    enableMouseEvents: true,
   }
 
   //return JSX
