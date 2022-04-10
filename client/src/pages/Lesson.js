@@ -35,6 +35,7 @@ const Lesson = () => {
           <p>{currentLessonSlide.p2}</p>
           <p>{currentLessonSlide.p3}</p>
 
+          
           <Link to={nextPath} className="float-end">
             <img className="img-fluid" src={next} alt="next page" onClick={() => lessonIncrement()}/>
           </Link>

@@ -1,8 +1,20 @@
 import React from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 
+import { LinkContainer } from "react-router-bootstrap";
+
+import { Link } from "react-router-dom";
+
+import { useCounter } from "../utils/GameContext";
+
 const Navigation = () => {
   //functions, hooks, state, etc go here
+
+  //counters for navigating directly to mini-game from Nav, rather than through Game
+  const { countGreatPlains, setGreatPlains } = useCounter();
+  const { countCalifornia, setCalifornia } = useCounter();
+  const { countSW, setSW } = useCounter();
+  const { countPacificNW, setPacificNW } = useCounter();
 
   //return JSX
   return (
@@ -25,14 +37,23 @@ const Navigation = () => {
               Help
             </Nav.Link>
             <NavDropdown title="Mini Games" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/fishing">California</NavDropdown.Item>
-              <NavDropdown.Item href="/pacificnw">
-                Pacific North West
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/southwest">Southwest</NavDropdown.Item>
-              <NavDropdown.Item href="/greatplains">
-                Great Plains
-              </NavDropdown.Item>
+
+              <LinkContainer to="/lesson" onClick={() => setCalifornia()}>
+                <NavDropdown.Item>California</NavDropdown.Item>
+              </LinkContainer>
+
+              <LinkContainer to="/lesson" onClick={() => setPacificNW()}>
+                <NavDropdown.Item>Pacific Northwest</NavDropdown.Item>
+              </LinkContainer>
+
+              <LinkContainer to="/lesson" onClick={() => setSW()}>
+                <NavDropdown.Item>Southwest</NavDropdown.Item>
+              </LinkContainer>
+
+              <LinkContainer to="/lesson" onClick={() => setGreatPlains()}>
+                <NavDropdown.Item>Great Plains</NavDropdown.Item>
+              </LinkContainer>
+
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

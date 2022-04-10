@@ -139,10 +139,9 @@ export default function Matching() {
     <div className="Matching">
       <header>
         <div>
-          Flip two cards to see if they match. Try to remember the place of each card. When you find a matching pair, it will vanish. Find all the pairs to win the game! 
+          Find all the matching cards! 
         </div>
-        <br>
-        </br>
+        <br></br>
       </header>
       <div className="container">
         {cards.map((card, index) => {
@@ -160,6 +159,7 @@ export default function Matching() {
         })}
       </div>
       <footer>
+      
         <div className="score">
           <div className="moves">
             <span className="bold">Moves:</span> {moves}
@@ -170,6 +170,7 @@ export default function Matching() {
             </div>
           )}
         </div>
+        <p><em>Play again and try to beat your best score!</em></p>
         <div className="restart">
           <Button onClick={handleRestart} color="primary" variant="contained">
             Restart

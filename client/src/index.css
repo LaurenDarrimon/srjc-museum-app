@@ -42,6 +42,7 @@ h4 {
 .site-content {
   flex: 1;
   min-width: 100vw !important;
+  padding-top: 100px;
 }
 
 .logo {
