@@ -24,12 +24,14 @@ const Overview = () => {
             This is a companion learning game for the SRJC Multi-Cultural
             Museum's collection of art and artifacts from regions across North
             America:
-            <ul>
-              <li>California</li>
-              <li>The Pacific Northwest</li>
-              <li>The Southwest</li>
-              <li>The Great Plains</li>
-            </ul>
+          </p>
+          <ul>
+            <li>California</li>
+            <li>The Pacific Northwest</li>
+            <li>The Southwest</li>
+            <li>The Great Plains</li>
+          </ul>
+          <p>
             Learn about native American art while having fun and exploring the
             exhibits. This game was created specifically with our local school
             district's annual 4th grade field trip to the musuem in mind.
@@ -48,12 +50,12 @@ const Overview = () => {
             You can still try your best! It will be harder to answer the
             scavenger hunt questions that are designed with your physical
             presence in the musuem in mind. However, there is no penalty for
-            guessing, so give it a try! Also, everyone can play the four minigames
-            for each region from the navigation bar at the top of the screen.
-            Those games don't need you to be at the museum at all! 
+            guessing, so give it a try! Also, everyone can play the four
+            minigames for each region from the navigation bar at the top of the
+            screen. Those games don't need you to be at the museum at all!
           </p>
 
-          <h2 className="display-5 d-inline-block">Let's test your skills!</h2>
+          <h2 className="display-5 d-inline-block">Let's go exploring!</h2>
           <Link to="/instructions" className="big-round-GO-btn float-end">
             <img className="img-fluid" src={go} alt="GO!" />
           </Link>

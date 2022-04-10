@@ -65,6 +65,11 @@ h4 {
   color: var(--light-gray) !important;
 }
 
+#basic-nav-nav {
+  position: absolute !important;
+  z-index: 1;
+}
+
 /* =============== LAUREN'S SECTION ============================= */
 
 .answers {
@@ -96,7 +101,7 @@ h4 {
   width: 100%;
   height: 100%;
 }
-.Matchin header {
+.Matching header {
   position: relative;
   width: 100%;
   text-align: center;
