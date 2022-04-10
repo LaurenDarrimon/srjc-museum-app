@@ -220,6 +220,29 @@ h4 {
   padding-top: 3.5em;
 }
 
+/* || ABOUT page */
+.about-page .accordion {
+  color: black;
+
+}
+
+.about-page .accordion-button:focus, .about-page .accordion-button:active {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 0.25rem rgba(202, 153, 56, 0.25);
+  ;
+}
+
+.about-page .accordion-button:not(.collapsed) {
+  color: black;
+  background-color: white;
+}
+
+.logo-about {
+  height: auto;
+  max-height: 200px;
+  width: auto;
+  max-width: 200px;
+}
 
 /* =============== END ERIN'S SECTION ============================= */
 
