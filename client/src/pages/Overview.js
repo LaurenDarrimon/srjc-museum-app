@@ -13,13 +13,44 @@ const Overview = () => {
     //Overview of game
     <Container>
       <Row xs={1} className="overview site-content">
-        <Col xs={11} md={{span: 8, offset: 3}} className="speech-bubble speech-bubble-md">
+        <Col
+          xs={11}
+          md={{ span: 8, offset: 3 }}
+          className="speech-bubble speech-bubble-md"
+        >
           <h1 className="display-5">Welcome!</h1>
+          <h2> North American Art Scavenger Hunt Game</h2>
           <p>
-            Some text describing what the game is about and how it works. North
-            American / Native American art. Will take you through 4 geographic
-            regions, and their art by looking for artifacts in the
-            museum...etc..etc.
+            This is a companion learning game for the SRJC Multi-Cultural
+            Museum's collection of art and artifacts from regions across North
+            America:
+            <ul>
+              <li>California</li>
+              <li>The Pacific Northwest</li>
+              <li>The Southwest</li>
+              <li>The Great Plains</li>
+            </ul>
+            Learn about native American art while having fun and exploring the
+            exhibits. This game was created specifically with our local school
+            district's annual 4th grade field trip to the musuem in mind.
+            Welcome 4th graders!
+          </p>
+
+          <h3>If You're in the Museum</h3>
+          <p>
+            Play by clikcing the GO button below! We will take you through each
+            region and its art by looking for artifacts in the museum. There
+            will be a mix of scavenger hunt activity questions and mini-games.
+          </p>
+
+          <h3>If You're Anywhere Else</h3>
+          <p>
+            You can still try your best! It will be harder to answer the
+            scavenger hunt questions that are designed with your physical
+            presence in the musuem in mind. However, there is no penalty for
+            guessing, so give it a try! Also, everyone can play the four minigames
+            for each region from the navigation bar at the top of the screen.
+            Those games don't need you to be at the museum at all! 
           </p>
 
           <h2 className="display-5 d-inline-block">Let's test your skills!</h2>
@@ -30,13 +61,15 @@ const Overview = () => {
       </Row>
 
       <Row>
-        <Col xs={{span: 6, offset: 1}} className="mascot-container">
-          <img className="img-fluid" src={mascotLarge} alt="mascot animal illustration" />
+        <Col xs={{ span: 6, offset: 1 }} className="mascot-container">
+          <img
+            className="img-fluid"
+            src={mascotLarge}
+            alt="mascot animal illustration"
+          />
         </Col>
       </Row>
     </Container>
-      
- 
   );
 };
 

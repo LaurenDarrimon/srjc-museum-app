@@ -139,7 +139,7 @@ export default function Matching() {
     <div className="Matching">
       <header>
         <div>
-          Select two cards with same content consequtively to make them vanish
+          Flip two cards to see if they match. Try to remember the place of each card. When you find a matching pair, it will vanish. Find all the pairs to win the game! 
         </div>
         <br>
         </br>

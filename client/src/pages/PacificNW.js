@@ -70,7 +70,7 @@ const PacificNW = () => {
       </Row>
       <Row>
         <Col xs={12} className="text-end">
-          <TryAgainModal />
+          {/* <TryAgainModal /> */}
           <Link to={nextPath}>
             <img
               src={next}
