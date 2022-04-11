@@ -13,13 +13,8 @@ const UrDoneModal = () => {
   //full screen modal to show when user answers a question wrong
 
   //functions, hooks, state, etc go here
-
-  //track which mini-game slide we are on
-  const { gameCounter, gameIncrement } = useCounter();
-  //gameIncrement(3);
-
+  const { triviaCounter, triviaIncrement } = useCounter();
   //track overall game slide
-   //setSlideIncrement(20);
   const { slideCounter, setSlideIncrement } = useCounter();
  
   let nextPath = gameData[slideCounter].nextPath;
@@ -32,14 +27,14 @@ const UrDoneModal = () => {
 
   return (
     <>
-      <Button variant="primary">
+      <div>
         <img
           src={next}
           alt="next question"
           className="p-4"
           onClick={handleShow}
         />
-      </Button>
+      </div>
 
       <Modal
         show={show}
@@ -57,7 +52,7 @@ const UrDoneModal = () => {
           <img className='mascot-urdone img-fluid' src={mascotGreatJob} alt="Mascot says 'Woohoo! Great Job'" />
         </Modal.Body>
         <Modal.Footer>
-          <Link to={nextPath} onClick={() => {gameIncrement(); handleClose()}}>
+          <Link to={nextPath} onClick={() => {triviaIncrement(); handleClose()}}>
             <img
               src={next}
               alt="next question"

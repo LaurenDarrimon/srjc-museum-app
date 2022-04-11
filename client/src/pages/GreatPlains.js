@@ -22,6 +22,7 @@ import InstructionModal from "../components/MiniGameInstModal";
 import TryAgainModal from "../components/TryAgainModal";
 import UrDoneModal from "../components/UrDoneModal";
 import { modalData } from "../assets/data/modal-data";
+import NextButton from "../components/NextButton";
 
 
 const greatPlains = () => {
@@ -80,17 +81,15 @@ const greatPlains = () => {
           </Col>
 
           <Col xs={8} md={8} className="text-end">
-            {/*TEMP - Click to show Modal */}
-            <UrDoneModal />
-        
-           {/*  <Link to={nextPath}>
+
+            <Link to={nextPath}>
               <img
                 src={next}
                 alt="next question"
                 className="p-4"
                 onClick={() => gameIncrement()}
               />
-            </Link>*/}
+            </Link>
           </Col>
         </Row>
       </Container>

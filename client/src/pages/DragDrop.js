@@ -3,29 +3,35 @@ import { memo } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
+//dragdrop utils
 import { Dustbin } from "../components/Dustbin";
 import { OptionBox } from "../components/OptionBox";
 
+//data
 import { quiz } from "../assets/data/questions";
 import { gameData } from "../assets/data/game-data";
+//images
 import next from "../assets/images/next.png";
 
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 
+//our components
+import NextButton from "../components/NextButton";
+
 // Import our custom hook
 import { useCounter } from "../utils/GameContext";
 
 const DragDrop = memo(function DragDrop() {
-  // Pluck values from our ThemeContext by invoking our useCounter hook
+  // Pluck values from our GameContext by invoking our useCounter hook
   const { triviaCounter, triviaIncrement } = useCounter();
 
   const { slideCounter, setSlideIncrement } = useCounter();
-  let nextPath = gameData[slideCounter].nextPath
+  let nextPath = gameData[slideCounter].nextPath;
 
   const options = quiz[triviaCounter].options;
   console.log(options);
-
+ 
   console.log("triviacounter");
   console.log(triviaCounter);
 
@@ -72,14 +78,17 @@ const DragDrop = memo(function DragDrop() {
             <br />
             <br />
 
-            <Link to={nextPath}>
+            {/*add NextButton as component to allow for conditional rendering (for "you're done" modal at end) */}
+            <NextButton />
+
+            {/**<Link to={nextPath}>
               <img
                 src={next}
-                alt="white arrow play button"
+                alt="next question"
                 className="p-4"
                 onClick={() => triviaIncrement()}
               />
-            </Link>
+            </Link> */}
           </Col>
         </Row>
       </Container>
