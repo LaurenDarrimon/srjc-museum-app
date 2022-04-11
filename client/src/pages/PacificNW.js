@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -15,6 +16,7 @@ import { useCounter } from "../utils/GameContext";
 //import game slide sequence
 import { gameData } from "../assets/data/game-data";
 
+import Matching from "../components/Matching";
 
 const PacificNW = () => {
   //functions, hooks, state, etc go here
@@ -38,40 +40,37 @@ const PacificNW = () => {
     <Container fluid>
       <Row className="justify-content-center p-5">
         <Col xs={12} className="text-center">
-          <h1 className="subtitle p-5">Pacific NW Game</h1>
+          <h1 className="subtitle p-5">Pacific Northwest </h1>
+          <h2>Flip Card Matching Game</h2>
         </Col>
-        <Col xs={12} className="speech-bubble-sm">
-          <h2>Test your Knowledge!</h2>
-          <p>
-            A question about potlach hats or potlatch ceremonies. Followed by
-            some sort of picture or graphic. Multiple Choice Answer, etc, etc,
-            etc..
-          </p>
-        </Col>
-        <Row>
-          <Col xs={4}>
-            {/* Click for modal */}
-            {/* ERIN pass in props for current instruction modal */}
-            <InstructionModal
-              title={currentModal.title}
-              p1={currentModal.p1}
-              pBold={currentModal.pBold}
-              p3={currentModal.p3}
-              imagePath={currentModal.imagePath}
-              imageDescription={currentModal.imageDescription}
-            />
-          </Col>
-          <Col xs={8} className="multi-choice-container">
-            <ol type="A">
-              <li className="multi-choice-answer">Answer One</li>
-              <li className="multi-choice-answer">Answer Two</li>
-              <li className="multi-choice-answer">Answer Three</li>
-            </ol>
-          </Col>
-          <TryAgainModal />
-        </Row>
+      </Row>
 
-        <Col xs={11} md={8} className="text-end">
+      <Row>
+        <Col xs={12} md={8}>
+          <Matching />
+        </Col>
+
+        <Col xs={12} md={4}>
+          {/* Click for modal */}
+          {/* pass in props for current instruction modal */}
+          <br></br>
+          <br></br>
+          <InstructionModal
+            title={currentModal.title}
+            p1={currentModal.p1}
+            pBold={currentModal.pBold}
+            p3={currentModal.p3}
+            imagePath={currentModal.imagePath}
+            imageDescription={currentModal.imageDescription}
+          />
+        </Col>
+        <br></br>
+
+        <br></br>
+      </Row>
+      <Row>
+        <Col xs={12} className="text-end">
+          {/* <TryAgainModal /> */}
           <Link to={nextPath}>
             <img
               src={next}

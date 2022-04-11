@@ -1,24 +1,46 @@
 {
   "files": {
-    "main.css": "/static/css/main.84132a96.css",
-    "main.js": "/static/js/main.bb7a3d8b.js",
+    "main.css": "/static/css/main.a31c4333.css",
+    "main.js": "/static/js/main.0433127a.js",
+    "static/media/potlatch-hat.JPG": "/static/media/potlatch-hat.b58fde10cea9edf54d6b.JPG",
     "static/media/logo-500.png": "/static/media/logo-500.8b6d75c8b6b7a313359f.png",
     "static/media/sonoma-county.png": "/static/media/sonoma-county.db8503523f918f3a722e.png",
+    "static/media/animals-exhibit.jpg": "/static/media/animals-exhibit.aafb6760fe767d7e25a6.jpg",
+    "static/media/pipe-bag.jpg": "/static/media/pipe-bag.963dfb3ce1032722a751.jpg",
+    "static/media/cradle.jpg": "/static/media/cradle.8384df693a50c6290f82.jpg",
     "static/media/waves.jpg": "/static/media/waves.f90043f9e7ba7b206518.jpg",
+    "static/media/red-feather-basket.jpg": "/static/media/red-feather-basket.0bab38c9f6857c768096.jpg",
+    "static/media/kachina.jpg": "/static/media/kachina.25d961e4479031e7c53f.jpg",
+    "static/media/storyteller.jpg": "/static/media/storyteller.1aee47f7abb380eab6c3.jpg",
+    "static/media/grandfather.jpg": "/static/media/grandfather.7ba3ed93d70948335602.jpg",
+    "static/media/bison-hide.jpg": "/static/media/bison-hide.0143c010878b6eb66037.jpg",
+    "static/media/orca-mask.jpeg": "/static/media/orca-mask.d49f6c2a1f3b83d8d157.jpeg",
+    "static/media/cedar.jpg": "/static/media/cedar.24b6b280c4dbeaff496f.jpg",
+    "static/media/mask.jpeg": "/static/media/mask.bed3071c0081ee811125.jpeg",
+    "static/media/wolf-frog.jpeg": "/static/media/wolf-frog.e229cd50ab2707815fb6.jpeg",
+    "static/media/pacific.jpg": "/static/media/pacific.04bafc1248cb80ded9fb.jpg",
     "static/media/pottery.png": "/static/media/pottery.3a31f542aa9b324a0608.png",
+    "static/media/totem.jpg": "/static/media/totem.3ed56102f37f48e9c564.jpg",
     "static/media/mascot-lg.png": "/static/media/mascot-lg.066d44ba9af9c8c0fa3a.png",
+    "static/media/speech-bubble-mascot-tip-2.png": "/static/media/speech-bubble-mascot-tip-2.c3e8b3a02b32ccb59338.png",
     "static/media/speech-bubble-mascot-guide.png": "/static/media/speech-bubble-mascot-guide.1ccff95b7a54475bc912.png",
     "static/media/speech-bubble-mascot-tryagain.png": "/static/media/speech-bubble-mascot-tryagain.87868396b4f5b66ee3a9.png",
     "static/media/pot-and-numbers-graphic.png": "/static/media/pot-and-numbers-graphic.c9352fb0335e7fd711d3.png",
     "static/media/go-btn.png": "/static/media/go-btn.833f869437e3faeb9e9b.png",
     "static/media/speech-bubble-mascot-instructions.png": "/static/media/speech-bubble-mascot-instructions.bccf5e2985b8a6b33a4b.png",
+    "static/media/feather.png": "/static/media/feather.7ac3086997eb52ebffb9.png",
+    "static/media/wing5.png": "/static/media/wing5.d4e91cd86385ea08f8ff.png",
+    "static/media/wing1.png": "/static/media/wing1.9f19b1dadc523531db72.png",
     "static/media/play-btn.png": "/static/media/play-btn.3c56030082969fcc831e.png",
+    "static/media/wing3.png": "/static/media/wing3.5b28ceb053417562e85a.png",
+    "static/media/wing2.png": "/static/media/wing2.250817011897032c9aca.png",
     "index.html": "/index.html",
-    "main.84132a96.css.map": "/static/css/main.84132a96.css.map",
-    "main.bb7a3d8b.js.map": "/static/js/main.bb7a3d8b.js.map"
+    "static/media/single-feather.svg": "/static/media/single-feather.94b28f87053fd4f6c58d97e006438f30.svg",
+    "main.a31c4333.css.map": "/static/css/main.a31c4333.css.map",
+    "main.0433127a.js.map": "/static/js/main.0433127a.js.map"
   },
   "entrypoints": [
-    "static/css/main.84132a96.css",
-    "static/js/main.bb7a3d8b.js"
+    "static/css/main.a31c4333.css",
+    "static/js/main.0433127a.js"
   ]
 }

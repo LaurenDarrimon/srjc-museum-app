@@ -28,7 +28,7 @@ const Instructions = () => {
             alt="illustration of dragging the number onto the image of a piece of pottery"
           />
           <p>
-            <strong>Drag and Drop</strong> the item's number onto its picture when
+            <strong> Drag and Drop</strong> the item's number onto its picture when
             you find it in the real-life exhibit.
           </p>
 

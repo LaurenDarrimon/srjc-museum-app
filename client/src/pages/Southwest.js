@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import next from "../assets/images/next.png";
 
 import { DndProvider } from "react-dnd";
+import { TouchBackend } from 'react-dnd-touch-backend'
 import { HTML5Backend } from "react-dnd-html5-backend";
 
 import { PotteryDrop } from "../components/PotteryDrop";
@@ -39,10 +40,14 @@ const Southwest = () => {
   console.log("currentModal");
   console.log(currentModal);
 
+  const options = {
+    enableMouseEvents: true,
+  }
+
   //return JSX
   return (
     //loading or intro screen and homepage
-    <DndProvider backend={HTML5Backend}>
+    <DndProvider backend={TouchBackend} options={options}>
       <Container fluid>
         <Row className="justify-content-center p-5">
           <Col xs={12} className="text-center">
