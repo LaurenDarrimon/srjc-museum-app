@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { Modal, Button } from "react-bootstrap";
 
 //images
-import mascotGuideInstructions from "../assets/images/speech-bubble-mascot-instructions.png";
 import go from "../assets/images/go-btn.png"
 import mascotTryAgain from "../assets/images/speech-bubble-mascot-tryagain.png";
 

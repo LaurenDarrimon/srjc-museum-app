@@ -2,7 +2,7 @@
    
 import React from "react";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col} from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import next from "../assets/images/next.png";
@@ -22,7 +22,10 @@ import { featherDeeds } from "../assets/data/great-plains-data";
 //import modal components
 import InstructionModal from "../components/MiniGameInstModal";
 import TryAgainModal from "../components/TryAgainModal";
+import UrDoneModal from "../components/UrDoneModal";
 import { modalData } from "../assets/data/modal-data";
+import NextButton from "../components/NextButton";
+
 
 const greatPlains = () => {
   //functions, hooks, state, etc go here
@@ -67,19 +70,20 @@ const greatPlains = () => {
           </Col>
 
           <Col xs={4}>
-          {/* Click for modal */}
-          {/* pass in props for current instruction modal */}
-          <InstructionModal
-            title={currentModal.title}
-            p1={currentModal.p1}
-            pBold={currentModal.pBold}
-            p3={currentModal.p3}
-            imagePath={currentModal.imagePath}
-            imageDescription={currentModal.imageDescription}
-          />
-        </Col>
+            {/* Click for modal */}
+            {/* pass in props for current instruction modal */}
+            <InstructionModal
+              title={currentModal.title}
+              p1={currentModal.p1}
+              pBold={currentModal.pBold}
+              p3={currentModal.p3}
+              imagePath={currentModal.imagePath}
+              imageDescription={currentModal.imageDescription}
+            />
+          </Col>
 
           <Col xs={8} md={8} className="text-end">
+
             <Link to={nextPath}>
               <img
                 src={next}
