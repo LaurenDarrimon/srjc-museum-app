@@ -14,7 +14,7 @@ export const modalData = [
         title:"Pacific NorthWest",
         p1:"Now that you've learned about the native people of the Pacific NW, lets put your brain to work!",
         pBold:"Are you ready to test your memory?",
-        p3:"Flip over 2 cards at a time. Can you find the ones that are the same?",
+        p3:"The cards all have images on the back. Flip over two cards to see if they match. Try to remember the place of each card. When you find a matching pair, it will vanish. Clear all the pairs to win the game!",
         },
 
     //SW

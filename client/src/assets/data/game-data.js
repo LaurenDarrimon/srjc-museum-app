@@ -43,107 +43,107 @@ export const gameData = [
   {
     //trivia 3
     //PNW FIND 1
-    number: 6,
+    number: 7,
     title: "PNW find trivia 1",
     nextPath: "/dragdrop",
   },
   {
     //PNW FIND 2
-    number: 7,
+    number: 8,
     title: "PNW find trivia 2",
     nextPath: "/lesson",
   },
   {
     //game 1
-    number: 8,
+    number: 9,
     title: "PNW Lesson 1",
     nextPath: "/lesson",
   },
   {
-    number: 8,
+    number: 10,
     title: "PNW Lesson 2",
     nextPath: "/lesson",
   },
   {
-    number: 9,
+    number: 11,
     title: "PNW Lesson 3",
     nextPath: "/pacificnw",
   },
   {
-    number: 10,
+    number: 12,
     title: "PNW Game",
     nextPath: "/dragdrop",
   },
   {
     //SW FIND 1 
-    number: 11,
+    number: 13,
     title: "SW find trivia 1",
     nextPath: "/dragdrop",
   },
   {
     //SW FIND 2
-    number: 12,
+    number: 14,
     title: "SW find trivia 2",
     nextPath: "/lesson",
   },
   {
     //game 2
     //SW FIND 2
-    number: 12,
+    number: 15,
     title: "SW Lesson 1",
     nextPath: "/lesson",
   },
   {
-    number: 13,
+    number: 16,
     title: "SW Lesson 2",
     nextPath: "/lesson",
   },
   {
-    number: 14,
+    number: 17,
     title: "SW Lesson 3",
     nextPath: "/southwest",
   },
   {
-    number: 15,
+    number: 18,
     title: "SW Game",
     nextPath: "/dragdrop",
   },
   {
       //GP FIND 1 
-    number: 16,
+    number: 19,
     title: "GP find trivia 1",
     nextPath: "/dragdrop",
   },
   {
       //GP FIND 2
-    number: 17,
+    number: 20,
     title: "GP find trivia 2",
     nextPath: "/lesson",
   },
   {
     //game 3
-    number: 18,
+    number: 21,
     title: "GP Lesson 1",
     nextPath: "/lesson",
   },
    {
-    number: 18,
+    number: 22,
     title: "GP Lesson 2",
     nextPath: "/lesson",
   },
   {
-    number: 19,
+    number: 23,
     title: "GP Lesson 3",
     nextPath: "/greatplains",
   },
   {
-    number: 20,
+    number: 24,
     title: "GP Game",
     nextPath: "/dragdrop",
   },
   {
       // Contemporary First Nations Q
-    number: 21,
+    number: 25,
     title: "Contemporary Culture Q.",
     nextPath: "/about",
   },
