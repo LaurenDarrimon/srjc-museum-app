@@ -13,29 +13,17 @@ const Overview = () => {
     //Overview of game
     <Container>
       <Row xs={1} className="overview site-content">
-        <Col
-          xs={11}
-          md={{ span: 8, offset: 3 }}
-          className="speech-bubble speech-bubble-md"
-        >
+        <Col xs={11} md={{ span: 8, offset: 3 }} className="speech-bubble speech-bubble-md">
           <h1 className="display-5">Welcome!</h1>
           <h2> North American Art Scavenger Hunt Game</h2>
           <p>
-            This is a companion learning game for the SRJC Multi-Cultural
-            Museum's collection of art and artifacts from regions across North
-            America:
+            Welcome to the North American Art Scavenger Hunt! Today we'll learn about native North American art while exploring the museum!
           </p>
-          <ul>
-            <li>California</li>
-            <li>The Pacific Northwest</li>
-            <li>The Southwest</li>
-            <li>The Great Plains</li>
-          </ul>
           <p>
-            Learn about native American art while having fun and exploring the
-            exhibits. This game was created specifically with our local school
-            district's annual 4th grade field trip to the musuem in mind.
-            Welcome 4th graders!
+            We'll look at art from across America, from California, the Pacific Northwest, the Southwest, and the Great Plains.
+          </p>
+          <p>
+            The game is intended to be played in person at the SRJC Multi-Culural Museum.
           </p>
 
           <h3>If You're in the Museum</h3>
@@ -64,14 +52,12 @@ const Overview = () => {
 
       <Row>
         <Col xs={{ span: 6, offset: 1 }} className="mascot-container">
-          <img
-            className="img-fluid"
-            src={mascotLarge}
-            alt="mascot animal illustration"
-          />
+          <img className="img-fluid" src={mascotLarge} alt="mascot animal illustration" />
         </Col>
       </Row>
     </Container>
+
+
   );
 };
 
