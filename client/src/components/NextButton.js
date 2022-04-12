@@ -14,10 +14,7 @@ const NextButton = () => {
     // next button modal
     // only on trivia pages (to conditionally render "end game" modal)
 
-    //functions, hooks, state, etc go here
-
-    //track which mini-game slide we are on
-    const { gameCounter, gameIncrement } = useCounter();
+    //functions, hooks, state, etc go here    
 
     // Pluck values from our GameContext by invoking our useCounter hook
     const { triviaCounter, triviaIncrement } = useCounter();

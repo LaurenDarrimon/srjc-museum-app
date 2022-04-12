@@ -1,6 +1,6 @@
 //This is the overall wrapper for the Game, that all the other components will live inside
 
-import React, { useState, UseEffect } from "react";
+import React from "react";
 import {
   ApolloClient,
   InMemoryCache,
@@ -10,7 +10,7 @@ import {
 import { setContext } from "@apollo/client/link/context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 
 
@@ -18,7 +18,7 @@ import Navigation from "./components/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Instructions from "./pages/Instructions";
-import DragDrop from "./pages/DragDrop";
+import Trivia from "./pages/Trivia";
 import Overview from "./pages/Overview";
 import Fishing from "./pages/Fishing";
 import GreatPlains from "./pages/GreatPlains";
@@ -79,7 +79,7 @@ function App() {
 
                 <Route path="/overview" element={<Overview />} />
 
-                <Route path="/dragdrop" element={<DragDrop />} />
+                <Route path="/trivia" element={<Trivia />} />
 
                 <Route path="/about" element={<About />} />
 

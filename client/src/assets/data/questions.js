@@ -1,4 +1,4 @@
-export const quiz = [
+export const triviaData = [
   {
     number: 1,
     lesson:

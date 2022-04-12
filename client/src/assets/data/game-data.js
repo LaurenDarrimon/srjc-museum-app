@@ -4,12 +4,12 @@ export const gameData = [
     //trivia 0
     number: 0,
     title: "land acknowledgement",
-    nextPath: "/dragdrop",
+    nextPath: "/trivia",
   },
   {
     number: 1,
     title: "CA find trivia 1",
-    nextPath: "/dragdrop",
+    nextPath: "/trivia",
   },
   {
     //CA scavenger hunt
@@ -38,14 +38,14 @@ export const gameData = [
     // game 0
     number: 6,
     title: "Fishing Game",
-    nextPath: "/dragdrop",
+    nextPath: "/trivia",
   },
   {
     //trivia 3
     //PNW FIND 1
     number: 7,
     title: "PNW find trivia 1",
-    nextPath: "/dragdrop",
+    nextPath: "/trivia",
   },
   {
     //PNW FIND 2
@@ -72,13 +72,13 @@ export const gameData = [
   {
     number: 12,
     title: "PNW Game",
-    nextPath: "/dragdrop",
+    nextPath: "/trivia",
   },
   {
     //SW FIND 1 
     number: 13,
     title: "SW find trivia 1",
-    nextPath: "/dragdrop",
+    nextPath: "/trivia",
   },
   {
     //SW FIND 2
@@ -106,13 +106,13 @@ export const gameData = [
   {
     number: 18,
     title: "SW Game",
-    nextPath: "/dragdrop",
+    nextPath: "/trivia",
   },
   {
       //GP FIND 1 
     number: 19,
     title: "GP find trivia 1",
-    nextPath: "/dragdrop",
+    nextPath: "/trivia",
   },
   {
       //GP FIND 2
@@ -139,7 +139,7 @@ export const gameData = [
   {
     number: 24,
     title: "GP Game",
-    nextPath: "/dragdrop",
+    nextPath: "/trivia",
   },
   {
       // Contemporary First Nations Q

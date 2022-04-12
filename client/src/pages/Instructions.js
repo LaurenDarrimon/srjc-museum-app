@@ -37,7 +37,7 @@ const Instructions = () => {
           <h2 className="display-5">Are you ready?</h2>
         </Col>
         <Col xs={6}>
-          <Link className="img-fluid big-round-GO-btn" to="/dragdrop">
+          <Link className="img-fluid big-round-GO-btn" to="/trivia">
             <img src={go} alt="GO!" />
           </Link>
         </Col>

@@ -47,7 +47,7 @@ export default function gameProvider({ children }) {
     setLessonCounter(lessonCounter + 1);
   };
 
-  //functions for arrival on each game page, so non-local users can jump to game
+  //functions for arrival on each game page, so non-local users can jump to game from Nav bar
   const setCalifornia = () => {
     console.log("Set CA");
     setTriviaCounter(3);

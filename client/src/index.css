@@ -78,13 +78,13 @@ h4 {
 /* =============== LAUREN'S SECTION ============================= */
 
 .answers {
-  background-color: var(--rust) !important;
+  /* background-color: var(--rust) !important; */
   color: white;
   display: inline-block;
   padding: 30px;
   margin: 15px;
   aspect-ratio: 1 / 1;
-  border-radius: 100%;
+  border-radius: 100% !important;
 }
 
 .game-background {
