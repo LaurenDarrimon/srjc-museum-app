@@ -20,7 +20,7 @@ const Card = ({ onClick, card, index, isInactive, isFlipped, isDisabled }) => {
         <img src={logo} alt="SRJC logo" />
       </div>
       <div className="card-face card-back-face">
-        <img src={card.image} alt="artifact" />
+        <img src={require(`../assets/images/${card.image}`)} alt="artifact" />
       </div>
     </div>
   );

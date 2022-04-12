@@ -8,21 +8,20 @@ import next from "../assets/images/next.png";
 //import modal components
 import InstructionModal from "../components/MiniGameInstModal";
 
-// import modal data
+//import modal data
 import { modalData } from "../assets/data/modal-data";
 
 // Import our custom hook
 import { useCounter } from "../utils/GameContext";
+
 //import game slide sequence
 import { gameData } from "../assets/data/game-data";
-import { pnwCardsArray } from "../assets/data/matching-card-data";
+import { caliCardsArray } from "../assets/data/matching-card-data";
 
 import Matching from "../components/Matching";
 
-const PacificNW = () => {
+const California = () => {
   //functions, hooks, state, etc go here
-
-  
 
   //track which mini-game slide we are on
   const { gameCounter, gameIncrement } = useCounter();
@@ -43,14 +42,14 @@ const PacificNW = () => {
     <Container fluid>
       <Row className="justify-content-center p-5">
         <Col xs={12} className="text-center">
-          <h1 className="subtitle p-5">Pacific Northwest </h1>
+          <h1 className="subtitle p-5">California </h1>
           <h2>Flip Card Matching Game</h2>
         </Col>
       </Row>
 
       <Row>
         <Col xs={12} md={8}>
-          <Matching cardsArray={pnwCardsArray}/>
+          <Matching cardsArray = {caliCardsArray} />
         </Col>
 
         <Col xs={12} md={4}>
@@ -88,4 +87,4 @@ const PacificNW = () => {
   );
 };
 
-export default PacificNW;
+export default California;

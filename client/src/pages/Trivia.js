@@ -48,8 +48,6 @@ const Trivia = () => {
           <br />
           <TriviaChoices />
 
-          
-
           <br />
           <br />
 

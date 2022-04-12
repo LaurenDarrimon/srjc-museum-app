@@ -11,33 +11,6 @@ import {
 
 import Card from "./Card";
 
-const uniqueCardsArray = [
-  {
-    type: "cedar",
-    image: require(`../assets/images/pnw-coast/cards/cedar.jpg`),
-  },
-  {
-    type: "mask",
-    image: require(`../assets/images/pnw-coast/cards/mask.jpeg`),
-  },
-  {
-    type: "pacific",
-    image: require(`../assets/images/pnw-coast/cards/pacific.jpg`),
-  },
-  {
-    type: "orca-mask",
-    image: require(`../assets/images/pnw-coast/cards/orca-mask.jpeg`),
-  },
-  {
-    type: "totem",
-    image: require(`../assets/images/pnw-coast/cards/totem.jpg`),
-  },
-  {
-    type: "wolf-frog",
-    image: require(`../assets/images/pnw-coast/cards/wolf-frog.jpeg`),
-  },
-];
-
 function shuffleCards(array) {
   const length = array.length;
   for (let i = length; i > 0; i--) {
@@ -50,7 +23,9 @@ function shuffleCards(array) {
   return array;
 }
 
-export default function Matching() {
+export default function Matching(props) {
+  let uniqueCardsArray = props.cardsArray
+
   const [cards, setCards] = useState(() =>
     shuffleCards(uniqueCardsArray.concat(uniqueCardsArray))
   );
@@ -172,7 +147,7 @@ export default function Matching() {
         </div>
         <p><em>Play again and try to beat your best score!</em></p>
         <div className="restart">
-          <Button onClick={handleRestart} color="primary" variant="contained">
+          <Button onClick={handleRestart} className="btn-primary" variant="contained">
             Restart
           </Button>
         </div>

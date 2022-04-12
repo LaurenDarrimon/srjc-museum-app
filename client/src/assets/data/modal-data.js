@@ -4,8 +4,8 @@ export const modalData = [
         {
         title:"California",
         p1:"Now that you've learned about the native people of California, lets play a game!",
-        pBold:"Let's catch a fish the traditional Californian way.",
-        p3:"Guide your fishing basket across the screen with your finger to catch as many fish as you can before they swim away.",
+        pBold:"Let's catch a fish the traditional Californian way - weave a basket, head to the stream, and guide the fish in.",
+        p3:"The cards all have images on the back. Flip over two cards to see if they match. Try to remember the place of each card. When you find a matching pair, it will vanish. Clear all the pairs to win the game!",
         },
     
     //PNW

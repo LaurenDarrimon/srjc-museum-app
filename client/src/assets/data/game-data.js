@@ -32,12 +32,12 @@ export const gameData = [
   {
     number: 5,
     title: "CA Lesson 3",
-    nextPath: "/fishing",
+    nextPath: "/california",
   },
   {
     // game 0
     number: 6,
-    title: "Fishing Game",
+    title: "California Game",
     nextPath: "/trivia",
   },
   {

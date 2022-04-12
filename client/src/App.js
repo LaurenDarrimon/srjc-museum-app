@@ -22,7 +22,7 @@ import Trivia from "./pages/Trivia";
 import Overview from "./pages/Overview";
 import Fishing from "./pages/Fishing";
 import GreatPlains from "./pages/GreatPlains";
-// import Pottery from "./pages/Pottery";
+import California from "./pages/California";
 import PacificNW from "./pages/PacificNW";
 import Southwest from "./pages/Southwest";
 import Lesson from "./pages/Lesson";
@@ -84,6 +84,8 @@ function App() {
                 <Route path="/about" element={<About />} />
 
                 <Route path="/fishing" element={<Fishing />} />
+
+                <Route path="/california" element={<California />} />
 
                 <Route path="/greatplains" element={<GreatPlains />} />
 
