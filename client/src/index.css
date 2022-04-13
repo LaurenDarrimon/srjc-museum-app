@@ -182,6 +182,52 @@ h4 {
 .card.is-inactive {
   opacity: 0;
 }
+ 
+/* SW potttery game section  */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.drag-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  background-color: var(--gold);
+  overflow-y: scroll;
+}
+
+.drop-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid black;
+  height: 400px;
+  width: 400px;
+  background-image: url("assets/images/southwest/pottery/pot.png");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: var(--teal);
+}
+
+.pot-design-bank {
+  background-color: var(--purple);
+  overflow-x: scroll;
+  padding: 4rem; 
+}
+
+/* GP Great plains feather game */
+
+.feather-container {
+  overflow-y: scroll;
+  max-height: 1000px;
+}
 
 /* =============== END LAUREN'S SECTION ============================= */
 

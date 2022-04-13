@@ -6,11 +6,10 @@ import { Link } from "react-router-dom";
 import next from "../assets/images/next.png";
 
 import { DndProvider } from "react-dnd";
-import { TouchBackend } from 'react-dnd-touch-backend'
-//import { HTML5Backend } from "react-dnd-html5-backend";
+import { TouchBackend } from "react-dnd-touch-backend";
 
 import { PotteryDrop } from "../components/PotteryDrop";
-import { PotteryDesigns } from "../components/PotteryDesigns";
+import { PotteryInfoCard } from "../components/PotteryInfoCard";
 
 import { potteryData } from "../assets/data/southwest-data";
 
@@ -42,7 +41,7 @@ const Southwest = () => {
 
   const options = {
     enableMouseEvents: true,
-  }
+  };
 
   //return JSX
   return (
@@ -51,36 +50,51 @@ const Southwest = () => {
       <Container fluid>
         <Row className="justify-content-center p-5">
           <Col xs={12} className="text-center">
-            <h1 className="subtitle p-5">Southwest Game</h1>
+            <h1 className="subtitle p-5">Design Your Own Pottery</h1>
           </Col>
+        </Row>
 
-          <Col xs={11} md={5}>
-            {potteryData.map((design) => (
-              <PotteryDesigns
-                key={design.number}
-                title={design.title}
-                description={design.description}
-                image={design.image}
-              />
-            ))}
+        <Row className="text-center" >
+          <Col xs={6}>
+            <p>Drag patterns from here:</p>
           </Col>
-
-          <Col xs={11} md={5}>
-            <PotteryDrop />
+          <Col xs={6}>
+            <p>onto the pot:</p>
           </Col>
+        </Row>
 
+        <PotteryDrop />
+        <br>
+        </br>
+
+        <h2>Symbols & Meanings:</h2>
+        <br>
+        </br>
+
+        <Row className="pot-design-bank flex-nowrap">
+          {potteryData.map((design) => (
+            <PotteryInfoCard
+              key={design.number}
+              title={design.title}
+              description={design.description}
+              image={design.image}
+            />
+          ))}
+        </Row>
+
+        <Row>
           <Col xs={4}>
-          {/* Click for modal */}
-          {/* pass in props for current instruction modal */}
-          <InstructionModal
-            title={currentModal.title}
-            p1={currentModal.p1}
-            pBold={currentModal.pBold}
-            p3={currentModal.p3}
-            imagePath={currentModal.imagePath}
-            imageDescription={currentModal.imageDescription}
-          />
-        </Col>
+            {/* Click for modal */}
+            {/* pass in props for current instruction modal */}
+            <InstructionModal
+              title={currentModal.title}
+              p1={currentModal.p1}
+              pBold={currentModal.pBold}
+              p3={currentModal.p3}
+              imagePath={currentModal.imagePath}
+              imageDescription={currentModal.imageDescription}
+            />
+          </Col>
 
           <Col xs={11} md={8} className="text-end">
             <Link to={nextPath}>

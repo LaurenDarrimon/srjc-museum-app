@@ -1,95 +1,59 @@
+import React, { useState } from "react";
+import { PotteryPattern } from "./PotteryPattern";
 import { useDrop } from "react-dnd";
-import { ItemTypes } from "../utils/ItemTypes";
+import { Container, Row, Col } from "react-bootstrap";
 
-const style = {
-  marginRight: "1.5rem",
-  marginBottom: "1.5rem",
-  color: "white",
-  padding: "1rem",
-  textAlign: "center",
-  fontSize: "1rem",
-  lineHeight: "normal",
-  float: "left",
-};
-export const PotteryDrop = (props) => {
-  const [{ canDrop, isOver }, drop] = useDrop(() => ({
-    accept: ItemTypes.BOX,
-    drop: () => ({ name: "Dustbin" }),
+//import { TestPotteryDesigns } from "./TestPotteryDesigns";
+
+import { potteryData } from "../assets/data/southwest-data";
+
+export function PotteryDrop() {
+  const [board, setBoard] = useState([]);
+  const [{ isOver }, drop] = useDrop(() => ({
+    accept: "image",
+    drop: (item) => addImage(item.number),
     collect: (monitor) => ({
-      isOver: monitor.isOver(),
-      canDrop: monitor.canDrop(),
+      isOver: !!monitor.isOver(),
     }),
   }));
-  const isActive = canDrop && isOver;
-  let backgroundColor = "#2e234a";
-  if (isActive) {
-    backgroundColor = "#4c9ba8";
-  } else if (canDrop) {
-    backgroundColor = "#ca9938";
-  }
-  return (
-    <div ref={drop} role={"Dustbin"} style={{ ...style, backgroundColor }}>
-      {isActive ? "Release to drop" : "Drag the design here"}
-      <br></br>
-      <br></br>
 
-      <svg
-        width="573"
-        height="553"
-        viewBox="0 0 573 553"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+  const addImage = (number) => {
+    const droppedPictures = potteryData.filter(
+      (picture) => number === picture.number
+    );
+    setBoard((board) => [...board, droppedPictures[0]]);
+  };
+
+  return (
+    <div className="container">
+      <div className="drag-box">
+    
+        <Row xs={11} md={5}>
+          {potteryData.map((picture) => (
+            <PotteryPattern
+              key={picture.number}
+              src={require(`../assets/images/southwest/pottery/${picture.image}`)}
+              number={picture.number}
+            />
+          ))}
+        </Row>
+      </div>
+
+      <div
+        className="drop-board"
+        ref={drop}
+        style={{ border: isOver ? "3px solid red" : "1px solid black" }}
       >
-        <path
-          d="M170.38 477.628C8.7543 357.676 -45.8072 216.133 65.3747 121.893C242.405 63.4389 508.043 27.8089 554.369 164.554C606.871 282.106 469.953 453.637 376.787 498.619C395.194 538.991 403.038 546 273.841 546C147.171 546 150.305 513.013 170.38 477.628Z"
-          fill="#CB794A"
-          stroke="black"
-          strokeWidth="13"
-        />
-        <path
-          d="M58.9579 116.955C52.6582 111.775 19.0598 86.616 37.4339 64.0471C47.374 51.8377 114.08 3 256.349 3C405.975 3 600.208 29.6387 478.939 108.815C336.67 163.572 123.53 147.663 58.9579 116.955Z"
-          fill="#D9A86C"
-          stroke="black"
-          strokeWidth="5"
-        />
-        <path
-          d="M478.319 54.7336C478.405 57.3295 477.223 60.0116 474.668 62.7662C472.11 65.5239 468.241 68.2789 463.142 70.9808C452.948 76.3825 438.041 81.4659 419.479 85.947C382.371 94.9053 330.865 101.408 273.766 103.316C216.666 105.223 164.841 102.174 127.218 95.7122C108.398 92.4801 93.185 88.4031 82.6531 83.694C77.385 81.3384 73.3411 78.8478 70.6048 76.267C67.8715 73.6891 66.5129 71.0918 66.4262 68.496C66.3394 65.9001 67.5216 63.218 70.0767 60.4634C72.6347 57.7057 76.5033 54.9507 81.6024 52.2487C91.7965 46.8471 106.703 41.7637 125.266 37.2826C162.373 28.3243 213.879 21.8218 270.979 19.914C328.079 18.0061 379.904 21.056 417.527 27.5174C436.347 30.7495 451.56 34.8265 462.092 39.5356C467.36 41.8911 471.404 44.3818 474.14 46.9626C476.873 49.5405 478.232 52.1377 478.319 54.7336Z"
-          fill="#463520"
-          stroke="black"
-          strokeWidth="2"
-        />
-        <path
-          d="M268.943 547.165C185.5 547.165 130.365 524.3 174.5 477.5C277.978 524.692 275.219 518.443 372.5 498C408.5 548.165 369.587 547.165 268.943 547.165Z"
-          fill="#D9A86C"
-          stroke="black"
-          strokeWidth="3"
-        />
-        <path
-          d="M520.757 358C382.457 475 240.556 462 84 399.5C95.0205 412.024 102.225 419.987 115.556 432.321L115.964 432.497C220.782 477.725 307.976 515.349 461.5 432C482.612 410.027 504.053 384.991 520.757 358Z"
-          fill="white"
-          id="pot-row1"
-        />
-        <path
-          d="M546.5 304.5C438.32 375.773 250.538 421.909 28 320.035C40.0848 344.72 55.2261 367.685 76.982 392.409C233.538 454.909 384.2 468.5 522.5 351.5C532.805 334.848 539.265 321.984 546.5 304.5Z"
-          fill="white"
-          id="pot-row2"
-        />
-        <path
-          d="M548.5 149.5C551.247 154.713 552.748 158.727 554.722 164.554C560.831 178.233 563.376 191.643 564.723 206.5C370.353 296.5 175.853 302.5 8 224.5C9.99977 203.586 13.3461 187.921 25 169C204.538 255.946 399.275 241 548.5 149.5Z"
-          fill="white"
-          id="pot-row3"
-        />
-        <path
-          d="M565.37 210C371 300 175.353 308 7.5 230C7.50013 265 12 281.5 23.9997 313C246.538 414.874 440.32 370.773 548.5 299.5C562.242 266.289 568.263 241.91 565.37 210Z"
-          fill="white"
-          id="pot-row4"
-        />
-        <path
-          d="M547.314 147C398.089 238.5 207.538 250.5 28 163.554C31.4657 157.927 38.5 149.5 51 137C214.5 205 414.3 189.5 519.5 115.5C523 119.5 540.585 134.231 547.314 147Z"
-          fill="white"
-          id="pot-row5"
-        />
-      </svg>
+        <Row xs={11} md={5}>
+          {board.map((picture) => (
+            <PotteryPattern
+              key={picture.number}
+              src={require(`../assets/images/southwest/pottery/${picture.image}`)}
+              number={picture.number}
+            />
+          ))}
+        </Row>
+      </div>
     </div>
   );
-};
+}

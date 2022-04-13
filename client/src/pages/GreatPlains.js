@@ -55,7 +55,7 @@ const greatPlains = () => {
             <h1 className="subtitle p-5">Great Plains Game</h1>
           </Col>
 
-          <Col xs={11} md={5}>
+          <Col className="feather-container" xs={11} md={5}>
             {featherDeeds.map((feather) => (
               <FeatherOptions
                 key={feather.number}
