@@ -1,14 +1,12 @@
-
-   
 import React from "react";
 
-import { Container, Row, Col} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import next from "../assets/images/next.png";
 
 import { DndProvider } from "react-dnd";
-import { HTML5Backend } from "react-dnd-html5-backend";
+import { TouchBackend } from "react-dnd-touch-backend";
 
 import { gameData } from "../assets/data/game-data";
 // Import our custom hook
@@ -25,7 +23,6 @@ import TryAgainModal from "../components/TryAgainModal";
 import UrDoneModal from "../components/UrDoneModal";
 import { modalData } from "../assets/data/modal-data";
 import NextButton from "../components/NextButton";
-
 
 const greatPlains = () => {
   //functions, hooks, state, etc go here
@@ -44,10 +41,14 @@ const greatPlains = () => {
   console.log("currentModal");
   console.log(currentModal);
 
+  const options = {
+    enableMouseEvents: true,
+  };
+
   //return JSX
   return (
     //loading or intro screen and homepage
-    <DndProvider backend={HTML5Backend}>
+    <DndProvider backend={TouchBackend} options={options}>
       <Container fluid>
         <Row className="justify-content-center p-5">
           <Col xs={12} className="text-center">
@@ -83,7 +84,6 @@ const greatPlains = () => {
           </Col>
 
           <Col xs={8} md={8} className="text-end">
-
             <Link to={nextPath}>
               <img
                 src={next}

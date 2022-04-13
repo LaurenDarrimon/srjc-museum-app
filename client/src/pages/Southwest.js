@@ -7,7 +7,7 @@ import next from "../assets/images/next.png";
 
 import { DndProvider } from "react-dnd";
 import { TouchBackend } from 'react-dnd-touch-backend'
-import { HTML5Backend } from "react-dnd-html5-backend";
+//import { HTML5Backend } from "react-dnd-html5-backend";
 
 import { PotteryDrop } from "../components/PotteryDrop";
 import { PotteryDesigns } from "../components/PotteryDesigns";
