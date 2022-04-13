@@ -71,7 +71,7 @@ export const lessonData = [
         p1: "They use clay from the soil to make bricks to build their homes and pottery for cooking. ",
         p2: "The pottery is made from long ropes of clay that are pinched together, smoothed, painted and baked in a hot fire to harden.",
         p3: "",
-        imagePath: "lessons/SWlesson2-black-mesa-nm.jpg",
+        imagePath: "lessons/SWlesson3-acoma-vase-2.jpg",
         imageDescription: "",
     },
     {
@@ -80,7 +80,7 @@ export const lessonData = [
         p1: "Because they lived in the desert, water was very important to their culture.",
         p2: "So, they would often paint designs on their pottery that are symbols for rain and prayer.",
         p3: "",
-        imagePath: "",
+        imagePath: "lessons/SWlesson-collage-rain-symbols-final.jpg",
         imageDescription: "",
     },
     //Great Plains
