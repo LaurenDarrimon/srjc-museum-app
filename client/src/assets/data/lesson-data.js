@@ -7,7 +7,7 @@ export const lessonData = [
         p2: "They ate seeds, roots, deer, elk and sea food. They even ground their own flour from acorns.",
         p3: "Some California tribes that you may already know about are the Pomo, Wappo, and Coast Miwok",
         imagePath: "lessons/ca-lesson1-landscape.jpg",
-        imageDescription: "Scenic view of California oak forest",
+        imageDescription: "Scenic view of California oak forest"
     },
     {
         number: 1,
@@ -16,7 +16,7 @@ export const lessonData = [
         p2: "Each family had their own set of baskets that they used for pots, pans and dishes.",
         p3: "The baskets are so sturdy that people would cook in them! Many baskets were also woven tightly enough to hold water.",
         imagePath: "lessons/CAlesson2-Washoe-Sara-Mayo_and_family.jpg",
-        imageDescription: "Portrait of a Washoe family",
+        imageDescription: "Portrait of a Washoe family"
     },
     {
         number: 2,
@@ -25,7 +25,7 @@ export const lessonData = [
         p2: "But one type of basket that men make are the fishing and bird trap baskets.",
         p3: "They would use these to hunt for food.",
         imagePath: "lessons/CAlesson3-Pomo-basket-weaver-thousand-stick-basket.jpg",
-        imageDescription: "A Pomo basket weaver working on a 'thousand stick basket'",
+        imageDescription: "A Pomo basket weaver working on a 'thousand stick basket'"
     },
     //PNW
     {
@@ -35,7 +35,7 @@ export const lessonData = [
         p2: "The native people of this region are known for their woodworking skills, because of the plentiful red cedar trees in the region.",
         p3: "",
         imagePath: "lessons/PNWlesson1-western-red-cedar.jpg",
-        imageDescription: "",
+        imageDescription: ""
     },
     {
         number: 4,
@@ -44,7 +44,7 @@ export const lessonData = [
         p2: "Families built cedar plank long-houses, where 30 - 40 people lived together",
         p3: "At the front of the house, totem poles were placed to represent the family history and social status of the house members.",
         imagePath: "lessons/PNWlesson2-Haida_house_totem_pole_regalia_Haina.jpg",
-        imageDescription: "",
+        imageDescription: ""
     },
     {
         number: 5,
@@ -53,7 +53,7 @@ export const lessonData = [
         p2: "Totem poles usually show carvings of these animals, because clans consider these animals as spiritual beings and their direct ancestors.",
         p3: "",
         imagePath: "lessons/PNWlesson3-calvinhunt-2003-eagle-chief-and-bear-holding-salmon.jpg",
-        imageDescription: "",
+        imageDescription: ""
     },
     //SW
     {
@@ -63,7 +63,7 @@ export const lessonData = [
         p2: "",
         p3: "",
         imagePath: "lessons/SWlesson1-Pueblo.jpg",
-        imageDescription: "",
+        imageDescription: ""
     },
     {
         number: 7,
@@ -72,7 +72,7 @@ export const lessonData = [
         p2: "The pottery is made from long ropes of clay that are pinched together, smoothed, painted and baked in a hot fire to harden.",
         p3: "",
         imagePath: "lessons/SWlesson3-acoma-vase-2.jpg",
-        imageDescription: "",
+        imageDescription: ""
     },
     {
         number: 8,
@@ -81,7 +81,7 @@ export const lessonData = [
         p2: "So, they would often paint designs on their pottery that are symbols for rain and prayer.",
         p3: "",
         imagePath: "lessons/SWlesson-collage-rain-symbols-final.jpg",
-        imageDescription: "",
+        imageDescription: ""
     },
     //Great Plains
     {
@@ -90,7 +90,7 @@ export const lessonData = [
         p1: "Imagine living in the midwestern prairie with lots of different kinds of grass growing in all directions.",
         p2: "The Great Plains Indians lived there surrounded by endless rolling hills, few trees and vast herds of huge bison, which they hunted.",
         p3: "lessons/GPlesson3-bison.jpg",
-        imagePath: "",
+        imagePath: ""
     },
     {
         number: 10,
@@ -99,6 +99,7 @@ export const lessonData = [
         p2: "",
         p3: "",
         imagePath: "lessons/GPlesson1-Kiowa-woman-and-children.jpg",
+        imageDescription: ""
     },
     {
         number: 11,
@@ -107,5 +108,6 @@ export const lessonData = [
         p2: "The feathers hold great spiritual meaning and must be earned before they can be worn.",
         p3: "The feathers are a measure of a person's status, representing acts of bravery, courage, or kindness, and are presented in a public ceremony.",
         imagePath: "lessons/GPlesson2-Black_Foot_Standing_Bear_Big_Eagle_Sioux.jpg",
+        imageDescription: ""
     }
 ]
