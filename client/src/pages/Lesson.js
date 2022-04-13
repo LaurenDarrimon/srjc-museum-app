@@ -25,12 +25,12 @@ const Lesson = () => {
 
   //return JSX
   return (
-    //Overview of game
+    //Lesson before each  mini-game
     <Container>
       <Row xs={1} className="lesson site-content">
         <Col xs={11} md={{span: 8, offset: 3}} className="speech-bubble speech-bubble-md">
           <h1>{currentLessonSlide.title}</h1>
-          <img className="img-fluid" src={currentLessonSlide.imagePath} alt={currentLessonSlide.imageDescription}></img>
+          <img className="img-fluid" src={require(`../assets/images/${currentLessonSlide.imagePath}`)} alt={currentLessonSlide.imageDescription}></img>
           <p>{currentLessonSlide.p1}</p>
           <p>{currentLessonSlide.p2}</p>
           <p>{currentLessonSlide.p3}</p>
