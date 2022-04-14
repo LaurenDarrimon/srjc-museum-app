@@ -7,6 +7,7 @@ import next from "../assets/images/next.png";
 
 import { DndProvider } from "react-dnd";
 import { TouchBackend } from "react-dnd-touch-backend";
+import { HTML5Backend } from "react-dnd-html5-backend";
 
 import { PotteryDrop } from "../components/PotteryDrop";
 import { PotteryInfoCard } from "../components/PotteryInfoCard";
@@ -43,10 +44,21 @@ const Southwest = () => {
     enableMouseEvents: true,
   };
 
+  function isTouchDevice() {
+    return (
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
+  }
+
+  const isTouchScreen = isTouchDevice() ? TouchBackend : HTML5Backend;
+
   //return JSX
   return (
     //loading or intro screen and homepage
-    <DndProvider backend={TouchBackend} options={options}>
+
+    <DndProvider backend={isTouchScreen} options={options}>
       <Container fluid>
         <Row className="justify-content-center p-5">
           <Col xs={12} className="text-center">
@@ -54,22 +66,20 @@ const Southwest = () => {
           </Col>
         </Row>
 
-        <Row className="text-center" >
+        <Row className="text-center">
           <Col xs={6}>
-            <p>Drag patterns from here:</p>
+            <h3>Drag patterns from here:</h3>
           </Col>
           <Col xs={6}>
-            <p>onto the pot:</p>
+            <h3>onto the pot:</h3>
           </Col>
         </Row>
 
         <PotteryDrop />
-        <br>
-        </br>
+        <br></br>
 
-        <h2>Symbols & Meanings:</h2>
-        <br>
-        </br>
+        <h4>Symbols & Meanings Key:</h4>
+        <br></br>
 
         <Row className="pot-design-bank flex-nowrap">
           {potteryData.map((design) => (

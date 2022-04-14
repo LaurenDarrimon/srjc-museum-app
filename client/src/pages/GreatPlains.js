@@ -59,7 +59,6 @@ const greatPlains = () => {
             {featherDeeds.map((feather) => (
               <FeatherOptions
                 key={feather.number}
-                title={feather.title}
                 deed={feather.deed}
                 rightAnswer={feather.rightAnswer}
               />

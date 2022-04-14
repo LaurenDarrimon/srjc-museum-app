@@ -24,7 +24,7 @@ export const potteryData = [
     number: 4,
     title: "Wing4",
     type: "wing",
-    image: "wing4.png",
+    image: "wings4.png",
     description: "Birds and feathers are often prayer symbols."
   },
   {
@@ -51,64 +51,3 @@ export const potteryData = [
 
 ];
 
-export const southwestLessonData = [
-  {
-    title:"",
-    p1:"",
-    p2:"",
-    p3:"",
-    imagePath:"",
-  },
-  {
-    title:"",
-    p1:"",
-    p2:"",
-    p3:"",
-    imagePath:"",
-  },
-  {
-    title:"",
-    p1:"",
-    p2:"",
-    p3:"",
-    imagePath:"",
-  },
-  {
-    title:"",
-    p1:"",
-    p2:"",
-    p3:"",
-    imagePath:"",
-  },
-]
-
-export const southwestModalData = [
-  {
-    title:"",
-    p1:"",
-    p2:"",
-    p3:"",
-    imagePath:"",
-  },
-  {
-    title:"",
-    p1:"",
-    p2:"",
-    p3:"",
-    imagePath:"",
-  },
-  {
-    title:"",
-    p1:"",
-    p2:"",
-    p3:"",
-    imagePath:"",
-  },
-  {
-    title:"",
-    p1:"",
-    p2:"",
-    p3:"",
-    imagePath:"",
-  },
-]

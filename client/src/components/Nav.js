@@ -36,7 +36,7 @@ const Navigation = () => {
             <Nav.Link href="/instructions" className="navigation">
               Help
             </Nav.Link>
-            <NavDropdown title="Mini Games" id="basic-nav-dropdown">
+            <NavDropdown title="Regions" id="basic-nav-dropdown">
 
               <LinkContainer to="/lesson" onClick={() => setCalifornia()}>
                 <NavDropdown.Item>California</NavDropdown.Item>
