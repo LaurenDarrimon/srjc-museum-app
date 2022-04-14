@@ -89,8 +89,8 @@ export const lessonData = [
         title: "People of the Great Plains",
         p1: "Imagine living in the midwestern prairie with lots of different kinds of grass growing in all directions.",
         p2: "The Great Plains Indians lived there surrounded by endless rolling hills, few trees and vast herds of huge bison, which they hunted.",
-        p3: "lessons/GPlesson3-bison.jpg",
-        imagePath: ""
+        p3: "",
+        imagePath: "lessons/GPlesson3-bison.jpg"
     },
     {
         number: 10,
