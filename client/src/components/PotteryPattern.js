@@ -9,17 +9,19 @@ export function PotteryPattern({ src, number }) {
     item: { number: number },
     collect: (monitor) => ({
       isDragging: !!monitor.isDragging(),
+      handlerId: monitor.getHandlerId(),
     }),
   }));
+  const opacity = isDragging ? 0.4 : 1;
   return (
     <>
-      <Col xs={6}>
+      <Col m={0} p={0} >
         <img
           ref={drag}
           src={src}
           alt=""
-          width={"150px"}
-          style={{ opacity: isDragging ? "50%" : "100%" }}
+          width={"100px"}
+          style={{ opacity }}
         />
       </Col>
     </>

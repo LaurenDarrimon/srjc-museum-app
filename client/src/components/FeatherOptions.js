@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { useDrag } from "react-dnd";
 import { ItemTypes } from "../utils/ItemTypes";
 
@@ -12,7 +13,7 @@ const style = {
   cursor: "move",
   float: "left",
 };
-export const FeatherOptions = function FeatherOptions(props) {
+export const FeatherOptions = (props) => {
 
 let featherNumber = 1
 

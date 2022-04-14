@@ -39,7 +39,7 @@ const Trivia = () => {
             <img
               className="characters"
               id="main-pic"
-              style={{ maxWidth: "30%" }}
+              style={{ maxWidth: "70%" }}
               src={require(`../assets/images/${quiz.mainImage}`)}
             />
           </div>

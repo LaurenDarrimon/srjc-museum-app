@@ -44,7 +44,7 @@ export function PotteryDrop() {
         ref={drop}
         style={{ border: isOver ? "3px solid red" : "1px solid black" }}
       >
-        <Row xs={11} md={5}>
+        <Row xs={11} md={5} className="pot-design-row">
           {board.map((picture) => (
             <PotteryPattern
               key={picture.number}

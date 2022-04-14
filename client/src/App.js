@@ -20,7 +20,6 @@ import About from "./pages/About";
 import Instructions from "./pages/Instructions";
 import Trivia from "./pages/Trivia";
 import Overview from "./pages/Overview";
-import Fishing from "./pages/Fishing";
 import GreatPlains from "./pages/GreatPlains";
 import California from "./pages/California";
 import PacificNW from "./pages/PacificNW";
@@ -82,8 +81,6 @@ function App() {
                 <Route path="/trivia" element={<Trivia />} />
 
                 <Route path="/about" element={<About />} />
-
-                <Route path="/fishing" element={<Fishing />} />
 
                 <Route path="/california" element={<California />} />
 

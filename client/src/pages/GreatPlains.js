@@ -7,6 +7,7 @@ import next from "../assets/images/next.png";
 
 import { DndProvider } from "react-dnd";
 import { TouchBackend } from "react-dnd-touch-backend";
+import { HTML5Backend } from "react-dnd-html5-backend";
 
 import { gameData } from "../assets/data/game-data";
 // Import our custom hook
@@ -45,10 +46,20 @@ const greatPlains = () => {
     enableMouseEvents: true,
   };
 
+  function isTouchDevice() {
+    return (
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
+  }
+
+  const isTouchScreen = isTouchDevice() ? TouchBackend : HTML5Backend;
+
   //return JSX
   return (
     //loading or intro screen and homepage
-    <DndProvider backend={TouchBackend} options={options}>
+    <DndProvider backend={isTouchScreen} options={options}>
       <Container fluid>
         <Row className="justify-content-center p-5">
           <Col xs={12} className="text-center">

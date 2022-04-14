@@ -5,7 +5,7 @@ export const triviaData = [
       "It's important to know about the civilizations that have been in Sonoma County continuously, since long before Europeans colonized this land.",
     question:
       "The museum is located in the ancestral homelands of which tribal nation?",
-    mainImage: "california/sonoma-county.png",
+    mainImage: "california/california.png",
     options: ["Ohlone", "Pomo", "Yokuts", "Cheyenne"],
     right_answer: "Pomo",
     correctMessage:
