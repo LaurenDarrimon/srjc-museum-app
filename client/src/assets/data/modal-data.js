@@ -23,7 +23,7 @@ export const modalData = [
         title:"SouthWest",
         p1:"Now that you've learned about the native people of the Southwest, lets play a game!",
         pBold:"Do you think you can design pottery like the Puebloans did?",
-        p3:"Decorate your pot by dragging a pattern onto it. Then repeat until you like what you see!",
+        p3:"Decorate your pot by dragging a pattern onto it. There's no right or wrong answer, just drag until you like your design!",
         },
     
     //Great Plains

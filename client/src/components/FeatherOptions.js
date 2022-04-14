@@ -64,10 +64,10 @@ let featherNumber = 1
       style={{ ...style, opacity }}
       data-testid={`box-${props.number}`}
     >
-      <Card style={{ width: "16rem" }} >
-        <Card.Img variant="top" src={feather} style={{ height: "20rem" }}/>
+      <Card xs={6} style={{ width: "14rem" }} >
+        <Card.Img variant="top" src={feather} style={{ height: "12rem" }}/>
         <Card.Body>
-          <Card.Title>{props.title}</Card.Title>
+          {/* <Card.Title>{props.title}</Card.Title> */}
           <Card.Text>
           {props.deed}
           </Card.Text>
