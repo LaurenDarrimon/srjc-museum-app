@@ -23,6 +23,7 @@
 body {
   font-family: "Lato", sans-serif !important;
   font-weight: 300;
+  width: 100vw;
 
 }
 
@@ -36,7 +37,7 @@ h4 {
 */
 
 #root {
-  background-color: var(--srjc-blue);
+  background-color: var(--purple);
   color: var(--light-gray);
   min-height: 100vh;
   display: flex;
@@ -52,7 +53,7 @@ h4 {
 }
 
 .navigation {
-  background-color: var(--srjc-blue);
+  background-color: var(--purple);
   color: var(--light-gray) !important;
 }
 
@@ -63,9 +64,7 @@ h4 {
 
 /***HOME PAGE**/
 
-.home {
-  min-height: 100vh;
-}
+/*round logo*/
 
 .logo {
   height: auto;
@@ -74,23 +73,59 @@ h4 {
   max-width: 350px;
 }
 
+/*trying out getting rid of footer
 .footer {
   background-color: var(--srjc-red);
   border-top: white solid 4px;
   /*position: absolute;
   bottom: 0px;
-  height: 100px;*/
+  height: 100px;*//*
   min-width: 100vw !important;
+}*/
+
+.home .speech-bubble {
+  border: 5px solid var(--rust);
+}
+
+.home h1 {
+  padding: 0 !important;
 }
 
 .subtitle-home {
-  font-weight: 300;
-  font-size: smaller;
+  font-weight: 300 !important;
 }
 
 .sub-heading-home {
   font-family: "Pangolin";
 }
+
+.not-onsite-info {
+  border: 2px solid var(--teal);
+  border-radius: 8px;
+}
+
+.home .accordion-item, .home .accordion-button {
+  background-color: transparent;
+}
+
+.home .accordion-header {
+  padding:0;
+}
+
+
+.home .main-content {
+  max-width: 80%;
+  position: relative;
+  left: 6rem;
+}
+
+.main-guide-img {
+  max-width: 50% !important;
+  position: relative;
+  bottom: 20rem;
+  left: 1rem;
+}
+
 /* =============== LAUREN'S SECTION ============================= */
 
 .answers {
@@ -258,6 +293,9 @@ h4 {
 /* || Utilities */
 .bold-text {
   font-weight: bold !important;
+}
+.text-400 {
+  font-weight: 400 !important;
 }
 
 /* || All pages */
