@@ -12,17 +12,26 @@ const Home = () => {
     <>
       <Container fluid className="home site-content">
         <Row className=" text-center">
-          <Col>
+          <Col xs={12}>
             <img
               src={logo}
               className="col-md-5 p-4 logo"
               alt="round SRJC logo showing black on white pottery design"
             />
-            <h2 className="subtitle p-4">North American Art</h2>
-            <h1>SCAVENGER HUNT</h1>
-            <Link to="/overview">
+          </Col>
+          <Col xs={12}>
+            <h1 className="display-4">Welcome!</h1>
+            <h2>
+              <span className=" subtitle-home">to the </span>
+              <br />
+              <span className="sub-heading-home display-5">North American Art</span>
+              <br />
+              <span className="display-4">SCAVENGER HUNT</span>
+            </h2>
+         
+            {/*<Link to="/overview">
               <img src={play} alt="white arrow play button" className="p-4" />
-            </Link>
+            </Link>*/}
           </Col>
         </Row>
       </Container>

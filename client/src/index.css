@@ -21,17 +21,19 @@
 /* NOTE: I am trying to to make the app always fill the vertical height  */
 
 body {
-  font-family: "Lato", sans-serif;
-  font-family: "Pangolin", cursive;
-  background-color: var(--srjc-blue);
+  font-family: "Lato", sans-serif !important;
+  font-weight: 300;
+
 }
 
+/* NOTE: Thinking we should use this font more sparingly. Its kinda ugly when there's a lot of it actually.
 h1,
 h2,
 h3,
 h4 {
   font-family: "Pangolin", cursive;
 }
+*/
 
 #root {
   background-color: var(--srjc-blue);
@@ -47,6 +49,22 @@ h4 {
   flex: 1;
   min-width: 100vw !important;
   padding-top: 100px;
+}
+
+.navigation {
+  background-color: var(--srjc-blue);
+  color: var(--light-gray) !important;
+}
+
+#basic-nav-nav {
+  position: absolute !important;
+  z-index: 1;
+}
+
+/***HOME PAGE**/
+
+.home {
+  min-height: 100vh;
 }
 
 .logo {
@@ -65,20 +83,14 @@ h4 {
   min-width: 100vw !important;
 }
 
-.navigation {
-  background-color: var(--srjc-blue);
-  color: var(--light-gray) !important;
+.subtitle-home {
+  font-weight: 300;
+  font-size: smaller;
 }
 
-#basic-nav-nav {
-  position: absolute !important;
-  z-index: 1;
+.sub-heading-home {
+  font-family: "Pangolin";
 }
-
-.home {
-  min-height: 100vh;
-}
-
 /* =============== LAUREN'S SECTION ============================= */
 
 .answers {
