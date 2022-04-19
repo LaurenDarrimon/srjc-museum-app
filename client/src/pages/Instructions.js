@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
-import go from "../assets/images/go-btn.png";
-import mascotBubble from "../assets/images/speech-bubble-mascot-guide.png";
-import potNumbers from "../assets/images/pot-and-numbers-graphic.png";
+import go from "../assets/images/go-btn.svg";
+import mascotBubble from "../assets/images/speech-bubble-mascot-guide.svg";
+import basket from "../assets/images/basket-red.svg";
 
 
 const Instructions = () => {
@@ -12,33 +12,36 @@ const Instructions = () => {
 
   //return JSX
   return (
-    //loading or intro screen and homepage
+    //instructions
     <Container fluid>
       <Row className="instructions site-content">
-        <Col xs={11} className="speech-bubble speech-bubble-fullscreen">
-          <h1 className="display-5">Instructions</h1>
-          <p>
-            Follow the prompts on the next page to find the artifacts in the museum.
-          </p>
-          <img className="img-fluid"
-            src={potNumbers}
-            alt="illustration of dragging the number onto the image of a piece of pottery"
+        <Col xs={{span: 10}} className="speech-bubble speech-bubble-md text-end mx-auto">
+          <h1 className="display-5 text-400 text-center">Instructions</h1>
+          <p className="text-start pb-2">
+            Follow the prompts to find the objects in the <span className="text-400">real-life exhibit</span>.
+            <img className="img-fluid w-25 float-end pt-3 pe-1"
+            src={basket}
+            alt="piece of pottery"
           />
-          <p>
-            <span className="bold-text">Tap or Click</span> on the right answer when you find the item in the real life exhibit.
+          </p>
+    
+          
+          <p className="text-start pb-4 pt-5">
+            <span className="text-400">Tap or Click</span> on the right answer.
           </p>
 
-          <img className="img-fluid"
+          <img className="img-fluid py-5"
             src={mascotBubble}
-            alt='little mascot says "Hi, Ill be your guide through the game"'
+            alt='Coyote says "Hi, Ill be your guide through the game"'
+            width="100%"
           />
         <Row>
-        <Col xs={6}>
-          <h2 className="display-5">Are you ready?</h2>
+        <Col xs={{span:5, offset:1}}>
+          <h2 className="display-4 text-start text-400">Let's go exploring!</h2>
         </Col>
-        <Col xs={6}>
-          <Link className="img-fluid big-round-GO-btn" to="/trivia">
-            <img src={go} alt="GO!" />
+        <Col xs={{span:5, offset:1}}>
+          <Link to="/trivia">
+            <img className="big-round-GO-btn img-fluid pe-3" src={go} alt="GO!" width="100%" />
           </Link>
         </Col>
         </Row>
