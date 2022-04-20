@@ -15,9 +15,9 @@ const Instructions = () => {
     //instructions
     <Container fluid>
       <Row className="instructions site-content">
-        <Col xs={{span: 10}} className="speech-bubble speech-bubble-md text-end mx-auto">
+        <Col xs={{span: 10}} className="speech-bubble text-end mx-auto">
           <h1 className="display-5 text-400 text-center">Instructions</h1>
-          <p className="text-start pb-2">
+          <p className="text-start py-4">
             Follow the prompts to find the objects in the <span className="text-400">real-life exhibit</span>.
             <img className="img-fluid w-25 float-end pt-3 pe-1"
             src={basket}

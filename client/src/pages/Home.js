@@ -18,7 +18,7 @@ const Home = () => {
           <Col xs={{ span: 7, offset: 4 }}>
             <img className=" pb-3 img-fluid" src={logo} alt="SRJC logo" />
           </Col>
-          <Col xs={11} md={{ span: 9, offset: 2 }} className="speech-bubble speech-bubble-md text-center">
+          <Col xs={11} md={{ span: 9, offset: 2 }} className="speech-bubble text-center">
             <h1 className="d-inline-block mx-auto ">
               <span className="sub-heading-home display-3">Native American Art</span>
               <br />
@@ -31,7 +31,6 @@ const Home = () => {
               <img className="img-fluid next-btn py-5" src={next} alt="next button" />
             </Link>
             <div className="bottom-section">
-
               <div className="not-onsite-info">
                 <Accordion defaultActiveKey="1" flush>
                   <Accordion.Item eventKey="0">

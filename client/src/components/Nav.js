@@ -27,9 +27,10 @@ const Navigation = () => {
             <Nav.Link href="/" className="navigation">
               Start Over
             </Nav.Link>
+            {/*Removing Overview from Nav - all content found on home/start over
             <Nav.Link href="/overview" className="navigation">
               Overview
-            </Nav.Link>
+            </Nav.Link>*/}
             <Nav.Link href="/about" className="navigation">
               About
             </Nav.Link>

@@ -77,8 +77,7 @@ h4 {
 
 /***HOME PAGE**/
 
-/*round logo*/
-
+  /*round logo*/
 .logo {
   height: auto;
   max-height: 350px;
@@ -86,7 +85,7 @@ h4 {
   max-width: 350px;
 }
 
-/*trying out getting rid of footer
+  /*trying out getting rid of footer
 
 .footer {
   background-color: var(--srjc-red);
@@ -357,27 +356,19 @@ h4 {
   background-color: white;
   color: black;
   border: 2px solid black;
-}
-
-.speech-bubble-md {
-  border: 2px solid var(--purple);
   border-radius: 10px;
   padding: 2em !important;
   margin: 1em auto 1em auto;
 }
 
+.speech-bubble h1 {
+  padding: 0 0 0.5em 0;
+  margin: 0;
+}
+
 .speech-bubble p,
 .speech-bubble h2 {
   padding: .5em 0;
-  margin: 0;
-}
-.speech-bubble h1 {
-  padding: 0 0 0.5em 0;
-}
-
-.speech-bubble-md h1,
-.speech-bubble-md h2 {
-  padding-bottom: .75em;
   margin: 0;
 }
 
@@ -435,4 +426,8 @@ h4 {
   max-width: 200px;
 }
 
+/****TRIVIA****/
+.trivia.site-content {
+  padding-top: .5em;
+}
 /* =============== END ERIN'S SECTION ============================= */
