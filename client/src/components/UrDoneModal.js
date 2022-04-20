@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { Modal, Button } from "react-bootstrap";
 //images
-import mascotGreatJob from "../assets/images/speech-bubble-mascot-greatjob.png";
+import mascotGreatJob from "../assets/images/speech-bubble-mascot-greatjob.svg";
 import next from "../assets/images/next.png";
 // "next-path" linksdata
 import { gameData } from "../assets/data/game-data";
@@ -43,13 +43,10 @@ const UrDoneModal = () => {
         aria-labelledby="modal-title"
       >
         <Modal.Header closeButton>
-          <Modal.Title as="h1">Yay!</Modal.Title>
+          <Modal.Title as="h1">Yay! <br/>You Finished the Game!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h2>
-            You Completed the Game!
-          </h2>
-          <img className='mascot-urdone img-fluid' src={mascotGreatJob} alt="Mascot says 'Woohoo! Great Job'" />
+          <img className='mascot-urdone mx-auto pt-5' src={mascotGreatJob} alt="Mascot says 'Woohoo! Great Job'" />
         </Modal.Body>
         <Modal.Footer>
           <Link to={nextPath} onClick={() => {triviaIncrement(); handleClose()}}>

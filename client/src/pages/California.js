@@ -48,14 +48,15 @@ const California = () => {
       </Row>
 
       <Row>
-        <Col xs={12} md={8}>
-          <Matching cardsArray = {caliCardsArray} />
+        <Col xs={12}>
+          <Matching cardsArray = {caliCardsArray} currentModal = {currentModal}/>
         </Col>
 
-        <Col xs={12} md={4}>
+        {/* Moved modal to Matching component
+          <Col xs={12}>
           {/* Click for modal */}
           {/* pass in props for current instruction modal */}
-          <br></br>
+          {/*<br></br>
           <br></br>
           <InstructionModal
             title={currentModal.title}
@@ -65,7 +66,7 @@ const California = () => {
             imagePath={currentModal.imagePath}
             imageDescription={currentModal.imageDescription}
           />
-        </Col>
+        </Col>*/}
         <br></br>
 
         <br></br>

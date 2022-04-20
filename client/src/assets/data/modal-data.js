@@ -1,29 +1,30 @@
+// Instructions Modal Data
 export const modalData = [
     //California
     
         {
         title:"California",
-        p1:"Now that you've learned about the native people of California, lets play a game!",
-        pBold:"Let's catch a fish the traditional Californian way - weave a basket, head to the stream, and guide the fish in.",
-        p3:"The cards all have images on the back. Flip over two cards to see if they match. Try to remember the place of each card. When you find a matching pair, it will vanish. Clear all the pairs to win the game!",
+        p1:"Now that you've learned about the native people of California...",
+        pBold:"It's time to test your memory!",
+        p3:"Flip over the cards to find matching pairs. Find all the pairs to win the game!",
         },
     
     //PNW
     
         {
         title:"Pacific NorthWest",
-        p1:"Now that you've learned about the native people of the Pacific NW, lets put your brain to work!",
-        pBold:"Are you ready to test your memory?",
-        p3:"The cards all have images on the back. Flip over two cards to see if they match. Try to remember the place of each card. When you find a matching pair, it will vanish. Clear all the pairs to win the game!",
+        p1:"Now that you've learned about the native people of the Pacific NW... ",
+        pBold:"Lets put your brain to work!",
+        p3:"Flip over the cards to find matching pairs. Find all the pairs to win the game!",
         },
 
     //SW
     
         {
         title:"SouthWest",
-        p1:"Now that you've learned about the native people of the Southwest, lets play a game!",
-        pBold:"Do you think you can design pottery like the Puebloans did?",
-        p3:"Decorate your pot by dragging a pattern onto it. There's no right or wrong answer, just drag until you like your design!",
+        p1:"",
+        pBold:"Decorate your own pot by dragging a pattern onto it.",
+        p3:"There's no right or wrong answer, just drag until you like your design!",
         },
     
     //Great Plains
