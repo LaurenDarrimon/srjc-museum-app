@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import { Modal, Button } from "react-bootstrap";
 
 //images
-import go from "../assets/images/go-btn.png"
-import mascotTryAgain from "../assets/images/speech-bubble-mascot-tryagain.png";
+import go from "../assets/images/go-btn.svg"
+import mascotTryAgain from "../assets/images/speech-bubble-mascot-tryagain.svg";
 
 const TryAgainModal = () => {
   //full screen modal to show when user answers a question wrong
@@ -15,14 +15,14 @@ const TryAgainModal = () => {
   
     return (
       <>
-        <Button variant="primary" onClick={handleShow}>
+        {/*<Button variant="primary" onClick={handleShow}>
             Launch "Try Again" Modal
-        </Button>
+    </Button>*/}
   
         <Modal 
           show={show}
           onHide={handleClose}
-          dialogClassName="custom-modal"
+          dialogClassName="custom-modal modal-try-again"
           aria-labelledby="modal-title"
           >
           <Modal.Header closeButton>

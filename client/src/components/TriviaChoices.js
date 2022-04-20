@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 
 //images
-import go from "../assets/images/go-btn.png";
-import mascotTryAgain from "../assets/images/speech-bubble-mascot-tryagain.png";
-import mascotGoodJob from "../assets/images/speech-bubble-mascot-greatjob.png";
+import go from "../assets/images/go-btn.svg";
+import mascotTryAgain from "../assets/images/speech-bubble-mascot-tryagain.svg";
+import mascotGoodJob from "../assets/images/speech-bubble-mascot-greatjob.svg";
 //data
 import { triviaData } from "../assets/data/questions";
 
@@ -54,23 +54,22 @@ const TriviaChoices = () => {
         <Modal
           show={show}
           onHide={handleClose}
-          dialogClassName="custom-modal"
+          dialogClassName="custom-modal modal-try-again"
           aria-labelledby="modal-title"
         >
           <Modal.Header closeButton>
             <Modal.Title as="h1">Try Again, Explorer!</Modal.Title>
           </Modal.Header>
-          <Modal.Body className="instructions-modal-body">
-            <p className="bold-text">Sorry that's not the right answer.</p>
+          <Modal.Body className="pt-4">
             <p>
-              Look around at the signs on the walls in the museum, and the
-              pictures next to the artifacts. There you'll find clues to the
+              Look around at the signs on the walls, and the
+              pictures next to the objects. There you'll find clues to the
               right answer.
             </p>
             <img
-              className="modal-img-mascot-instructions img-fluid"
+              className="mascot-try-again pt-4"
               src={mascotTryAgain}
-              alt="Click on the Mascot in the lower left corner to see these instructions again"
+              alt=""
             />
           </Modal.Body>
           <Modal.Footer>
@@ -93,15 +92,14 @@ const TriviaChoices = () => {
           aria-labelledby="modal-title"
         >
           <Modal.Header closeButton>
-            <Modal.Title as="h1">That's Right!</Modal.Title>
+            <Modal.Title as="h1">Good work, Explorer!</Modal.Title>
           </Modal.Header>
-          <Modal.Body className="instructions-modal-body">
-            <p className="bold-text">Good work, Explorer.</p>
+          <Modal.Body className="pt-2">
             <p>
               {quiz.correctMessage}
             </p>
             <img
-              className="modal-img-mascot-instructions img-fluid"
+              className="mascot-good-job pt-4"
               src={mascotGoodJob}
               alt="Click on the Mascot in the lower left corner to see these instructions again"
             />

@@ -8,7 +8,7 @@ export const triviaData = [
     options: ["Ohlone", "Pomo", "Yokuts", "Cheyenne"],
     right_answer: "Pomo",
     correctMessage:
-      "That's right! The Pomo Tribal Nation has continuously inhabited this land since long before Europeans colonized it.",
+      "The Pomo Tribal Nation has continuously inhabited this land since long before Europeans colonized it.",
     wrongMessage:
       "That tribal nation's homelands are located nearby, but not primarily in Sonoma County.  Please try again!",
   },
@@ -21,7 +21,7 @@ export const triviaData = [
     options: [12, 6, 34, 98, 5, 114, 39, 23, 19],
     right_answer: 6,
     correctMessage:
-      "That's right! This is a gift basket. Beautiful baskets adorned with feathers were often given as gifts.",
+      "This is a gift basket. Beautiful baskets adorned with feathers were often given as gifts.",
     wrongMessage: "That's not quite right. Keep looking, explorer!",
   },
   {
@@ -40,7 +40,7 @@ export const triviaData = [
     ],
     right_answer: "Elsie Allen",
     correctMessage:
-      "That's right! Elsie Allen was a very famous basket weaver. She was also the person who collected the baskets in this exhibit!",
+      "Elsie Allen was a very famous basket weaver. She was also the person who collected the baskets in this exhibit!",
     wrongMessage: "That's not quite right. Keep looking, explorer!",
   },
   {
@@ -58,7 +58,7 @@ export const triviaData = [
     ],
     right_answer: "Raven, Wolf & Killer Whale",
     correctMessage:
-      "That's right! The exhibit includes Bear, Raven, Wolf, Eagle and Killer Whale.",
+      "The exhibit includes Bear, Raven, Wolf, Eagle and Killer Whale.",
     wrongMessage: "That's not quite right. Keep looking, explorer!",
   },
   {
@@ -70,7 +70,7 @@ export const triviaData = [
     mainImage: "pnw-coast/potlatch-hat.JPG",
     options: ["1", "2", "3", "4", "5"],
     right_answer: "4",
-    correctMessage: "That's right! The number of rings on the hat tells us how many times the wearer 'Potlached' or gave away all of their belongings, which a sign of extremely high status.",
+    correctMessage: "The number of rings on the hat tells us how many times the wearer 'Potlached' or gave away all of their belongings, which a sign of extremely high status.",
     wrongMessage: "That's not quite right. Keep looking, explorer!",
   },
   {
@@ -82,7 +82,7 @@ export const triviaData = [
     mainImage: "southwest/storyteller.jpg",
     options: ["1", "2", "3", "4", "5"],
     right_answer: "4",
-    correctMessage: "That's right! The artist Helen Cordero started the tradition of storyteller figures.",
+    correctMessage: "The artist Helen Cordero started the tradition of storyteller figures.",
     wrongMessage: "That's not quite right. Keep looking, explorer!",
   },
   {
@@ -99,7 +99,7 @@ export const triviaData = [
       "Smiling Face",
     ],
     right_answer: "Green dragon skin",
-    correctMessage: "That's right! Kachinas teach people how to behave correctly but they also provide comedy, in the case of the Clown kachinas. ",
+    correctMessage: "Kachinas teach people how to behave correctly but they also provide comedy, in the case of the Clown kachinas. ",
     wrongMessage: "That's not quite right. Keep looking, explorer!",
   },
   {
@@ -115,7 +115,7 @@ export const triviaData = [
     ],
     right_answer: "Teepees, Clothing & Food",
     correctMessage:
-      "Yes! Bison were important for blankets, clothing, shelter in the form of Teepees, and food.",
+      "Bison were important for blankets, clothing, shelter in the form of Teepees, and food.",
     wrongMessage: "That's not quite right. Keep looking, explorer!",
   },
   {
@@ -127,7 +127,7 @@ export const triviaData = [
     mainImage: "great-plains/pipe-bag.jpg",
     options: [1, 8, 10, 15, 24, 27],
     right_answer: 24,
-    correctMessage: "You found it! The quills are soaked in water to soften them, and then they can be flattened and dyed. There are several items in the case that are decorated with porcupine quills. ",
+    correctMessage: "The quills are soaked in water to soften them, and then they can be flattened and dyed. There are several items in the case that are decorated with porcupine quills. ",
     wrongMessage: "That's not quite right. Keep looking, explorer!",
   },
   {

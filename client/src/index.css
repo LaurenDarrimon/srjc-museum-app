@@ -398,17 +398,20 @@ h4 {
   padding-top: 3.5em;
 }
 
-  /*your done modal*/
+  /*your done modal + try again modal*/
 
 .modal-urdone .modal-content {
-  padding: 4em !important;
+  padding: 2em !important;
 }
 
+.modal-urdone .modal-body, .modal-try-again .modal-body, .modal-urdone .modal-header, .modal-try-again .modal-header {
+  padding: 3px;
+}
 
-.mascot-urdone {
-  padding: 6em 0;
+.mascot-urdone, .mascot-try-again, .mascot-good-job {
   text-align: center;
   margin: 0 auto 0 auto;
+  width: 99%; 
 }
 
 /* || ABOUT page */
