@@ -101,7 +101,7 @@ const TriviaChoices = () => {
             <img
               className="mascot-good-job pt-4"
               src={mascotGoodJob}
-              alt="Click on the Mascot in the lower left corner to see these instructions again"
+              alt="good job!"
             />
           </Modal.Body>
           <Modal.Footer>
