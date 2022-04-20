@@ -27,7 +27,7 @@ const Instructions = () => {
     
           
           <p className="text-start pb-4 pt-5">
-            <span className="text-400">Tap or Click</span> on the right answer.
+            <span className="text-400">Tap or Click</span> on the right answer. Then click <span className="text-400">NEXT</span>.
           </p>
 
           <img className="img-fluid py-5"

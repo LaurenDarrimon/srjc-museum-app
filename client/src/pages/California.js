@@ -48,11 +48,11 @@ const California = () => {
       </Row>
 
       <Row>
-        <Col xs={12} md={8}>
+        <Col xs={12}>
           <Matching cardsArray = {caliCardsArray} />
         </Col>
 
-        <Col xs={12} md={4}>
+        <Col xs={12}>
           {/* Click for modal */}
           {/* pass in props for current instruction modal */}
           <br></br>

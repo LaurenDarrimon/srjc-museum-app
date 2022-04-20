@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import { Modal } from "react-bootstrap";
 
 //images
-import mascotGuideInstructions from "../assets/images/speech-bubble-mascot-instructions.png";
+import mascotGuideInstructions from "../assets/images/speech-bubble-mascot-instructions.svg";
 import go from "../assets/images/go-btn.png"
-import mascotGuide from "../assets/images/speech-bubble-mascot-tip-2.png";
+import mascotGuide from "../assets/images/speech-bubble-mascot-instructions-3.svg";
 
 const InstructionModal = (props) => {
   //full screen modal with instructions for mini-games
