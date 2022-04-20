@@ -1,4 +1,9 @@
 import { useEffect, useState, useRef, React } from "react";
+import {Row, Col} from "react-bootstrap"
+//import modal components
+import InstructionModal from "../components/MiniGameInstModal";
+//import modal data
+
 
 import {
   Dialog,
@@ -134,22 +139,35 @@ export default function Matching(props) {
         })}
       </div>
       <footer>
-      
-        <div className="score">
-          <div className="moves">
-            <span className="bold">Moves:</span> {moves}
-          </div>
-          {localStorage.getItem("bestScore") && (
-            <div className="high-score">
-              <span className="bold">Best Score:</span> {bestScore}
+        <div className="">
+          <div className="score">
+            <div className="moves">
+              <span className="bold">Moves:</span> {moves}
             </div>
-          )}
+            {localStorage.getItem("bestScore") && (
+              <div className="high-score">
+                <span className="bold">Best Score:</span> {bestScore}
+              </div>
+            )}
+          </div>
+          <p><em>Play again and try to beat your best score!</em></p>
+          <div className="restart">
+            <Button onClick={handleRestart} className="btn-primary" variant="contained">
+              Restart
+            </Button>
+          </div>
         </div>
-        <p><em>Play again and try to beat your best score!</em></p>
-        <div className="restart">
-          <Button onClick={handleRestart} className="btn-primary" variant="contained">
-            Restart
-          </Button>
+        <div className="">
+          {/* Click for modal */}
+          {/* pass in props for current instruction modal */}
+          <InstructionModal
+            title={props.currentModal.title}
+            p1={props.currentModal.p1}
+            pBold={props.currentModal.pBold}
+            p3={props.currentModal.p3}
+            imagePath={props.currentModal.imagePath}
+            imageDescription={props.currentModal.imageDescription}
+          />
         </div>
       </footer>
       <Dialog

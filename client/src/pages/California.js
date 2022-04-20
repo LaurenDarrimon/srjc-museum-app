@@ -49,7 +49,7 @@ const California = () => {
 
       <Row>
         <Col xs={12}>
-          <Matching cardsArray = {caliCardsArray} />
+          <Matching cardsArray = {caliCardsArray} currentModal = {currentModal}/>
         </Col>
 
         <Col xs={12}>
