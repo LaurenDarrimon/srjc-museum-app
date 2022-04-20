@@ -24,9 +24,9 @@ const Trivia = () => {
 
   return (
     //loading or intro screen and homepage
-    <Container fluid className="site-content">
+    <Container fluid className="trivia site-content">
       <Row className="justify-content-center text-center p-5">
-        <Col xs={11} md={7} className="py-5">
+        <Col xs={{span:11}} className="speech-bubble py-5 mx-auto">
           <h1>Question {quiz.number}</h1>
 
           <h2>{quiz.lesson}</h2>

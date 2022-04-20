@@ -373,7 +373,6 @@ h4 {
 }
 
 
-
 /* || MODALS - Instructions & Try Again */
 .custom-modal {
   max-width: 65% !important;
@@ -427,4 +426,8 @@ h4 {
   max-width: 200px;
 }
 
+/****TRIVIA****/
+.trivia.site-content {
+  padding-top: .5em;
+}
 /* =============== END ERIN'S SECTION ============================= */
