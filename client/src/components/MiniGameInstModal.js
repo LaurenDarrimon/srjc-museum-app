@@ -22,6 +22,7 @@ const InstructionModal = (props) => {
             src={mascotGuide}
             alt="You've got this!"
             className="img-fluid"
+            width= "300px"
           />
         </div>
   

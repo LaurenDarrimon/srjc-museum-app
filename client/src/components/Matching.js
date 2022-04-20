@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef, React } from "react";
-import {Row, Col} from "react-bootstrap"
 //import modal components
 import InstructionModal from "../components/MiniGameInstModal";
 //import modal data
@@ -139,7 +138,7 @@ export default function Matching(props) {
         })}
       </div>
       <footer>
-        <div className="">
+        <div className="d-inline-block w-50 text-center">
           <div className="score">
             <div className="moves">
               <span className="bold">Moves:</span> {moves}
@@ -157,7 +156,7 @@ export default function Matching(props) {
             </Button>
           </div>
         </div>
-        <div className="">
+        <div className="d-inline-block matching-inst-modal-btn">
           {/* Click for modal */}
           {/* pass in props for current instruction modal */}
           <InstructionModal

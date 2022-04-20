@@ -191,10 +191,11 @@ h4 {
   margin: 0 auto;
 }
 .Matching footer {
-  width: 360px;
+  /*width: 360px;*/
+  width: 650px;
   position: relative;
   margin: 0 auto;
-  padding: 10px 4px;
+  padding: 10px 0px;
   margin-top: 10px;
 }
 .Matching footer .score {
@@ -219,8 +220,10 @@ h4 {
   align-items: stretch;
   gap: 1rem;
   margin: 0 auto;
-  width: 500px;
-  height: 420px;
+  /*width: 500px;
+  height: 420px;*/
+  width: 600px;
+  height: 504px;
   perspective: 100%;
   max-width: 720px;
 }
@@ -253,6 +256,11 @@ h4 {
 }
 .card.is-inactive {
   opacity: 0;
+}
+
+.matching-inst-modal-btn {
+  position: relative;
+  bottom: 3rem;
 }
  
 /* SW potttery game section  */

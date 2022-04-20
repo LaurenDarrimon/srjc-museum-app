@@ -52,10 +52,11 @@ const California = () => {
           <Matching cardsArray = {caliCardsArray} currentModal = {currentModal}/>
         </Col>
 
-        <Col xs={12}>
+        {/* Moved modal to Matching component
+          <Col xs={12}>
           {/* Click for modal */}
           {/* pass in props for current instruction modal */}
-          <br></br>
+          {/*<br></br>
           <br></br>
           <InstructionModal
             title={currentModal.title}
@@ -65,7 +66,7 @@ const California = () => {
             imagePath={currentModal.imagePath}
             imageDescription={currentModal.imageDescription}
           />
-        </Col>
+        </Col>*/}
         <br></br>
 
         <br></br>
