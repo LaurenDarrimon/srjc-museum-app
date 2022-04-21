@@ -38,13 +38,14 @@ const PacificNW = () => {
   //return JSX
   return (
     //loading or intro screen and homepage
-    <Container fluid>
-      <Row className="justify-content-center p-5">
+    <Container fluid className="site-content region-northwest">
+      <Row className="justify-content-center py-3 px-5">
         <Col xs={12} className="text-center">
           <div className="region-northwest">
-            <h1 className="subtitle p-5">Pacific Northwest </h1>
+            <h1 className="subtitle p-2">Pacific Northwest </h1>
           </div>
-          <h2>Flip Card Matching Game</h2>
+          {/*maybe a redundant subtitle since instruction modal explains?
+          <h2>Flip Card Matching Game</h2>*/}
         </Col>
       </Row>
 

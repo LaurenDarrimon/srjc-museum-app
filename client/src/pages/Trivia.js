@@ -36,10 +36,9 @@ const Trivia = () => {
       <Row className="justify-content-center text-center p-5">
         <Col xs={{ span: 11 }} className="speech-bubble py-5 mx-auto">
           <div className={`region  ${regionClass}`} >
-            <h1>{quiz.region}</h1> 
+            <h1 className="d-inline-block pe-3">{quiz.region}</h1> 
+            <h2 className="region-h2-trivia">{quiz.number}</h2>
           </div>
-
-          <h2>Question {quiz.number}</h2>
 
           <h3>{quiz.lesson}</h3>
 

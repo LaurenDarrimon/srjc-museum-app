@@ -60,7 +60,7 @@ const greatPlains = () => {
   return (
     //loading or intro screen and homepage
     <DndProvider backend={isTouchScreen} options={options}>
-      <Container fluid>
+      <Container fluid className="site-content region-greatplains">
         <Row className="justify-content-center p-5">
           <Col xs={12} className="text-center">
             <div className="region-greatplains">
