@@ -31,7 +31,7 @@ const California = () => {
   //the next slide in the sequence
   let nextPath = gameData[slideCounter].nextPath;
 
-  //ERIN get the data for the game we're on
+  //get the data for the game we're on
   const currentModal = modalData[gameCounter];
   console.log("currentModal");
   console.log(currentModal);
@@ -42,21 +42,23 @@ const California = () => {
     <Container fluid>
       <Row className="justify-content-center p-5">
         <Col xs={12} className="text-center">
-          <h1 className="subtitle p-5">California </h1>
+          <div className="region-california">
+            <h1 className="subtitle p-5">California </h1>
+          </div>
           <h2>Flip Card Matching Game</h2>
         </Col>
       </Row>
 
       <Row>
         <Col xs={12}>
-          <Matching cardsArray = {caliCardsArray} currentModal = {currentModal}/>
+          <Matching cardsArray={caliCardsArray} currentModal={currentModal} />
         </Col>
 
         {/* Moved modal to Matching component
           <Col xs={12}>
           {/* Click for modal */}
-          {/* pass in props for current instruction modal */}
-          {/*<br></br>
+        {/* pass in props for current instruction modal */}
+        {/*<br></br>
           <br></br>
           <InstructionModal
             title={currentModal.title}

@@ -1,39 +1,31 @@
 export const regionData = [
-  //California
+  // teal
 
   {
-    title: "California",
-    welcome: "",
-    translation:"",
-    imagePath: "lessons/ca-lesson1-landscape.jpg",
-    imageDescription: "Scenic view of California oak forest",
+    region: "region-california",
   },
 
-  //SW
+  //SW - gold 
+
   {
-    title: "the Southwest",
-    welcome: "",
-    translation:"",
-    imagePath: "lessons/ca-lesson1-landscape.jpg",
-    imageDescription: "Scenic view of California oak forest",
+    region: "region-southwest",
   },
 
-  //Great Plains
+  //GP - rust 
+
   {
-    title: "the Great Plains",
-    welcome: "",
-    translation:"",
-    imagePath: "lessons/ca-lesson1-landscape.jpg",
-    imageDescription: "Scenic view of great plains",
+    region: "region-greatplains",
   },
 
   //PNW
 
   {
-    title: "the Pacific NorthWest",
-    welcome: "",
-    translation:"",
-    imagePath: "lessons/ca-lesson1-landscape.jpg",
-    imageDescription: "Scenic view of the PNW coast",
+    region: "region-northwest",
+  },
+
+  //general
+
+  {
+    region: "region-california",
   },
 ];

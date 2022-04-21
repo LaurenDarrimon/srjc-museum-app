@@ -22,8 +22,6 @@ import Matching from "../components/Matching";
 const PacificNW = () => {
   //functions, hooks, state, etc go here
 
-  
-
   //track which mini-game slide we are on
   const { gameCounter, gameIncrement } = useCounter();
 
@@ -43,21 +41,23 @@ const PacificNW = () => {
     <Container fluid>
       <Row className="justify-content-center p-5">
         <Col xs={12} className="text-center">
-          <h1 className="subtitle p-5">Pacific Northwest </h1>
+          <div className="region-northwest">
+            <h1 className="subtitle p-5">Pacific Northwest </h1>
+          </div>
           <h2>Flip Card Matching Game</h2>
         </Col>
       </Row>
 
       <Row>
         <Col xs={12}>
-          <Matching cardsArray={pnwCardsArray} currentModal = {currentModal}/>
+          <Matching cardsArray={pnwCardsArray} currentModal={currentModal} />
         </Col>
 
         {/* Moved modal to Matching component
           <Col xs={12}>
           {/* Click for modal */}
-          {/* pass in props for current instruction modal */}
-          {/*<br></br>
+        {/* pass in props for current instruction modal */}
+        {/*<br></br>
           <br></br>
           <InstructionModal
             title={currentModal.title}

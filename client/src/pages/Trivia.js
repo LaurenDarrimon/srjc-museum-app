@@ -1,8 +1,9 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 //data
 import { triviaData } from "../assets/data/questions";
+import { regionData } from "../assets/data/region-data";
 
 //our components
 import NextButton from "../components/NextButton";
@@ -15,21 +16,32 @@ const Trivia = () => {
   // Pluck values from our GameContext by invoking our useCounter hook
   const { triviaCounter, triviaIncrement } = useCounter();
 
+  const { gameCounter, setGameCounter } = useCounter();
+
   const quiz = triviaData[triviaCounter];
   const options = quiz.options;
   console.log(options);
 
-  console.log("triviacounter");
+  console.log("triviacounter:");
   console.log(triviaCounter);
+
+  console.log("gamecounter:");
+  console.log(gameCounter);
+
+  let regionClass = regionData[gameCounter].region
 
   return (
     //loading or intro screen and homepage
     <Container fluid className="trivia site-content">
       <Row className="justify-content-center text-center p-5">
-        <Col xs={{span:11}} className="speech-bubble py-5 mx-auto">
-          <h1>Question {quiz.number}</h1>
+        <Col xs={{ span: 11 }} className="speech-bubble py-5 mx-auto">
+          <div className={`region  ${regionClass}`} >
+            <h1>{quiz.region} Region</h1>
+          </div>
 
-          <h2>{quiz.lesson}</h2>
+          <h2>Question {quiz.number}</h2>
+
+          <h3>{quiz.lesson}</h3>
 
           <div
             style={{ overflow: "hidden", clear: "both" }}

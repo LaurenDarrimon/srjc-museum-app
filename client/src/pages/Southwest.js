@@ -62,7 +62,9 @@ const Southwest = () => {
       <Container fluid>
         <Row className="justify-content-center p-5">
           <Col xs={12} className="text-center">
-            <h1 className="subtitle p-5">Design Your Own Pottery</h1>
+            <div className="region-southwest">
+              <h1 className="subtitle p-5">Design Your Own Pottery</h1>
+            </div>
           </Col>
         </Row>
 

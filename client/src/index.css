@@ -149,6 +149,33 @@ h4 {
 
 /* =============== LAUREN'S SECTION ============================= */
 
+.region {
+  color: white;
+  padding: 30px;
+  box-shadow: 5px 5px 4px 1px lightgrey;
+  margin-bottom: 20px; 
+}
+
+.region-california {
+  background-color: var(--teal);
+  color: white;
+}
+
+.region-southwest {
+  background-color: var(--gold);
+  color: white;
+}
+
+.region-greatplains {
+  background-color: var(--rust);
+  color: white;
+}
+
+.region-northwest {
+  background-color: var(--purple);
+  color: white;
+}
+
 .answers {
   /* background-color: var(--rust) !important; */
   color: white;

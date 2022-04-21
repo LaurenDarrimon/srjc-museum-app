@@ -63,7 +63,9 @@ const greatPlains = () => {
       <Container fluid>
         <Row className="justify-content-center p-5">
           <Col xs={12} className="text-center">
-            <h1 className="subtitle p-5">Great Plains Game</h1>
+            <div className="region-greatplains">
+              <h1 className="subtitle p-5">Great Plains Game</h1>
+            </div>
           </Col>
 
           <Col className="feather-container" xs={11} md={5}>

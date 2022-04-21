@@ -1,6 +1,7 @@
 export const triviaData = [
   {
     number: 1,
+    region:"California",
     lesson: "",
     question:
       "The museum is located in the ancestral homelands of which tribal nation?",
@@ -14,6 +15,7 @@ export const triviaData = [
   },
   {
     number: 2,
+    region:"California",
     lesson:
       "SCAVENGER HUNT! The Pomo are renowned for their basket-making. Find this basket in the exhibit. Each basket has a number.",
     question: "What number is this beautiful basket?",
@@ -26,6 +28,7 @@ export const triviaData = [
   },
   {
     number: 3,
+    region:"California",
     lesson:
       "People of California carried their babies in baskets on their backs.",
     question:
@@ -46,6 +49,7 @@ export const triviaData = [
   },
   {
     number: 4,
+    region:"American Southwest",
     lesson: "The people of the Southwest make storyteller figurines. ",
     question:
       "Can you find the storyteller that looks a little bit like these two, but is a grandfather? How many children are climbing on him?",
@@ -58,6 +62,7 @@ export const triviaData = [
   },
   {
     number: 5,
+    region:"American Southwest",
     lesson:
       "This is a Kachina doll. They are not toys, but dolls of divine beings who take part in Hopi ceremonies.",
     question: "Find the Hano Clown Kachina. What is NOT a feature of this guy?",
@@ -76,6 +81,7 @@ export const triviaData = [
   },
   {
     number: 6,
+    region:"Great Plains",
     lesson:
       "Many years ago, millions of bison roamed the grasslands of the Great Plains.",
     question:
@@ -93,6 +99,7 @@ export const triviaData = [
   },
   {
     number: 7,
+    region:"Great Plains",
     lesson:
       "Porcupines spiny quills can be painful, but several tribes also use porcupine quills to decorate with!",
     question:
@@ -106,8 +113,9 @@ export const triviaData = [
   },
   {
     number: 8,
+    region:"Pacific Northwest Coast",
     lesson:
-      "People of the Pacific NW considered certain animals to be spiritual beings and their direct ancestors.",
+      "People of the Pacific NW coast considered certain animals to be spiritual beings and their direct ancestors.",
     question:
       "Find the Pacific NW exhibit. What 3 animals to you see in their art?",
     mainImage: "pnw-coast/animals-exhibit.jpg",
@@ -124,6 +132,7 @@ export const triviaData = [
   },
   {
     number: 9,
+    region:"Pacific Northwest Coast",
     lesson:
       "There is a traditional gift-giving ceremony in the Pacific NW called the Potlatch. Guests did not bring gifts, like a birthday party. Instead, the host gave away all of their belongings to the guests.",
     question:
@@ -137,6 +146,7 @@ export const triviaData = [
   },
   {
     number: 10,
+    region:"California",
     lesson: "A vibrant living culture!",
     question:
       "This will be a question about current First Nations People in our area",
