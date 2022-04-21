@@ -29,7 +29,7 @@ const Lesson = () => {
   //return JSX
   return (
     //Lesson before each  mini-game
-    <Container>
+    <Container className={`${regionClass}`}>
       <Row xs={1} className="lesson site-content">
         <Col
           xs={11}
