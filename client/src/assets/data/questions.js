@@ -1,7 +1,7 @@
 export const triviaData = [
   {
     number: 1,
-    lesson:"",
+    lesson: "",
     question:
       "The museum is located in the ancestral homelands of which tribal nation?",
     mainImage: "california/california.png",
@@ -28,7 +28,8 @@ export const triviaData = [
     number: 3,
     lesson:
       "People of California carried their babies in baskets on their backs.",
-    question: "Find the cradle basket in the image. What's the name of the artist who made it?",
+    question:
+      "Find the cradle basket in the image. What's the name of the artist who made it?",
     mainImage: "california/cradle.jpg",
     options: [
       "Betty White",
@@ -45,6 +46,66 @@ export const triviaData = [
   },
   {
     number: 4,
+    lesson: "The people of the Southwest make storyteller figurines. ",
+    question:
+      "Can you find the storyteller that looks a little bit like these two, but is a grandfather? How many children are climbing on him?",
+    mainImage: "southwest/storyteller.jpg",
+    options: ["1", "2", "3", "4", "5"],
+    right_answer: "4",
+    correctMessage:
+      "The artist Helen Cordero started the tradition of storyteller figures.",
+    wrongMessage: "That's not quite right. Keep looking, explorer!",
+  },
+  {
+    number: 5,
+    lesson:
+      "This is a Kachina doll. They are not toys, but dolls of divine beings who take part in Hopi ceremonies.",
+    question: "Find the Hano Clown Kachina. What is NOT a feature of this guy?",
+    mainImage: "southwest/kachina.jpg",
+    options: [
+      "Striped Horns",
+      "Watermelon",
+      "Green dragon skin",
+      "white boots",
+      "Smiling Face",
+    ],
+    right_answer: "Green dragon skin",
+    correctMessage:
+      "Kachinas teach people how to behave correctly but they also provide comedy, in the case of the Clown kachinas. ",
+    wrongMessage: "That's not quite right. Keep looking, explorer!",
+  },
+  {
+    number: 6,
+    lesson:
+      "Many years ago, millions of bison roamed the grasslands of the Great Plains.",
+    question:
+      "Find this painted bison hide in the exhibit. What do you think bison hides were used for?",
+    mainImage: "great-plains/bison-hide.jpg",
+    options: [
+      "Blanket, Clothing & Parachute",
+      "Teepees, Trampoline & Food",
+      "Teepees, Clothing & Food",
+    ],
+    right_answer: "Teepees, Clothing & Food",
+    correctMessage:
+      "Bison were important for blankets, clothing, shelter in the form of Teepees, and food.",
+    wrongMessage: "That's not quite right. Keep looking, explorer!",
+  },
+  {
+    number: 7,
+    lesson:
+      "Porcupines spiny quills can be painful, but several tribes also use porcupine quills to decorate with!",
+    question:
+      "Look for a pipe bag like the one in the photo. What number is the bag with the porcupine quill decorations? ",
+    mainImage: "great-plains/pipe-bag.jpg",
+    options: [1, 8, 10, 15, 24, 27],
+    right_answer: 24,
+    correctMessage:
+      "The quills are soaked in water to soften them, and then they can be flattened and dyed. There are several items in the case that are decorated with porcupine quills. ",
+    wrongMessage: "That's not quite right. Keep looking, explorer!",
+  },
+  {
+    number: 8,
     lesson:
       "People of the Pacific NW considered certain animals to be spiritual beings and their direct ancestors.",
     question:
@@ -62,7 +123,7 @@ export const triviaData = [
     wrongMessage: "That's not quite right. Keep looking, explorer!",
   },
   {
-    number: 5,
+    number: 9,
     lesson:
       "There is a traditional gift-giving ceremony in the Pacific NW called the Potlatch. Guests did not bring gifts, like a birthday party. Instead, the host gave away all of their belongings to the guests.",
     question:
@@ -70,64 +131,8 @@ export const triviaData = [
     mainImage: "pnw-coast/potlatch-hat.JPG",
     options: ["1", "2", "3", "4", "5"],
     right_answer: "4",
-    correctMessage: "The number of rings on the hat tells us how many times the wearer 'Potlached' or gave away all of their belongings, which a sign of extremely high status.",
-    wrongMessage: "That's not quite right. Keep looking, explorer!",
-  },
-  {
-    number: 6,
-    lesson:
-      "The people of the Southwest make storyteller figurines. ",
-    question:
-      "Can you find the storyteller that looks a little bit like these two, but is a grandfather? How many children are climbing on him?",
-    mainImage: "southwest/storyteller.jpg",
-    options: ["1", "2", "3", "4", "5"],
-    right_answer: "4",
-    correctMessage: "The artist Helen Cordero started the tradition of storyteller figures.",
-    wrongMessage: "That's not quite right. Keep looking, explorer!",
-  },
-  {
-    number: 7,
-    lesson:
-      "This is a Kachina doll. They are not toys, but dolls of divine beings who take part in Hopi ceremonies.",
-    question: "Find the Hano Clown Kachina. What is NOT a feature of this guy?",
-    mainImage: "southwest/kachina.jpg",
-    options: [
-      "Striped Horns",
-      "Watermelon",
-      "Green dragon skin",
-      "white boots",
-      "Smiling Face",
-    ],
-    right_answer: "Green dragon skin",
-    correctMessage: "Kachinas teach people how to behave correctly but they also provide comedy, in the case of the Clown kachinas. ",
-    wrongMessage: "That's not quite right. Keep looking, explorer!",
-  },
-  {
-    number: 8,
-    lesson:
-      "Many years ago, millions of bison roamed the grasslands of the Great Plains.",
-    question: "Find this painted bison hide in the exhibit. What do you think bison hides were used for?",
-    mainImage: "great-plains/bison-hide.jpg",
-    options: [
-      "Blanket, Clothing & Parachute",
-      "Teepees, Trampoline & Food",
-      "Teepees, Clothing & Food",
-    ],
-    right_answer: "Teepees, Clothing & Food",
     correctMessage:
-      "Bison were important for blankets, clothing, shelter in the form of Teepees, and food.",
-    wrongMessage: "That's not quite right. Keep looking, explorer!",
-  },
-  {
-    number: 9,
-    lesson:
-      "Porcupines spiny quills can be painful, but several tribes also use porcupine quills to decorate with!",
-    question:
-      "Look for a pipe bag like the one in the photo. What number is the bag with the porcupine quill decorations? ",
-    mainImage: "great-plains/pipe-bag.jpg",
-    options: [1, 8, 10, 15, 24, 27],
-    right_answer: 24,
-    correctMessage: "The quills are soaked in water to soften them, and then they can be flattened and dyed. There are several items in the case that are decorated with porcupine quills. ",
+      "The number of rings on the hat tells us how many times the wearer 'Potlached' or gave away all of their belongings, which a sign of extremely high status.",
     wrongMessage: "That's not quite right. Keep looking, explorer!",
   },
   {

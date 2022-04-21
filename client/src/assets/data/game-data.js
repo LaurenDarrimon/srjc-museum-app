@@ -41,104 +41,104 @@ export const gameData = [
     nextPath: "/trivia",
   },
   {
-    //trivia 3
-    //PNW FIND 1
-    number: 7,
-    title: "PNW find trivia 1",
-    nextPath: "/trivia",
-  },
-  {
-    //PNW FIND 2
-    number: 8,
-    title: "PNW find trivia 2",
-    nextPath: "/lesson",
-  },
-  {
-    //game 1
-    number: 9,
-    title: "PNW Lesson 1",
-    nextPath: "/lesson",
-  },
-  {
-    number: 10,
-    title: "PNW Lesson 2",
-    nextPath: "/lesson",
-  },
-  {
-    number: 11,
-    title: "PNW Lesson 3",
-    nextPath: "/pacificnw",
-  },
-  {
-    number: 12,
-    title: "PNW Game",
-    nextPath: "/trivia",
-  },
-  {
     //SW FIND 1 
-    number: 13,
+    number: 7,
     title: "SW find trivia 1",
     nextPath: "/trivia",
   },
   {
     //SW FIND 2
-    number: 14,
+    number: 8,
     title: "SW find trivia 2",
     nextPath: "/lesson",
   },
   {
     //game 2
     //SW FIND 2
-    number: 15,
+    number: 9,
     title: "SW Lesson 1",
     nextPath: "/lesson",
   },
   {
-    number: 16,
+    number: 10,
     title: "SW Lesson 2",
     nextPath: "/lesson",
   },
   {
-    number: 17,
+    number: 11,
     title: "SW Lesson 3",
     nextPath: "/southwest",
   },
   {
-    number: 18,
+    number: 12,
     title: "SW Game",
     nextPath: "/trivia",
   },
   {
       //GP FIND 1 
-    number: 19,
+    number: 13,
     title: "GP find trivia 1",
     nextPath: "/trivia",
   },
   {
       //GP FIND 2
-    number: 20,
+    number: 14,
     title: "GP find trivia 2",
     nextPath: "/lesson",
   },
   {
     //game 3
-    number: 21,
+    number: 15,
     title: "GP Lesson 1",
     nextPath: "/lesson",
   },
    {
-    number: 22,
+    number: 16,
     title: "GP Lesson 2",
     nextPath: "/lesson",
   },
   {
-    number: 23,
+    number: 17,
     title: "GP Lesson 3",
     nextPath: "/greatplains",
   },
   {
-    number: 24,
+    number: 18,
     title: "GP Game",
+    nextPath: "/trivia",
+  },
+  {
+    //trivia 3
+    //PNW FIND 1
+    number: 19,
+    title: "PNW find trivia 1",
+    nextPath: "/trivia",
+  },
+  {
+    //PNW FIND 2
+    number: 20,
+    title: "PNW find trivia 2",
+    nextPath: "/lesson",
+  },
+  {
+    //game 1
+    number: 21,
+    title: "PNW Lesson 1",
+    nextPath: "/lesson",
+  },
+  {
+    number: 22,
+    title: "PNW Lesson 2",
+    nextPath: "/lesson",
+  },
+  {
+    number: 23,
+    title: "PNW Lesson 3",
+    nextPath: "/pacificnw",
+  },
+  {
+    number: 24,
+    title: "PNW Game",
     nextPath: "/trivia",
   },
   {

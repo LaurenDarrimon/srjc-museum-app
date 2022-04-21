@@ -43,16 +43,16 @@ const Navigation = () => {
                 <NavDropdown.Item>California</NavDropdown.Item>
               </LinkContainer>
 
-              <LinkContainer to="/lesson" onClick={() => setPacificNW()}>
-                <NavDropdown.Item>Pacific Northwest</NavDropdown.Item>
-              </LinkContainer>
-
               <LinkContainer to="/lesson" onClick={() => setSW()}>
                 <NavDropdown.Item>Southwest</NavDropdown.Item>
               </LinkContainer>
 
               <LinkContainer to="/lesson" onClick={() => setGreatPlains()}>
                 <NavDropdown.Item>Great Plains</NavDropdown.Item>
+              </LinkContainer>
+
+              <LinkContainer to="/lesson" onClick={() => setPacificNW()}>
+                <NavDropdown.Item>Pacific Northwest</NavDropdown.Item>
               </LinkContainer>
 
             </NavDropdown>

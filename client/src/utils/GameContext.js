@@ -64,21 +64,25 @@ export default function gameProvider({ children }) {
     // navigate(`/${nextPath}`);
   };
 
-  const setPacificNW = () => {
-    setLessonCounter(3);
-    setTriviaCounter(6);
-    setGameCounter(1);
-    setSlideCounter(9);
-  };
-
   const setSW = () => {
-    setLessonCounter(6);
-    setTriviaCounter(8);
-    setGameCounter(2);
-    setSlideCounter(15);
+
+    setLessonCounter(3);
+    setTriviaCounter(5);
+    setGameCounter(1);
+    setSlideCounter(9);    
   };
 
   const setGreatPlains = () => {
+
+    setLessonCounter(6);
+    setTriviaCounter(7);
+    setGameCounter(2);
+    setSlideCounter(15);
+    
+  };
+
+  const setPacificNW = () => {
+
     setLessonCounter(9);
     setTriviaCounter(9);
     setGameCounter(3);
