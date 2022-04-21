@@ -32,11 +32,11 @@ const Trivia = () => {
 
   return (
     //loading or intro screen and homepage
-    <Container fluid className="trivia site-content">
+    <Container fluid className={`trivia site-content ${regionClass}`}>
       <Row className="justify-content-center text-center p-5">
         <Col xs={{ span: 11 }} className="speech-bubble py-5 mx-auto">
           <div className={`region  ${regionClass}`} >
-            <h1>{quiz.region} Region</h1>
+            <h1>{quiz.region}</h1> 
           </div>
 
           <h2>Question {quiz.number}</h2>

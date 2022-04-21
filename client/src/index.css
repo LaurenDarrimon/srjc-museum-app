@@ -51,6 +51,8 @@ h4 {
 }
 
 .site-content {
+  box-sizing: border-box;
+  min-height: 100vh;
   flex: 1;
   min-width: 100vw !important;
   padding-top: 1.75em;
