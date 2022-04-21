@@ -21,8 +21,9 @@ export const BonnetDrop = (props) => {
     }),
   }));
   const isActive = canDrop && isOver;
-  let backgroundColor = "#2e234a";
+  let backgroundColor = "rgb(194, 71, 68)";
   if (isActive) {
+    //changed to match rust background color on page
     backgroundColor = "#4c9ba8";
   } else if (canDrop) {
     backgroundColor = "#ca9938";

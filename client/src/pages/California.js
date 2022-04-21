@@ -39,17 +39,17 @@ const California = () => {
   //return JSX
   return (
     //loading or intro screen and homepage
-    <Container fluid>
-      <Row className="justify-content-center p-5">
+    <Container fluid className="site-content region-california">
+      <Row className="justify-content-center py-3 px-5">
         <Col xs={12} className="text-center">
           <div className="region-california">
-            <h1 className="subtitle p-5">California </h1>
+            <h1 className="subtitle p-3">California </h1>
+            {/*NOTE: just not sure  if this needs a subtitle, its already explained in the modal
+            <h2>Matching Game</h2>*/}
           </div>
-          <h2>Flip Card Matching Game</h2>
+          
         </Col>
-      </Row>
-
-      <Row>
+    
         <Col xs={12}>
           <Matching cardsArray={caliCardsArray} currentModal={currentModal} />
         </Col>
@@ -72,8 +72,7 @@ const California = () => {
         <br></br>
 
         <br></br>
-      </Row>
-      <Row>
+    
         <Col xs={12} className="text-end">
           {/* <TryAgainModal /> */}
           <Link to={nextPath}>

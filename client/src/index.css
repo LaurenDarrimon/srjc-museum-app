@@ -153,9 +153,19 @@ h4 {
 
 .region {
   color: white;
-  padding: 30px;
-  box-shadow: 5px 5px 4px 1px lightgrey;
-  margin-bottom: 20px; 
+  padding: 1.5rem;
+  /*box-shadow: 5px 5px 4px 1px lightgrey;*/
+  border: 2px solid var(--purple);
+  border-radius: 10px;
+  margin-bottom: 1.5rem; 
+}
+
+.region-h2-trivia {
+  font-size: smaller;
+  padding: .5rem 1rem !important;
+  border: 2px solid white;
+  border-radius: 100%;
+  display: inline;
 }
 
 .region-california {
@@ -211,11 +221,12 @@ h4 {
   position: relative;
   width: 100%;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 1.5rem;
 }
 .Matching header > div {
-  font-size: 15px;
-  width: 324px;
+  /*made font bigger, adjusted width to fit on 1 line*/
+  font-size: 2rem;
+  /*width: 350px;*/
   text-align: center;
   margin: 0 auto;
 }
@@ -391,8 +402,8 @@ h4 {
   /* || white text bubbles */
 .speech-bubble {
   background-color: white;
-  color: black;
-  border: 2px solid black;
+  color: var(--purple);
+  border: 2px solid var(--purple);
   border-radius: 10px;
   padding: 2em !important;
   margin: 1em auto 1em auto;

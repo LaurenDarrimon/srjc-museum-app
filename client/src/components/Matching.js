@@ -120,7 +120,6 @@ export default function Matching(props) {
         <div>
           Find all the matching cards! 
         </div>
-        <br></br>
       </header>
       <div className="container">
         {cards.map((card, index) => {
