@@ -132,6 +132,7 @@ export default function Matching(props) {
               isInactive={checkIsInactive(card)}
               isFlipped={checkIsFlipped(index)}
               onClick={handleCardClick}
+              gameCounter={props.gameCounter} //pass gameCounter to Card
             />
           );
         })}

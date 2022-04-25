@@ -51,7 +51,11 @@ const PacificNW = () => {
 
       <Row>
         <Col xs={12}>
-          <Matching cardsArray={pnwCardsArray} currentModal={currentModal} />
+          <Matching 
+            cardsArray={pnwCardsArray} 
+            currentModal={currentModal} 
+            gameCounter={gameCounter} //need to pass to <Cards>
+          />
         </Col>
 
         {/* Moved modal to Matching component

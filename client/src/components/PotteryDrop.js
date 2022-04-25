@@ -56,4 +56,4 @@ export function PotteryDrop() {
       </div>
     </div>
   );
-}
+} 

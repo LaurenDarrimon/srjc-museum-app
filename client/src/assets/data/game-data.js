@@ -53,7 +53,7 @@ export const gameData = [
     nextPath: "/lesson",
   },
   {
-    //game 2
+    //game 1
     //SW FIND 2
     number: 9,
     title: "SW Lesson 1",
@@ -87,7 +87,7 @@ export const gameData = [
     nextPath: "/lesson",
   },
   {
-    //game 3
+    //game 2 
     number: 15,
     title: "GP Lesson 1",
     nextPath: "/lesson",
@@ -121,7 +121,7 @@ export const gameData = [
     nextPath: "/lesson",
   },
   {
-    //game 1
+    //game 3
     number: 21,
     title: "PNW Lesson 1",
     nextPath: "/lesson",
