@@ -19,7 +19,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Instructions from "./pages/Instructions";
 import Trivia from "./pages/Trivia";
-import Overview from "./pages/Overview";
 import GreatPlains from "./pages/GreatPlains";
 import California from "./pages/California";
 import PacificNW from "./pages/PacificNW";
@@ -72,11 +71,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
 
-                <Route path="/overview" element={<Overview />} />
-
                 <Route path="/instructions" element={<Instructions />} />
-
-                <Route path="/overview" element={<Overview />} />
 
                 <Route path="/trivia" element={<Trivia />} />
 

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
 import next from "../assets/images/next.png";
-import mascotLarge from "../assets/images/mascot-lg.png";
 
 // Import our custom hook
 import { useCounter } from "../utils/GameContext";
@@ -61,11 +60,7 @@ const Lesson = () => {
 
       <Row>
         <Col xs={{ span: 6, offset: 1 }} className="mascot-container">
-          <img
-            className="img-fluid"
-            src={mascotLarge}
-            alt="mascot animal illustration"
-          />
+ 
         </Col>
       </Row>
     </Container>
