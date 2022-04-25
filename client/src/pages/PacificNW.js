@@ -5,14 +5,12 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import next from "../assets/images/next.png";
 
-//import modal components
-import InstructionModal from "../components/MiniGameInstModal";
-
-// import modal data
+// import instruction modal data (instructions modal imported in Matching component)
 import { modalData } from "../assets/data/modal-data";
 
 // Import our custom hook
 import { useCounter } from "../utils/GameContext";
+
 //import game slide sequence
 import { gameData } from "../assets/data/game-data";
 import { pnwCardsArray } from "../assets/data/matching-card-data";
@@ -24,6 +22,10 @@ const PacificNW = () => {
 
   //track which mini-game slide we are on
   const { gameCounter, gameIncrement } = useCounter();
+  
+  //set game counter when you land on this slide from refresh
+  const {setGameCounter} = useCounter();
+  setGameCounter(3);
 
   //track which slide we are on
   const { slideCounter, setSlideIncrement } = useCounter();
@@ -44,8 +46,6 @@ const PacificNW = () => {
           <div className="region-northwest">
             <h1 className="subtitle p-2">Pacific Northwest </h1>
           </div>
-          {/*maybe a redundant subtitle since instruction modal explains?
-          <h2>Flip Card Matching Game</h2>*/}
         </Col>
       </Row>
 

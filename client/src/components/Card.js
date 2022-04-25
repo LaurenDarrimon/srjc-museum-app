@@ -22,9 +22,8 @@ const Card = ({ onClick, card, index, isInactive, isFlipped, isDisabled, gameCou
       })}
       onClick={handleClick}
     >
-      <div className="card-face card-font-face">
-        <img src={logo} alt="SRJC logo" />
-        <img src={{gameCounterPNW} ? {cardBack2} : {cardBack1}} alt="SRJC logo"/>
+      <div className="card-face card-front-face" style= {{backgroundColor: gameCounterPNW ?  "#4c9ba8" : "#ca9938"}}>
+       <img src={gameCounterPNW ? cardBack2 : cardBack1} alt={gameCounterPNW ? "traditional mask" : "stylized basket pattern"} />
       </div>
       <div className="card-face card-back-face">
         <img src={require(`../assets/images/${card.image}`)} alt="artifact" />

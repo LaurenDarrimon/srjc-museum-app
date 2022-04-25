@@ -271,17 +271,32 @@ h4 {
 .card {
   width: 100%;
   height: 100%;
-  border-radius: 4px;
-  /* box-shadow: 2px 2px 4px 4px #dedede; */
+  border-radius: 5px;
+  box-shadow: -1px 2px 2px 0px #171717;
   transition: 0.3s;
   transform-style: preserve-3d;
   position: relative;
   cursor: pointer;
+  box-sizing: border-box;
+  border: 1px solid var(--gold);
+  
 }
 .card img {
-  width: 95%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-sizing: border-box  ;
+
 }
+
+.card-front-face {
+  overflow: hidden;
+}
+
+.card-front-face img {
+  height: auto !important;
+}
+
 .card .card-face {
   backface-visibility: hidden;
   position: absolute;
