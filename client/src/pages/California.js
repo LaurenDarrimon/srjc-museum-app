@@ -26,6 +26,10 @@ const California = () => {
   //track which mini-game slide we are on
   const { gameCounter, gameIncrement } = useCounter();
 
+  //set game counter when you land on this slide from refresh
+  const {setGameCounter} = useCounter();
+  setGameCounter(0);
+
   //track which slide we are on
   const { slideCounter, setSlideIncrement } = useCounter();
   //the next slide in the sequence
@@ -44,8 +48,6 @@ const California = () => {
         <Col xs={12} className="text-center">
           <div className="region-california">
             <h1 className="subtitle p-3">California </h1>
-            {/*NOTE: just not sure  if this needs a subtitle, its already explained in the modal
-            <h2>Matching Game</h2>*/}
           </div>
           
         </Col>

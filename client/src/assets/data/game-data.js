@@ -40,6 +40,7 @@ export const gameData = [
     title: "California Game",
     nextPath: "/trivia",
   },
+    // gameCounter=1
   {
     //SW FIND 1 
     number: 7,
@@ -53,7 +54,6 @@ export const gameData = [
     nextPath: "/lesson",
   },
   {
-    //game 2
     //SW FIND 2
     number: 9,
     title: "SW Lesson 1",
@@ -74,6 +74,7 @@ export const gameData = [
     title: "SW Game",
     nextPath: "/trivia",
   },
+    // gameCounter=2
   {
       //GP FIND 1 
     number: 13,
@@ -87,7 +88,7 @@ export const gameData = [
     nextPath: "/lesson",
   },
   {
-    //game 3
+    //game 2 
     number: 15,
     title: "GP Lesson 1",
     nextPath: "/lesson",
@@ -107,6 +108,7 @@ export const gameData = [
     title: "GP Game",
     nextPath: "/trivia",
   },
+    // gameCounter=3
   {
     //trivia 3
     //PNW FIND 1
@@ -121,7 +123,7 @@ export const gameData = [
     nextPath: "/lesson",
   },
   {
-    //game 1
+    
     number: 21,
     title: "PNW Lesson 1",
     nextPath: "/lesson",
@@ -141,6 +143,7 @@ export const gameData = [
     title: "PNW Game",
     nextPath: "/trivia",
   },
+  //gameCounter=4
   {
       // Contemporary First Nations Q
     number: 25,

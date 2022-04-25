@@ -4,7 +4,6 @@ import { Container, Row, Col, Accordion } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 //images
 import logo from "../assets/images/museum-logo-red-blue-bar.png";
-import logo2 from "../assets/images/logo-500.png";
 import next from "../assets/images/next.png";
 import animalGuide from "../assets/images/coyote.svg"
 
