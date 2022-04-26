@@ -4,8 +4,8 @@ export const modalData = [
 
   {
     title: "California",
-    p1: "Now that you've learned about the native people of California...",
-    pBold: "It's time to test your memory!",
+    p1: "",
+    pBold: "Alright Explorer, let's put that brain to work!",
     p3: "Flip over the cards to find matching pairs. Find all the pairs to win the game!",
   },
 
@@ -13,26 +13,26 @@ export const modalData = [
 
   {
     title: "SouthWest",
-    p1: "",
+    p1: "The people of the SouthWest were expert potters.",
     pBold: "Decorate your own pot by dragging a pattern onto it.",
-    p3: "There's no right or wrong answer, just drag until you like your design!",
+    p3: "There's no right answer, just drag until you like your design!",
   },
 
   //Great Plains
   {
     title: "The Great Plains",
-    p1: "Now that you've learned about the people of the American Great Plains, lets put your brain to work!",
+    p1: "Warriors earned eagle feathers as a symbol of their kindness or bravery",
     pBold:
-      "What sorts of actions would earn a feather in your ceremonial Eagle Feather Headress?",
-    p3: "If a card contains a good deed or act of bravery that would earn you an eagle feather, Drag and Drop the feather inside it onto the headress on the right.",
+      "What sorts of actions would earn a feather in your Headress?",
+    p3: "If a card contains an action that would earn you a feather, Drag and Drop its feather onto the headress on the right.",
   },
 
   //PNW
 
   {
     title: "Pacific NorthWest",
-    p1: "Now that you've learned about the native people of the Pacific NW... ",
-    pBold: "Lets put your brain to work!",
-    p3: "Flip over the cards to find matching pairs. Find all the pairs to win the game!",
+    p1: "",
+    pBold: "Alright Explorer, let's test your memory!",
+    p3: "Flip over the cards to find matching pairs. Find all the pairs to win the game.",
   },
 ];
