@@ -59,22 +59,38 @@ h4 {
 }
 
 /***NAV****/
+
+
 .navigation {
-  background-color: transparent; /*make NAVBAR transparent*/
-  color: var(--light-gray) !important;
+  /*background-color: transparent; /*make NAVBAR transparent*/
+  color: var(--purple) !important;
+}
+
+.dropdown-toggle, .dropdown-menu a {
+  /*nav dropdown */
+  color: var(--purple) !important;
 }
 
 .navbar-collapse.show .navbar-nav, .navbar-collapse.collapsing .navbar-nav { /*NAVBAR not transparent when expanded*/
-  background-color: var(--purple);
+  background-color: white;
+  border-radius: .5rem;
+  border: 1px solid var(--purple);
+  box-shadow: -.75px 1.25px 3px var(--purple);
 }
 
 .navbar-toggler {
-  background-color: var(--purple-50) !important; /*so the hamburger menu shows ontop of white bubbles*/
+  /*background-color: var(--purple-50) !important; /*so the hamburger menu shows ontop of white bubbles*/
+  box-shadow: -.75px 1.25px 3px var(--purple-25);
 }
 
 #basic-nav-nav {
   position: absolute !important;
-  z-index: 1;
+  /*z-index: 1;*/
+}
+  /*get rid of Bootstrap Primary Blue focusing!*/
+.dropdown-item:active {
+  color: var(--purple) !important;
+  background-color: #e9ecef !important;
 }
 
 /***HOME PAGE**/

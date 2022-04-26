@@ -1,28 +1,26 @@
 import React from "react";
-
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+//images
 import next from "../assets/images/next.png";
-
+// drag and drop
 import { DndProvider } from "react-dnd";
 import { TouchBackend } from "react-dnd-touch-backend";
 import { HTML5Backend } from "react-dnd-html5-backend";
-
-import { gameData } from "../assets/data/game-data";
-// Import our custom hook
+// hooks
+import { useEffect } from "react";
 import { useCounter } from "../utils/GameContext";
-
+//mini-game components
 import { BonnetDrop } from "../components/BonnetDrop";
 import { FeatherOptions } from "../components/FeatherOptions";
-
+//data
+import { gameData } from "../assets/data/game-data"; //game slide sequence
 import { featherDeeds } from "../assets/data/great-plains-data";
-
-//import modal components
+import { modalData } from "../assets/data/modal-data"; //instructions modal data
+//modal components
 import InstructionModal from "../components/MiniGameInstModal";
 import TryAgainModal from "../components/TryAgainModal";
 import UrDoneModal from "../components/UrDoneModal";
-import { modalData } from "../assets/data/modal-data";
 import NextButton from "../components/NextButton";
 
 const greatPlains = () => {
@@ -30,7 +28,11 @@ const greatPlains = () => {
 
   //track which mini-game slide we are on
   const { gameCounter, gameIncrement } = useCounter();
-  //gameIncrement(3);
+  //set all counters when you land on this slide from nav or refresh
+  const { countGreatPlains, setGreatPlains } = useCounter();
+  useEffect(() => {
+    setGreatPlains();
+  });
 
   //track overall game slide
   const { slideCounter, setSlideIncrement } = useCounter();

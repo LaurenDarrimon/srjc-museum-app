@@ -50,13 +50,23 @@ export default function gameProvider({ children }) {
   //functions for arrival on each game page, so non-local users can jump to game from Nav bar
   const setCalifornia = () => {
     console.log("Set CA");
+    //counters for landing on Game page
+    //NOTE: bc <LinkContainer> element is what's messing up Navbar, and I need to get rid of it- moving set__() to mini-Game pages
+    setTriviaCounter(3);
+    setGameCounter(0);
+    setLessonCounter(3);
+    setSlideCounter(6);
+
+    console.log("slide counter:");
+    console.log(slideCounter);
+
+    //counters for landing on Lesson page
+    /*
     setTriviaCounter(3);
     setGameCounter(0);
     setLessonCounter(0);
     setSlideCounter(3);
-
-    console.log("slide counter:");
-    console.log(slideCounter);
+    */
 
     // let nextPath = gameData[slideCounter].nextPath;
     // console.log("nextpath")
@@ -65,28 +75,64 @@ export default function gameProvider({ children }) {
   };
 
   const setSW = () => {
+    console.log("Set SW");
+    //counters for landing on Game page
+    setTriviaCounter(5);
+    setGameCounter(1);
+    setLessonCounter(6);
+    setSlideCounter(12);
 
+    console.log("slide counter:");
+    console.log(slideCounter);
+
+    //counters for landing on Lesson page
+    /*
     setLessonCounter(3);
     setTriviaCounter(5);
     setGameCounter(1);
     setSlideCounter(9);    
+    */
   };
 
   const setGreatPlains = () => {
+    console.log("Set GreatPlains");
+    //counters for landing on Game page
+    setTriviaCounter(7);
+    setGameCounter(2);
+    setLessonCounter(9);
+    setSlideCounter(18);
 
+    console.log("slide counter:");
+    console.log(slideCounter);
+
+    //counters for landing on Lesson page
+    /*
     setLessonCounter(6);
     setTriviaCounter(7);
     setGameCounter(2);
     setSlideCounter(15);
-    
+    */
   };
 
   const setPacificNW = () => {
+    console.log("Set PNW");
+    //counters for landing on Game page
+    setTriviaCounter(9);
+    setGameCounter(3);
+    setLessonCounter(12);
+    setSlideCounter(24);
 
+    console.log("slide counter:");
+    console.log(slideCounter);
+
+
+    //counters for landing on Lesson page
+    /*
     setLessonCounter(9);
     setTriviaCounter(9);
     setGameCounter(3);
     setSlideCounter(21);
+    */
   };
 
   // Method to update our state determining if user is onsite or not

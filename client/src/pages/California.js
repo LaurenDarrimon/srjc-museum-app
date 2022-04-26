@@ -1,23 +1,16 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-
+//images
 import next from "../assets/images/next.png";
-
-//import modal components
-import InstructionModal from "../components/MiniGameInstModal";
-
-//import modal data
-import { modalData } from "../assets/data/modal-data";
-
-// Import our custom hook
+// hooks
 import { useCounter } from "../utils/GameContext";
-
-//import game slide sequence
-import { gameData } from "../assets/data/game-data";
+import { useEffect } from "react";
+//data
+import { gameData } from "../assets/data/game-data"; //game slide sequence
 import { caliCardsArray } from "../assets/data/matching-card-data";
-
+import { modalData } from "../assets/data/modal-data"; //instructions data (instr. modal moved to Matching.js)
+// mini-game components
 import Matching from "../components/Matching";
 
 const California = () => {
@@ -26,9 +19,11 @@ const California = () => {
   //track which mini-game slide we are on
   const { gameCounter, gameIncrement } = useCounter();
 
-  //set game counter when you land on this slide from refresh
-  const {setGameCounter} = useCounter();
-  setGameCounter(0);
+  //set all counters when you land on this slide from nav or refresh
+  const { countCalifornia, setCalifornia } = useCounter();
+  useEffect(() => {
+    setCalifornia();
+  });
 
   //track which slide we are on
   const { slideCounter, setSlideIncrement } = useCounter();
