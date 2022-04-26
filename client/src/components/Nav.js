@@ -19,7 +19,7 @@ const Navigation = () => {
   //return JSX
   return (
 
-    <Navbar fixed="top" expand="lg" className="navigation navbar-dark ">
+    <Navbar fixed="top"  variant="dark" expand="lg" className="navigation">
       <Container>
         {/* <Navbar.Brand href="#home" className="navigation">Start Over</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
