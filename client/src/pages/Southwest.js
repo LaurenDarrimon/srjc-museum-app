@@ -1,34 +1,37 @@
 import React from "react";
-
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+//images
 import next from "../assets/images/next.png";
-
+//drag and drop
 import { DndProvider } from "react-dnd";
 import { TouchBackend } from "react-dnd-touch-backend";
 import { HTML5Backend } from "react-dnd-html5-backend";
-
+//mini-game components
 import { PotteryDrop } from "../components/PotteryDrop";
 import { PotteryInfoCard } from "../components/PotteryInfoCard";
-
+//data
 import { potteryData } from "../assets/data/southwest-data";
-
-// Import our custom hook
+import { gameData } from "../assets/data/game-data"; // game slide sequence
+// hooks
 import { useCounter } from "../utils/GameContext";
-//import game slide sequence
-import { gameData } from "../assets/data/game-data";
-
+import { useEffect } from "react";
 //import modal components
 import InstructionModal from "../components/MiniGameInstModal";
 import TryAgainModal from "../components/TryAgainModal";
-import { modalData } from "../assets/data/modal-data";
+import { modalData } from "../assets/data/modal-data"; //instructions data
 
 const Southwest = () => {
   //functions, hooks, state, etc go here
 
   //track which mini-game slide we are on
   const { gameCounter, gameIncrement } = useCounter();
+
+  //set all counters when you land on this slide from nav or refresh
+  const { countSW, setSW } = useCounter();
+  useEffect(() => {
+    setSW();
+  });
 
   //track which slide we are on
   const { slideCounter, setSlideIncrement } = useCounter();

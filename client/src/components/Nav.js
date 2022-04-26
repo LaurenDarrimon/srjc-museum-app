@@ -19,7 +19,7 @@ const Navigation = () => {
   //return JSX
   return (
 
-    <Navbar fixed="top" bg="dark" expand="lg" className="navigation navbar-dark ">
+    <Navbar fixed="top" expand="lg" className="navigation navbar-dark ">
       <Container>
         {/* <Navbar.Brand href="#home" className="navigation">Start Over</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -36,11 +36,12 @@ const Navigation = () => {
             </Nav.Link>
             <NavDropdown title="Regions" id="basic-nav-dropdown">
               
-              <NavDropdown.Item href="/lesson">California</NavDropdown.Item>
-              <NavDropdown.Item href="/lesson">Southwest</NavDropdown.Item>
-              <NavDropdown.Item href="/lesson">Great Plains</NavDropdown.Item>
-              <NavDropdown.Item href="/lesson">Pacific Northwest</NavDropdown.Item>
-              {/*
+              <NavDropdown.Item href="/California">California</NavDropdown.Item>
+              <NavDropdown.Item href="/Southwest" >Southwest</NavDropdown.Item>
+              <NavDropdown.Item href="/GreatPlains">Great Plains</NavDropdown.Item>
+              <NavDropdown.Item href="/PacificNW" >Pacific Northwest</NavDropdown.Item>
+              {/**** NOTE: LinkContainer is causing Navbar not to close, setRegion functions moved to miniGame slides
+               
               <LinkContainer to="/lesson" onClick={() => setCalifornia()}>
                 <NavDropdown.Item>California</NavDropdown.Item>
               </LinkContainer>
