@@ -18,7 +18,8 @@ const Navigation = () => {
 
   //return JSX
   return (
-    <Navbar fixed="top" expand="lg" className="navigation navbar-dark ">
+
+    <Navbar fixed="top" bg="dark" expand="lg" className="navigation navbar-dark ">
       <Container>
         {/* <Navbar.Brand href="#home" className="navigation">Start Over</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -34,7 +35,12 @@ const Navigation = () => {
               Help
             </Nav.Link>
             <NavDropdown title="Regions" id="basic-nav-dropdown">
-
+              
+              <NavDropdown.Item href="/lesson">California</NavDropdown.Item>
+              <NavDropdown.Item href="/lesson">Southwest</NavDropdown.Item>
+              <NavDropdown.Item href="/lesson">Great Plains</NavDropdown.Item>
+              <NavDropdown.Item href="/lesson">Pacific Northwest</NavDropdown.Item>
+              {/*
               <LinkContainer to="/lesson" onClick={() => setCalifornia()}>
                 <NavDropdown.Item>California</NavDropdown.Item>
               </LinkContainer>
@@ -50,7 +56,7 @@ const Navigation = () => {
               <LinkContainer to="/lesson" onClick={() => setPacificNW()}>
                 <NavDropdown.Item>Pacific Northwest</NavDropdown.Item>
               </LinkContainer>
-
+              */}
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

@@ -59,17 +59,19 @@ h4 {
 }
 
 /***NAV****/
+
+/*
 .navigation {
-  background-color: transparent; /*make NAVBAR transparent*/
+  /*background-color: transparent; /*make NAVBAR transparent*
   color: var(--light-gray) !important;
 }
 
-.navbar-collapse.show .navbar-nav, .navbar-collapse.collapsing .navbar-nav { /*NAVBAR not transparent when expanded*/
+.navbar-collapse.show .navbar-nav, .navbar-collapse.collapsing .navbar-nav { /*NAVBAR not transparent when expanded*
   background-color: var(--purple);
 }
 
 .navbar-toggler {
-  background-color: var(--purple-50) !important; /*so the hamburger menu shows ontop of white bubbles*/
+  background-color: var(--purple-50) !important; /*so the hamburger menu shows ontop of white bubbles*
 }
 
 #basic-nav-nav {
