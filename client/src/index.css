@@ -119,7 +119,13 @@ h4 {
 }
 .home .speech-bubble {
   border: 5px solid var(--rust);
-  padding: 2em 1.5em !important;
+  padding: 1.5em 1em !important;
+}
+
+@media screen and (min-width: 576px) {
+  .home .speech-bubble {
+    padding: 2em 1.5em !important;
+  }
 }
 
 .home h1 {
@@ -153,18 +159,55 @@ h4 {
   padding: 0;
 }
 
-.home .bottom-section {
+/*.home .bottom-section {
   max-width: 75%;
   position: relative;
   left: 7rem;
-}
+}*/
 
-.main-guide-img {
+
+/*Responsive sizing for Mascot/Home page*/
+
+.main-guide-img { /*xs*/
   max-width: 50% !important;
   position: relative;
-  bottom: 25rem;
-  left: 2rem;
+  bottom: 18rem;
+  left: .75rem;
+  padding: 0 !important;
 }
+
+@media screen and (min-width: 576px) {  /*sm*/
+  .main-guide-img {
+    max-width: 40% !important;
+    bottom: 20rem;
+    left: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 630px) {  /*btwn sm & md*/
+  .main-guide-img {
+    max-width: 45% !important;
+    bottom: 20rem;
+    left: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {  /*md*/
+  .main-guide-img {
+    max-width: 45% !important;
+    bottom: 20rem;
+    left: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 992px) {  /*lg*/
+  .main-guide-img {
+    max-width: 50% !important;
+    bottom: 25rem;
+    left: 1.25rem;
+  }
+}
+
 
 .next-btn {
   z-index: 100 !important;

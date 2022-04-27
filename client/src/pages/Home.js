@@ -14,16 +14,18 @@ const Home = () => {
     <>
       <Container fluid className="home site-content">
         <Row>
-          <Col xs={{ span: 7, offset: 4 }}>
-            <img className=" pb-3 img-fluid" src={logo} alt="SRJC logo" />
+          <Col xs={{ span: 7, offset: 4 }} >
+            <img className="pb-3 img-fluid" src={logo} alt="SRJC logo" />
           </Col>
           <Col
-            xs={11}
-            md={{ span: 9, offset: 2 }}
-            className="speech-bubble text-center"
+            xs= {{ span: 10, offset: 1 }}
+            sm= {{ span: 9, offset: 2 }}
+            md= {{ span: 9, offset: 2}}
+            lg={{ span: 8, offset: 3 }}
+            className="text-center speech-bubble mt-xs-3 mt-sm-1 mt-md-0 mt-lg-5"
           >
             <h1 className="d-inline-block mx-auto ">
-              <span className="sub-heading-home display-3">
+              <span className="sub-heading-home display-5 display-md-4">
                 Native American Art
               </span>
               <br />
@@ -36,21 +38,17 @@ const Home = () => {
               <span className="text-400">Native American Art and Culture </span>
               while exploring the museum!
             </p>
-          </Col>
-          <Col
-            xs={11}
-            md={{ span: 9, offset: 2 }}
-            className="speech-bubble text-end"
-          >
-            <Link to="/instructions">
-              <img
-                className="img-fluid next-btn py-5 "
-                src={next}
-                alt="next button"
-                style={{ textAlign: "right" }}
-              />
-            </Link>
-            <div className="bottom-section">
+            <div className="w-100 d-block">
+              <Link to="/instructions" >
+                <img
+                  className="img-fluid next-btn py-3 py-sm-5 "
+                  src={next}
+                  alt="next button"
+                  style={{ textAlign: "right" }}
+                />
+              </Link>
+            </div>
+            <div className="bottom-section w-75 float-end">
               <div className="not-onsite-info">
                 <Accordion defaultActiveKey="1" flush>
                   <Accordion.Item eventKey="0">
@@ -82,11 +80,13 @@ const Home = () => {
               </div>
             </div>
           </Col>
-          <img
-            className="main-guide-img"
-            src={animalGuide}
-            alt="cute blue coyote"
-          />
+  
+            <img
+              className="main-guide-img"
+              src={animalGuide}
+              alt="cute blue coyote"
+            />
+
         </Row>
       </Container>
     </>
