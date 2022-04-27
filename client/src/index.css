@@ -9,10 +9,10 @@
   --rust-50: rgba(194, 68, 66, 0.5);
   --rust-25: rgba(211, 67, 65, 0.25);
   --rust-dark: #924140;
-  
+
   --purple: #2e234a;
-  --purple-25:rgba(46, 35, 74, 0.25);
-  --purple-50:rgba(46, 35, 74, 0.50);
+  --purple-25: rgba(46, 35, 74, 0.25);
+  --purple-50: rgba(46, 35, 74, 0.5);
   --gold: #ca9938;
   --tan: #d9a86c;
   --teal: #4c9ba8;
@@ -27,8 +27,6 @@ body {
   font-weight: 300 !important;
   font-size: 1.75rem !important;
   width: 100vw;
-
-
 }
 
 /* NOTE: Thinking we should use this font more sparingly. Its kinda ugly when there's a lot of it actually.
@@ -60,34 +58,36 @@ h4 {
 
 /***NAV****/
 
-
 .navigation {
   /*background-color: transparent; /*make NAVBAR transparent*/
   color: var(--purple) !important;
 }
 
-.dropdown-toggle, .dropdown-menu a {
+.dropdown-toggle,
+.dropdown-menu a {
   /*nav dropdown */
   color: var(--purple) !important;
 }
 
-.navbar-collapse.show .navbar-nav, .navbar-collapse.collapsing .navbar-nav { /*NAVBAR not transparent when expanded*/
+.navbar-collapse.show .navbar-nav,
+.navbar-collapse.collapsing .navbar-nav {
+  /*NAVBAR not transparent when expanded*/
   background-color: white;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: 1px solid var(--purple);
-  box-shadow: -.75px 1.25px 3px var(--purple);
+  box-shadow: -0.75px 1.25px 3px var(--purple);
 }
 
 .navbar-toggler {
   /*background-color: var(--purple-50) !important; /*so the hamburger menu shows ontop of white bubbles*/
-  box-shadow: -.75px 1.25px 3px var(--purple-25);
+  box-shadow: -0.75px 1.25px 3px var(--purple-25);
 }
 
 #basic-nav-nav {
   position: absolute !important;
   /*z-index: 1;*/
 }
-  /*get rid of Bootstrap Primary Blue focusing!*/
+/*get rid of Bootstrap Primary Blue focusing!*/
 .dropdown-item:active {
   color: var(--purple) !important;
   background-color: #e9ecef !important;
@@ -95,7 +95,7 @@ h4 {
 
 /***HOME PAGE**/
 
-  /*round logo*/
+/*round logo*/
 .logo {
   height: auto;
   max-height: 350px;
@@ -103,14 +103,14 @@ h4 {
   max-width: 350px;
 }
 
-  /*trying out getting rid of footer
+/*trying out getting rid of footer
 
 .footer {
   background-color: var(--srjc-red);
   border-top: white solid 4px;
   /*position: absolute;
   bottom: 0px;
-  height: 100px;*//*
+  height: 100px;*/ /*
   min-width: 100vw !important;
 }*/
 
@@ -142,15 +142,16 @@ h4 {
 .home .teal-text button {
   color: var(--teal) !important;
 }
-.home .accordion-item, .home .accordion-button, .home .accordion-collapse.accordion-body {
+.home .accordion-item,
+.home .accordion-button,
+.home .accordion-collapse.accordion-body {
   background-color: transparent;
   font-size: 1.25rem !important;
 }
 
 .home .accordion-header {
-  padding:0;
+  padding: 0;
 }
-
 
 .home .bottom-section {
   max-width: 75%;
@@ -166,7 +167,7 @@ h4 {
 }
 
 .next-btn {
-  z-index: 100 !important; 
+  z-index: 100 !important;
 }
 
 /* =============== LAUREN'S SECTION ============================= */
@@ -177,12 +178,12 @@ h4 {
   /*box-shadow: 5px 5px 4px 1px lightgrey;*/
   border: 2px solid var(--purple);
   border-radius: 10px;
-  margin-bottom: 1.5rem; 
+  margin-bottom: 1.5rem;
 }
 
 .region-h2-trivia {
   font-size: smaller;
-  padding: .5rem 1rem !important;
+  padding: 0.5rem 1rem !important;
   border: 2px solid white;
   border-radius: 100%;
   display: inline;
@@ -282,8 +283,8 @@ h4 {
   margin: 0 auto;
   /*width: 500px;
   height: 420px;*/
-  width: 600px;
-  height: 504px;
+  width: 50vw;
+  height: 41vw;
   perspective: 100%;
   max-width: 720px;
 }
@@ -299,14 +300,12 @@ h4 {
   cursor: pointer;
   box-sizing: border-box;
   border: 1px solid var(--gold);
-  
 }
 .card img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  box-sizing: border-box  ;
-
+  box-sizing: border-box;
 }
 
 .card-front-face {
@@ -337,7 +336,14 @@ h4 {
   position: relative;
   bottom: 3rem;
 }
- 
+
+@media (max-width: 576px) {
+  .Matching .container {
+    width: 90vw;
+    height: 75vw;
+  }
+}
+
 /* SW potttery game section  */
 
 .container {
@@ -365,7 +371,7 @@ h4 {
   height: 400px;
   width: 400px;
   background-image: url("assets/images/southwest/pottery/pot.png");
-  background-size: cover; 
+  background-size: cover;
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-color: var(--teal);
@@ -378,7 +384,7 @@ h4 {
 .pot-design-bank {
   background-color: var(--purple);
   overflow-x: scroll;
-  padding: 4rem; 
+  padding: 4rem;
 }
 
 /* GP Great plains feather game */
@@ -408,36 +414,46 @@ h4 {
   font-family: "Pangolin" !important;
 }
 /* || All pages */
-  /*custom style BS BUTTONS*/
+/*custom style BS BUTTONS*/
 .btn-primary {
-    color: #fff;
-    background-color: var(--rust)!important;
-    border-color: black !important;
+  color: #fff;
+  background-color: var(--rust) !important;
+  border-color: black !important;
 }
 .btn-primary:hover {
   color: #fff;
   background-color: var(--rust-dark) !important;
   border-color: black !important;
 }
-.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+.btn-check:active + .btn-primary,
+.btn-check:checked + .btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show > .btn-primary.dropdown-toggle {
   color: #fff;
   background-color: var(--rust-dark) !important;
   border-color: black !important;
 }
-.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+.btn-check:active + .btn-primary:focus,
+.btn-check:checked + .btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem var(--rust-50) !important;
 }
-.btn-check:focus+.btn-primary, .btn-primary:focus {
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
   color: #fff;
   background-color: var(--rust);
   border-color: black !important;
   box-shadow: 0 0 0 0.25rem var(--rust-50) !important;
 }
-.btn-check:focus+.btn, .btn:focus {
+.btn-check:focus + .btn,
+.btn:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem var(--rust-25);
 }
-  /* || white text bubbles */
+/* || white text bubbles */
 .speech-bubble {
   background-color: white;
   color: var(--purple);
@@ -454,10 +470,9 @@ h4 {
 
 .speech-bubble p,
 .speech-bubble h2 {
-  padding: .5em 0;
+  padding: 0.5em 0;
   margin: 0;
 }
-
 
 /* || MODALS - Instructions & Try Again */
 .custom-modal {
@@ -470,26 +485,31 @@ h4 {
   padding: 2em !important;
 }
 
-  /*instructions modal*/
+/*instructions modal*/
 .modal-img-mascot-instructions {
   display: block;
   padding-top: 3.5em;
 }
 
-  /*your done modal + try again modal*/
+/*your done modal + try again modal*/
 
 .modal-urdone .modal-content {
   padding: 2em !important;
 }
 
-.modal-urdone .modal-body, .modal-try-again .modal-body, .modal-urdone .modal-header, .modal-try-again .modal-header {
+.modal-urdone .modal-body,
+.modal-try-again .modal-body,
+.modal-urdone .modal-header,
+.modal-try-again .modal-header {
   padding: 3px;
 }
 
-.mascot-urdone, .mascot-try-again, .mascot-good-job {
+.mascot-urdone,
+.mascot-try-again,
+.mascot-good-job {
   text-align: center;
   margin: 0 auto 0 auto;
-  width: 99%; 
+  width: 99%;
 }
 
 .modal-matching .mascot-good-job {
@@ -498,18 +518,18 @@ h4 {
 
 .modal-footer img {
   position: relative;
-  top:-1em;
+  top: -1em;
 }
 
-.modal-high-score { /*matching done modal*/
-  padding: .75em;
+.modal-high-score {
+  /*matching done modal*/
+  padding: 0.75em;
   background-color: transparent;
   box-sizing: border-box;
-  border: .5px solid var(--purple);
+  border: 0.5px solid var(--purple);
   border-radius: 6px;
   box-shadow: 0px 0px 6px 3px var(--gold);
 }
-
 
 /* || ABOUT page */
 .about-page .accordion {
@@ -536,6 +556,6 @@ h4 {
 
 /****TRIVIA****/
 .trivia.site-content {
-  padding-top: .5em;
+  padding-top: 0.5em;
 }
 /* =============== END ERIN'S SECTION ============================= */

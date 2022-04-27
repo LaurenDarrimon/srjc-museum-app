@@ -168,33 +168,6 @@ export default function Matching(props) {
         </div>
       </footer>
 
-     {/* <Dialog
-        open={showModal}
-        onClose={(event, reason) => {
-          if (reason !== "backdropClick") {
-            onClose(event, reason);
-          }
-        }}
-        disableEscapeKeyDown
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-      >
-        <DialogTitle id="alert-dialog-title">
-          Hurray!!! You completed the challenge
-        </DialogTitle>
-        <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-            You completed the game in {moves} moves. Your best score is{" "}
-            {bestScore} moves.
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleRestart} color="primary">
-            Restart
-          </Button>
-        </DialogActions>
-      </Dialog>*/}
-
       <Modal
         show={showModal}
         onHide={(event, reason) => {
