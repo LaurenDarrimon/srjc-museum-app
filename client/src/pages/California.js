@@ -1,13 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-//images
-import next from "../assets/images/next.png";
+
 // hooks
 import { useCounter } from "../utils/GameContext";
 import { useEffect } from "react";
+
+import NextButton from "../components/NextButton";
+import BackButton from "../components/BackButton";
+
 //data
-import { gameData } from "../assets/data/game-data"; //game slide sequence
 import { caliCardsArray } from "../assets/data/matching-card-data";
 import { modalData } from "../assets/data/modal-data"; //instructions data (instr. modal moved to Matching.js)
 // mini-game components
@@ -25,12 +26,7 @@ const California = () => {
     setCalifornia();
   });
 
-  //track which slide we are on
-  const { slideCounter, setSlideIncrement } = useCounter();
-  //the next slide in the sequence
-  let nextPath = gameData[slideCounter].nextPath;
-
-  //get the data for the game we're on
+  //get the modal data for the game we're on
   const currentModal = modalData[gameCounter];
   console.log("currentModal");
   console.log(currentModal);
@@ -44,42 +40,22 @@ const California = () => {
           <div className="region-california">
             <h1 className="subtitle p-3">California </h1>
           </div>
-          
         </Col>
-    
+
         <Col xs={12}>
           <Matching cardsArray={caliCardsArray} currentModal={currentModal} />
         </Col>
 
-        {/* Moved modal to Matching component
-          <Col xs={12}>
-          {/* Click for modal */}
-        {/* pass in props for current instruction modal */}
-        {/*<br></br>
-          <br></br>
-          <InstructionModal
-            title={currentModal.title}
-            p1={currentModal.p1}
-            pBold={currentModal.pBold}
-            p3={currentModal.p3}
-            imagePath={currentModal.imagePath}
-            imageDescription={currentModal.imageDescription}
-          />
-        </Col>*/}
         <br></br>
+        <br></br>
+      </Row>
 
-        <br></br>
-    
-        <Col xs={12} className="text-end">
-          {/* <TryAgainModal /> */}
-          <Link to={nextPath}>
-            <img
-              src={next}
-              alt="next question"
-              className="p-4"
-              onClick={() => gameIncrement()}
-            ></img>
-          </Link>
+      <Row>
+        <Col xs={6}>
+          <BackButton />
+        </Col>
+        <Col xs={6}>
+          <NextButton />
         </Col>
       </Row>
     </Container>

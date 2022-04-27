@@ -23,29 +23,15 @@ export default function gameProvider({ children }) {
   //state to track whether user is in museum or not
   const [onSite, setOnSite] = useState(true);
 
-  //let navigate = useNavigate();
-
-  // Method to update our state
-  const triviaIncrement = () => {
-    console.log("trivia counter incremented");
-    console.log(triviaCounter + 1);
-    setSlideCounter(slideCounter + 1);
-    setTriviaCounter(triviaCounter + 1);
+  //function takes array of all counters in this order: trivia, game, lesson, slide
+  const setAllGameState = (counters) => {
+    setTriviaCounter(counters[0]);
+    setGameCounter(counters[1]);
+    setLessonCounter(counters[2]);
+    setSlideCounter(counters[3]);
   };
 
-  const gameIncrement = () => {
-    console.log("game counter incremented");
-    console.log(gameCounter + 1);
-    setSlideCounter(slideCounter + 1);
-    setGameCounter(gameCounter + 1);
-  };
 
-  const lessonIncrement = () => {
-    console.log("lesson counter incremented");
-    console.log(lessonCounter + 1);
-    setSlideCounter(slideCounter + 1);
-    setLessonCounter(lessonCounter + 1);
-  };
 
   //functions for arrival on each game page, so non-local users can jump to game from Nav bar
   const setCalifornia = () => {
@@ -59,19 +45,6 @@ export default function gameProvider({ children }) {
 
     console.log("slide counter:");
     console.log(slideCounter);
-
-    //counters for landing on Lesson page
-    /*
-    setTriviaCounter(3);
-    setGameCounter(0);
-    setLessonCounter(0);
-    setSlideCounter(3);
-    */
-
-    // let nextPath = gameData[slideCounter].nextPath;
-    // console.log("nextpath")
-    // console.log(nextPath)
-    // navigate(`/${nextPath}`);
   };
 
   const setSW = () => {
@@ -84,14 +57,6 @@ export default function gameProvider({ children }) {
 
     console.log("slide counter:");
     console.log(slideCounter);
-
-    //counters for landing on Lesson page
-    /*
-    setLessonCounter(3);
-    setTriviaCounter(5);
-    setGameCounter(1);
-    setSlideCounter(9);    
-    */
   };
 
   const setGreatPlains = () => {
@@ -104,14 +69,6 @@ export default function gameProvider({ children }) {
 
     console.log("slide counter:");
     console.log(slideCounter);
-
-    //counters for landing on Lesson page
-    /*
-    setLessonCounter(6);
-    setTriviaCounter(7);
-    setGameCounter(2);
-    setSlideCounter(15);
-    */
   };
 
   const setPacificNW = () => {
@@ -124,15 +81,6 @@ export default function gameProvider({ children }) {
 
     console.log("slide counter:");
     console.log(slideCounter);
-
-
-    //counters for landing on Lesson page
-    /*
-    setLessonCounter(9);
-    setTriviaCounter(9);
-    setGameCounter(3);
-    setSlideCounter(21);
-    */
   };
 
   // Method to update our state determining if user is onsite or not
@@ -151,18 +99,16 @@ export default function gameProvider({ children }) {
         setSW,
         setGreatPlains,
         triviaCounter,
-        triviaIncrement,
         setTriviaCounter,
         gameCounter,
         setGameCounter,
-        gameIncrement,
         lessonCounter,
         setLessonCounter,
-        lessonIncrement,
         onSite,
         isUserOnSite,
         slideCounter,
         setSlideCounter,
+        setAllGameState,
       }}
     >
       {children}

@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
-import next from "../assets/images/next.png";
+import NextButton from "../components/NextButton";
+import BackButton from "../components/BackButton";
 
 // Import our custom hook
 import { useCounter } from "../utils/GameContext";
+
 //track which turn we are on and which slide is next in sequence
 import { gameData } from "../assets/data/game-data";
 import { lessonData } from "../assets/data/lesson-data";
@@ -29,13 +30,13 @@ const Lesson = () => {
   return (
     //Lesson before each  mini-game
     <Container className={`${regionClass}`}>
-      <Row xs={1} className="lesson site-content">
+      <Row xs={11} className="lesson site-content text-center">
         <Col
           xs={11}
           md={{ span: 8, offset: 3 }}
           className="speech-bubble speech-bubble-md"
         >
-          <div className={`region  ${regionClass}`} >
+          <div className={`region  ${regionClass}`}>
             <h1>{currentLessonSlide.title}</h1>
           </div>
           <img
@@ -46,22 +47,17 @@ const Lesson = () => {
           <p>{currentLessonSlide.p1}</p>
           <p>{currentLessonSlide.p2}</p>
           <p>{currentLessonSlide.p3}</p>
-
-          <Link to={nextPath} className="float-end">
-            <img
-              className="img-fluid"
-              src={next}
-              alt="next page"
-              onClick={() => lessonIncrement()}
-            />
-          </Link>
+        </Col>
+        <Col xs={6} className="justify-content-center text-center">
+          <BackButton />
+        </Col>
+        <Col xs={6} className="justify-content-center text-center">
+          <NextButton />
         </Col>
       </Row>
 
       <Row>
-        <Col xs={{ span: 6, offset: 1 }} className="mascot-container">
- 
-        </Col>
+        <Col xs={{ span: 6, offset: 1 }} className="mascot-container"></Col>
       </Row>
     </Container>
   );

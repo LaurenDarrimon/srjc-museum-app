@@ -1,29 +1,28 @@
-import React from "react";
+import { useEffect, React } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
-//images
-import next from "../assets/images/next.png";
+
 //drag and drop
 import { DndProvider } from "react-dnd";
 import { TouchBackend } from "react-dnd-touch-backend";
 import { HTML5Backend } from "react-dnd-html5-backend";
+
 //mini-game components
 import { PotteryDrop } from "../components/PotteryDrop";
 import { PotteryInfoCard } from "../components/PotteryInfoCard";
+
 //data
 import { potteryData } from "../assets/data/southwest-data";
-import { gameData } from "../assets/data/game-data"; // game slide sequence
-// hooks
-import { useCounter } from "../utils/GameContext";
-import { useEffect } from "react";
-//import modal components
-import InstructionModal from "../components/MiniGameInstModal";
-import TryAgainModal from "../components/TryAgainModal";
 import { modalData } from "../assets/data/modal-data"; //instructions data
 
-const Southwest = () => {
-  //functions, hooks, state, etc go here
+// hooks
+import { useCounter } from "../utils/GameContext";
 
+//import modal & button components
+import InstructionModal from "../components/MiniGameInstModal";
+import NextButton from "../components/NextButton";
+import BackButton from "../components/BackButton";
+
+const Southwest = () => {
   //track which mini-game slide we are on
   const { gameCounter, gameIncrement } = useCounter();
 
@@ -32,11 +31,6 @@ const Southwest = () => {
   useEffect(() => {
     setSW();
   });
-
-  //track which slide we are on
-  const { slideCounter, setSlideIncrement } = useCounter();
-  //the next slide in the sequence
-  let nextPath = gameData[slideCounter].nextPath;
 
   //get the data for the game we're on
   const currentModal = modalData[gameCounter];
@@ -110,16 +104,14 @@ const Southwest = () => {
               imageDescription={currentModal.imageDescription}
             />
           </Col>
+        </Row>
 
-          <Col xs={11} md={8} className="text-end">
-            <Link to={nextPath}>
-              <img
-                src={next}
-                alt="next question"
-                className="p-4"
-                onClick={() => gameIncrement()}
-              />
-            </Link>
+        <Row>
+          <Col xs={6}>
+            <BackButton />
+          </Col>
+          <Col xs={6}>
+            <NextButton />
           </Col>
         </Row>
       </Container>

@@ -7,6 +7,7 @@ import { regionData } from "../assets/data/region-data";
 
 //our components
 import NextButton from "../components/NextButton";
+import BackButton from "../components/BackButton";
 import TriviaChoices from "../components/TriviaChoices";
 
 // Import our custom hook
@@ -28,15 +29,15 @@ const Trivia = () => {
   console.log("gamecounter:");
   console.log(gameCounter);
 
-  let regionClass = regionData[gameCounter].region
+  let regionClass = regionData[gameCounter].region;
 
   return (
     //loading or intro screen and homepage
     <Container fluid className={`trivia site-content ${regionClass}`}>
       <Row className="justify-content-center text-center p-5">
         <Col xs={{ span: 11 }} className="speech-bubble py-5 mx-auto">
-          <div className={`region  ${regionClass}`} >
-            <h1 className="d-inline-block pe-3">{quiz.region}</h1> 
+          <div className={`region  ${regionClass}`}>
+            <h1 className="d-inline-block pe-3">{quiz.region}</h1>
             <h2 className="region-h2-trivia">{quiz.number}</h2>
           </div>
 
@@ -61,8 +62,12 @@ const Trivia = () => {
 
           <br />
           <br />
+        </Col>
 
-          {/*add NextButton as component to allow for conditional rendering (for "you're done" modal at end) */}
+        <Col xs={6}>
+          <BackButton />
+        </Col>
+        <Col xs={6}>
           <NextButton />
         </Col>
       </Row>

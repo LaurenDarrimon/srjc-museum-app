@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
-import { Modal, Button } from "react-bootstrap";
+
 //import modal
 import UrDoneModal from "../components/UrDoneModal";
 //images
@@ -11,35 +11,31 @@ import { gameData } from "../assets/data/game-data";
 import { useCounter } from "../utils/GameContext";
 
 const NextButton = () => {
-    // next button modal
-    // only on trivia pages (to conditionally render "end game" modal)
+  // Pluck values from our GameContext by invoking our useCounter hook
 
-    //functions, hooks, state, etc go here    
+  const { slideCounter, setSlideIncrement } = useCounter();
 
-    // Pluck values from our GameContext by invoking our useCounter hook
-    const { triviaCounter, triviaIncrement } = useCounter();
-    //track overall game slide
-    //setSlideIncrement(20);
-    const { slideCounter, setSlideIncrement } = useCounter();
+  const { allGameState, setAllGameState } = useCounter();
 
-    let nextPath = gameData[slideCounter].nextPath;
+  let nextPath = gameData[slideCounter].nextPath;
 
-    if (slideCounter == 25) {
-        //render next button as modal trigger
-        return <UrDoneModal />;
-    } else {
-        return (
-            <Link to={nextPath}>
-                <img
-                    src={next}
-                    alt="next question"
-                    className="p-4"
-                    onClick={() => triviaIncrement()}
-                />
-            </Link>
-        );
-    }
+  if (slideCounter == 25) {
+    //render next button as modal trigger
+    return <UrDoneModal />;
+  } else {
+    let nextStateCounters = gameData[slideCounter + 1].stateCounters;
 
-}
+    return (
+      <Link to={nextPath}>
+        <img
+          src={next}
+          alt="next question"
+          className="p-4"
+          onClick={() => setAllGameState(nextStateCounters)}
+        />
+      </Link>
+    );
+  }
+};
 
 export default NextButton;

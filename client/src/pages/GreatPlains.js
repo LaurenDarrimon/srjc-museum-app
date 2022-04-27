@@ -1,27 +1,25 @@
-import React from "react";
+import { React, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
-//images
-import next from "../assets/images/next.png";
+
 // drag and drop
 import { DndProvider } from "react-dnd";
 import { TouchBackend } from "react-dnd-touch-backend";
 import { HTML5Backend } from "react-dnd-html5-backend";
+
 // hooks
-import { useEffect } from "react";
 import { useCounter } from "../utils/GameContext";
+
 //mini-game components
 import { BonnetDrop } from "../components/BonnetDrop";
 import { FeatherOptions } from "../components/FeatherOptions";
+
 //data
-import { gameData } from "../assets/data/game-data"; //game slide sequence
 import { featherDeeds } from "../assets/data/great-plains-data";
 import { modalData } from "../assets/data/modal-data"; //instructions modal data
-//modal components
+//modal & botton components
 import InstructionModal from "../components/MiniGameInstModal";
-import TryAgainModal from "../components/TryAgainModal";
-import UrDoneModal from "../components/UrDoneModal";
 import NextButton from "../components/NextButton";
+import BackButton from "../components/BackButton";
 
 const greatPlains = () => {
   //functions, hooks, state, etc go here
@@ -33,11 +31,6 @@ const greatPlains = () => {
   useEffect(() => {
     setGreatPlains();
   });
-
-  //track overall game slide
-  const { slideCounter, setSlideIncrement } = useCounter();
-  //setSlideIncrement(20);
-  let nextPath = gameData[slideCounter].nextPath;
 
   //get the data for the game we're on
   const currentModal = modalData[gameCounter];
@@ -96,16 +89,14 @@ const greatPlains = () => {
               imageDescription={currentModal.imageDescription}
             />
           </Col>
+        </Row>
 
-          <Col xs={8} md={8} className="text-end">
-            <Link to={nextPath}>
-              <img
-                src={next}
-                alt="next question"
-                className="p-4"
-                onClick={() => gameIncrement()}
-              />
-            </Link>
+        <Row>
+          <Col xs={6}>
+            <BackButton />
+          </Col>
+          <Col xs={6}>
+            <NextButton />
           </Col>
         </Row>
       </Container>

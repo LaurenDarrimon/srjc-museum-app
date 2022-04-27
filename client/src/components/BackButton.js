@@ -1,39 +1,47 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //images
 import back from "../assets/images/go-back-arrow.png";
-// "next-path" linksdata
+// "next-path" links data
 import { gameData } from "../assets/data/game-data";
 // Import our custom hook
 import { useCounter } from "../utils/GameContext";
 
-const BackButton = (history) => {
-  //functions, hooks, state, etc go here
+const BackButton = () => {
 
   // Pluck values from our GameContext by invoking our useCounter hook
-  const { triviaCounter, triviaDecrement } = useCounter();
-  //track overall game slide
-
   const { slideCounter, setSlideIncrement } = useCounter();
+
+  const { allGameState, setAllGameState } = useCounter();
 
   let lastPath = gameData[slideCounter].lastPath;
 
-  const backNavigation = () => {
-    history.push(`/${lastPath}`);
-    //triviaDecrement();
-  };
+  if (slideCounter > 0) {
+    let lastStateCounters = gameData[slideCounter - 1].stateCounters;
 
-  return (
-    <div>
-      <img
-        src={back}
-        alt="next question"
-        className="p-4"
-        onClick={() => backNavigation()}
-      />
-    </div>
-  );
+    return (
+      <Link to={lastPath}>
+        <img
+          src={back}
+          alt="back to previous slide"
+          className="p-4"
+          onClick={() => setAllGameState(lastStateCounters)}
+        />
+      </Link>
+    );
+  } else {
+    return (
+      <Link to="/instructions">
+        <img
+          src={back}
+          alt="back to previous slide"
+          className="p-4"
+          onClick={() => setAllGameState([0, 0, 0, 0])}
+        />
+      </Link>
+    );
+  }
 };
 
 export default BackButton;

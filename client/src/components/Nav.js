@@ -8,13 +8,6 @@ import { Link } from "react-router-dom";
 import { useCounter } from "../utils/GameContext";
 
 const Navigation = () => {
-  //functions, hooks, state, etc go here
-
-  //counters for navigating directly to mini-game from Nav, rather than through Game
-  const { countGreatPlains, setGreatPlains } = useCounter();
-  const { countCalifornia, setCalifornia } = useCounter();
-  const { countSW, setSW } = useCounter();
-  const { countPacificNW, setPacificNW } = useCounter();
 
   //return JSX
   return (
@@ -40,24 +33,6 @@ const Navigation = () => {
               <NavDropdown.Item href="/Southwest" >Southwest</NavDropdown.Item>
               <NavDropdown.Item href="/GreatPlains">Great Plains</NavDropdown.Item>
               <NavDropdown.Item href="/PacificNW" >Pacific Northwest</NavDropdown.Item>
-              {/**** NOTE: LinkContainer is causing Navbar not to close, setRegion functions moved to miniGame slides
-               
-              <LinkContainer to="/lesson" onClick={() => setCalifornia()}>
-                <NavDropdown.Item>California</NavDropdown.Item>
-              </LinkContainer>
-
-              <LinkContainer to="/lesson" onClick={() => setSW()}>
-                <NavDropdown.Item>Southwest</NavDropdown.Item>
-              </LinkContainer>
-
-              <LinkContainer to="/lesson" onClick={() => setGreatPlains()}>
-                <NavDropdown.Item>Great Plains</NavDropdown.Item>
-              </LinkContainer>
-
-              <LinkContainer to="/lesson" onClick={() => setPacificNW()}>
-                <NavDropdown.Item>Pacific Northwest</NavDropdown.Item>
-              </LinkContainer>
-              */}
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
