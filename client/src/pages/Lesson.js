@@ -7,8 +7,6 @@ import BackButton from "../components/BackButton";
 // Import our custom hook
 import { useCounter } from "../utils/GameContext";
 
-//track which turn we are on and which slide is next in sequence
-import { gameData } from "../assets/data/game-data";
 import { lessonData } from "../assets/data/lesson-data";
 import { regionData } from "../assets/data/region-data";
 
@@ -17,12 +15,8 @@ const Lesson = () => {
   //track which mini-game slide we are on
   const { lessonCounter, lessonIncrement } = useCounter();
   const { gameCounter, setGameCounter } = useCounter();
-  // erin -new
-  const currentLessonSlide = lessonData[lessonCounter];
 
-  //track the overall slide we are on
-  const { slideCounter, setSlideIncrement } = useCounter();
-  let nextPath = gameData[slideCounter].nextPath;
+  const currentLessonSlide = lessonData[lessonCounter];
 
   let regionClass = regionData[gameCounter].region;
 

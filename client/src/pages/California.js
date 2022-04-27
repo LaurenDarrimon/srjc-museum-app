@@ -15,21 +15,17 @@ import { modalData } from "../assets/data/modal-data"; //instructions data (inst
 import Matching from "../components/Matching";
 
 const California = () => {
-  //functions, hooks, state, etc go here
-
-  //track which mini-game slide we are on
-  const { gameCounter, gameIncrement } = useCounter();
-
   //set all counters when you land on this slide from nav or refresh
   const { countCalifornia, setCalifornia } = useCounter();
   useEffect(() => {
     setCalifornia();
   });
 
+  //track which mini-game slide we are on
+  const { gameCounter, gameIncrement } = useCounter();
+
   //get the modal data for the game we're on
   const currentModal = modalData[gameCounter];
-  console.log("currentModal");
-  console.log(currentModal);
 
   //return JSX
   return (
@@ -51,10 +47,10 @@ const California = () => {
       </Row>
 
       <Row>
-        <Col xs={6}>
+        <Col xs={6} className="justify-content-center text-center">
           <BackButton />
         </Col>
-        <Col xs={6}>
+        <Col xs={6} className="justify-content-center text-center">
           <NextButton />
         </Col>
       </Row>

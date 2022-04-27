@@ -22,20 +22,17 @@ import NextButton from "../components/NextButton";
 import BackButton from "../components/BackButton";
 
 const greatPlains = () => {
-  //functions, hooks, state, etc go here
-
-  //track which mini-game slide we are on
-  const { gameCounter, gameIncrement } = useCounter();
-  //set all counters when you land on this slide from nav or refresh
+   //set all counters when you land on this slide from nav or refresh
   const { countGreatPlains, setGreatPlains } = useCounter();
   useEffect(() => {
     setGreatPlains();
   });
 
+  //track which mini-game slide we are on
+  const { gameCounter, gameIncrement } = useCounter();
+ 
   //get the data for the game we're on
   const currentModal = modalData[gameCounter];
-  console.log("currentModal");
-  console.log(currentModal);
 
   const options = {
     enableMouseEvents: true,
@@ -92,10 +89,10 @@ const greatPlains = () => {
         </Row>
 
         <Row>
-          <Col xs={6}>
+          <Col xs={6} className="justify-content-center text-center">
             <BackButton />
           </Col>
-          <Col xs={6}>
+          <Col xs={6} className="justify-content-center text-center">
             <NextButton />
           </Col>
         </Row>
