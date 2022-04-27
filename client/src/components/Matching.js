@@ -1,19 +1,14 @@
 import { useEffect, useState, useRef, React } from "react";
-//import modal components
+import { Modal, Button } from "react-bootstrap";
+
+//import components
 import InstructionModal from "../components/MiniGameInstModal";
-//import modal data
-
-
-import {
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogContentText,
-  Button,
-  DialogTitle,
-} from "@material-ui/core";
-
 import Card from "./Card";
+
+//images
+import mascotGoodJob from "../assets/images/coyote-head.svg";
+import go from "../assets/images/go-btn.svg";
+
 
 function shuffleCards(array) {
   const length = array.length;
@@ -26,6 +21,7 @@ function shuffleCards(array) {
   }
   return array;
 }
+
 
 export default function Matching(props) {
   let uniqueCardsArray = props.cardsArray
@@ -114,6 +110,8 @@ export default function Matching(props) {
     setCards(shuffleCards(uniqueCardsArray.concat(uniqueCardsArray)));
   };
 
+
+
   return (
     <div className="Matching">
       <header>
@@ -169,7 +167,8 @@ export default function Matching(props) {
           />
         </div>
       </footer>
-      <Dialog
+
+     {/* <Dialog
         open={showModal}
         onClose={(event, reason) => {
           if (reason !== "backdropClick") {
@@ -194,7 +193,43 @@ export default function Matching(props) {
             Restart
           </Button>
         </DialogActions>
-      </Dialog>
+      </Dialog>*/}
+
+      <Modal
+        show={showModal}
+        onHide={(event, reason) => {
+          if (reason !== "backdropClick") {
+            onClose(event, reason);
+          }
+        }}
+        dialogClassName="custom-modal modal-matching"
+        aria-labelledby="modal-title"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title as="h1" className="pangolin-font">Good work, Explorer!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="pt-2 ">
+          <p className="modal-high-score">
+            <span className="bold-text">Your Score:</span> {moves} moves
+            <br />
+            <span className="bold-text">Your High Score:</span> {bestScore} moves
+          </p>
+          <img
+            className="mascot-good-job pt-4"
+            src={mascotGoodJob}
+            alt="good job!"
+          />
+        </Modal.Body>
+        <Modal.Footer>
+          <img
+            onClick={handleRestart}
+            className="img-fluid"
+            src={go}
+            alt="GO!"
+          />
+        </Modal.Footer>
+      </Modal>
+
     </div>
   );
 }

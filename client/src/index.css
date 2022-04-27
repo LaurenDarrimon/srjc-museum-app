@@ -400,6 +400,9 @@ h4 {
 .teal-text {
   color: var(--teal) !important;
 }
+.pangolin-font {
+  font-family: "Pangolin" !important;
+}
 /* || All pages */
   /*custom style BS BUTTONS*/
 .btn-primary {
@@ -484,6 +487,25 @@ h4 {
   margin: 0 auto 0 auto;
   width: 99%; 
 }
+
+.modal-matching .mascot-good-job {
+  width: 75% !important;
+}
+
+.modal-footer img {
+  position: relative;
+  top:-1em;
+}
+
+.modal-high-score { /*matching done modal*/
+  padding: .75em;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: .5px solid var(--purple);
+  border-radius: 6px;
+  box-shadow: 0px 0px 6px 3px var(--gold);
+}
+
 
 /* || ABOUT page */
 .about-page .accordion {
