@@ -170,10 +170,8 @@ export default function Matching(props) {
 
       <Modal
         show={showModal}
-        onHide={(event, reason) => {
-          if (reason !== "backdropClick") {
-            onClose(event, reason);
-          }
+        onHide={() => {
+          setShowModal(false)
         }}
         dialogClassName="custom-modal modal-matching"
         aria-labelledby="modal-title"
