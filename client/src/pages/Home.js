@@ -26,7 +26,7 @@ const Home = () => {
             <p className="h3 subtitle-home">
               Learn about <span className="text-400">Native American Art and Culture </span>while exploring the museum!
             </p>
-            <Link to="/instructions">
+            <Link to="/instructions" style={{zIndex: 100}}>
               <img className="img-fluid next-btn py-5" src={next} alt="next button" />
             </Link>
             <div className="bottom-section">
