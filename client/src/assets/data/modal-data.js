@@ -13,9 +13,9 @@ export const modalData = [
 
   {
     title: "SouthWest",
-    p1: "The people of the SouthWest were expert potters.",
+    p1: "Native SouthWesterners were expert potters.",
     pBold: "Decorate your own pot by dragging a pattern onto it.",
-    p3: "There's no right answer, just drag until you like your design!",
+    p3: "When you like your design, take a screenshot, and click Next.",
   },
 
   //Great Plains
