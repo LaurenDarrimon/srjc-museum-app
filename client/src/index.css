@@ -266,10 +266,6 @@ h4 {
   max-width: 90vh;
 }
 
-.featherCard {
-  color: black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 /* MATCHING CARD GAME CSS */
 
@@ -438,6 +434,13 @@ h4 {
   max-height: 1000px;
   padding: 30px;
 }
+
+.featherCard {
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 1.25rem;
+}
+
 
 /* =============== END LAUREN'S SECTION ============================= */
 
