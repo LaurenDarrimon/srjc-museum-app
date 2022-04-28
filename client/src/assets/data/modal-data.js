@@ -21,7 +21,7 @@ export const modalData = [
   //Great Plains
   {
     title: "The Great Plains",
-    p1: "Warriors earned eagle feathers as a symbol of their kindness or bravery",
+    p1: "Warriors earned eagle feathers as a symbol of their kindness or bravery.",
     pBold:
       "What sorts of actions would earn a feather in your Headress?",
     p3: "If a card contains an action that would earn you a feather, Drag and Drop its feather onto the headress on the right.",
