@@ -219,7 +219,8 @@ h4 {
   color: white;
   padding: 1.5rem;
   /*box-shadow: 5px 5px 4px 1px lightgrey;*/
-  border: 2px solid var(--purple);
+  /*box-shadow: -0.75px 1.25px 3px var(--purple);*/
+  border: 1px solid var(--purple);
   border-radius: 10px;
   margin-bottom: 1.5rem;
 }
@@ -250,16 +251,6 @@ h4 {
 .region-northwest {
   background-color: var(--purple);
   color: white;
-}
-
-.answers {
-  /* background-color: var(--rust) !important; */
-  color: white;
-  display: inline-block;
-  padding: 30px;
-  margin: 15px;
-  aspect-ratio: 1 / 1;
-  border-radius: 100% !important;
 }
 
 .game-background {
@@ -503,10 +494,11 @@ h4 {
 .speech-bubble {
   background-color: white;
   color: var(--purple);
-  border: 2px solid var(--purple);
+  /*border: 2px solid var(--purple);*/
   border-radius: 10px;
   padding: 2em !important;
   margin: 1em auto 1em auto;
+  box-shadow: -.75px .75px 2px 0px var(--purple);
 }
 
 .speech-bubble h1 {
@@ -578,27 +570,38 @@ h4 {
 }
 
 /* || ABOUT page */
-.about-page .accordion {
+.about {
+  font-size: 1rem;
+}
+.about .accordion {
   color: black;
+  border-radius: 10px !important;
+  box-shadow: -.75px .75px 2px 0px var(--purple);
 }
 
-.about-page .accordion-button:focus,
-.about-page .accordion-button:active {
+.about .accordion-header button {
+  font-size: .75em !important;
+}
+
+.about .accordion-button:focus,
+.about .accordion-button:active {
   border-color: var(--gold);
   box-shadow: 0 0 0 0.25rem rgba(202, 153, 56, 0.25);
 }
 
-.about-page .accordion-button:not(.collapsed) {
+.about .accordion-button:not(.collapsed) {
   color: black;
   background-color: white;
 }
 
 .logo-about {
-  height: auto;
-  max-height: 200px;
   width: auto;
-  max-width: 200px;
+  max-width: 40%;
+  border-radius: 100%;
+  border: .5px solid black;
+  box-shadow: -.75px .75px 2px 0px black;
 }
+
 
 /******LESSONS*****/
 .lesson {
@@ -687,5 +690,14 @@ h4 {
 /****TRIVIA****/
 .trivia.site-content {
   padding-top: 0.5em;
+}
+
+.answers {
+  font-size: 1.25rem !important;
+  padding: .75em !important;
+  margin: 15px;
+  /*aspect-ratio: 1 / 1;*/
+  border-radius: 10px !important;
+  box-shadow: -0.5px .5px 2px var(--purple);
 }
 /* =============== END ERIN'S SECTION ============================= */

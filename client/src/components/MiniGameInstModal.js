@@ -4,7 +4,7 @@ import { Modal } from "react-bootstrap";
 
 //images
 import mascotGuideInstructions from "../assets/images/speech-bubble-mascot-instructions.svg";
-import go from "../assets/images/go-btn.png"
+import go from "../assets/images/go-btn.svg"
 import mascotGuide from "../assets/images/speech-bubble-mascot-instructions-3.svg";
 
 const InstructionModal = (props) => {
