@@ -600,6 +600,90 @@ h4 {
   max-width: 200px;
 }
 
+/******LESSONS*****/
+.lesson {
+  font-size: 1rem;
+}
+
+
+  /*responsive sizing for mascot-lessons page*/
+.lesson .mascot-container img { /*xs*/
+  position: relative;
+  bottom: 20.5rem;
+  right: 8.5rem;
+  max-width: 40%;
+}
+
+@media screen and (min-width: 530px) {  /*btwn xs & sm*/
+  .lesson .mascot-container img {
+    bottom: 20.5rem;
+    right: 10rem;
+    max-width: 36%;
+  }
+}
+
+@media screen and (min-width: 576px) {  /*sm*/
+  .lesson .mascot-container img {
+    bottom: 20.75rem;
+    right: 10rem;
+    max-width: 34%;
+  }
+}
+
+@media screen and (min-width: 630px) {  /*btwn sm & md*/
+  .lesson .mascot-container img {
+    bottom: 30rem;
+    right: 15rem;
+    max-width: 30%;
+  }
+}
+
+@media screen and (min-width: 768px) {  /*md*/
+  .lesson .mascot-container img{
+    bottom: 38rem;
+    right: 15rem;
+    max-width: 34%;
+  }
+  .lesson .speech-bubble {
+    padding: 3em !important;
+  }
+}
+
+@media screen and (min-width: 934px) {  /*btwn md & lg*/
+  .lesson .mascot-container img{
+    bottom: 38rem;
+    right: 19rem;
+    max-width: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) {  /*lg*/
+  .lesson .mascot-container img {
+    bottom: 45rem;
+    right: 16rem;
+    max-width: 35%;
+  }
+  .lesson.site-content {
+    padding-top: 5rem !important;
+  }
+}
+
+@media screen and (min-width: 1080px) {  /*btwn lg & xl*/
+  .lesson .mascot-container img{
+    bottom: 48rem;
+    right: 20rem;
+    max-width: 35%;
+  }
+}
+
+@media screen and (min-width: 1400px) {  /*xxl*/
+  .lesson .mascot-container img{
+    bottom: 48rem;
+    right: 25rem;
+    max-width: 35%;
+  }
+}
+
 /****TRIVIA****/
 .trivia.site-content {
   padding-top: 0.5em;
