@@ -14,6 +14,16 @@ import TriviaChoices from "../components/TriviaChoices";
 import { useCounter } from "../utils/GameContext";
 
 const Trivia = () => {
+  const { allGameState, setAllGameState } = useCounter();
+
+  //check and see if there is a game counter in local storage.
+  if (localStorage.getItem("allGameCounters")) {
+    //if there is, parse the stored string back into an array
+    var allGameCounters = JSON.parse(localStorage.getItem("allGameCounters"));
+    //set the game counters to the stored array
+    setAllGameState(allGameCounters);
+  }
+
   // Pluck values from our GameContext by invoking our useCounter hook
   const { triviaCounter, triviaIncrement } = useCounter();
 

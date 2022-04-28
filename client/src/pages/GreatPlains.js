@@ -1,5 +1,5 @@
 import { React, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Modal } from "react-bootstrap";
 
 // drag and drop
 import { DndProvider } from "react-dnd";

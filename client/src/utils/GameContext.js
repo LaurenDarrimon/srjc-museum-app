@@ -29,8 +29,9 @@ export default function gameProvider({ children }) {
     setGameCounter(counters[1]);
     setLessonCounter(counters[2]);
     setSlideCounter(counters[3]);
-  };
 
+    localStorage.setItem('allGameCounters', JSON.stringify(counters));
+  };
 
 
   //functions for arrival on each game page, so non-local users can jump to game from Nav bar
@@ -84,10 +85,10 @@ export default function gameProvider({ children }) {
   };
 
   // Method to update our state determining if user is onsite or not
-  const isUserOnSite = () => {
-    console.log("user answered onsite question");
-    return setOnSite(!onSite);
-  };
+  // const isUserOnSite = () => {
+  //   console.log("user answered onsite question");
+  //   return setOnSite(!onSite);
+  // };
 
   // The provider component will wrap all other components inside of it that need access to our global state
   return (
@@ -104,8 +105,6 @@ export default function gameProvider({ children }) {
         setGameCounter,
         lessonCounter,
         setLessonCounter,
-        onSite,
-        isUserOnSite,
         slideCounter,
         setSlideCounter,
         setAllGameState,
