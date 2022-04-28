@@ -252,16 +252,6 @@ h4 {
   color: white;
 }
 
-.answers {
-  /* background-color: var(--rust) !important; */
-  color: white;
-  display: inline-block;
-  padding: 30px;
-  margin: 15px;
-  aspect-ratio: 1 / 1;
-  border-radius: 100% !important;
-}
-
 .game-background {
   max-width: 90vh;
 }
@@ -687,5 +677,13 @@ h4 {
 /****TRIVIA****/
 .trivia.site-content {
   padding-top: 0.5em;
+}
+
+.answers {
+  font-size: 1.25rem !important;
+  padding: .75em !important;
+  margin: 15px;
+  /*aspect-ratio: 1 / 1;*/
+  border-radius: 10px !important;
 }
 /* =============== END ERIN'S SECTION ============================= */
