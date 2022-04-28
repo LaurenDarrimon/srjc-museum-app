@@ -9,6 +9,8 @@ import animalGuide from "../assets/images/coyote.svg";
 
 //this is the loading page
 const Home = () => {
+
+  
   return (
     //loading or intro screen and homepage
     <>

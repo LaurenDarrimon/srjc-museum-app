@@ -11,7 +11,17 @@ import { lessonData } from "../assets/data/lesson-data";
 import { regionData } from "../assets/data/region-data";
 
 const Lesson = () => {
-  //functions, hooks, state, etc go here
+
+  const { allGameState, setAllGameState } = useCounter();
+
+  //check and see if there is a game counter in local storage. 
+  if (localStorage.getItem("allGameCounters")){
+    //if there is, parse the stored string back into an array
+    var allGameCounters = JSON.parse(localStorage.getItem("allGameCounters"));
+    //set the game counters to the stored array 
+    setAllGameState(allGameCounters);
+  }
+ 
   //track which mini-game slide we are on
   const { lessonCounter, lessonIncrement } = useCounter();
   const { gameCounter, setGameCounter } = useCounter();

@@ -13,8 +13,6 @@ export const PotteryInfoCard = (props) => {
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
           <Card.Text>{props.description}</Card.Text>
-          {/* later we can add a more info button as a stretch goal */}
-          {/* <Button variant="primary">Go somewhere</Button> */}
         </Card.Body>
       </Card>
       <h5></h5>
