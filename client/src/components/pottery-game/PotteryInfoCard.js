@@ -1,4 +1,4 @@
-import Reaact from "react"
+import React from "react"
 import { Col, Card } from "react-bootstrap";
 
 export const PotteryInfoCard = (props) => {
@@ -8,7 +8,7 @@ export const PotteryInfoCard = (props) => {
       <Card >
         <Card.Img
           variant="top"
-          src={require(`../assets/images/southwest/pottery/${props.image}`)}
+          src={require(`../../assets/images/southwest/pottery/${props.image}`)}
         />
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>

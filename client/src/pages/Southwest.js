@@ -7,9 +7,9 @@ import { TouchBackend } from "react-dnd-touch-backend";
 import { HTML5Backend } from "react-dnd-html5-backend";
 
 //mini-game components
-import { PotteryDrop } from "../components/PotteryDrop";
-import { PotteryInfoCard } from "../components/PotteryInfoCard";
-import { PotterDNDContainer} from "../components/pottery-game/PotteryDNDContainer"
+//import { PotteryDrop } from "../components/PotteryDrop";
+import {PotteryInfoCard} from "../components/pottery-game/PotteryInfoCard";
+import PotterDNDContainer from "../components/pottery-game/PotteryDNDContainer"
 
 //data
 import { potteryData } from "../assets/data/southwest-data";
@@ -60,19 +60,19 @@ const Southwest = () => {
         <Row className="justify-content-center p-5">
           <Col xs={12} className="text-center">
             <div className="region-southwest">
-              <h1 className="subtitle p-5">Design Your Own Pottery</h1>
+              <h1 className="subtitle">SouthWestern Pottery</h1>
             </div>
           </Col>
         </Row>
 
-        <Row className="text-center">
+        {/*<Row className="text-center">
           <Col xs={6}>
             <h3>Drag patterns from here:</h3>
           </Col>
           <Col xs={6}>
             <h3>onto the pot:</h3>
           </Col>
-        </Row>
+        </Row>*/}
 
         {/**DND section */}
         <PotterDNDContainer />

@@ -1,5 +1,5 @@
 import { useDrag } from "react-dnd";
-import { ItemTypes } from "../utils/ItemTypes.js";
+import { ItemTypes } from "../../utils/ItemTypes.js";
 
 const style = {
   position: "absolute",

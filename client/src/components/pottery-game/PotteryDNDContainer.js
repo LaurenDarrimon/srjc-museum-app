@@ -2,13 +2,14 @@ import update from "immutability-helper";
 //import { set } from "lodash";
 import { useCallback, useState } from "react";
 import { useDrop } from "react-dnd";
-import { Box } from "./Box.js";
-import { ItemTypes } from "../utils/ItemTypes.js";
-import { potteryData } from "../assets/data/southwest-data.js";
+import  Box  from "./Box.js";
+import { ItemTypes } from "../../utils/ItemTypes.js";
+import { potteryData } from "../../assets/data/southwest-data.js";
 
 const styles = {
-  width: 300,
+  width: "90vw",
   height: 300,
+  margin: "0 auto",
   border: "1px solid black",
   position: "relative"
 };
