@@ -376,7 +376,7 @@ h4 {
 
 /* SW potttery game section  */
 
-.container {
+/*.container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -410,6 +410,23 @@ h4 {
 /* .pot-design-row{
   margin: -400px 0 !important; 
 } */
+.southwest-game.site-content {
+  padding-top: 4rem !important;
+}
+.box {
+  visibility: hidden;
+  z-index: 99;
+}
+
+.box svg:first-child {
+  visibility: visible !important;
+}
+
+.pot-img {
+  width: 88% !important;
+  position: relative;
+  bottom:-190px;
+}
 
 .pot-design-bank {
   background-color: var(--purple);

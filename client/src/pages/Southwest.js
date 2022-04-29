@@ -23,6 +23,7 @@ import InstructionModal from "../components/MiniGameInstModal";
 import NextButton from "../components/NextButton";
 import BackButton from "../components/BackButton";
 
+
 const Southwest = () => {
 
   //set all game counters when you land on this slide from nav or refresh
@@ -56,31 +57,20 @@ const Southwest = () => {
     //loading or intro screen and homepage
 
     <DndProvider backend={isTouchScreen} options={options}>
-      <Container fluid className="site-content region-southwest">
-        <Row className="justify-content-center p-5">
-          <Col xs={12} className="text-center">
+      <Container fluid className="site-content southwest-game region-southwest">
+            {/*<Col xs={12} className="text-center">
             <div className="region-southwest">
-              <h1 className="subtitle">SouthWestern Pottery</h1>
+                <h1 className="subtitle">SouthWestern Pottery</h1>
             </div>
-          </Col>
-        </Row>
+            </Col>
 
-        {/*<Row className="text-center">
-          <Col xs={6}>
-            <h3>Drag patterns from here:</h3>
-          </Col>
-          <Col xs={6}>
-            <h3>onto the pot:</h3>
-          </Col>
-        </Row>*/}
-
-        {/**DND section */}
-        <PotterDNDContainer />
-       
-        <br></br>
-
-        <h4>Symbols & Meanings Key:</h4>
-        <br></br>
+            {/**DND section */}
+            <PotterDNDContainer />
+            
+        
+            <br></br>
+            <h4>Symbols & Meanings Key:</h4>
+            <br></br>
 
         <Row className="pot-design-bank flex-nowrap">
           {potteryData.map((design) => (
