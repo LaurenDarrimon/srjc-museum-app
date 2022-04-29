@@ -17,6 +17,7 @@ export function PotteryPattern({ src, number }) {
     <>
       <Col m={0} p={0} >
         <img
+          className="pottery-pattern"
           ref={drag}
           src={src}
           alt=""
