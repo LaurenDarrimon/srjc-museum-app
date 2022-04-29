@@ -163,7 +163,7 @@ const PotteryDNDContainer = () => {
   );
 
   return (
-    <div ref={drop} style={styles} className="text-center">
+    <div ref={drop} style={styles} className="pottery-container text-center">
       {Object.keys(boxes).map((key) => {
         const { left, top, title, imgName } = boxes[key];
         return (

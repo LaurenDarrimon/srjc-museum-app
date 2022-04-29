@@ -411,7 +411,10 @@ h4 {
   margin: -400px 0 !important; 
 } */
 .southwest-game.site-content {
-  padding-top: 4rem !important;
+  padding-top: 5rem !important;
+}
+.pottery-container svg {
+  fill: rgb(66, 44, 25);
 }
 .box {
   visibility: hidden;
