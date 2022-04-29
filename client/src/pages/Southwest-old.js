@@ -9,7 +9,6 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 //mini-game components
 import { PotteryDrop } from "../components/PotteryDrop";
 import { PotteryInfoCard } from "../components/PotteryInfoCard";
-import { PotterDNDContainer} from "../components/pottery-game/PotteryDNDContainer"
 
 //data
 import { potteryData } from "../assets/data/southwest-data";
@@ -74,9 +73,7 @@ const Southwest = () => {
           </Col>
         </Row>
 
-        {/**DND section */}
-        <PotterDNDContainer />
-       
+        <PotteryDrop />
         <br></br>
 
         <h4>Symbols & Meanings Key:</h4>
