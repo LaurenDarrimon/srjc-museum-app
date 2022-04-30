@@ -16,9 +16,13 @@ const style = {
   cursor: "move",
   float: "left",
 };
+
+//moved outside of component, because counter was starting over for each feather, causing the buggy-ness
+let featherNumber = 1;
+
 export const FeatherOptions = (props) => {
 
-  let featherNumber = 1
+  
 
   //right/wrong modal show/hide
   const [showModalRight1, setShowModalRight1] = useState(false);
@@ -32,14 +36,14 @@ export const FeatherOptions = (props) => {
     end: (item, monitor) => {
       const dropResult = monitor.getDropResult();
 
-      if (props && dropResult && props.rightAnswer && featherNumber >= 6) {
+      if (props && dropResult && props.rightAnswer && featherNumber == 6) {
         /*alert(
           `Great Job! You have filled headress. Progress to the next question.  `
         );*/
         setShowModalRight2(true);
 
         let featherToColor = document.getElementById(`feather${featherNumber}`);
-        featherToColor.setAttribute("fill", "#c24744")
+        featherToColor.setAttribute("fill", "#4C9BA8")
       }
       
       if (props && dropResult && props.rightAnswer && featherNumber < 6) {
@@ -51,11 +55,12 @@ export const FeatherOptions = (props) => {
         //working here to change the fill color of feathers with a given class 
         let featherToColor = document.getElementById(`feather${featherNumber}`);
 
-        console.log("featherToColor:")
-        console.log(featherToColor)
-        featherToColor.setAttribute("fill", "#c24744")
+        console.log("featherToColor:");
+        console.log(featherToColor);
+        featherToColor.setAttribute("fill", "#4C9BA8");
         //increase the feather number counter
         featherNumber++; 
+        console.log(featherNumber);
 
     
       }
@@ -88,7 +93,7 @@ export const FeatherOptions = (props) => {
           <Card.Text>
           {props.deed}
           </Card.Text>
-          {/* later we can add a more info button as a stretch goal */}
+          {/* later we can add a more info button as a stretch goal */} 
           {/* <Button variant="primary">Go somewhere</Button> */}
         </Card.Body>
       </Card>
@@ -145,7 +150,7 @@ export const FeatherOptions = (props) => {
       </Modal.Header>
       <Modal.Body className="pt-2 ">
         <p className="">
-          That's right! You earned a feather. Keep adding more.
+          Great Job! You have filled headress. Progress to the next question.
         </p>
         <img
           className="mascot-good-job pt-4"
