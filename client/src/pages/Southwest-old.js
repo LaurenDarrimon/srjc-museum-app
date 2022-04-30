@@ -7,9 +7,8 @@ import { TouchBackend } from "react-dnd-touch-backend";
 import { HTML5Backend } from "react-dnd-html5-backend";
 
 //mini-game components
-//import { PotteryDrop } from "../components/PotteryDrop";
-import {PotteryInfoCard} from "../components/pottery-game/PotteryInfoCard";
-import PotterDNDContainer from "../components/pottery-game/PotteryDNDContainer"
+import { PotteryDrop } from "../components/PotteryDrop";
+import { PotteryInfoCard } from "../components/PotteryInfoCard";
 
 //data
 import { potteryData } from "../assets/data/southwest-data";
@@ -22,9 +21,6 @@ import { useCounter } from "../utils/GameContext";
 import InstructionModal from "../components/MiniGameInstModal";
 import NextButton from "../components/NextButton";
 import BackButton from "../components/BackButton";
-import PotteryDNDResponsive from "../components/pottery-game/PotteryDNDResponsive";
-import PotteryDNDMobile from "../components/pottery-game/PotteryDNDMobile"
-
 
 const Southwest = () => {
 
@@ -59,26 +55,29 @@ const Southwest = () => {
     //loading or intro screen and homepage
 
     <DndProvider backend={isTouchScreen} options={options}>
-      <Container fluid className="site-content southwest-game region-southwest">
-            {/*<Col xs={12} className="text-center">
+      <Container fluid className="site-content region-southwest">
+        <Row className="justify-content-center p-5">
+          <Col xs={12} className="text-center">
             <div className="region-southwest">
-                <h1 className="subtitle">SouthWestern Pottery</h1>
+              <h1 className="subtitle p-5">Design Your Own Pottery</h1>
             </div>
-            </Col>
+          </Col>
+        </Row>
 
-            {/**DND section */}
-            <Row>
-                <Col xs={12} sm={10} className=" mx-auto">
-                    <PotteryDNDResponsive />
-                </Col>
-            </Row>
-            
-            
-            
-        
-            <br></br>
-            <h4>Symbols & Meanings Key:</h4>
-            <br></br>
+        <Row className="text-center">
+          <Col xs={6}>
+            <h3>Drag patterns from here:</h3>
+          </Col>
+          <Col xs={6}>
+            <h3>onto the pot:</h3>
+          </Col>
+        </Row>
+
+        <PotteryDrop />
+        <br></br>
+
+        <h4>Symbols & Meanings Key:</h4>
+        <br></br>
 
         <Row className="pot-design-bank flex-nowrap">
           {potteryData.map((design) => (
