@@ -423,6 +423,7 @@ h4 {
 
 .box svg:first-child {
   visibility: visible !important;
+  width: 30px !important;
 }
 
 .pot-img {
@@ -435,6 +436,78 @@ h4 {
   background-color: var(--purple);
   overflow-x: scroll;
   padding: 4rem;
+}
+/*
+@media screen and (min-width: 530px) {  /*btwn xs & sm*
+  .box svg:first-child {
+    visibility: visible !important;
+    width: 70px !important;
+  }
+  .pot-img {
+    width: 88% !important;
+    position: relative;
+    bottom:-190px;
+  }
+}
+
+@media screen and (min-width: 576px) {  /*sm*
+  .lesson .mascot-container img {
+    bottom: 20.75rem;
+    right: 10rem;
+    max-width: 34%;
+  }
+}
+
+@media screen and (min-width: 630px) {  /*btwn sm & md*
+  .lesson .mascot-container img {
+    bottom: 30rem;
+    right: 15rem;
+    max-width: 30%;
+  }*/
+
+@media screen and (min-width: 768px) {  /*md*/
+  .box svg:first-child {
+    width: 70px !important;
+  }
+  .pot-img {
+    width: 88% !important;
+    bottom:-200px;
+  }
+}
+/*
+@media screen and (min-width: 934px) {  /*btwn md & lg*
+  .lesson .mascot-container img{
+    bottom: 38rem;
+    right: 19rem;
+    max-width: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) {  /*lg*
+  .lesson .mascot-container img {
+    bottom: 45rem;
+    right: 16rem;
+    max-width: 35%;
+  }
+  .lesson.site-content {
+    padding-top: 5rem !important;
+  }
+}
+
+@media screen and (min-width: 1080px) {  /*btwn lg & xl*
+  .lesson .mascot-container img{
+    bottom: 48rem;
+    right: 20rem;
+    max-width: 35%;
+  }
+}
+
+@media screen and (min-width: 1400px) {  /*xxl*
+  .lesson .mascot-container img{
+    bottom: 48rem;
+    right: 25rem;
+    max-width: 35%;
+  }
 }
 
 /* GP Great plains feather game */

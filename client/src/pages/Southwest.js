@@ -22,6 +22,8 @@ import { useCounter } from "../utils/GameContext";
 import InstructionModal from "../components/MiniGameInstModal";
 import NextButton from "../components/NextButton";
 import BackButton from "../components/BackButton";
+import PotteryDNDResponsive from "../components/pottery-game/PotteryDNDResponsive";
+import PotteryDNDMobile from "../components/pottery-game/PotteryDNDMobile"
 
 
 const Southwest = () => {
@@ -65,7 +67,13 @@ const Southwest = () => {
             </Col>
 
             {/**DND section */}
-            <PotterDNDContainer />
+            <Row>
+                <Col xs={12} sm={10} className=" mx-auto">
+                    <PotteryDNDResponsive />
+                </Col>
+            </Row>
+            
+            
             
         
             <br></br>
