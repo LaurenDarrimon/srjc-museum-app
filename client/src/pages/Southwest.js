@@ -9,7 +9,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 //mini-game components
 //import { PotteryDrop } from "../components/PotteryDrop";
 import {PotteryInfoCard} from "../components/pottery-game/PotteryInfoCard";
-import PotterDNDContainer from "../components/pottery-game/PotteryDNDContainer"
+import PotteryDNDResponsive from "../components/pottery-game/PotteryDNDResponsive";
 
 //data
 import { potteryData } from "../assets/data/southwest-data";
@@ -22,8 +22,8 @@ import { useCounter } from "../utils/GameContext";
 import InstructionModal from "../components/MiniGameInstModal";
 import NextButton from "../components/NextButton";
 import BackButton from "../components/BackButton";
-import PotteryDNDResponsive from "../components/pottery-game/PotteryDNDResponsive";
-import PotteryDNDMobile from "../components/pottery-game/PotteryDNDMobile"
+
+
 
 
 const Southwest = () => {
