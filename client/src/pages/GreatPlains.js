@@ -60,7 +60,7 @@ const greatPlains = () => {
             </div>
           </Col>
 
-          <Col className="feather-container" xs={11} md={5}>
+          <Col className="feather-container mx-4 mt-3" xs={11} md={4} >
             {featherDeeds.map((feather) => (
               <FeatherOptions
                 key={feather.number}

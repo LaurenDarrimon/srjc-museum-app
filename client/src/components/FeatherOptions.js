@@ -10,11 +10,11 @@ import mascotGoodJob from "../assets/images/coyote-head.svg";
 import go from "../assets/images/go-btn.svg";
 
 const style = {
-  padding: "1rem 1rem",
-  marginRight: "1.5rem",
-  marginBottom: "1.5rem",
+  //padding: "1rem 1rem",
+  //marginRight: "1.5rem",
+  //marginBottom: "1.5rem",
   cursor: "move",
-  float: "left",
+  //float: "left",
 };
 
 //moved outside of component, because counter was starting over for each feather, causing the buggy-ness
@@ -82,11 +82,11 @@ export const FeatherOptions = (props) => {
     <div
       ref={drag}
       role="Box"
-      className="featherCard"
+      className="featherCard mx-auto"
       style={{ ...style, opacity }}
       data-testid={`box-${props.number}`}
     >
-      <Card xs={6} style={{ width: "14rem" }} >
+      <Card xs={6}  >
         <Card.Img variant="top" src={feather} style={{ height: "12rem" }}/>
         <Card.Body>
           {/* <Card.Title>{props.title}</Card.Title> */}

@@ -2,10 +2,8 @@ import { useDrop } from "react-dnd";
 import { ItemTypes } from "../utils/ItemTypes";
 
 const style = {
-  marginRight: "1.5rem",
-  marginBottom: "1.5rem",
   color: "white",
-  padding: "1rem",
+  padding: "0",
   textAlign: "center",
   fontSize: "1rem",
   lineHeight: "normal",
@@ -29,7 +27,7 @@ export const BonnetDrop = (props) => {
     backgroundColor = "#ca9938";
   }
   return (
-    <div ref={drop} role={"Dustbin"} style={{ ...style, backgroundColor }} className=" ">
+    <div ref={drop} role={"Dustbin"} style={{ ...style, backgroundColor }} className="ms-1 me-5">
       {isActive ? "Release to drop" : "Drag the feather here"}
       <br></br>
       <br></br>

@@ -455,14 +455,20 @@ h4 {
 .feather-container {
   background-color: var(--gold);
   overflow-y: scroll;
-  max-height: 1000px;
-  padding: 30px;
+  max-height: 900px;
+  padding: 20px !important;
+  border-radius: 6px;
+  border: 1px solid var(--purple)
+ /* box-shadow: -.75px .75px 2px 0px var(--purple-50);*/
+
 }
 
 .featherCard {
   color: black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
   font-size: 1.25rem;
+  margin: 0 auto 0 auto !important;
+  padding: 0;
 }
 
 
