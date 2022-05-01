@@ -458,7 +458,7 @@ h4 {
   max-height: 900px;
   padding: 20px !important;
   border-radius: 6px;
-  border: 1px solid var(--purple)
+  border: 1px solid var(--purple);
  /* box-shadow: -.75px .75px 2px 0px var(--purple-50);*/
 
 }
@@ -469,6 +469,11 @@ h4 {
   font-size: 1.25rem;
   margin: 0 auto 0 auto !important;
   padding: 0;
+}
+
+.greatplains-game .showInstructions-btn {
+  position: relative;
+  bottom: 6rem;
 }
 
 
