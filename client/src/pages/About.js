@@ -103,8 +103,9 @@ const About = () => {
                   </p>
                   <h5 className="h6">Educational Content</h5>
                   <p>
-                    All educational material for this game was provided by the the SRJC Multicultural Museum. All edits 
-                    made by our team were made in consultation with the museum's curator and the college's Native American Faculty and Staff Association.
+                    All educational material for this game was provided by the the SRJC Multicultural Museum. All textual edits 
+                    made by our team to fit the context of this game were made in consultation with the museum's curator and the 
+                    college's Native American Faculty and Staff Association.
                   </p>
                   
                 </div>

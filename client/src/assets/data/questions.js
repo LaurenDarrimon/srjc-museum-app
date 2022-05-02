@@ -11,13 +11,13 @@ export const triviaData = [
     correctMessage:
       "The Pomo Tribal Nation has continuously inhabited this land since long before Europeans colonized it.",
     wrongMessage:
-      "That tribal nation's homelands are located nearby, but not primarily in Sonoma County.  Please try again!",
+      "That tribal nation's homelands are located nearby, but not primarily in Sonoma County. Please try again!",
   },
   {
     number: 2,
     region:"California",
     lesson:
-      "SCAVENGER HUNT! The Pomo are renowned for their basket-making. Find this basket in the exhibit. Each basket has a number.",
+      "The Pomo are renowned for their basket-making. Find this basket in the exhibit. Each basket has a number.",
     question: "What number is this beautiful basket?",
     mainImage: "california/red-feather-basket.jpg",
     options: [12, 6, 34, 98, 5, 114, 39, 23, 19],
@@ -117,7 +117,7 @@ export const triviaData = [
     lesson:
       "People of the Pacific NW coast considered certain animals to be spiritual beings and their direct ancestors.",
     question:
-      "Find the Pacific NW exhibit. What 3 animals to you see in their art?",
+      "Find the Pacific NW exhibit. What 3 animals do you see in their art?",
     mainImage: "pnw-coast/animals-exhibit.jpg",
     options: [
       "Bear, Raven & Penguin",
