@@ -217,12 +217,16 @@ h4 {
 
 .region {
   color: white;
-  padding: 1.5rem;
+  padding: 1.25rem;
   /*box-shadow: 5px 5px 4px 1px lightgrey;*/
   /*box-shadow: -0.75px 1.25px 3px var(--purple);*/
   border: 1px solid var(--purple);
   border-radius: 10px;
   margin-bottom: 1.5rem;
+}
+
+.region h1 {
+  padding-bottom: 0 !important;
 }
 
 .region-h2-trivia {
@@ -652,6 +656,23 @@ h4 {
   font-size: 1rem;
 }
 
+.lesson figure {
+  border-radius: 6px;
+  padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+  /*border: .5px solid #5e5e5e;*/
+  box-shadow: -.5px 1px 2px 0px #5e5e5ebd;
+
+}
+
+.lesson figcaption {
+  color: #5e5e5e;
+
+}
+
+.lesson figure img {
+  border-radius: 6px;
+}
+
 
   /*responsive sizing for mascot-lessons page*/
 .lesson .mascot-container img { /*xs*/
@@ -737,7 +758,7 @@ h4 {
 }
 
 .answers {
-  font-size: 1.25rem !important;
+  font-size: 1.5rem !important;
   padding: .75em !important;
   margin: 15px;
   /*aspect-ratio: 1 / 1;*/

@@ -72,7 +72,7 @@ const Home = () => {
                         museum's exhibits.
                       </span>{" "}
                       Access them through the{" "}
-                      <span className="text-400">"Mini-Games" link</span> in the
+                      <span className="text-400">"Regions" link</span> in the
                       menu.
                       <br />
                       <br />
