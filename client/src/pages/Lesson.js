@@ -48,11 +48,16 @@ const Lesson = () => {
           <div className={`region  ${regionClass}`}>
             <h1>{currentLessonSlide.title}</h1>
           </div>
+          <figure>
           <img
             className="img-fluid"
             src={require(`../assets/images/${currentLessonSlide.imagePath}`)}
             alt={currentLessonSlide.imageDescription}
-          ></img>
+          />
+          <figcaption>{currentLessonSlide.imageDescription}</figcaption>
+          </figure>
+          
+
           <p>{currentLessonSlide.p1}</p>
           <p>{currentLessonSlide.p2}</p>
           <p>{currentLessonSlide.p3}</p>
