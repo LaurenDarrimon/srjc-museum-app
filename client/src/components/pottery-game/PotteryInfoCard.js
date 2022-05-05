@@ -4,7 +4,7 @@ import { Col, Card } from "react-bootstrap";
 export const PotteryInfoCard = (props) => {
 
   return (
-    <Col xs={6} sm={4} md={3} lg={2} className="featherCard" data-testid={`box-${props.number}`}>
+    <Col xs={6} sm={4} md={3} lg={2} className="pot-design-card" data-testid={`box-${props.number}`}>
       <Card >
         <Card.Img
           variant="top"

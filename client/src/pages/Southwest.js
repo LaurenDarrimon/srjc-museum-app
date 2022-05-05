@@ -1,5 +1,5 @@
 import { useEffect, React } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 //drag and drop
 import { DndProvider } from "react-dnd";
@@ -51,6 +51,12 @@ const Southwest = () => {
       navigator.msMaxTouchPoints > 0
     );
   }
+  
+  let wasPotCleared = false; 
+  function pageRefresh() {
+    window.location.reload(false)
+    wasPotCleared = true; 
+  }
 
   const isTouchScreen = isTouchDevice() ? TouchBackend : HTML5Backend;
 
@@ -72,6 +78,8 @@ const Southwest = () => {
                     <PotteryDNDResponsive />
                 </Col>
             </Row>
+
+            <Button onClick={pageRefresh}>Clear Pot</Button>
             
             
             
@@ -91,6 +99,8 @@ const Southwest = () => {
           ))}
         </Row>
 
+        {/* check to see if the Clear Pot button was clicked. Only show the instruction modal if the button wasn't clicked */}
+        {!wasPotCleared ? <Row></Row> :
         <Row>
           <Col xs={4}>
             {/* Click for modal */}
@@ -104,7 +114,7 @@ const Southwest = () => {
               imageDescription={currentModal.imageDescription}
             />
           </Col>
-        </Row>
+        </Row>} 
 
         <Row>
           <Col xs={6} className="justify-content-center text-center">
