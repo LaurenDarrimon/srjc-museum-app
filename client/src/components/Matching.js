@@ -9,7 +9,7 @@ import Card from "./Card";
 import mascotGoodJob from "../assets/images/coyote-head.svg";
 import go from "../assets/images/go-btn.svg";
 
-
+//function to shuffle the cards
 function shuffleCards(array) {
   const length = array.length;
   for (let i = length; i > 0; i--) {
@@ -93,10 +93,12 @@ export default function Matching(props) {
     checkCompletion();
   }, [clearedCards]);
   const checkIsFlipped = (index) => {
+    console.log("check to see if card is flipped")
     return openCards.includes(index);
   };
 
   const checkIsInactive = (card) => {
+    console.log("check to see if card is inactive");
     return Boolean(clearedCards[card.type]);
   };
 
