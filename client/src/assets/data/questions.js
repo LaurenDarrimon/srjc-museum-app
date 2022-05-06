@@ -152,7 +152,7 @@ export const triviaData = [
       "Which local tribe's people inhabit the lands of Sonoma County and have a vibrant tradition of fine basket making?",
     mainImage: "pottery.png",
     options: ["Yana", "Patwin", "Pomo", "Yuki"],
-    right_answer: "a",
+    right_answer: "Pomo",
     correctMessage: "That's right! This is William McKay and his family. William is passing on the art of basket making, for which the Pomo are renowned, to his grandchildren!",
     wrongMessage: "That's not quite right. Keep looking, explorer!",
   },
