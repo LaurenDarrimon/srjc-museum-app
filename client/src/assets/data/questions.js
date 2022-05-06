@@ -149,7 +149,7 @@ export const triviaData = [
     region:"California",
     lesson: "Ancient Traditions in Modern Times",
     question:
-      "Which local tribe (shown here) inhabits the lands of Sonoma County and boasts a vibrant tradition of fine basket making?",
+      "Which local tribe's people inhabit the lands of Sonoma County and have a vibrant tradition of fine basket making?",
     mainImage: "pottery.png",
     options: ["Yana", "Patwin", "Pomo", "Yuki"],
     right_answer: "a",
