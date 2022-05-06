@@ -81,9 +81,6 @@ const Southwest = () => {
 
             <Button onClick={pageRefresh}>Clear Pot</Button>
             
-            
-            
-        
             <br></br>
             <h4>Symbols & Meanings Key:</h4>
             <br></br>

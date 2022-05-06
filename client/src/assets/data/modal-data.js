@@ -28,7 +28,6 @@ export const modalData = [
   },
 
   //PNW
-
   {
     title: "Pacific NorthWest",
     p1: "",

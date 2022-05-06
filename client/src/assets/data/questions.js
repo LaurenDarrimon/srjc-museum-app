@@ -147,13 +147,13 @@ export const triviaData = [
   {
     number: 10,
     region:"California",
-    lesson: "A vibrant living culture!",
+    lesson: "Ancient Traditions in Modern Times",
     question:
-      "This will be a question about current First Nations People in our area",
+      "Which local tribe (shown here) inhabits the lands of Sonoma County and boasts a vibrant tradition of fine basket making?",
     mainImage: "pottery.png",
-    options: ["a", "b", "c", "d"],
+    options: ["Yana", "Patwin", "Pomo", "Yuki"],
     right_answer: "a",
-    correctMessage: "That's right!",
+    correctMessage: "That's right! This is William McKay and his family. William is passing on the art of basket making, for which the Pomo are renowned, to his grandchildren!",
     wrongMessage: "That's not quite right. Keep looking, explorer!",
   },
 ];
