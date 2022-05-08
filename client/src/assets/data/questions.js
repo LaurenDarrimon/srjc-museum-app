@@ -157,7 +157,7 @@ export const triviaData = [
     wrongMessage: "That's not quite right. Try Again!",
   },
   {
-    number: 10,
+    number: 11,
     region:"California",
     lesson: "",
     question:
