@@ -89,7 +89,7 @@ const Southwest = () => {
           {potteryData.map((design) => (
             <PotteryInfoCard
               key={design.number}
-              //title={design.title}
+              title={design.title}
               description={design.description}
               image={design.image}
             />
