@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { Modal, Button } from "react-bootstrap";
+//components
+import NextButton from './NextButton';
 //images
 import mascotGreatJob from "../assets/images/speech-bubble-mascot-greatjob.svg";
 import next from "../assets/images/next.png";
@@ -54,7 +56,7 @@ const UrDoneModal = () => {
               src={next}
               alt="next question"
               className="p-4"
-            />
+            /> 
           </Link>
         </Modal.Footer>
       </Modal>

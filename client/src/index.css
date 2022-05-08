@@ -675,6 +675,12 @@ h4 {
   font-size: 1rem;
 }
 
+.lesson p {
+  text-align: left;
+  width: 92%;
+  margin: 0 auto;
+}
+
 .lesson figure {
   border-radius: 6px;
   padding: 1.2rem 1.2rem 1.5rem 1.2rem;
