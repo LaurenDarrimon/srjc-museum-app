@@ -57,10 +57,12 @@ const Lesson = () => {
           <figcaption>{currentLessonSlide.imageDescription}</figcaption>
           </figure>
           
-
-          <p>{currentLessonSlide.p1}</p>
-          <p>{currentLessonSlide.p2}</p>
-          <p>{currentLessonSlide.p3}</p>
+          <div className="ps-3">
+            <p>{currentLessonSlide.p1}</p>
+            <p>{currentLessonSlide.p2}</p>
+            <p>{currentLessonSlide.p3}</p>
+          </div>
+          
         </Col>
         <Row className="mt-5">
           <Col xs={6} className="pt-5 mt-5 text-center">

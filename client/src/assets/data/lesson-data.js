@@ -6,8 +6,8 @@ export const lessonData = [
     p1: "Native Californians lived in an area rich in different types of plants and animals that they could use for food and other supplies.",
     p2: "They ate seeds and roots, hunted deer and elk, and fished for seafood. They even ground their own flour from acorns.",
     p3: "Some California tribes that you may already know about are the Pomo, Wappo, and Coast Miwok",
-    imagePath: "lessons/ca-lesson1-landscape.jpg",
-    imageDescription: "California oak forest",
+    imagePath: "lessons/CAlesson2-Washoe-Sara-Mayo_and_family.jpg",
+    imageDescription: "Washoe family",
   },
   {
     number: 1,
@@ -15,8 +15,8 @@ export const lessonData = [
     p1: "Native Californians are expert basket-makers.",
     p2: "Each family had their own set of baskets that they used the same way your family uses pots, pans, dishes, and storage containers!",
     p3: "The baskets are so sturdy that people would cook in them! Many baskets were also woven tightly enough to hold water.",
-    imagePath: "lessons/CAlesson2-Washoe-Sara-Mayo_and_family.jpg",
-    imageDescription: "Washoe family",
+    imagePath: "lessons/CAlesson3-Pomo-basket-weaver-thousand-stick-basket.jpg",
+    imageDescription: "A Pomo basket weaver working on a 'thousand stick basket'",
   },
   {
     number: 2,
@@ -24,9 +24,9 @@ export const lessonData = [
     p1: "Baskets were traditionally woven by women.",
     p2: "But one type of basket that men make are the fishing and bird trap baskets.",
     p3: "They would use these to hunt for food.",
-    imagePath: "lessons/CAlesson3-Pomo-basket-weaver-thousand-stick-basket.jpg",
+    imagePath: "lessons/ca-hunting-basket.jpg",
     imageDescription:
-      "A Pomo basket weaver working on a 'thousand stick basket'",
+      "A traditional fishing basket",
   },
   //SW
   {

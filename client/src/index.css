@@ -788,6 +788,15 @@ h4 {
   margin: 15px;
   /*aspect-ratio: 1 / 1;*/
   border-radius: 10px !important;
-  box-shadow: -0.5px .5px 2px var(--purple);
+  box-shadow: -.5px .5px 2px var(--purple);
+}
+
+.trivia-question-container {
+  width: 85%;
+  margin: 0 auto; 
+}
+
+.trivia-question-container img {
+  border-radius: 10px;
 }
 /* =============== END ERIN'S SECTION ============================= */

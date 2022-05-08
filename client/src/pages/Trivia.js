@@ -51,22 +51,24 @@ const Trivia = () => {
             <h2 className="region-h2-trivia">{quiz.number}</h2>
           </div>
 
-          <h3>{quiz.lesson}</h3>
+          <div className="trivia-question-container">
+            <div
+              style={{ overflow: "hidden", clear: "both" }}
+              image={quiz.mainImage}
+              answer={quiz.right_answer}
+            >
+              <img
+                className="characters"
+                id="main-pic"
+                style={{ maxWidth: "70%" }}
+                src={require(`../assets/images/${quiz.mainImage}`)}
+              />
+            </div>
+            <h3 className="pt-4 pb-2 ">{quiz.lesson}</h3>
 
-          <div
-            style={{ overflow: "hidden", clear: "both" }}
-            image={quiz.mainImage}
-            answer={quiz.right_answer}
-          >
-            <img
-              className="characters"
-              id="main-pic"
-              style={{ maxWidth: "70%" }}
-              src={require(`../assets/images/${quiz.mainImage}`)}
-            />
+            <h2 className="py-1 ">{quiz.question}</h2>
           </div>
 
-          <h2>{quiz.question}</h2>
           <br />
           <TriviaChoices />
 
