@@ -1,38 +1,38 @@
 export const potteryData = [
   {
     number: 1,
-    title: "Wing1",
+    title: "Bird",
     type: "wing",
     image: "wing1.png",
-    description: "Patterns with birds and feathers may symbolize prayer."
+    description: "Prayer"
   },
   {
     number: 2,
-    title: "Wing2",
+    title: "Bird",
     type: "wing",
     image: "wing2.png",
-    description: "Birds and feathers can mean prayer."
+    description: "Prayer"
   },
   {
     number: 3,
     title: "Wing3",
     type: "wing",
     image: "wing3.png",
-    description: "Patterns with birds and feathers can be prayer symbols."
+    description: "Prayer"
   },
   {
     number: 4,
     title: "Wing4",
     type: "wing",
     image: "wings4.png",
-    description: "Birds and feathers are often prayer symbols."
+    description: "Prayer"
   },
   {
     number: 5,
     title: "Wing5",
     type: "wing",
     image: "wing5.png",
-    description: "Patterns with birds and feathers are often prayer symbols."
+    description: "Prayer"
   },
   {
     number: 6,
