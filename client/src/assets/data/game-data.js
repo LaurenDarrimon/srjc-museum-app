@@ -1,4 +1,5 @@
 export const gameData = [
+  // stateCounters = [trivia, game, lesson, overall slide]
   {
     //land acknowledgement
     //trivia 0
@@ -195,10 +196,31 @@ export const gameData = [
   {
       // Contemporary First Nations Q
     number: 25,
-    title: "Contemporary Culture Q.",
-    nextPath: "/about",
+    title: "Contemporary Culture Q1",
+    nextPath: "/lesson",
     lastPath: "/pacificnw",
-    stateCounters:[9, 3, 12, 25,]
+    stateCounters:[9, 4, 11, 25,]
+  },
+  {
+  number: 26,
+  title: "Contemporary Culture Lesson 1",
+  nextPath: "/lesson",
+  lastPath: "/trivia",
+  stateCounters:[9, 4, 12, 26,]
+  } ,
+  {
+  number: 27,
+  title: "Contemporary Culture Lesson 2",
+  nextPath: "/trivia",
+  lastPath: "/lesson",
+  stateCounters:[9, 4, 13, 27,]
+  },
+  {
+    number: 28,
+    title: "Contemporary Culture Q2",
+    nextPath: "/about",
+    lastPath: "/lesson",
+    stateCounters:[10, 4, 13, 28,]
   },
 
 ];

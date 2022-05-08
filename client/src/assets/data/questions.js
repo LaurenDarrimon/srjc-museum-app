@@ -147,13 +147,25 @@ export const triviaData = [
   {
     number: 10,
     region:"California",
-    lesson: "Ancient Traditions in Modern Times",
+    lesson: "Pictured are local children learning the ancient art of basket weaving with their grandfather & grandmother. ",
     question:
-      "Which local tribe's people inhabit the lands of Sonoma County and have a vibrant tradition of fine basket making?",
-    mainImage: "pottery.png",
+      "Which Sonoma county people has vibrant tradition of fine basket making?",
+    mainImage: "contemporary/basket-weaving/clint-mckay-baskets-collage.png",
     options: ["Yana", "Patwin", "Pomo", "Yuki"],
     right_answer: "Pomo",
-    correctMessage: "That's right! This is William McKay and his family. William is passing on the art of basket making, for which the Pomo are renowned, to his grandchildren!",
-    wrongMessage: "That's not quite right. Keep looking, explorer!",
+    correctMessage: "That's right! This is Clin McKay and his family. Clint is passing on the art of basket making, for which the Pomo are renowned, to his grandchildren!",
+    wrongMessage: "That's not quite right. Try Again!",
+  },
+  {
+    number: 10,
+    region:"California",
+    lesson: "",
+    question:
+      "What are some of the benefits of cultural burning?",
+    mainImage: "contemporary/basket-weaving/clint-mckay-baskets-collage.png",
+    options: ["fire prevention & soil improvement", "burning a neighbor's field you don't like", "clearing space for a highway", "getting rid of trash"],
+    right_answer: "Pomo",
+    correctMessage: "That's right! Controled burning can prevent larger fires later. Suppressing small fires ( along with urban development and climate change) has led to more large, uncontrolled fires that can quickly spread through areas with lots of underbrush. ",
+    wrongMessage: "That's not quite right. Try Again!",
   },
 ];

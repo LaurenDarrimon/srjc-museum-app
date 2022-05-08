@@ -19,7 +19,7 @@ const NextButton = () => {
 
   let nextPath = gameData[slideCounter].nextPath;
 
-  if (slideCounter == 25) {
+  if (slideCounter == 28) {
     //render next button as modal trigger
     return <UrDoneModal />;
   } else {

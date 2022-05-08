@@ -72,8 +72,8 @@ const Lesson = () => {
         </Row>
         <div className="mascot-container">
         <picture>
-          <source media="(max-width:630px)" srcset= {coyoteHead} />
-          <source media="(min-width:630px)" srcset={coyote} />
+          <source media="(max-width:630px)" srcSet= {coyoteHead} />
+          <source media="(min-width:630px)" srcSet={coyote} />
           <img src={coyote} alt="coyote guide" />
         </picture>
           

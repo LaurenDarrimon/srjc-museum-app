@@ -112,4 +112,24 @@ export const lessonData = [
       "lessons/PNWlesson3-calvinhunt-2003-eagle-chief-and-bear-holding-salmon.jpg",
     imageDescription: "",
   },
+  {
+    number: 12,
+    title: "Cultural Burning",
+    p1: " Native people have a tradition of lighting small, controlled fires to provide service, such as keeping local plants and animals healthy.",
+    p2: "These burns have many positive effects over the generations. ",
+    p3: "They improve soil quality, and help plants grow healthy and strong.",
+    imagePath:
+      "contemporary/cultural-burning/ericatom-devynfriedfel-chairmanrongood.jpg",
+    imageDescription: "Local Sonoma county group performing a cultural burn",
+  },
+  {
+    number: 13,
+    title: "Cultural Burning",
+    p1: "As European colonizers spread across the US, fire suppression became more common.",
+    p2: "Without cultural burns, old underbrush built up, putting forests at risk of devastating fire.",
+    p3: "Luckily, people are now beginning to understand that the native peoples' tradition of controlled burns is a valuable way to reduce out of control wildfires.",
+    imagePath:
+      "contemporary/cultural-burning/ericatom.jpg",
+    imageDescription: "Local Sonoma county group performing a cultural burn",
+  },
 ];
