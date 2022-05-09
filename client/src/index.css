@@ -171,10 +171,11 @@ h4 {
 .main-guide-img { /*xs*/
   max-width: 50% !important;
   position: relative;
-  bottom: 18rem;
+  bottom: 14rem;
   left: .75rem;
   padding: 0 !important;
 }
+
 
 @media screen and (min-width: 576px) {  /*sm*/
   .main-guide-img {
@@ -195,7 +196,7 @@ h4 {
 @media screen and (min-width: 768px) {  /*md*/
   .main-guide-img {
     max-width: 45% !important;
-    bottom: 20rem;
+    bottom: 24rem;
     left: 1.25rem;
   }
 }
@@ -581,9 +582,24 @@ h4 {
   color: var(--purple);
   /*border: 2px solid var(--purple);*/
   border-radius: 10px;
-  padding: 2em !important;
+  padding: 1.5em !important;
   margin: 1em auto 1em auto;
   box-shadow: -.75px .75px 2px 0px var(--purple);
+  font-size: medium;
+}
+
+@media screen and (min-width: 460px) {  /* btwn xs & sm*/
+  .speech-bubble {
+    padding: 2em !important;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 996px) {  /* lg*/
+  .instructions .speech-bubble, .trivia .speech-bubble {
+    padding: 5rem !important;
+    font-size: 2rem;
+  }
 }
 
 .speech-bubble h1 {
@@ -720,8 +736,8 @@ h4 {
   /*responsive sizing for mascot-lessons page*/
 .lesson .mascot-container img { /*xs*/
   position: relative;
-  bottom: 20.5rem;
-  right: 8.5rem;
+  bottom: 19.5rem;
+  right: 6.5rem;
   max-width: 40%;
 }
 

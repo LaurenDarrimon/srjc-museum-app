@@ -44,8 +44,8 @@ const Trivia = () => {
   return (
     //loading or intro screen and homepage
     <Container fluid className={`trivia site-content ${regionClass}`}>
-      <Row className="text-center p-5">
-        <Col xs={{ span: 11 }} className="speech-bubble py-5 mx-auto">
+      <Row className="text-center p-4 p-sm-5">
+        <Col xs={12} sm={11} className="speech-bubble py-5 mx-auto">
           <div className={`region  ${regionClass}`}>
             <h1 className="d-inline-block pe-3">{quiz.region}</h1>
             <h2 className="region-h2-trivia">{quiz.number}</h2>
