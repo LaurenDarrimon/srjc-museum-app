@@ -80,7 +80,7 @@ export const potteryData = [
   {
     number: 15,
     title: "Lightning",
-    image: "lighting.svg",
+    image: "lightning.svg",
     description: "lightning or snakes ~ snakes symbolize water"
   },
   {
