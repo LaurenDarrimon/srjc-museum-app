@@ -447,18 +447,31 @@ h4 {
 }
 
 .pot-design-bank {
-  background-color: var(--purple);
   overflow-x: scroll;
   padding: 4rem;
 }
 
-.pot-design-card{
-  background-color:white; 
+.pot-design-card {
   color: black;
   font-size: 1.25rem;
   margin: 0 auto 0 auto !important;
   padding: 0; 
   margin:20px;
+}
+
+.pot-design-card .card {
+  height: 350px;
+  padding: 1.5rem 1rem;
+  border-radius: 6px;
+}
+
+.pot-design-card .card-body {
+  font-size: 1rem;
+}
+
+.pot-design-card .card-img-top {
+  max-height: 150px;
+  max-width: auto;
 }
 
 

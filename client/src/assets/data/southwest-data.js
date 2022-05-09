@@ -2,143 +2,116 @@ export const potteryData = [
   {
     number: 1,
     title: "Bird",
-    type: "wing",
     image: "wing1.svg",
     description: "Prayer"
   },
   {
     number: 2,
     title: "Bird",
-    type: "wing",
     image: "wing2.svg",
     description: "Prayer"
   },
   {
     number: 3,
-    title: "Wing3",
-    type: "wing",
+    title: "Wing",
     image: "wing3.svg",
     description: "Prayer"
   },
   {
     number: 4,
-    title: "Wing4",
-    type: "wing",
+    title: "Fird",
     image: "wing4.svg",
     description: "Prayer"
   },
   {
     number: 5,
-    title: "Wing5",
-    type: "wing",
+    title: "Feather",
     image: "wing5.svg",
     description: "Prayer"
   },
   {
     number: 6,
-    title: "Rain1",
-    type: "rain",
+    title: "Feather",
     image: "wing6.svg",
     description: "Prayer"
   },
   {
     number: 7,
     title: "Diagonal Lines",
-    type: "rain",
     image: "diagonal-lines-rain.svg",
-    description: "Snakes are associates with water."
-  },
-  {
-    number: 8,
-    title: "Rain1",
-    type: "rain",
-    image: "fertility1.svg",
-    description: "Zigzag lines are often associated with lightning and snakes."
+    description: "Water"
   },
   {
     number: 9,
-    title: "Rain2",
-    type: "rain",
+    title: "Butterfly",
     image: "fertility1.svg",
-    description: "Snakes are associates with water."
+    description: "Fertility"
   },
   {
     number: 10,
-    title: "Rain2",
-    type: "rain",
+    title: "Tadpole",
     image: "fertility2.svg",
-    description: "Snakes are associates with water."
+    description: "Fertility"
   },
   {
     number: 11,
-    title: "Rain2",
-    type: "rain",
+    title: "Turtle",
     image: "fertility3.svg",
-    description: "Snakes are associates with water."
+    description: "Fertility"
   },
   {
     number: 12,
-    title: "Rain2",
-    type: "rain",
+    title: "The Heartline",
     image: "heartline1.svg",
-    description: "Snakes are associates with water."
+    description: "Pathway of powerful Breath ~ Lungs to Mouth"
   },
   {
     number: 13,
-    title: "Rain2",
-    type: "rain",
+    title: "The Heartline",
     image: "heartline2.svg",
-    description: "Snakes are associates with water."
+    description: "Pathway of powerful Breath ~ Lungs to Mouth"
   },
   {
     number: 14,
-    title: "Rain2",
-    type: "rain",
+    title: "Kiva Steps",
     image: "kiva-steps.svg",
-    description: "Snakes are associates with water."
+    description: "Sacred space"
   },
   {
     number: 15,
-    title: "Rain2",
-    type: "rain",
-    image: "lightning.svg",
-    description: "Snakes are associates with water."
+    title: "Lightning",
+    image: "lighting.svg",
+    description: "lightning or snakes ~ snakes symbolize water"
   },
   {
     number: 16,
-    title: "Rain2",
-    type: "rain",
+    title: "Rain",
     image: "rain1.svg",
-    description: "Snakes are associates with water."
+    description: "Rain, Clouds & Lightning"
   },
   {
     number: 17,
-    title: "Rain2",
-    type: "rain",
+    title: "Rain",
     image: "rain2.svg",
-    description: "Snakes are associates with water."
+    description: "Rain & Clouds"
   },
   {
     number: 18,
-    title: "Rain2",
-    type: "rain",
+    title: "Rain",
     image: "rain3.svg",
-    description: "Snakes are associates with water."
+    description: "Rain & Clouds"
   },
   {
     number: 19,
-    title: "Rain2",
-    type: "rain",
+    title: "Rainbow",
     image: "rainbow.svg",
-    description: "Snakes are associates with water."
+    description: "Symbolic of Rain"
   },
   {
     number: 20,
-    title: "Rain2",
-    type: "rain",
+    title: "Snake",
     image: "snake.svg",
-    description: "Snakes are associates with water."
+    description: "lightning or snakes ~ snakes symbolize water"
   }
-
 ];
 
