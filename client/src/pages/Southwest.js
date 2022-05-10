@@ -65,39 +65,36 @@ const Southwest = () => {
     //loading or intro screen and homepage
 
     <DndProvider backend={isTouchScreen} options={options}>
-      <Container fluid className="site-content southwest-game region-southwest">
-            {/*<Col xs={12} className="text-center">
-            <div className="region-southwest">
-                <h1 className="subtitle">SouthWestern Pottery</h1>
-            </div>
-            </Col>
+      <Container fluid className="site-content southwest-game region-southwest pt-lg-5">
+          {/*<Col xs={12} className="text-center">
+          <div className="region-southwest">
+              <h1 className="subtitle">SouthWestern Pottery</h1>
+          </div>
+          </Col>
 
-            {/**DND section */}
-            <Row>
-                <Col xs={12} sm={10} className=" mx-auto">
-                    <PotteryDNDResponsive />
-                </Col>
-            </Row>
-
-            <Button onClick={pageRefresh}>Clear Pot</Button>
-            
-            <br></br>
+          {/**DND section */}
+        <Row>
+          <Col xs={12} sm={10} className="mx-auto">
+            <PotteryDNDResponsive />
+            <Button onClick={pageRefresh} className="mb-5">Clear Pot</Button>
             <h4>Symbols & Meanings Key:</h4>
-            <br></br>
-
-        <Row className="pot-design-bank flex-nowrap">
-          {potteryData.map((design) => (
-            <PotteryInfoCard
-              key={design.number}
-              title={design.title}
-              description={design.description}
-              image={design.image}
-            />
-          ))}
+            <Row className="pot-design-bank flex-nowrap">
+              {potteryData.map((design) => (
+                <PotteryInfoCard
+                  key={design.number}
+                  title={design.title}
+                  description={design.description}
+                  image={design.image}
+                />
+              ))}
+            </Row>
+          </Col>
         </Row>
+        
 
         {/* check to see if the Clear Pot button was clicked. Only show the instruction modal if the button wasn't clicked */}
-        {!wasPotCleared ? <Row></Row> :
+        {console.log(wasPotCleared)}
+        {wasPotCleared ? <Row></Row> :
         <Row>
           <Col xs={4}>
             {/* Click for modal */}

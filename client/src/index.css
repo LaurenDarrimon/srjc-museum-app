@@ -21,12 +21,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Pangolin&display=swap");
 
 /* NOTE: I am trying to to make the app always fill the vertical height  */
+html {
+  background-color: var(--purple);
+}
 
 body {
   font-family: "Lato", sans-serif !important;
   font-weight: 300 !important;
   font-size: 1.75rem !important;
   width: 100vw;
+  background-color: var(--purple);
 }
 
 /* NOTE: Thinking we should use this font more sparingly. Its kinda ugly when there's a lot of it actually.
@@ -53,14 +57,19 @@ h4 {
   min-height: 100vh;
   flex: 1;
   min-width: 100vw !important;
-  padding-top: 1.75em;
+  padding-top: 1.75rem;
 }
 
 /***NAV****/
 
 .navigation {
-  /*background-color: transparent; /*make NAVBAR transparent*/
   color: var(--purple) !important;
+}
+
+@media screen and (min-width: 992px) {
+  .navigation, #basic-nav-dropdown {
+    color: var(--light-gray) !important;
+  }
 }
 
 .dropdown-toggle,
@@ -171,10 +180,11 @@ h4 {
 .main-guide-img { /*xs*/
   max-width: 50% !important;
   position: relative;
-  bottom: 18rem;
+  bottom: 14rem;
   left: .75rem;
   padding: 0 !important;
 }
+
 
 @media screen and (min-width: 576px) {  /*sm*/
   .main-guide-img {
@@ -195,7 +205,7 @@ h4 {
 @media screen and (min-width: 768px) {  /*md*/
   .main-guide-img {
     max-width: 45% !important;
-    bottom: 20rem;
+    bottom: 24rem;
     left: 1.25rem;
   }
 }
@@ -271,6 +281,7 @@ h4 {
 .Matching {
   width: 100%;
   height: 100%;
+  font-size: 1.25rem;
 }
 .Matching header {
   position: relative;
@@ -309,18 +320,48 @@ h4 {
   padding: 12px;
   box-shadow: 0 0 4px 4px #dedede;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   justify-items: center;
   align-items: stretch;
   gap: 1rem;
   margin: 0 auto;
   /*width: 500px;
   height: 420px;*/
-  width: 50vw;
-  height: 41vw;
+  width: 70vw;
+  height: 98vw;
   perspective: 100%;
   max-width: 720px;
+}
+
+@media (min-width: 576px) {
+  .Matching .container {
+    width: 80vw;
+    height: 66vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .Matching .container {
+    width: 75vw;
+    height: 60vw;
+  }
+}
+
+@media (min-width: 1060px) {
+  .Matching .container {
+    width: 75vw;
+    height: 50vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Matching .container {
+    width: 100vw;
+    height: 45vh;
+  }
 }
 
 .Matching .card {
@@ -378,15 +419,8 @@ h4 {
 
 .matching-inst-modal-btn {
   position: relative;
-  bottom: 3rem;
 }
 
-@media (max-width: 576px) {
-  .Matching .container {
-    width: 90vw;
-    height: 75vw;
-  }
-}
 
 /* SW potttery game section  */
 
@@ -447,18 +481,35 @@ h4 {
 }
 
 .pot-design-bank {
-  background-color: var(--purple);
   overflow-x: scroll;
-  padding: 4rem;
+  padding: 2rem;
+  background-color: var(--tan);
+  border-radius: 6px;
+  border: 3px solid rgb(66, 44, 25);
+  /*margin: 0 1rem !important;*/
 }
 
-.pot-design-card{
-  background-color:white; 
+.pot-design-card {
   color: black;
   font-size: 1.25rem;
   margin: 0 auto 0 auto !important;
-  padding: 0; 
+  padding: .35em !important; 
   margin:20px;
+}
+
+.pot-design-card .card {
+  height: 350px;
+  padding: 1.5rem 1rem;
+  border-radius: 6px;
+}
+
+.pot-design-card .card-body {
+  font-size: 1rem;
+}
+
+.pot-design-card .card-img-top {
+  max-height: 150px;
+  max-width: auto;
 }
 
 
@@ -564,9 +615,27 @@ h4 {
   color: var(--purple);
   /*border: 2px solid var(--purple);*/
   border-radius: 10px;
-  padding: 2em !important;
+  padding: 1.5em !important;
   margin: 1em auto 1em auto;
   box-shadow: -.75px .75px 2px 0px var(--purple);
+  font-size: medium;
+}
+
+@media screen and (min-width: 460px) {  /* btwn xs & sm*/
+  .speech-bubble {
+    padding: 2em !important;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 996px) {  /* lg*/
+  .speech-bubble {
+    margin-top: 1em !important;
+  }
+  .instructions .speech-bubble, .trivia .speech-bubble {
+    padding: 5rem !important;
+    font-size: 2rem;
+  }
 }
 
 .speech-bubble h1 {
@@ -582,8 +651,19 @@ h4 {
 
 /* || MODALS - Instructions & Try Again */
 .custom-modal {
-  max-width: 65% !important;
+  max-width: 85% !important;
   margin-top: 8vh !important;
+  margin: 0 auto !important;
+}
+
+
+@media screen and (min-width: 576px) {  /*sm*/
+  .custom-modal {
+    max-width: 65% !important;
+    margin-top: 8vh !important;
+
+  }
+  
 }
 
 /*bs-react class*/
@@ -703,8 +783,8 @@ h4 {
   /*responsive sizing for mascot-lessons page*/
 .lesson .mascot-container img { /*xs*/
   position: relative;
-  bottom: 20.5rem;
-  right: 8.5rem;
+  bottom: 19.5rem;
+  right: 6.5rem;
   max-width: 40%;
 }
 

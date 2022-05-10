@@ -31,8 +31,8 @@ const PacificNW = () => {
   //return JSX
   return (
     //loading or intro screen and homepage
-    <Container fluid className="site-content region-northwest">
-      <Row className="justify-content-center py-3 px-5">
+    <Container fluid className="site-content region-northwest pt-lg-5">
+      <Row className="justify-content-center py-3 px-5 mx-auto">
         <Col xs={12} className="text-center">
           <div className="region-northwest">
             <h1 className="subtitle p-2">Pacific Northwest </h1>
@@ -41,7 +41,7 @@ const PacificNW = () => {
       </Row>
 
       <Row>
-        <Col xs={12}>
+        <Col xs={12} className="px-1">
           <Matching
             cardsArray={pnwCardsArray}
             currentModal={currentModal}

@@ -30,8 +30,8 @@ const California = () => {
   //return JSX
   return (
     //loading or intro screen and homepage
-    <Container fluid className="site-content region-california">
-      <Row className="justify-content-center py-3 px-5">
+    <Container fluid className="site-content region-california pt-lg-5">
+      <Row className="justify-content-center py-3 px-5 mx-auto">
         <Col xs={12} className="text-center">
           <div className="region-california">
             <h1 className="subtitle p-3">California </h1>
