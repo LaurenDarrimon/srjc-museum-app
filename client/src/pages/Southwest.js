@@ -65,7 +65,7 @@ const Southwest = () => {
     //loading or intro screen and homepage
 
     <DndProvider backend={isTouchScreen} options={options}>
-      <Container fluid className="site-content southwest-game region-southwest">
+      <Container fluid className="site-content southwest-game region-southwest pt-lg-5">
           {/*<Col xs={12} className="text-center">
           <div className="region-southwest">
               <h1 className="subtitle">SouthWestern Pottery</h1>
@@ -74,7 +74,7 @@ const Southwest = () => {
 
           {/**DND section */}
         <Row>
-          <Col xs={12} sm={10} className=" mx-auto">
+          <Col xs={12} sm={10} className="mx-auto">
             <PotteryDNDResponsive />
             <Button onClick={pageRefresh} className="mb-5">Clear Pot</Button>
             <h4>Symbols & Meanings Key:</h4>

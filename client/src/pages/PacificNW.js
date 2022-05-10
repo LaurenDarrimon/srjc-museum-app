@@ -31,7 +31,7 @@ const PacificNW = () => {
   //return JSX
   return (
     //loading or intro screen and homepage
-    <Container fluid className="site-content region-northwest">
+    <Container fluid className="site-content region-northwest pt-lg-5">
       <Row className="justify-content-center py-3 px-5 mx-auto">
         <Col xs={12} className="text-center">
           <div className="region-northwest">

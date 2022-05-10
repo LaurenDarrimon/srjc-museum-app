@@ -57,14 +57,19 @@ h4 {
   min-height: 100vh;
   flex: 1;
   min-width: 100vw !important;
-  padding-top: 1.75em;
+  padding-top: 1.75rem;
 }
 
 /***NAV****/
 
 .navigation {
-  /*background-color: transparent; /*make NAVBAR transparent*/
   color: var(--purple) !important;
+}
+
+@media screen and (min-width: 992px) {
+  .navigation, #basic-nav-dropdown {
+    color: var(--light-gray) !important;
+  }
 }
 
 .dropdown-toggle,
@@ -345,6 +350,20 @@ h4 {
   }
 }
 
+@media (min-width: 1060px) {
+  .Matching .container {
+    width: 75vw;
+    height: 50vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Matching .container {
+    width: 100vw;
+    height: 45vh;
+  }
+}
+
 .Matching .card {
   width: 100%;
   height: 100%;
@@ -610,6 +629,9 @@ h4 {
 }
 
 @media screen and (min-width: 996px) {  /* lg*/
+  .speech-bubble {
+    margin-top: 1em !important;
+  }
   .instructions .speech-bubble, .trivia .speech-bubble {
     padding: 5rem !important;
     font-size: 2rem;
