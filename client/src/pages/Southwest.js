@@ -93,7 +93,8 @@ const Southwest = () => {
         
 
         {/* check to see if the Clear Pot button was clicked. Only show the instruction modal if the button wasn't clicked */}
-        {!wasPotCleared ? <Row></Row> :
+        {console.log(wasPotCleared)}
+        {wasPotCleared ? <Row></Row> :
         <Row>
           <Col xs={4}>
             {/* Click for modal */}

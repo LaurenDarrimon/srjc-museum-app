@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef, React } from "react";
-import { Modal, Button } from "react-bootstrap";
+import { Row, Col, Modal, Button } from "react-bootstrap";
 
 //import components
 import InstructionModal from "../components/MiniGameInstModal";
@@ -115,7 +115,8 @@ export default function Matching(props) {
 
 
   return (
-    <div className="Matching">
+
+    <Row className="Matching">
       <header>
         <div>
           Find all the matching cards! 
@@ -138,7 +139,7 @@ export default function Matching(props) {
         })}
       </div>
       <footer>
-        <div className="d-inline-block w-50 text-center">
+        <Col xs={12} sm={{ span:5, offset:1 }} className="p-1 d-inline-block text-center">
           <div className="score">
             <div className="moves">
               <span className="bold">Moves:</span> {moves}
@@ -155,8 +156,11 @@ export default function Matching(props) {
               Restart
             </Button>
           </div>
-        </div>
-        <div className="d-inline-block matching-inst-modal-btn">
+        </Col>
+        <Col 
+          xs={{ span:9, offset:5 }} 
+          md={{ span:6, offset:7 }}
+          className="d-inline-block matching-inst-modal-btn p-2">
           {/* Click for modal */}
           {/* pass in props for current instruction modal */}
           <InstructionModal
@@ -167,7 +171,7 @@ export default function Matching(props) {
             imagePath={props.currentModal.imagePath}
             imageDescription={props.currentModal.imageDescription}
           />
-        </div>
+        </Col>
       </footer>
 
       <Modal
@@ -203,6 +207,6 @@ export default function Matching(props) {
         </Modal.Footer>
       </Modal>
 
-    </div>
+    </Row>
   );
 }
