@@ -17,6 +17,7 @@ import { Container, Row } from "react-bootstrap";
 import Navigation from "./components/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import AboutEnd from "./pages/AboutEnd";
 import Instructions from "./pages/Instructions";
 import Trivia from "./pages/Trivia";
 import GreatPlains from "./pages/GreatPlains";
@@ -76,6 +77,8 @@ function App() {
                 <Route path="/trivia" element={<Trivia />} />
 
                 <Route path="/about" element={<About />} />
+
+                <Route path="/aboutend" element={<AboutEnd />} />
 
                 <Route path="/california" element={<California />} />
 
