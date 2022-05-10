@@ -21,19 +21,18 @@ const Navigation = () => {
             <Nav.Link href="/" className="navigation">
               Start Over
             </Nav.Link>
-            <Nav.Link href="/about" className="navigation">
-              About
-            </Nav.Link>
-            <Nav.Link href="/instructions" className="navigation">
-              Help
-            </Nav.Link>
-            <NavDropdown title="Regions" id="basic-nav-dropdown">
-              
+            <NavDropdown title="Mini-Games" id="basic-nav-dropdown">
               <NavDropdown.Item href="/California">California</NavDropdown.Item>
               <NavDropdown.Item href="/Southwest" >Southwest</NavDropdown.Item>
               <NavDropdown.Item href="/GreatPlains">Great Plains</NavDropdown.Item>
               <NavDropdown.Item href="/PacificNW" >Pacific Northwest</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/instructions" className="navigation">
+              Help
+            </Nav.Link>
+            <Nav.Link href="/about" className="navigation">
+              About
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

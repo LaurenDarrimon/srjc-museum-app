@@ -218,7 +218,7 @@ export const gameData = [
   {
     number: 28,
     title: "Contemporary Culture Q2",
-    nextPath: "/about",
+    nextPath: "/aboutend",
     lastPath: "/lesson",
     stateCounters:[10, 4, 13, 28,]
   },

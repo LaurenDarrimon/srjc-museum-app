@@ -45,7 +45,7 @@ const UrDoneModal = () => {
         aria-labelledby="modal-title"
       >
         <Modal.Header closeButton>
-          <Modal.Title as="h1">Yay! <br/>You Finished the Game!</Modal.Title>
+          <Modal.Title as="h1">Yay! <br/>You Finished!</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <img className='mascot-urdone mx-auto pt-5' src={mascotGreatJob} alt="Mascot says 'Woohoo! Great Job'" />

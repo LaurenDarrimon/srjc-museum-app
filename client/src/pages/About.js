@@ -8,22 +8,22 @@ const About = () => {
   //return JSX
   return (
     //loading or intro screen and homepage
-    <Container fluid className="about">
-      <Row className="mx-auto p-5 justify-content-center">
+    <Container fluid className="about pt-lg-5">
+      <Row className="mx-auto pt-5 justify-content-center">
         <Col xs={12} className="text-center">
-          <h1 className="display-2 py-4 pangolin-font">Thanks for Playing!</h1>
+          <h1 className="display-2 py-4 pangolin-font">About</h1>
         </Col>
-        <Col xs={6} className="text-center mx-auto pb-5">
+        <Col xs={6} xl={7} className="text-center mx-auto pb-5">
           <img
             src={logo}
             className="logo-about img-fluid"
             alt="round SRJC logo showing black on white pottery design"
           />        
         </Col>
-        <Col xs={11} md={10}>
+        <Col xs={11} sm ={10} md={8} lg={7} xl={6}>
           <Accordion defaultActiveKey="">
             <Accordion.Item eventKey="0">
-              <Accordion.Header>About This Game</Accordion.Header>
+              <Accordion.Header>This Game</Accordion.Header>
               <Accordion.Body>
                 <p>
                   This scavenger hunt is based on the SRJC Multicultural Museum's

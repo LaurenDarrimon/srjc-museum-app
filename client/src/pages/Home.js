@@ -67,21 +67,14 @@ const Home = () => {
                       Click Here to Learn How.
                     </Accordion.Header>
                     <Accordion.Body>
-                      <span className="text-400">
+                      <p className="p-0 pb-3">
                         There are 4 games you can play without any help from the
                         museum's exhibits.
-                      </span>{" "}
-                      Access them through the{" "}
-                      <span className="text-400">"Regions" link</span> in the
+                      </p>{" "}
+                      See the{" "}
+                      <span className="text-400">"Mini-Games" link</span> in the
                       menu.
                       <br />
-                      <br />
-                      <span className="text-400">
-                        You can still try your best on the scavenger hunt if you
-                        would like!
-                      </span>{" "}
-                      You wont have access to clues in the museum, but there is
-                      no penalty for guessing.
                     </Accordion.Body>
                   </Accordion.Item>
                 </Accordion>

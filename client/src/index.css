@@ -750,6 +750,20 @@ h4 {
   box-shadow: -.75px .75px 2px 0px black;
 }
 
+/*** alt ABOUT pg at end of game*********/
+.aboutend {
+  height: 100vh;
+}
+
+.aboutend div:only-child {
+  margin: 10rem;
+}
+
+.aboutend button {
+  font-size: 1.75rem;
+  padding: 1rem;
+}
+
 
 /******LESSONS*****/
 .lesson {
