@@ -26,7 +26,7 @@ export const BonnetDrop = (props) => {
     backgroundColor = "#ca9938";
   }
   return (
-    <div ref={drop} role={"Dustbin"} style={{ ...style, backgroundColor }} className="fs-6 bonnet-drop ms-sm-1 me-sm-5">
+    <div ref={drop} role={"Dustbin"} style={{ ...style, backgroundColor }} className="fs-6 bonnet-drop pb-3">
       {isActive ? "Release to drop" : "Drag the feather here"}
       <br></br>
       <br></br>
