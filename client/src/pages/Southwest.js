@@ -9,7 +9,9 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 //mini-game components
 //import { PotteryDrop } from "../components/PotteryDrop";
 import {PotteryInfoCard} from "../components/pottery-game/PotteryInfoCard";
-import PotteryDNDResponsive from "../components/pottery-game/PotteryDNDResponsive";
+import PotteryDNDResponsiveContainer from "../components/pottery-game/PotteryDNDResponsiveContainer";
+import PotteryDNDmd from "../components/pottery-game/PotteryDNDmd";
+import PotteryDNDxs from "../components/pottery-game/PotteryDNDxs";
 
 //data
 import { potteryData } from "../assets/data/southwest-data";
@@ -65,20 +67,20 @@ const Southwest = () => {
     //loading or intro screen and homepage
 
     <DndProvider backend={isTouchScreen} options={options}>
-      <Container fluid className="site-content southwest-game region-southwest pt-lg-5">
-          {/*<Col xs={12} className="text-center">
-          <div className="region-southwest">
-              <h1 className="subtitle">SouthWestern Pottery</h1>
-          </div>
+      <Container fluid className="site-content southwest-game region-southwest p-0 pt-lg-5">
+          <Col xs={10} className="text-center pb-4 mx-auto">
+            <div className="region-southwest">
+                <h1 className="region-southwest display-5 pb-2 pb-sm-3 pb-md-5">Southwestern Pottery</h1>
+            </div>
           </Col>
 
           {/**DND section */}
         <Row>
-          <Col xs={12} sm={10} className="mx-auto">
-            <PotteryDNDResponsive />
-            <Button onClick={pageRefresh} className="mb-5">Clear Pot</Button>
-            <h4>Symbols & Meanings Key:</h4>
-            <Row className="pot-design-bank flex-nowrap">
+          <Col xs={12} className="mx-auto">
+            <PotteryDNDResponsiveContainer />
+            <Button onClick={pageRefresh} className=" pot-reset ms-3 ms-lg-4 ms-xl-5">Clear Pot</Button>
+            <h4 className="pot-design-bank-title display-6 p-3 ps-lg-4 ps-xl-5">Symbols & Meanings Key:</h4>
+            <Row className="pot-design-bank flex-nowrap mx-2 mx-md-3 mx-lg-4 mx-xl-5">
               {potteryData.map((design) => (
                 <PotteryInfoCard
                   key={design.number}
@@ -96,7 +98,7 @@ const Southwest = () => {
         {console.log(wasPotCleared)}
         {wasPotCleared ? <Row></Row> :
         <Row>
-          <Col xs={4}>
+          <Col xs={{ span:4, offset:7 }} className="p-3 p-sm-4 p-md-5">
             {/* Click for modal */}
             {/* pass in props for current instruction modal */}
             <InstructionModal

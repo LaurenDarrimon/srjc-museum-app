@@ -1,11 +1,10 @@
 import React from "react";
-import useState from "react";
-import PotteryDNDContainer from "./PotteryDNDContainer";
-import PotteryDNDMobile from "./PotteryDNDMobile";
+import PotteryDNDmd from "./PotteryDNDmd";
+import PotteryDNDxs from "./PotteryDNDxs";
 
-const PotteryDNDResponsive = () => {
+const PotteryDNDResponsiveContainer = () => {
     const [width, setWidth] = React.useState(window.innerWidth);
-    const breakpoint = 756;
+    const breakpoint = 768;
     React.useEffect(() => {
      const handleResizeWindow = () => setWidth(window.innerWidth);
       // subscribe to window resize event "onComponentDidMount"
@@ -15,14 +14,14 @@ const PotteryDNDResponsive = () => {
         window.removeEventListener("resize", handleResizeWindow);
       };
     }, []);
-    if (width > breakpoint) {
+    if (width >= breakpoint) {
       return (
-        <PotteryDNDContainer />
+        <PotteryDNDmd />
       );
     }
     return (
-      <PotteryDNDMobile />
+      <PotteryDNDxs />
     );
   }
   
-export default PotteryDNDResponsive;
+export default PotteryDNDResponsiveContainer;

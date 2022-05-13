@@ -36,13 +36,13 @@ const InstructionModal = (props) => {
             <Modal.Title as="h1"className="instructions-modal-title">{props.title} <br /><span className="instructions-modal-subtitle">Mini-Game</span></Modal.Title>  
           </Modal.Header>
           <Modal.Body className="instructions-modal-body">
-            <p>
+            <p className='fs-5'>
             {props.p1}
             </p>
-            <p className='bold-text'>
+            <p className='text-400 fs-5'>
             {props.pBold}
             </p>
-            <p>
+            <p className='fs-5'>
             {props.p3}
             </p>
             <img className='modal-img-mascot-instructions img-fluid' src={mascotGuideInstructions} alt="Click on the Mascot in the lower left corner to see these instructions again" />
