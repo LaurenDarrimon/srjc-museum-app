@@ -35,31 +35,32 @@ const Instructions = () => {
             Then click <span className="text-400">NEXT</span>.
           </p>
 
-          <Row>
-            <Col xs={{ span: 7 }} md={{ span: 5, offset: 1 }}>
-              <p className="text-start">
-                Once you start the game, navigate using the Back and Next
-                Arrows. The back button in your browser will not work.
-              </p>
-            </Col>
-            <Col xs={{ span: 5 }}>
-              <img
-                className="img-fluid pe-3"
-                src={back}
-                alt="Back Arrow"
-                width="40%"
-              />
-              <img
-                className="img-fluid pe-3"
-                src={next}
-                alt="Next Arrow"
-                width="40%"
-              />
-            </Col>
-          </Row>
+
+
+          <p className="text-start">
+            Only use <span className="text-400" >the game's Back and Next
+            Arrows.</span>
+            <br />
+          </p>
+          <div className="w-50 pt-md-2">
+          <img
+              className="img-fluid pe-2 pt-3 float-start"
+              src={back}
+              alt="Back Arrow"
+              width="40%"
+            />
+            <img
+              className="img-fluid pe-2 pt-3 float-start"
+              src={next}
+              alt="Next Arrow"
+              width="40%"
+            />
+          </div>
+          <p className="w-50 float-end pt-2 pt-md-4">The back button in your browser will not work.</p>
+          
 
           <img
-            className="img-fluid py-3"
+            className="img-fluid py-3 py-md-5"
             src={mascotBubble}
             alt='Coyote says "Hi, Ill be your guide through the game"'
             width="100%"
