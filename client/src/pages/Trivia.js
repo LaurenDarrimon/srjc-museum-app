@@ -47,7 +47,7 @@ const Trivia = () => {
       <Row className="text-center p-4 p-sm-5">
         <Col xs={12} sm={11} className="speech-bubble py-5 mx-auto">
           <div className={`region  ${regionClass}`}>
-            <h1 className="d-inline-block pe-3">{quiz.region}</h1>
+            <h1 className="d-inline-block pe-3 mb-2 mb-sm-0">{quiz.region}</h1>
             <h2 className="region-h2-trivia">{quiz.number}</h2>
           </div>
 
