@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Modal, Card } from "react-bootstrap";
+import { Modal, Card , Col } from "react-bootstrap";
 import { useDrag } from "react-dnd";
 
 import { ItemTypes } from "../utils/ItemTypes";
@@ -82,19 +82,16 @@ export const FeatherOptions = (props) => {
     <div
       ref={drag}
       role="Box"
-      className="featherCard mx-auto"
+      className="featherCard "
       style={{ ...style, opacity }}
       data-testid={`box-${props.number}`}
     >
-      <Card xs={6}  >
-        <Card.Img variant="top" src={feather} style={{ height: "12rem" }}/>
+      <Card>
+        <Card.Img variant="top" src={feather} className="feather-img"/>
         <Card.Body>
-          {/* <Card.Title>{props.title}</Card.Title> */}
           <Card.Text>
           {props.deed}
           </Card.Text>
-          {/* later we can add a more info button as a stretch goal */} 
-          {/* <Button variant="primary">Go somewhere</Button> */}
         </Card.Body>
       </Card>
       <h5></h5>

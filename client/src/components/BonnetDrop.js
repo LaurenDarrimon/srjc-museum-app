@@ -5,9 +5,8 @@ const style = {
   color: "white",
   padding: "0",
   textAlign: "center",
-  fontSize: "1rem",
   lineHeight: "normal",
-  float: "left",
+  //float: "left",
 };
 export const BonnetDrop = (props) => {
   const [{ canDrop, isOver }, drop] = useDrop(() => ({
@@ -27,7 +26,7 @@ export const BonnetDrop = (props) => {
     backgroundColor = "#ca9938";
   }
   return (
-    <div ref={drop} role={"Dustbin"} style={{ ...style, backgroundColor }} className="ms-1 me-5">
+    <div ref={drop} role={"Dustbin"} style={{ ...style, backgroundColor }} className="fs-6 bonnet-drop ms-sm-1 me-sm-5">
       {isActive ? "Release to drop" : "Drag the feather here"}
       <br></br>
       <br></br>

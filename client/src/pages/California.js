@@ -34,7 +34,7 @@ const California = () => {
       <Row className="justify-content-center py-3 px-5 mx-auto">
         <Col xs={12} className="text-center">
           <div className="region-california">
-            <h1 className="subtitle p-3">California </h1>
+            <h1 className="display-5 p-3">California </h1>
           </div>
         </Col>
 
