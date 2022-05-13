@@ -732,6 +732,7 @@ h4 {
   overflow-x: scroll;
   max-height: 900px;
   padding: 1rem 1rem 3rem 2rem !important;
+  margin: 0 auto 0 auto;
   border-radius: 6px;
   border: 1px solid var(--purple);
   font-size: 1rem;
@@ -771,9 +772,9 @@ h4 {
   padding:0 !important;
 }
 
-@media screen and (min-width: 390px) {  /*xs*/
+@media screen and (min-width: 350px) {  /*xs*/
   .bonnet-drop svg {
-    width: 230px;
+    width: 250px;
     height: auto;
   }
   .greatplains-game .showInstructions-btn {
@@ -785,7 +786,7 @@ h4 {
 }
   @media screen and (min-width: 520px) {  /*xs*/
     .bonnet-drop svg {
-      width: 280px;
+      width: 330px;
       height: auto;
     }
     .greatplains-game .showInstructions-btn {
@@ -812,7 +813,8 @@ h4 {
     background-color: var(--gold);
     overflow-x: hidden;
     overflow-y: scroll;
-    padding: 1.25rem 3rem 1.25rem 1.25rem !important;
+    /*margin: 0 1em 0 1em !important;*/
+    padding: 1rem 2.75rem 1rem 1rem !important;
     display: block;
   }
 
@@ -835,7 +837,7 @@ h4 {
 
   .feather-container {
     overflow-y: scroll;
-    padding: 1.25rem 2.5rem 1.25rem 1.25rem !important;
+    padding: 1.25rem 3.25rem 1.25rem 1.25rem !important;
     
     display: initial;
   
@@ -846,6 +848,9 @@ h4 {
   }
 }
 
+@media screen and (min-width: 992px) {  /*lg*/
+
+}
 
 /* =============== END LAUREN'S SECTION ============================= */
 
@@ -947,15 +952,14 @@ h4 {
 /* || MODALS - Instructions & Try Again */
 .custom-modal {
   max-width: 85% !important;
-  margin-top: 8vh !important;
-  margin: 0 auto !important;
+  margin: 2.5rem auto !important;
 }
 
 
 @media screen and (min-width: 576px) {  /*sm*/
   .custom-modal {
     max-width: 65% !important;
-    margin-top: 8vh !important;
+    margin: 2.5rem auto !important;
 
   }
   
