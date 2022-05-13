@@ -35,13 +35,11 @@ const PacificNW = () => {
       <Row className="justify-content-center py-3 px-5 mx-auto">
         <Col xs={12} className="text-center">
           <div className="region-northwest">
-            <h1 className="display-5 p-2">Pacific Northwest </h1>
+            <h1 className="display-5 p-3">Pacific Northwest </h1>
           </div>
         </Col>
-      </Row>
 
-      <Row>
-        <Col xs={12} className="px-1">
+        <Col xs={12} className="">
           <Matching
             cardsArray={pnwCardsArray}
             currentModal={currentModal}
