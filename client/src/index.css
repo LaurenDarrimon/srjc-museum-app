@@ -722,29 +722,128 @@ h4 {
 
 /* GP Great plains feather game */
 
+.bonnet-drop svg {
+  width: 200px;
+  height: auto;
+}
+
 .feather-container {
   background-color: var(--gold);
-  overflow-y: scroll;
+  overflow-x: scroll;
   max-height: 900px;
-  padding: 1.25rem 2.5rem 1.25rem 1.25rem !important;
+  padding: 1rem 1rem 3rem 2rem !important;
   border-radius: 6px;
   border: 1px solid var(--purple);
   font-size: 1rem;
  /* box-shadow: -.75px .75px 2px 0px var(--purple-50);*/
+  display: flex;
 
 }
 
 .featherCard {
   color: black;
  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-  font-size: 1.25rem;
+  font-size: .75rem;
   margin: 0 auto 0 auto !important;
-  padding: 0;
+  padding: .25rem;
+
+  width: 100%;
+
+}
+
+.feather-img {
+  height: 5rem !important;
+}
+
+.featherCard .card {
+  padding: .5rem;
 }
 
 .greatplains-game .showInstructions-btn {
+  margin-top: 1rem;
+  padding: 0 !important;
   position: relative;
-  bottom: 6rem;
+  left: -3rem;
+  bottom: -18rem;
+}
+
+.instr-btn-col {
+  padding:0 !important;
+}
+
+@media screen and (min-width: 390px) {  /*xs*/
+  .bonnet-drop svg {
+    width: 230px;
+    height: auto;
+  }
+  .greatplains-game .showInstructions-btn {
+    position: relative;
+    bottom: -20rem;
+    left: -3.5rem;
+
+  }
+}
+  @media screen and (min-width: 520px) {  /*xs*/
+    .bonnet-drop svg {
+      width: 280px;
+      height: auto;
+    }
+    .greatplains-game .showInstructions-btn {
+      position: relative;
+      bottom: -22rem;
+      left: -3.5rem;
+  
+    }
+}
+
+@media screen and (min-width: 576px) {  /*sm ***back to column view*/ 
+  .bonnet-drop svg {
+    width: 400px;
+    height: auto;
+  }
+  .feather-img {
+    height: 6rem !important;
+  }
+  .greatplains-game .showInstructions-btn {
+    bottom: 5rem;
+    left: 22rem;
+  }
+  .feather-container {
+    background-color: var(--gold);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 1.25rem 3rem 1.25rem 1.25rem !important;
+    display: block;
+  }
+
+}
+
+@media screen and (min-width: 768px) {  /*md*/
+
+  .bonnet-drop svg {
+    width: 543px;
+    height: 1020px;
+  }
+
+  .featherCard {
+    width: 100%;
+    font-size: 1.25rem !important;
+  }
+  .feather-img {
+    height: 12rem !important;
+  }
+
+  .feather-container {
+    overflow-y: scroll;
+    padding: 1.25rem 2.5rem 1.25rem 1.25rem !important;
+    
+    display: initial;
+  
+  }
+  .greatplains-game .showInstructions-btn {
+    bottom: 3rem;
+    left: 2rem;
+  }
 }
 
 

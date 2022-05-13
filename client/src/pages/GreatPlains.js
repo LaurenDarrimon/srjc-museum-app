@@ -53,14 +53,14 @@ const greatPlains = () => {
     //loading or intro screen and homepage
     <DndProvider backend={isTouchScreen} options={options}>
       <Container fluid className="greatplains-game site-content region-greatplains pe-0 pt-1 pt-lg-5"> 
-        <Row className="m-0">
+        <Row className="m-md-0">
           <Col xs={12} className="text-center">
             <div className="region-greatplains">
-              <h1 className="subtitle p-5">The Great Plains</h1>
+              <h1 className="display-5 p-5">The Great Plains</h1>
             </div>
           </Col>
 
-          <Col className="feather-container mx-4 mt-3 " xs={11} md={4} >
+          <Col className="feather-container mx-auto mx-sm-4 mt-3 order-1 order-sm-0 " xs={11} sm={4} xl={{span:3, offset:2}}>
             {featherDeeds.map((feather) => (
               <FeatherOptions
                 key={feather.number}
@@ -70,11 +70,11 @@ const greatPlains = () => {
             ))}
           </Col>
 
-          <Col xs={11} md={7} className="p-0 overflow-hidden">
+          <Col xs={8} sm={7} xl={6} className="mx-auto px-4 p-sm-2 overflow-hidden">
             <BonnetDrop />
           </Col>
 
-          <Col xs={4}>
+          <Col xs={4} className="instr-btn-col order-0 order-sm-0">
             {/* Click for modal */}
             {/* pass in props for current instruction modal */}
             <InstructionModal
