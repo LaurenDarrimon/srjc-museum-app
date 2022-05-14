@@ -863,6 +863,9 @@ h4 {
 .text-400 {
   font-weight: 400 !important;
 }
+.text-300 {
+  font-weight: 300 !important;
+}
 .teal-text {
   color: var(--teal) !important;
 }
@@ -1196,5 +1199,83 @@ h4 {
 
 .trivia-question-container img {
   border-radius: 10px;
+}
+
+/****CONTEMPORARY CULTURE SECTION*******/
+.culture-today .main-guide-img {
+  bottom: 10rem;
+  left: -1rem;
+}
+
+.pot-img-ct {
+  width: 100px !important;
+
+  position: relative;
+  bottom: 2rem;
+  left: -5.5rem;
+}
+
+@media screen and (min-width: 320px) {  /*xs*/
+  .culture-today .main-guide-img {
+    bottom: 10rem;
+    left: -.5rem;
+  }
+  .pot-img-ct {
+    bottom: .5rem;
+    left: -5.5rem;
+  }
+}
+
+@media screen and (min-width: 430px) {  /*xs*/
+  .pot-img-ct {
+    width: 120px !important;
+
+    bottom: -2rem;
+    left: -5.5rem;
+  }
+}
+
+@media screen and (min-width: 576px) {  /*sm*/
+  .culture-today .main-guide-img {
+    bottom: 14rem;
+    left: 3rem;
+  }
+  .pot-img-ct {
+    width: 130px !important;
+
+    bottom: -1rem;
+    left: -3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {  /*md*/
+  .culture-today .main-guide-img {
+    bottom: 14rem;
+    left: 4rem;
+  }
+  .pot-img-ct {
+    width: 130px !important;
+
+    bottom: -4rem;
+    left: -3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {  /*lg*/
+  .pot-img-ct {
+    width: 200px !important;
+
+    bottom: -13rem;
+    left: -3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {  /*xl*/
+  .pot-img-ct {
+    width: 250px !important;
+
+    bottom: -18rem;
+    left: -3rem;
+  }
 }
 /* =============== END ERIN'S SECTION ============================= */

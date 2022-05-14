@@ -27,6 +27,9 @@ const Navigation = () => {
               <NavDropdown.Item href="/GreatPlains">Great Plains</NavDropdown.Item>
               <NavDropdown.Item href="/PacificNW" >Pacific Northwest</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/culturetoday" className="navigation">
+              Culture Today
+            </Nav.Link>
             <Nav.Link href="/instructions" className="navigation">
               Help
             </Nav.Link>
