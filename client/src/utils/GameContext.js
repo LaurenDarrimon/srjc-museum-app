@@ -84,6 +84,18 @@ export default function gameProvider({ children }) {
     console.log(slideCounter);
   };
 
+  const setCultureToday = () => {
+    console.log("Set CultureToday");
+    //counters for landing on Culture Today page
+    setTriviaCounter(9);
+    setGameCounter(4);
+    setLessonCounter(11);
+    setSlideCounter(25);
+
+    console.log("slide counter:");
+    console.log(slideCounter);
+  }
+
   // Method to update our state determining if user is onsite or not
   // const isUserOnSite = () => {
   //   console.log("user answered onsite question");
@@ -99,6 +111,7 @@ export default function gameProvider({ children }) {
         setPacificNW,
         setSW,
         setGreatPlains,
+        setCultureToday,
         triviaCounter,
         setTriviaCounter,
         gameCounter,

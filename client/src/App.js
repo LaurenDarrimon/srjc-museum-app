@@ -33,6 +33,7 @@ import CountProvider from './utils/GameContext';
 // import Progress from "./pages/Progress";
 
 import "./index.css";
+import CultureToday from "./pages/CultureToday";
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -89,6 +90,8 @@ function App() {
                 <Route path="/pacificnw" element={<PacificNW />} />
 
                 <Route path="/lesson" element={<Lesson />} />
+
+                <Route path="/culturetoday" element={<CultureToday />} />
 
               </Routes>
           </Row>

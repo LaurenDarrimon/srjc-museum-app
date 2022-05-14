@@ -189,38 +189,45 @@ export const gameData = [
   {
     number: 24,
     title: "PNW Game",
-    nextPath: "/trivia",
+    nextPath: "/culturetoday",
     lastPath: "/lesson",
     stateCounters:[9, 3, 11, 24,]
   },
-  {
-      // Contemporary First Nations Q
+  // Contemporary First Nations Q
+  {   
     number: 25,
-    title: "Contemporary Culture Q1",
-    nextPath: "/lesson",
+    title: "Contemporary Culture Intro",
+    nextPath: "/trivia",
     lastPath: "/pacificnw",
     stateCounters:[9, 4, 11, 25,]
   },
+  {   
+    number: 26,
+    title: "Contemporary Culture Q1",
+    nextPath: "/lesson",
+    lastPath: "/culturetoday",
+    stateCounters:[9, 4, 11, 26,]
+  },
   {
-  number: 26,
+  number: 27,
   title: "Contemporary Culture Lesson 1",
   nextPath: "/lesson",
   lastPath: "/trivia",
-  stateCounters:[9, 4, 12, 26,]
+  stateCounters:[9, 4, 12, 27,]
   } ,
   {
-  number: 27,
+  number: 28,
   title: "Contemporary Culture Lesson 2",
   nextPath: "/trivia",
   lastPath: "/lesson",
-  stateCounters:[9, 4, 13, 27,]
+  stateCounters:[9, 4, 13, 28,]
   },
   {
-    number: 28,
+    number: 29,
     title: "Contemporary Culture Q2",
     nextPath: "/aboutend",
     lastPath: "/lesson",
-    stateCounters:[10, 4, 13, 28,]
+    stateCounters:[10, 4, 13, 29,]
   },
 
 ];
