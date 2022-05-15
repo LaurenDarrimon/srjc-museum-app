@@ -8,7 +8,7 @@ const About = () => {
   //return JSX
   return (
     //loading or intro screen and homepage
-    <Container fluid className="about pt-lg-5">
+    <Container fluid className="about pt-lg-5 site-content">
       <Row className="mx-auto pt-5 justify-content-center">
         <Col xs={12} className="text-center">
           <h1 className="display-2 py-4 pangolin-font">About</h1>
