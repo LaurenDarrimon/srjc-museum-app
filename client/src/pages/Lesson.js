@@ -37,7 +37,7 @@ const Lesson = () => {
   return (
     //Lesson before each  mini-game
     <Container className={`${regionClass} lesson`}>
-      <Row xs={11} className="lesson site-content text-center">
+      <Row className="lesson site-content text-center">
         <Col
           xs= {{ span: 10, offset: 1 }}
           sm= {{ span: 9, offset: 2 }}

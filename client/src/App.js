@@ -67,7 +67,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
       <CountProvider>
-        <Container fluid className="flex-column justify-flex-start min-100-vh">
+        <Container fluid className="flex-column justify-flex-start min-100-vh ">
           <Navigation />
           <Row>
               <Routes>

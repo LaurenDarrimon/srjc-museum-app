@@ -29,7 +29,7 @@ const InstructionModal = (props) => {
         <Modal 
           show={show}
           onHide={handleClose}
-          dialogClassName="custom-modal"
+          dialogClassName="custom-modal instructions-modal"
           aria-labelledby="instructions-modal-title"
           >
           <Modal.Header closeButton>

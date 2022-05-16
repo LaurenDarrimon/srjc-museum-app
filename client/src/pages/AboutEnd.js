@@ -10,7 +10,7 @@ const About = () => {
   //return JSX
   return (
     //loading or intro screen and homepage
-    <Container fluid className="aboutend region-california p-5">
+    <Container fluid className="aboutend region-california p-5 site-content">
       <Row className="mx-auto justify-content-center">
         <Col xs={12} className="text-center">
           <h1 className="display-1 pangolin-font">Thanks for Playing!</h1>
