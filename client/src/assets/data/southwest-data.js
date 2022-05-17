@@ -19,7 +19,7 @@ export const potteryData = [
   },
   {
     number: 4,
-    title: "Fird",
+    title: "Bird",
     image: "wing4.svg",
     description: "Prayer"
   },
