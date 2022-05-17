@@ -36,8 +36,8 @@ const Lesson = () => {
   //return JSX
   return (
     //Lesson before each  mini-game
-    <Container className={`${regionClass} lesson`}>
-      <Row className="lesson site-content text-center">
+    <Container className="lesson">
+      <Row className={`${regionClass} lesson site-content text-center`}>
         <Col
           xs= {{ span: 10, offset: 1 }}
           sm= {{ span: 9, offset: 2 }}
