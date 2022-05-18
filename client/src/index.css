@@ -145,14 +145,26 @@ h4 {
   .site-content.california-game {
     margin-top: 11rem;
   }
+  .site-content.pnw-game {
+    margin-top: 10rem;
+    border: 1px solid var(--light-gray);
+    box-shadow: -1px 1.25px 5px 1.25px black;
+    padding: 2em;
+  }
+
+  @media screen and (min-width: 1515px) {
+    .site-content.california-game {
+      margin-top: 20rem;
+    }
+    .site-content.pnw-game {
+      margin-top: 18rem;
+    }
+  }
   .site-content.southwest-game {
     margin-top: 0rem;
   }
   .site-content.greatplains-game {
     margin-top: 4rem;
-  }
-  .site-content.pnw-game {
-    margin-top: 16rem;
   }
   .site-content.culture-today {
     margin-top: 5rem;
@@ -461,6 +473,7 @@ h4 {
   .Matching .container {
     width: 75vw;
     height: 60vw;
+
   }
 }
 
@@ -474,16 +487,18 @@ h4 {
 @media screen and (min-width: 1200px) {
   .Matching .container {
     width: 100vw;
-    height: 45vh;
+    height: 45vw;
   }
 }
 
-@media screen and (min-width: 1200px) and (hover: hover) {
+@media screen and (min-width: 1400px) {
   .Matching .container {
     width: 100vw;
-    height: 65vh;
+    height: 35vw;
   }
 }
+
+
 
 .Matching .card {
   width: 100%;

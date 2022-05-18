@@ -118,7 +118,7 @@ export default function Matching(props) {
 
     <Row className="Matching">
       <header>
-        <div className="fs-6">
+        <div className="fs-6 mt-lg-3 mt-xxl-4">
           Find all the matching cards! 
         </div>
       </header>
