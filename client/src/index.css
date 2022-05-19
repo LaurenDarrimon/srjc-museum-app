@@ -60,7 +60,7 @@ h4 {
   padding-top: 1.75rem;
 }
 
-@media screen and (min-width: 992px) and (hover:hover) {
+@media screen and (min-width: 992px) and (hover: hover) {
   .site-content {
     min-height: 0;
     min-width: 0;
@@ -71,6 +71,13 @@ h4 {
     position: relative;
     top: -25rem;
   }
+/*
+  .site-content.region-northwest {
+      margin-top: 10rem;
+      border: 1px solid var(--light-gray);
+      box-shadow: -1px 1.25px 5px 1.25px black;
+      padding: 2em;
+    }*/
 
   .site-content.instructions {
     top: -23rem;
@@ -116,7 +123,35 @@ h4 {
   }
 }
 
-@media screen and (min-width: 1200px) and (hover:hover) {
+@media screen and (min-width: 1515px) and (hover: hover) {
+  .site-content.california-game {
+    margin-top: 20rem;
+  }
+  .site-content.pnw-game {
+    margin-top: 18rem;
+  }
+}
+.site-content.southwest-game {
+  margin-top: 0rem;
+}
+.site-content.greatplains-game {
+  margin-top: 4rem;
+}
+.site-content.culture-today {
+  margin-top: 5rem;
+}
+
+.custom-modal {
+  transform: scale(.55) !important;
+  position: relative;
+  top: -17rem;
+}
+
+.instructions-modal {
+  top: -12rem;
+}
+
+@media screen and (min-width: 1200px) and (hover: hover) {
   .site-content {
     transform: scale(.45);    
     top: -28rem;
@@ -145,30 +180,8 @@ h4 {
   .site-content.california-game {
     margin-top: 11rem;
   }
-  .site-content.southwest-game {
-    margin-top: 0rem;
-  }
-  .site-content.greatplains-game {
-    margin-top: 4rem;
-  }
-  .site-content.pnw-game {
-    margin-top: 16rem;
-  }
-  .site-content.culture-today {
-    margin-top: 5rem;
-  }
-
-  .custom-modal {
-    transform: scale(.55) !important;
-    position: relative;
-    top: -17rem;
-  }
-
-  .instructions-modal {
-    top: -12rem;
-  }
+ 
 }
-
 
 /***NAV****/
 
@@ -461,6 +474,7 @@ h4 {
   .Matching .container {
     width: 75vw;
     height: 60vw;
+
   }
 }
 
@@ -474,16 +488,18 @@ h4 {
 @media screen and (min-width: 1200px) {
   .Matching .container {
     width: 100vw;
-    height: 45vh;
+    height: 45vw;
   }
 }
 
-@media screen and (min-width: 1200px) and (hover: hover) {
+@media screen and (min-width: 1400px) {
   .Matching .container {
     width: 100vw;
-    height: 65vh;
+    height: 35vw;
   }
 }
+
+
 
 .Matching .card {
   width: 100%;
@@ -1086,26 +1102,17 @@ h4 {
   margin: 0;
 }
 
-/* || MODALS - Instructions & Try Again */
+/********** || MODALS || ***********/
 .custom-modal {
   max-width: 85% !important;
   margin: 2.5rem auto !important;
 }
 
-
-@media screen and (min-width: 576px) {  /*sm*/
-  .custom-modal {
-    max-width: 65% !important;
-    margin: 2.5rem auto !important;
-
-  }
-  
-}
-
 /*bs-react class*/
 .modal-content {
-  padding: 2em !important;
+  padding: 1rem !important;
 }
+
 
 /*instructions modal*/
 .instructions-modal-subtitle {
@@ -1114,10 +1121,10 @@ h4 {
 
 .modal-img-mascot-instructions {
   display: block;
-  padding-top: 3.5em;
+  width: 99%;
 }
 
-/*your done modal + try again modal*/
+/*your done modal + try again modal + good job*/
 
 .modal-urdone .modal-content {
   padding: 2em !important;
@@ -1138,6 +1145,12 @@ h4 {
   width: 99%;
 }
 
+.mascot-good-job {
+  width: 85%;
+}
+
+  /*matching- good job modal (unique bc of high-score)*/
+
 .modal-matching .mascot-good-job {
   width: 75% !important;
 }
@@ -1149,13 +1162,86 @@ h4 {
 
 .modal-high-score {
   /*matching done modal*/
-  padding: 0.75em;
   background-color: transparent;
   box-sizing: border-box;
   border: 0.5px solid var(--purple);
   border-radius: 6px;
   box-shadow: 0px 0px 6px 3px var(--gold);
 }
+
+  /*feather game modals*/
+
+  /*modal media queries*/
+@media screen and (min-width: 576px) {  /*sm*/
+  .custom-modal {
+    max-width: 65% !important;
+    margin: 2.5rem auto !important;
+  }
+  .modal-content {
+    padding: 2em !important;
+  }
+  .modal-matching .mascot-good-job {
+    width: 65% !important;
+  }
+}
+
+@media screen and (min-width: 768px) {  /*md*/
+  .modal-matching .mascot-good-job {
+    width: 55% !important;
+  }
+}
+
+@media screen and (min-width: 992px) { /*lg*/
+  .modal-content {
+    padding: 3em !important;
+  }
+  .modal-matching .mascot-good-job {
+    width: 45% !important;
+  }
+}
+    /*desktop only*/
+@media screen and (min-width: 992px) and (hover: hover) { /*lg*/
+  .custom-modal.modal-matching, .custom-modal.trivia  {
+    margin: 5.5rem auto !important;
+  }
+  .custom-modal.modal-feather {
+    margin-top: 5rem !important;
+  }
+  .mascot-good-job {
+    width: 65%;
+  }
+  .modal-img-mascot-instructions {
+    width: 75% !important;
+  }
+}
+
+@media screen and (min-width: 1200px) and (hover: hover) { /*xl*/
+  .custom-modal.modal-matching, .custom-modal.trivia  {
+    margin: 7.5rem auto !important;
+  }
+  .custom-modal.modal-feather {
+    margin-top: 7rem !important;
+  }
+  .modal-content {
+    padding: 3.5em !important;
+  }
+  .mascot-good-job {
+    width: 65%;
+  }
+  .modal-img-mascot-instructions {
+    width: 75% !important;
+  }
+  
+}
+
+@media screen and (min-width: 1400px) and (hover: hover) { /*xxl*/
+  .custom-modal {
+    max-width: 55% !important;
+    margin: 2.5rem auto !important;
+  }
+
+}
+
 
 /* || ABOUT page */
 .about {

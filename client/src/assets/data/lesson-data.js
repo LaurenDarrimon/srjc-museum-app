@@ -21,7 +21,7 @@ export const lessonData = [
   {
     number: 2,
     title: "California Basket Weaving",
-    p1: "Baskets were traditionally woven by women.",
+    p1: "In some tribes, baskets are traditionally woven by women.",
     p2: "But one type of basket that men make are the fishing and bird trap baskets.",
     p3: "They would use these to hunt for food.",
     imagePath: "lessons/ca-hunting-basket.jpg",
@@ -31,7 +31,7 @@ export const lessonData = [
   //SW
   {
     number: 3,
-    title: "People of the Southwest",
+    title: "The Southwest",
     p1: "The Puebloan people of the Southwest live in villages called pueblos in the hot, dry deserts of Arizona, New Mexico and Colorado.",
     p2: "",
     p3: "",
