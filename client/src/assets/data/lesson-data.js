@@ -1,3 +1,5 @@
+// Content for all "Lesson" template slides
+
 export const lessonData = [
   //California
   {

@@ -2,13 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 //import modal
-import UrDoneModal from "../components/UrDoneModal";
+// Next Button / Increment Button (sets all game counters on click)
+// Use instead of Browser Forward Btn
+
+import UrDoneModal from "../modals/UrDoneModal";
 //images
-import next from "../assets/images/next.png";
+import next from "../../assets/images/buttons/next.png";
 // "next-path" linksdata
-import { gameData } from "../assets/data/game-data";
+import { gameData } from "../../assets/data/game-data";
 // Import our custom hook
-import { useCounter } from "../utils/GameContext";
+import { useCounter } from "../../utils/GameContext";
 
 const NextButton = () => {
   // Pluck values from our GameContext by invoking our useCounter hook

@@ -1,13 +1,15 @@
+// Matching Game Component
+
 import { useEffect, useState, useRef, React } from "react";
 import { Row, Col, Modal, Button } from "react-bootstrap";
 
 //import components
-import InstructionModal from "../components/MiniGameInstModal";
+import InstructionModal from "../modals/MiniGameInstModal";
 import Card from "./Card";
 
 //images
-import mascotGoodJob from "../assets/images/coyote.svg";
-import go from "../assets/images/go-btn.svg";
+import mascotGoodJob from "../../assets/images/guide-animal/coyote.svg";
+import go from "../../assets/images/buttons/go-btn.svg";
 
 //function to shuffle the cards
 function shuffleCards(array) {

@@ -1,6 +1,7 @@
-import React, { useState, useContext } from "react";
+// Uses React Context to track user's place in the game
+// Creates all Game Counters (custom hooks to access game Context, to track place in game)
 
-//import { useNavigate } from "react-router-dom";
+import React, { useState, useContext } from "react";
 
 // Create our theme context using React.CreateContext()
 export const GameContext = React.createContext();
@@ -21,7 +22,7 @@ export default function gameProvider({ children }) {
   //state to track slide number - we'll use this to determine which slide to render next
   const [slideCounter, setSlideCounter] = useState(0);
   //state to track whether user is in museum or not
-  const [onSite, setOnSite] = useState(true);
+  const [onSite, setOnSite] = useState(true); //currently un-used, future goal
 
   //function takes array of all counters in this order: trivia, game, lesson, slide
   const setAllGameState = (counters) => {
@@ -30,7 +31,7 @@ export default function gameProvider({ children }) {
     setLessonCounter(counters[2]);
     setSlideCounter(counters[3]);
 
-    localStorage.setItem('allGameCounters', JSON.stringify(counters));
+    localStorage.setItem('allGameCounters', JSON.stringify(counters)); //set values in local storage so user can refresh game without breaking it
   };
 
 

@@ -1,11 +1,7 @@
+// Main Navigation
+
 import React from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
-
-import { LinkContainer } from "react-router-bootstrap";
-
-import { Link } from "react-router-dom";
-
-import { useCounter } from "../utils/GameContext";
 
 const Navigation = () => {
 

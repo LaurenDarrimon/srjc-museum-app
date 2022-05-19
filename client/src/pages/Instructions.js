@@ -1,12 +1,14 @@
+// Main Instructions
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 
-import go from "../assets/images/go-btn.svg";
-import mascotBubble from "../assets/images/speech-bubble-mascot-guide.svg";
-import basket from "../assets/images/basket-red.svg";
-import next from "../assets/images/next.png";
-import back from "../assets/images/go-back-arrow.png";
+import go from "../assets/images/buttons/go-btn.svg";
+import mascotBubble from "../assets/images/guide-animal/speech-bubble-mascot-guide.svg";
+import basket from "../assets/images/guide-animal/basket-red.svg";
+import next from "../assets/images/buttons/next.png";
+import back from "../assets/images/buttons/go-back-arrow.png";
 
 const Instructions = () => {
   //functions, hooks, state, etc go here

@@ -1,3 +1,5 @@
+// Mini-Game #2 - SouthWest - Pottery Game
+
 import { useEffect, React } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 
@@ -7,23 +9,20 @@ import { TouchBackend } from "react-dnd-touch-backend";
 import { HTML5Backend } from "react-dnd-html5-backend";
 
 //mini-game components
-//import { PotteryDrop } from "../components/PotteryDrop";
 import {PotteryInfoCard} from "../components/pottery-game/PotteryInfoCard";
 import PotteryDNDResponsiveContainer from "../components/pottery-game/PotteryDNDResponsiveContainer";
-import PotteryDNDmd from "../components/pottery-game/PotteryDNDmd";
-import PotteryDNDxs from "../components/pottery-game/PotteryDNDxs";
 
 //data
-import { potteryData } from "../assets/data/southwest-data";
-import { modalData } from "../assets/data/modal-data"; //instructions data
+import { potteryData } from "../assets/data/mini-game-data/southwest-data";
+import { modalData } from "../assets/data/mini-game-data/instructions-data"; //instructions data
 
 // hooks
 import { useCounter } from "../utils/GameContext";
 
 //import modal & button components
-import InstructionModal from "../components/MiniGameInstModal";
-import NextButton from "../components/NextButton";
-import BackButton from "../components/BackButton";
+import InstructionModal from "../components/modals/MiniGameInstModal";
+import NextButton from "../components/navigation/NextButton";
+import BackButton from "../components/navigation/BackButton";
 
 
 

@@ -1,4 +1,5 @@
-// Instructions Modal Data
+// Content for Mini-Game Instructions Modals
+
 export const modalData = [
   //California
 

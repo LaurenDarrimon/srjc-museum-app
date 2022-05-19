@@ -1,13 +1,14 @@
+// About Page - this project / our team / etc.
+
 import React from "react";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
-import logo from "../assets/images/logo-500.png";
+import logo from "../assets/images/logo/logo-500.png";
 
 const About = () => {
   //functions, hooks, state, etc go here
 
   //return JSX
   return (
-    //loading or intro screen and homepage
     <Container fluid className="about pt-lg-5 site-content">
       <Row className="mx-auto pt-5 justify-content-center">
         <Col xs={12} className="text-center">

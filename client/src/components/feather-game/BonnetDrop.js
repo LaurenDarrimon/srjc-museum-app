@@ -1,5 +1,8 @@
+// React DND Droppable Component 
+// (eagle feather headress graphic - feathers change color on drops)
+
 import { useDrop } from "react-dnd";
-import { ItemTypes } from "../utils/ItemTypes";
+import { ItemTypes } from "../../utils/ItemTypes";
 
 const style = {
   color: "white",

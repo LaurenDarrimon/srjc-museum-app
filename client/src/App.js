@@ -14,10 +14,10 @@ import { Container, Row } from "react-bootstrap";
 
 
 
-import Navigation from "./components/Nav";
+import Navigation from "./components/navigation/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import AboutEnd from "./pages/AboutEnd";
+import TheEnd from "./pages/TheEnd";
 import Instructions from "./pages/Instructions";
 import Trivia from "./pages/Trivia";
 import GreatPlains from "./pages/GreatPlains";
@@ -79,7 +79,7 @@ function App() {
 
                 <Route path="/about" element={<About />} />
 
-                <Route path="/aboutend" element={<AboutEnd />} />
+                <Route path="/theend" element={<TheEnd />} />
 
                 <Route path="/california" element={<California />} />
 

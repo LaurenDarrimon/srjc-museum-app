@@ -1,11 +1,14 @@
+// Mini Game Instructions Modal
+// content populated from "assets/data/mini-game-data/instructions-data.js" - see this file to edit content
+
 import React, { useState } from 'react';
 //import { Link } from "react-router-dom";
 import { Modal } from "react-bootstrap";
 
 //images
-import mascotGuideInstructions from "../assets/images/speech-bubble-mascot-instructions.svg";
-import go from "../assets/images/go-btn.svg"
-import mascotGuide from "../assets/images/speech-bubble-mascot-instructions-3.svg";
+import mascotGuideInstructions from "../../assets/images/guide-animal/speech-bubble-mascot-instructions.svg";
+import go from "../../assets/images/buttons/go-btn.svg"
+import mascotGuide from "../../assets/images/guide-animal/speech-bubble-mascot-instructions-3.svg";
 
 const InstructionModal = (props) => {
   //full screen modal with instructions for mini-games

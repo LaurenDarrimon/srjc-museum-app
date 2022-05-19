@@ -1,3 +1,6 @@
+// Contains all info for Scavenger Hunt Questions
+// Including Q's and Right/Wrong Answers
+
 export const triviaData = [
   {
     number: 1,
@@ -162,7 +165,7 @@ export const triviaData = [
     lesson: "",
     question:
       "What are some of the benefits of cultural burning?",
-    mainImage: "contemporary/basket-weaving/clint-mckay-baskets-collage.png",
+    mainImage: "contemporary/cultural-burning/devynfriedfel-ericatom.jpg",
     options: ["fire prevention & soil improvement", "burning a neighbor's field you don't like", "clearing space for a highway", "getting rid of trash"],
     right_answer: "fire prevention & soil improvement",
     correctMessage: "That's right! Controled burning can prevent larger fires later. Suppressing small fires ( along with urban development and climate change) has led to more large, uncontrolled fires that can quickly spread through areas with lots of underbrush. ",

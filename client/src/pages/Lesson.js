@@ -1,16 +1,19 @@
+//Template for all Lesson/Educational content pages
+//content data populated from "assets/data/lesson-data.js" - see this file to add or remove content
+
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 //our components
-import NextButton from "../components/NextButton";
-import BackButton from "../components/BackButton";
+import NextButton from "../components/navigation/NextButton";
+import BackButton from "../components/navigation/BackButton";
 // custom hook
 import { useCounter } from "../utils/GameContext";
 //data
 import { lessonData } from "../assets/data/lesson-data";
-import { regionData } from "../assets/data/region-data";
+import { regionData } from "../assets/data/region-color-classes.js";
 //images
-import coyote from "../assets/images/coyote.svg";
-import coyoteHead from "../assets/images/coyote-head.svg"
+import coyote from "../assets/images/guide-animal/coyote.svg";
+import coyoteHead from "../assets/images/guide-animal/coyote-head.svg"
 
 
 const Lesson = () => {

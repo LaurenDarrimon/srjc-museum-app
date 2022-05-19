@@ -1,12 +1,16 @@
+// Back Button / Decrement Button (sets all game counters on click)
+// Use instead of Browser Back Btn
+
+
 import React from "react";
 import { Link } from "react-router-dom";
 
 //images
-import back from "../assets/images/go-back-arrow.png";
+import back from "../../assets/images/buttons/go-back-arrow.png";
 // "next-path" links data
-import { gameData } from "../assets/data/game-data";
+import { gameData } from "../../assets/data/game-data";
 // Import our custom hook
-import { useCounter } from "../utils/GameContext";
+import { useCounter } from "../../utils/GameContext";
 
 const BackButton = () => {
 

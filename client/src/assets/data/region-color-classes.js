@@ -1,3 +1,8 @@
+// Color Coded Classes specific to each region
+
+// (preserve the order of the objects in this file! 
+// - Assigned to elements as variable according to their order in this array )
+
 export const regionData = [
   // teal
 

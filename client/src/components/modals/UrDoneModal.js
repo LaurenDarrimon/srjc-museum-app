@@ -1,15 +1,17 @@
+// You're Done Modal - very end of game only
+// called conditionally by NextButton component
+
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import { Modal, Button } from "react-bootstrap";
-//components
-import NextButton from './NextButton';
+import { Modal } from "react-bootstrap";
+
 //images
-import mascotGreatJob from "../assets/images/speech-bubble-mascot-greatjob.svg";
-import next from "../assets/images/next.png";
+import mascotGreatJob from "../../assets/images/guide-animal/speech-bubble-mascot-greatjob.svg";
+import next from "../../assets/images/buttons/next.png";
 // "next-path" linksdata
-import { gameData } from "../assets/data/game-data";
+import { gameData } from "../../assets/data/game-data";
 // Import our custom hook
-import { useCounter } from "../utils/GameContext";
+import { useCounter } from "../../utils/GameContext";
 
 const UrDoneModal = () => {
   //full screen modal to show when user answers a question wrong

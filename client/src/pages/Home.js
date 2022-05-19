@@ -1,3 +1,5 @@
+// Home Page
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Accordion } from "react-bootstrap";
@@ -6,9 +8,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useCounter } from "../utils/GameContext";
 
 //images
-import logo from "../assets/images/museum-logo-red-blue-bar.png";
-import next from "../assets/images/next.png";
-import animalGuide from "../assets/images/coyote.svg";
+import logo from "../assets/images/logo/museum-logo-red-blue-bar.png";
+import next from "../assets/images/buttons/next.png";
+import animalGuide from "../assets/images/guide-animal/coyote.svg";
 
 //this is the loading page
 const Home = () => {
@@ -18,7 +20,6 @@ const Home = () => {
 
 
   return (
-    //loading or intro screen and homepage
     <>
       <Container fluid className="home site-content">
         <Row>
