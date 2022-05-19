@@ -20,7 +20,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Pangolin&display=swap");
 
-/* NOTE: I am trying to to make the app always fill the vertical height  */
 html {
   background-color: var(--purple);
 }
@@ -32,15 +31,6 @@ body {
   width: 100vw;
   background-color: var(--purple);
 }
-
-/* NOTE: Thinking we should use this font more sparingly. Its kinda ugly when there's a lot of it actually.
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Pangolin", cursive;
-}
-*/
 
 #root {
   background-color: var(--purple);
@@ -130,25 +120,26 @@ h4 {
   .site-content.pnw-game {
     margin-top: 18rem;
   }
-}
-.site-content.southwest-game {
-  margin-top: 0rem;
-}
-.site-content.greatplains-game {
-  margin-top: 4rem;
-}
-.site-content.culture-today {
-  margin-top: 5rem;
-}
 
-.custom-modal {
-  transform: scale(.55) !important;
-  position: relative;
-  top: -17rem;
-}
+  .site-content.southwest-game {
+    margin-top: 0rem;
+  }
+  .site-content.greatplains-game {
+    margin-top: 4rem;
+  }
+  .site-content.culture-today {
+    margin-top: 5rem;
+  }
 
-.instructions-modal {
-  top: -12rem;
+  .custom-modal {
+    transform: scale(.55) !important;
+    position: relative;
+    top: -17rem;
+  }
+
+  .instructions-modal {
+    top: -12rem;
+  }
 }
 
 @media screen and (min-width: 1200px) and (hover: hover) {
