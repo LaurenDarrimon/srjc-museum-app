@@ -6,7 +6,7 @@ import InstructionModal from "../components/MiniGameInstModal";
 import Card from "./Card";
 
 //images
-import mascotGoodJob from "../assets/images/coyote-head.svg";
+import mascotGoodJob from "../assets/images/coyote.svg";
 import go from "../assets/images/go-btn.svg";
 
 //function to shuffle the cards
@@ -185,14 +185,14 @@ export default function Matching(props) {
         <Modal.Header closeButton>
           <Modal.Title as="h1" className="pangolin-font">Good work, Explorer!</Modal.Title>
         </Modal.Header>
-        <Modal.Body className="pt-2 ">
-          <p className="modal-high-score">
+        <Modal.Body className="pt-3 text-center">
+          <p className="modal-high-score p-3 p-lg-4">
             <span className="bold-text">Your Score:</span> {moves} moves
             <br />
             <span className="bold-text">Your High Score:</span> {bestScore} moves
           </p>
           <img
-            className="mascot-good-job pt-4"
+            className="mascot-good-job pt-2 pt-sm-3 pt-md-4 mx-auto"
             src={mascotGoodJob}
             alt="good job!"
           />
@@ -200,7 +200,7 @@ export default function Matching(props) {
         <Modal.Footer>
           <img
             onClick={handleRestart}
-            className="img-fluid"
+            className="img-fluid px-5 py-2 py-sm-3 px-sm-0 py-md-0"
             src={go}
             alt="GO!"
           />

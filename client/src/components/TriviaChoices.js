@@ -88,14 +88,14 @@ const TriviaChoices = () => {
         <Modal
           show={show}
           onHide={handleClose}
-          dialogClassName="custom-modal"
+          dialogClassName="custom-modal trivia"
           aria-labelledby="modal-title"
         >
           <Modal.Header closeButton>
             <Modal.Title as="h1">Good work, Explorer!</Modal.Title>
           </Modal.Header>
-          <Modal.Body className="pt-2">
-            <p>
+          <Modal.Body className="pt-2 text-center">
+            <p className="fs-3 text-start">
               {quiz.correctMessage}
             </p>
             <img
@@ -107,7 +107,7 @@ const TriviaChoices = () => {
           <Modal.Footer>
             <img
               onClick={handleClose}
-              className="img-fluid"
+              className="img-fluid p-1"
               src={go}
               alt="GO!"
             />

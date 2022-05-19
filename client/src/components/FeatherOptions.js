@@ -112,7 +112,7 @@ export const FeatherOptions = (props) => {
         <Modal.Title as="h1" className="pangolin-font">Good work, Explorer!</Modal.Title>
       </Modal.Header>
       <Modal.Body className="pt-2 ">
-        <p className="">
+        <p className="fs-3">
           That's right! You earned a feather. Keep adding more.
         </p>
         <img
