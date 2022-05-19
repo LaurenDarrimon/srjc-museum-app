@@ -35,16 +35,16 @@ export const pnwCardsArray = [
         image: "california/cards/basket-2.png",
       },
       {
-        type: "fish-on-blue",
-        image: "california/cards/blue-fish.png",
+        type: "oysters",
+        image: "california/cards/oysters.jpg",
       },
       {
         type: "stream",
         image: "california/cards/stream.png",
       },
       {
-        type: "green-fish",
-        image: "california/cards/green-fish.png",
+        type: "acorns",
+        image: "california/cards/acorns.jpg",
       },
       {
         type: "basket-to-catch-fish",
