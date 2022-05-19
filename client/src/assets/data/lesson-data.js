@@ -31,8 +31,8 @@ export const lessonData = [
   //SW
   {
     number: 3,
-    title: "People of the SW",
-    p1: "The Puebloan people of the Southwest live in villages called pueblos in the hot, dry desserts of Arizona, New Mexico and Colorado.",
+    title: "People of the Southwest",
+    p1: "The Puebloan people of the Southwest live in villages called pueblos in the hot, dry deserts of Arizona, New Mexico and Colorado.",
     p2: "",
     p3: "",
     imagePath: "lessons/SWlesson1-Pueblo.jpg",
