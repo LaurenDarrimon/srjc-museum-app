@@ -1,10 +1,18 @@
+// Drag-n-Drop Container ( <768px screens )
+
+// Note to anyone trying to debug or alter this game in the future:
+// See https://react-dnd.github.io/react-dnd/examples/drag-around/naive for the example this game was based on.
+// Or https://codesandbox.io/s/potterygametest-d5scdy (to see intermediary step btwn above example and this game)
+// PS: I'm sorry in advance this is such a headache.
+
+
 import update from "immutability-helper";
 import { Row, Col } from "react-bootstrap"
 import { useCallback, useState } from "react";
 import { useDrop } from "react-dnd";
 import  Box  from "./Box.js";
 import { ItemTypes } from "../../utils/ItemTypes.js";
-//images
+//images  (all DnD pattern imgs are inline SVG)
 import potImg from "../../assets/images/southwest/pottery/pot.png"
 
 const styles = {
@@ -16,7 +24,9 @@ const styles = {
 const PotteryDNDxs = () => {
 
   const [hideSourceOnDrag, setHideSourceOnDrag] = useState(false);
-
+    // set all patterns (aka boxes)
+    // box/pattern state includes: orig. pattern position (top + left) & svg code for pattern
+    // each pattern entry repeats 10x (to allow for repeating pattern designs)
     const [boxes, setBoxes] = useState({
         a: {
             top: -23,

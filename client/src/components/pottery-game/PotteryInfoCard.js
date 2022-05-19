@@ -1,3 +1,6 @@
+// Pottery Pattern Info Component (scroll section below DnD component)
+// content populated from "assets/data/mini-game-data/southwest-data.js" - see this file to edit content
+
 import React from "react"
 import { Col, Card } from "react-bootstrap";
 

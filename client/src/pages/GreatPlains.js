@@ -1,3 +1,5 @@
+// Mini-Game #3 - Great Plains - Feather Game
+
 import { React, useEffect } from "react";
 import { Container, Row, Col, Modal } from "react-bootstrap";
 
@@ -10,16 +12,16 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import { useCounter } from "../utils/GameContext";
 
 //mini-game components
-import { BonnetDrop } from "../components/BonnetDrop";
-import { FeatherOptions } from "../components/FeatherOptions";
+import { BonnetDrop } from "../components/feather-game/BonnetDrop";
+import { FeatherOptions } from "../components/feather-game/FeatherOptions";
 
 //data
-import { featherDeeds } from "../assets/data/great-plains-data";
-import { modalData } from "../assets/data/modal-data"; //instructions modal data
+import { featherDeeds } from "../assets/data/mini-game-data/great-plains-data";
+import { modalData } from "../assets/data/mini-game-data/instructions-data"; //instructions modal data
 //modal & botton components
-import InstructionModal from "../components/MiniGameInstModal";
-import NextButton from "../components/NextButton";
-import BackButton from "../components/BackButton";
+import InstructionModal from "../components/modals/MiniGameInstModal";
+import NextButton from "../components/navigation/NextButton";
+import BackButton from "../components/navigation/BackButton";
 
 const greatPlains = () => {
    //set all counters when you land on this slide from nav or refresh
@@ -50,7 +52,6 @@ const greatPlains = () => {
 
   //return JSX
   return (
-    //loading or intro screen and homepage
     <DndProvider backend={isTouchScreen} options={options}>
       <Container fluid className="greatplains-game site-content region-greatplains pt-1 pt-lg-5"> 
         <Row className="">

@@ -1,3 +1,5 @@
+// End Game Splash Page - links to About Page
+
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import pattern from "../assets/images/southwest/pottery/fertility1.svg";

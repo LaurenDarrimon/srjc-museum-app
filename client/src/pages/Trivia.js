@@ -1,16 +1,19 @@
+// Template for all scavenger hunt/ multiple choice questions
+// Content populated from "assets/data/questions.js" - see this file to add or remove content
+
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 //data
 import { triviaData } from "../assets/data/questions";
-import { regionData } from "../assets/data/region-data";
+import { regionData } from "../assets/data/region-color-classes.js";
 
 //our components
-import NextButton from "../components/NextButton";
-import BackButton from "../components/BackButton";
+import NextButton from "../components/navigation/NextButton";
+import BackButton from "../components/navigation/BackButton";
 import TriviaChoices from "../components/TriviaChoices";
 
-// Import our custom hook
+// Import our custom hook/ Game counter
 import { useCounter } from "../utils/GameContext";
 
 const Trivia = () => {

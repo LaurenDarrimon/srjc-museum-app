@@ -1,13 +1,24 @@
+// ~ MAIN GAME SEQUENCE DATA ~ //
+
+// Contains all the info needed to render all game components in the proper order
+// Mainly keeping track of the Game's stateCounters
+// Be very careful when changing these values
+
+/****Counters***
+   1. trivia => increments each time user completes trivia/scav. hunt question
+   2. game => increments each time user completes a mini-game
+   3. lesson => increments each time user completess a "lesson" slide
+   4. overall slide => increments each time the user hits the "next" btn
+    */
+
 export const gameData = [
-  // stateCounters = [trivia, game, lesson, overall slide]
   {
-    //land acknowledgement
-    //trivia 0
-    number: 0,
-    title: "land acknowledgement",
-    nextPath: "/trivia",
-    lastPath: "/instructions",
-    stateCounters:[0, 0, 0, 0,]
+    //trivia-counter 0
+    number: 0, // Key # for each page/slide
+    title: "land acknowledgement", 
+    nextPath: "/trivia", // next page (for back/next buttons)
+    lastPath: "/instructions", // last page
+    stateCounters:[0, 0, 0, 0,] //[trivia question, game, lesson, overall slide] 
   },
   {
     number: 1,
@@ -18,7 +29,7 @@ export const gameData = [
   },
   {
     //CA scavenger hunt
-    //trivia 2 //game 0
+    //trivia-counter 2 //game-counter 0
     number: 2,
     title: "CA find trivia 2",
     nextPath: "/lesson",
@@ -26,7 +37,7 @@ export const gameData = [
     stateCounters:[2, 0, 0, 2,]
   },
   {
-    //game 0
+    //game-counter 0
     number: 3,
     title: "CA Lesson 1",
     nextPath: "/lesson",
@@ -225,7 +236,7 @@ export const gameData = [
   {
     number: 29,
     title: "Contemporary Culture Q2",
-    nextPath: "/aboutend",
+    nextPath: "/theend",
     lastPath: "/lesson",
     stateCounters:[10, 4, 13, 29,]
   },

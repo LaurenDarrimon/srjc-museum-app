@@ -1,13 +1,16 @@
+// Splash Page for Contemporary Culture Section (end of game)
+// sets counters to appropriate position when reached from navbar
+
 import { useEffect, React } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 //custom hooks
 import { useCounter } from "../utils/GameContext";
 //components
-import NextButton from "../components/NextButton";
-import BackButton from "../components/BackButton"; 
+import NextButton from "../components/navigation/NextButton";
+import BackButton from "../components//navigation/BackButton"; 
 //images
-import animalGuide from "../assets/images/coyote.svg";
+import animalGuide from "../assets/images/guide-animal/coyote.svg";
 
 //this is the loading page
 const CultureToday = () => {
@@ -57,8 +60,8 @@ const CultureToday = () => {
                 <path d="M87.7311 118.685C66.5285 123.699 52.5388 114.659 55.3536 104.434C82.7177 108.341 103.674 96.2089 111.817 89.2267C121.174 98.1224 108.934 113.67 87.7311 118.685Z" fill="#CA9938" stroke="#2E234A"/>
                 </g>
                 <defs>
-                <filter id="filter0_d_242_281" x="2.66309" y="10.692" width="136.657" height="117.918" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <filter id="filter0_d_242_281" x="2.66309" y="10.692" width="136.657" height="117.918" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                 <feOffset dy="4"/>
                 <feGaussianBlur stdDeviation="2"/>

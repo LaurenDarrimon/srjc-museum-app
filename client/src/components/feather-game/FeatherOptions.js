@@ -1,13 +1,16 @@
+// React DND Draggable Compontent 
+// (Answer choices containing Feather Image - Feather draggable onto Headdress graphic)
+
 import React, { useState } from "react";
 import { Modal, Card , Col } from "react-bootstrap";
 import { useDrag } from "react-dnd";
 
-import { ItemTypes } from "../utils/ItemTypes";
+import { ItemTypes } from "../../utils/ItemTypes";
 
 //images
-import feather from "../assets/images/great-plains/single-feather.svg";
-import mascotGoodJob from "../assets/images/coyote-head.svg";
-import go from "../assets/images/go-btn.svg";
+import feather from "../../assets/images/great-plains/single-feather.svg";
+import mascotGoodJob from "../../assets/images/guide-animal/coyote-head.svg";
+import go from "../../assets/images/buttons/go-btn.svg";
 
 const style = {
   //padding: "1rem 1rem",

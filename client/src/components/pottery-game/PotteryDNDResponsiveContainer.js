@@ -1,3 +1,5 @@
+// Conditionally renders XS or MD Pottery DnD game component - depending on screen size
+
 import React from "react";
 import PotteryDNDmd from "./PotteryDNDmd";
 import PotteryDNDxs from "./PotteryDNDxs";

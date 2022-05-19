@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 
 //images
-import go from "../assets/images/go-btn.svg";
-import mascotTryAgain from "../assets/images/speech-bubble-mascot-tryagain.svg";
-import mascotGoodJob from "../assets/images/speech-bubble-mascot-greatjob.svg";
+import go from "../assets/images/buttons/go-btn.svg";
+import mascotTryAgain from "../assets/images/guide-animal/speech-bubble-mascot-tryagain.svg";
+import mascotGoodJob from "../assets/images/guide-animal/speech-bubble-mascot-greatjob.svg";
 //data
 import { triviaData } from "../assets/data/questions";
 

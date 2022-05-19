@@ -1,3 +1,5 @@
+// Mini-Game #4 - Pacific NW - Matching
+
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -6,13 +8,13 @@ import { useCounter } from "../utils/GameContext";
 import { useEffect } from "react";
 
 //data
-import { pnwCardsArray } from "../assets/data/matching-card-data";
-import { modalData } from "../assets/data/modal-data"; //instruction modal data (instructions modal imported in Matching component)
+import { pnwCardsArray } from "../assets/data/mini-game-data/matching-card-data";
+import { modalData } from "../assets/data/mini-game-data/instructions-data"; //instruction modal data (instructions modal imported in Matching component)
 
 //components
-import Matching from "../components/Matching";
-import NextButton from "../components/NextButton";
-import BackButton from "../components/BackButton";
+import Matching from "../components/matching-game/Matching";
+import NextButton from "../components/navigation/NextButton";
+import BackButton from "../components/navigation/BackButton";
 
 const PacificNW = () => {
 

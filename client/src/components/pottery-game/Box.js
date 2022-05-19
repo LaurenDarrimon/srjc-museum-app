@@ -1,3 +1,6 @@
+// helps set up pottery drag-n-drop game
+// Box containing each draggable pattern
+
 import { useDrag } from "react-dnd";
 import { ItemTypes } from "../../utils/ItemTypes.js";
 
