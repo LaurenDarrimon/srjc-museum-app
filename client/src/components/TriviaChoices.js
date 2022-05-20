@@ -54,14 +54,14 @@ const TriviaChoices = () => {
         <Modal
           show={show}
           onHide={handleClose}
-          dialogClassName="custom-modal modal-try-again"
+          dialogClassName="custom-modal modal-try-again trivia"
           aria-labelledby="modal-title"
         >
           <Modal.Header closeButton>
             <Modal.Title as="h1">Try Again, Explorer!</Modal.Title>
           </Modal.Header>
-          <Modal.Body className="pt-4">
-            <p>
+          <Modal.Body className="pt-4 fs-3 text-center">
+            <p className="text-start">
               Look around at the signs on the walls, and the
               pictures next to the objects. There you'll find clues to the
               right answer.

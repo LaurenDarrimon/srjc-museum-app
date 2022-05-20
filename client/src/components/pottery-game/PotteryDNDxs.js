@@ -16,8 +16,8 @@ import { ItemTypes } from "../../utils/ItemTypes.js";
 import potImg from "../../assets/images/southwest/pottery/pot.png"
 
 const styles = {
-  width: "100%",
-  height: "500px",
+  //width: "100%",
+  height: "600px",
   position: "relative"
 };
 

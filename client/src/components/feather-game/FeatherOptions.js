@@ -114,14 +114,14 @@ export const FeatherOptions = (props) => {
       <Modal.Header closeButton>
         <Modal.Title as="h1" className="pangolin-font">Good work, Explorer!</Modal.Title>
       </Modal.Header>
-      <Modal.Body className="pt-2 ">
-        <p className="fs-3">
+      <Modal.Body className="pt-2 fs-3 text-center">
+        <p className="text-start">
           That's right! You earned a feather. Keep adding more.
         </p>
         <img
           className="mascot-good-job pt-4"
           src={mascotGoodJob}
-          alt="good job!"
+          alt="Coyote Guide"
         />
       </Modal.Body>
       <Modal.Footer>
@@ -148,14 +148,17 @@ export const FeatherOptions = (props) => {
       <Modal.Header closeButton>
         <Modal.Title as="h1" className="pangolin-font">Good work, Explorer!</Modal.Title>
       </Modal.Header>
-      <Modal.Body className="pt-2 ">
-        <p className="">
-          Great Job! You have filled headress. Progress to the next question.
+      <Modal.Body className="pt-2 text-center fs-3">
+        <p className="text-start">
+          Great Job! You have filled headress. 
+        </p>
+        <p className="text-start">
+          <span className="bold-text">Carry On to the next question.</span>
         </p>
         <img
           className="mascot-good-job pt-4"
           src={mascotGoodJob}
-          alt="good job!"
+          alt="Coyote Guide"
         />
       </Modal.Body>
       <Modal.Footer>
@@ -182,14 +185,14 @@ export const FeatherOptions = (props) => {
       <Modal.Header closeButton>
         <Modal.Title as="h1" className="pangolin-font">Hmm, not quite right!</Modal.Title>
       </Modal.Header>
-      <Modal.Body className="pt-2 ">
-        <p className="">
+      <Modal.Body className="pt-2 fs-3 text-center">
+        <p className="text-start">
           Please try again.
         </p>
         <img
-          className="mascot-good-job pt-4"
+          className="mascot-try-again pt-4"
           src={mascotGoodJob}
-          alt="good job!"
+          alt="Coyote Guide"
         />
       </Modal.Body>
       <Modal.Footer>
