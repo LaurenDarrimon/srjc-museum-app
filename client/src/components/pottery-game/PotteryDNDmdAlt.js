@@ -6,9 +6,10 @@
 // Or https://codesandbox.io/s/potterygametest-d5scdy (to see intermediary step btwn above example and this game)
 // PS: I'm sorry in advance for the headache.
 
+import React from "react";
 import update from "immutability-helper";
 import {Row, Col} from "react-bootstrap"
-import { useCallback, useState } from "react";
+import { useCallback, useState, useEffect } from "react";
 import { useDrop } from "react-dnd";
 //our components + utils
 import  Box  from "./Box.js";
@@ -22,9 +23,28 @@ const styles = {
   
 };
 
-const PotteryDNDmd = () => {
+const PotteryDNDmdAlt = () => {
 
-  const [hideSourceOnDrag, setHideSourceOnDrag] = useState(false);
+  // Get Mouse Position - to fix DnD error on scaled elements
+  /*const useMousePosition = () => {
+    const [position, setPosition] = useState({ x: 0, y: 0 });
+  
+    useEffect(() => {
+      const setFromEvent = (e) => setPosition({ x: -(e.clientX), y: -(e.clientY) });
+      window.addEventListener("mousemove", setFromEvent);
+  
+      return () => {
+        window.removeEventListener("mousemove", setFromEvent);
+      };
+    }, []);
+  
+    return position;
+  };
+
+  const position = useMousePosition();*/
+
+  const[hideSourceOnDrag, setHideSourceOnDrag] = useState(false); //breaks on mobile if set to true
+
   // set all patterns (aka boxes)
   // box/pattern state includes: orig. pattern position (top + left) & svg code for pattern
   // each pattern entry repeats 10x (to allow for repeating pattern designs)
@@ -1089,13 +1109,15 @@ const PotteryDNDmd = () => {
     },
     [boxes, setBoxes]
   );
+
+
   const [, drop] = useDrop(
     () => ({
       accept: ItemTypes.BOX,
       drop(item, monitor) {
         const delta = monitor.getDifferenceFromInitialOffset();
-        const left = Math.round(item.left + delta.x);
-        const top = Math.round(item.top + delta.y);
+        const left = Math.round(item.left + (delta.x * (1 / .55)));
+        const top = Math.round(item.top + (delta.y * (1 / .55))) ;
         moveBox(item.id, left, top);
         return undefined;
       }
@@ -1129,4 +1151,4 @@ const PotteryDNDmd = () => {
   );
 };
 
-export default PotteryDNDmd;
+export default PotteryDNDmdAlt;

@@ -74,12 +74,12 @@ const Southwest = () => {
           </Col>
 
           {/**DND section */}
-        <Row>
-          <Col xs={12} className="mx-auto">
+        <Row className="m-0">
+          <Col xs={12} className="mx-auto ">
             <PotteryDNDResponsiveContainer />
             <Button onClick={pageRefresh} className=" pot-reset ms-3 ms-lg-4 ms-xl-5">Clear Pot</Button>
             <h4 className="pot-design-bank-title display-6 p-3 ps-lg-4 ps-xl-5">Symbols & Meanings Key:</h4>
-            <Row className="pot-design-bank flex-nowrap mx-2 mx-md-3 mx-lg-4 mx-xl-5">
+            <Row className="pot-design-bank flex-nowrap mx-2 mx-sm-3 mx-md-3 mx-lg-4 mx-xl-5">
               {potteryData.map((design) => (
                 <PotteryInfoCard
                   key={design.number}
@@ -96,8 +96,8 @@ const Southwest = () => {
         {/* check to see if the Clear Pot button was clicked. Only show the instruction modal if the button wasn't clicked */}
         {console.log(wasPotCleared)}
         {wasPotCleared ? <Row></Row> :
-        <Row>
-          <Col xs={{ span:4, offset:7 }} className="p-3 p-sm-4 p-md-5">
+        <Row className="w-100 m-0">
+          <Col xs={{ span:5, offset:6 }} className="p-4 p-sm-5">
             {/* Click for modal */}
             {/* pass in props for current instruction modal */}
             <InstructionModal

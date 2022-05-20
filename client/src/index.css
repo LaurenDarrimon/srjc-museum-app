@@ -36,6 +36,7 @@ body {
   background-color: var(--purple);
   color: var(--light-gray);
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   min-width: 100vw !important;
@@ -54,12 +55,12 @@ body {
   .site-content {
     min-height: 0;
     min-width: 0;
-    transform: scale(.45);
+    transform: scale(.55);
     padding-top: 0rem;
     border-radius: 8px;
     
     position: relative;
-    top: -25rem;
+    top: -17rem;
   }
 /*
   .site-content.region-northwest {
@@ -70,41 +71,43 @@ body {
     }*/
 
   .site-content.instructions {
-    top: -23rem;
+    top: -17rem;
   }
 
   .site-content.trivia {
-    top: -19rem !important;
+    top: -12rem !important;
   }
 
   .site-content.lesson {
-    top: -30rem !important;
+    top: -22rem !important;
   }
 
   .site-content.about {
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
 
-  .site-content.aboutend {
-    min-height: 200vh;
+  .site-content.theend {
     margin-top: 10rem;
+    padding: 5rem;
   }
 
   .site-content.california-game {
-    margin-top: 6rem;
+    margin-top: 2rem;
   }
   .site-content.southwest-game {
-    margin-top: 0rem;
+    margin-top: -10rem;
   }
   .site-content.greatplains-game {
-    margin-top: 3rem;
+    margin-top: 0rem;
   }
   .site-content.pnw-game {
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
   .site-content.culture-today {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
+
+
 
   .custom-modal {
     transform: scale(.65) !important;
@@ -113,50 +116,20 @@ body {
   }
 }
 
-@media screen and (min-width: 1515px) and (hover: hover) {
-  .site-content.california-game {
-    margin-top: 20rem;
-  }
-  .site-content.pnw-game {
-    margin-top: 18rem;
-  }
-
-  .site-content.southwest-game {
-    margin-top: 0rem;
-  }
-  .site-content.greatplains-game {
-    margin-top: 4rem;
-  }
-  .site-content.culture-today {
-    margin-top: 5rem;
-  }
-
-  .custom-modal {
-    transform: scale(.55) !important;
-    position: relative;
-    top: -17rem;
-  }
-
-  .instructions-modal {
-    top: -12rem;
-  }
-}
-
 @media screen and (min-width: 1200px) and (hover: hover) {
-  .site-content {
-    transform: scale(.45);    
-    top: -28rem;
+  .site-content { 
+    top: -20rem;
   }
   .site-content.instructions {
-    top: -25rem;
+    top: -20rem;
   }
 
   .site-content.trivia {
-    top: -20rem !important;
+    top: -15rem !important;
   }
 
   .site-content.lesson {
-    top: -30rem !important;
+    top: -24rem !important;
   }
 
   .site-content.about {
@@ -169,9 +142,51 @@ body {
   }
 
   .site-content.california-game {
-    margin-top: 11rem;
+    margin-top: 6rem;
+  }
+
+  .site-content.southwest-game {
+    margin-top: -7rem;
+  }
+  .site-content.greatplains-game {
+    margin-top: .75rem;
+  }
+  .site-content.pnw-game {
+    margin-top: 2.75rem;
+  }
+  .site-content.culture-today {
+    margin-top: 2rem;
   }
  
+}
+
+@media screen and (min-width: 1515px) and (hover: hover) {
+  .site-content.california-game {
+    margin-top: 17rem;
+  }
+  .site-content.pnw-game {
+    margin-top: 18rem;
+  }
+
+  .site-content.southwest-game {
+    margin-top: -8rem;
+  }
+  .site-content.greatplains-game {
+    margin-top: 2rem;
+  }
+  .site-content.culture-today {
+    margin-top: -2rem;
+  }
+
+  .custom-modal {
+    transform: scale(.55) !important;
+    position: relative;
+    top: -17rem;
+  }
+
+  .instructions-modal {
+    top: -12rem;
+  }
 }
 
 /***NAV****/
@@ -578,6 +593,7 @@ body {
 .pottery-container .col {
   margin: 0 0 0 2rem;
   padding: 0;
+  width: 250px;
 }
 
 .pot-img {
@@ -619,7 +635,6 @@ body {
 
 .pot-design-card .card-img-top {
   max-height: 150px;
-  max-width: auto;
 }
 
 /*responsive styling for patterns & pot image*/
@@ -710,6 +725,9 @@ body {
   .pot-reset {
     margin-top: 10rem;
   }
+  .pot-design-card .card-img-top {
+    max-height: 90px;
+  }
 }
 
 @media screen and (min-width: 680px) {  /*sm*/
@@ -745,6 +763,15 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (hover: hover) {  /*md*/
+  .pot-img {
+    bottom:-250px;
+  }
+  .pot-reset {
+    margin-top: 16rem;
+  }
+}
+
 @media screen and (min-width: 915px) {  /*md*/
   .pottery-container .col {
     margin-left: 16%;
@@ -754,6 +781,15 @@ body {
   }
   .pot-reset {
     margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 915px) and (hover: hover) {  /*md*/
+  .pot-img {
+    bottom:-250px;
+  }
+  .pot-reset {
+    margin-top: 20rem;
   }
 }
 
@@ -772,11 +808,15 @@ body {
 
 @media screen and (min-width: 992px) and (hover: hover) {  /*lg*/
   .pottery-container {
-    height: 150vh;
+    width: 100%;
+    height: 110vh;
   }
   .pottery-container .col {
     margin-left: 22%;
     margin-top: 2rem;
+  }
+  .box svg:first-child {
+    width: 70px !important;
   }
   .pot-reset {
     margin-top: 0rem;
@@ -854,10 +894,10 @@ body {
     margin-top: 5rem;
   }
   .pot-reset {
-    margin-top: 0rem;
+    margin-top: 8rem;
   }
   .pot-img {
-    bottom:-130px;
+    bottom:-250px;
   }
 }
 
@@ -1130,13 +1170,9 @@ body {
 
 .mascot-urdone,
 .mascot-try-again,
-.mascot-good-job {
+.mascot-good-job, 
+.mascot-try-again {
   text-align: center;
-  margin: 0 auto 0 auto;
-  width: 99%;
-}
-
-.mascot-good-job {
   width: 85%;
 }
 
@@ -1171,7 +1207,7 @@ body {
   .modal-content {
     padding: 2em !important;
   }
-  .modal-matching .mascot-good-job {
+  .mascot-good-job, .mascot-urdone, .mascot-try-again {
     width: 65% !important;
   }
 }
@@ -1198,11 +1234,12 @@ body {
   .custom-modal.modal-feather {
     margin-top: 5rem !important;
   }
-  .mascot-good-job {
-    width: 65%;
-  }
+
   .modal-img-mascot-instructions {
     width: 75% !important;
+  }
+  .modal-urdone {
+    margin-top: 5rem !important;
   }
 }
 
@@ -1231,6 +1268,12 @@ body {
     margin: 2.5rem auto !important;
   }
 
+}
+
+@media screen and (min-width: 1515px) and (hover: hover) {
+  .modal-urdone {
+    margin-top: 8rem !important;
+  }
 }
 
 

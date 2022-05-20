@@ -60,7 +60,7 @@ const Lesson = () => {
           <figcaption>{currentLessonSlide.imageDescription}</figcaption>
           </figure>
           
-          <div className="ps-3">
+          <div className="ps-3 fs-3">
             <p>{currentLessonSlide.p1}</p>
             <p>{currentLessonSlide.p2}</p>
             <p>{currentLessonSlide.p3}</p>
