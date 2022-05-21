@@ -95,7 +95,7 @@ body {
     margin-top: 2rem;
   }
   .site-content.southwest-game {
-    margin-top: -10rem;
+    margin-top: -9rem;
   }
   .site-content.greatplains-game {
     margin-top: 0rem;
@@ -604,6 +604,13 @@ body {
 
 
   /*pottery design meanings key*/
+.arrow {
+  width: 20px !important;
+}
+
+.arrow2 {
+  width: 50px !important;
+}
 
 .pot-design-bank {
   overflow-x: scroll;
@@ -819,10 +826,10 @@ body {
     width: 70px !important;
   }
   .pot-reset {
-    margin-top: 0rem;
+    margin-top: 20%;
   }
   .pot-img {
-    bottom:-130px;
+    bottom:-38%;
   }
 }
 
@@ -844,10 +851,10 @@ body {
     margin-left: 25%;
   }
   .pot-reset {
-    margin-top: 0rem;
+    margin-top: 30%;
   }
   .pot-img {
-    bottom:-150px;
+    bottom:-40%;
   }
 }
 
@@ -1229,7 +1236,7 @@ body {
     /*desktop only*/
 @media screen and (min-width: 992px) and (hover: hover) { /*lg*/
   .custom-modal.modal-matching, .custom-modal.trivia  {
-    margin: 5.5rem auto !important;
+    margin: 3rem auto !important;
   }
   .custom-modal.modal-feather {
     margin-top: 5rem !important;
@@ -1245,7 +1252,7 @@ body {
 
 @media screen and (min-width: 1200px) and (hover: hover) { /*xl*/
   .custom-modal.modal-matching, .custom-modal.trivia  {
-    margin: 7.5rem auto !important;
+    margin: 5rem auto !important;
   }
   .custom-modal.modal-feather {
     margin-top: 7rem !important;
