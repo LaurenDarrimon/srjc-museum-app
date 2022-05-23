@@ -62,13 +62,6 @@ body {
     position: relative;
     top: -17rem;
   }
-/*
-  .site-content.region-northwest {
-      margin-top: 10rem;
-      border: 1px solid var(--light-gray);
-      box-shadow: -1px 1.25px 5px 1.25px black;
-      padding: 2em;
-    }*/
 
   .site-content.instructions {
     top: -17rem;
@@ -221,13 +214,11 @@ body {
 }
 
 .navbar-toggler {
-  /*background-color: var(--purple-50) !important; /*so the hamburger menu shows ontop of white bubbles*/
   box-shadow: -0.75px 1.25px 3px var(--purple-25);
 }
 
 #basic-nav-nav {
   position: absolute !important;
-  /*z-index: 1;*/
 }
 /*get rid of Bootstrap Primary Blue focusing!*/
 .dropdown-item:active {
@@ -245,16 +236,6 @@ body {
   max-width: 350px;
 }
 
-/*trying out getting rid of footer
-
-.footer {
-  background-color: var(--srjc-red);
-  border-top: white solid 4px;
-  /*position: absolute;
-  bottom: 0px;
-  height: 100px;*/ /*
-  min-width: 100vw !important;
-}*/
 
 .home.site-content {
   padding-top: 1em !important;
@@ -300,12 +281,6 @@ body {
 .home .accordion-header {
   padding: 0;
 }
-
-/*.home .bottom-section {
-  max-width: 75%;
-  position: relative;
-  left: 7rem;
-}*/
 
 
 /*Responsive sizing for Mascot/Home page*/
@@ -356,7 +331,7 @@ body {
   z-index: 100 !important;
 }
 
-/* =============== LAUREN'S SECTION ============================= */
+/***Region Color Classes**/
 
 .region {
   color: white;
@@ -908,7 +883,7 @@ body {
   }
 }
 
-/* GP Great plains feather game */
+/********* GP Great plains feather game ***********/
 
 .bonnet-drop svg {
   width: 200px;
@@ -1040,9 +1015,6 @@ body {
 
 }
 
-/* =============== END LAUREN'S SECTION ============================= */
-
-/* =============== ERIN'S SECTION ============================= */
 
 /* || Utilities */
 .bold-text {
@@ -1539,4 +1511,3 @@ body {
     left: -3rem;
   }
 }
-/* =============== END ERIN'S SECTION ============================= */
