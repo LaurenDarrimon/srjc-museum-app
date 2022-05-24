@@ -23,7 +23,10 @@ Interactive e-learning application and scavenger hunt game for the Santa Rosa Ju
 
 ### Link 
 🔗 
-Link to application [North American Art Scavenger Hunt Game](http://polar-badlands-25618.herokuapp.com/)
+Application [North American Art Scavenger Hunt Game](http://polar-badlands-25618.herokuapp.com/)
+
+Code Repo & Documentation [GitHub code repo](https://github.com/LaurenDarrimon/srjc-museum-app)
+
 
 ### Museum 
 The [Santa Rosa Junior College Multi-Cultural Museum](https://museum.santarosa.edu/) showcases art and cultural objects from four major groupings or regions of Western North America: California, the Southwest, the Great Plains, and the Pacific Northwest Coast. The game is roughly organized around those regions, with a special emphasis on the current indiginous peoples native to the land the college occupies, [the Pomo Tribes](https://en.wikipedia.org/wiki/Pomo) of Northern California. 
@@ -99,7 +102,7 @@ We did this through a series of counters.
 
 The context provider CountProvider gives acess to the game's React Context API (information and functions from src/utils/GameContext.js) to all the components within it. 
 
-Uses React Context to track user's place in the game. Creates all Game Counters (custom hooks to access game Context, to track place in game)
+Uses React's Context API  to track user's place in the game. It creates all Game Counters, which are custom React hooks to access game Context, to track the player's place in the game. 
 
 #### Game Counters
 
