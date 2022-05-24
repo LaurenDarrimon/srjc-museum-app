@@ -58,7 +58,8 @@ const Instructions = () => {
               width="40%"
             />
           </div>
-          <p className="w-50 float-end pt-2 pt-md-4">The back button in your browser will not work.</p>
+          <p className="w-50 float-end pt-2 pt-md-4">The back button on your browser will mess up the game. 
+          If this happens, use the top menu to start over or go to the nearest mini-game. </p>
           
 
           <img
