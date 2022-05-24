@@ -1,7 +1,7 @@
 // Template for all scavenger hunt/ multiple choice questions
 // Content populated from "assets/data/questions.js" - see this file to add or remove content
 
-import React from "react";
+import { React, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 //data
@@ -20,12 +20,15 @@ const Trivia = () => {
   const { allGameState, setAllGameState } = useCounter();
 
   //check and see if there is a game counter in local storage.
-  if (localStorage.getItem("allGameCounters")) {
-    //if there is, parse the stored string back into an array
-    var allGameCounters = JSON.parse(localStorage.getItem("allGameCounters"));
-    //set the game counters to the stored array
-    setAllGameState(allGameCounters);
-  }
+  //wrap the setAllGameState call in UseEffect hook so that it does not constantly rerender
+  useEffect(() => {
+    if (localStorage.getItem("allGameCounters")) {
+      //if there is, parse the stored string back into an array
+      var allGameCounters = JSON.parse(localStorage.getItem("allGameCounters"));
+      //set the game counters to the stored array
+      setAllGameState(allGameCounters);
+    }
+  }, []);
 
   // Pluck values from our GameContext by invoking our useCounter hook
   const { triviaCounter, triviaIncrement } = useCounter();

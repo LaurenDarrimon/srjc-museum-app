@@ -36,7 +36,7 @@ const BackButton = () => {
     );
   } else {
     return (
-      <Link to="/instructions">
+      <Link to="/museum/instructions">
         <img
           src={back}
           alt="back to previous slide"
