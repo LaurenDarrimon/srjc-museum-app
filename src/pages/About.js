@@ -324,12 +324,11 @@ const About = () => {
                   thoughtful feedback.
                 </p>
                 <p>
-                  To to Professor Ethan Wilde for all his encouragement and
+                  To to Professor Ethan Wilde for all his
                   support, both technical and inspirational.
                 </p>
                 <p>
-                  To our many user testers for bearing with us through some
-                  glitchier early versions.
+                  To our user testers for bearing with us.
                 </p>
                 <p>
                   Above all, we thank and honor the artists and craftspersons

@@ -39,20 +39,17 @@ If you're not in the museum you can still play! Take your best guess or skip pas
 
 The lesson slides and the four regional mini-games for each region can be played by anyone, anywhere. Each of the four regions has either a drag and drop game or a memory matching card game. Use the navigation menu to skip to any of these mini-games. 
 
-### Architecture
-
-
 ### Installation
 🔧
 Download or clone the repository. 
 
-Then, in order for this application to work, use Node.js to install dependencies including React, React Bootstrap, React Router Dom, and React Drag n Drop. To install all dependencies at once, from the command line in the root directory run: 
+Then, in order for this application to work, use Node.js to install dependencies including React, React Bootstrap, React Router Dom, and React Drag n Drop. To install all the dependencies at once, from the application's root directory run the following command line prompt: 
 
 ~~~
 npm i 
 ~~~
 
-This will install all dependencies listed in the package.json. 
+This will install all the dependencies listed in the package.json. 
 
 ### Usage 
 To run the application from the command line and open it in your browser, from the root directory run: 
@@ -60,6 +57,42 @@ To run the application from the command line and open it in your browser, from t
 ~~~
 npm run start
 ~~~
+
+This will compile the application from your src dirctory into the build and public directories. Then, the app will open in your browser at http://localhost:3000/museum/
+
+### Architecture
+
+The main part of the app is in the /src directory. 
+
+1. App.js
+
+
+
+2. Assets 
+
+    a. Images: Contains images organized by where they are used
+
+    b. Data: Javascript objects that contain the informaton that is passed to the React components, the dofferent questions, answers, lessons, image paths, etc, are all contained in these data objects. 
+
+
+3. Components
+
+    These are reusable component sections of pages, like the nav bar, nav buttons, modals, and other partial elements that appear on pages. 
+
+4. Pages
+
+    These are reusable full-page templates, that will be dynamically populated with various information from the game data objects. The pages contain smaller components from /components. 
+
+5. Utils
+
+    Contain helper functions to help the game run. Item Types is a helper for the matching card games and Game Context is the context provider (see below).
+
+
+
+
+### Reusable React Components 
+
+### React Context API
 
 
 ### Contributing 
@@ -87,5 +120,6 @@ Above all, we thank and honor the artists and craftspersons whose art, culture a
 
 ### License
 The license for this project is: [MIT](https://opensource.org/licenses/MIT)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge&logo=appveyor)](https://opensource.org/licenses/MIT)
 
