@@ -62,10 +62,13 @@ This will compile the application from your src dirctory into the build and publ
 
 ### Architecture
 
+The index.html file in the /public directory is the single page of the application. The root <div> element will be filled with various React components from the /src directory, depending on the URL route.   
+
 The main part of the app is in the /src directory. 
 
 1. App.js
 
+    Contains the client-side routing. Using React-router-dom, the various URL paths will call on the specified React pages to fill the root div element. App.js also wraps all of the routes with the context provider, so that all components will have acess to the game counter data. 
 
 
 2. Assets 
@@ -75,11 +78,11 @@ The main part of the app is in the /src directory.
     b. Data: Javascript objects that contain the informaton that is passed to the React components, the dofferent questions, answers, lessons, image paths, etc, are all contained in these data objects. 
 
 
-3. Components
+3. React Components
 
     These are reusable component sections of pages, like the nav bar, nav buttons, modals, and other partial elements that appear on pages. 
 
-4. Pages
+4. React Pages
 
     These are reusable full-page templates, that will be dynamically populated with various information from the game data objects. The pages contain smaller components from /components. 
 
@@ -88,11 +91,38 @@ The main part of the app is in the /src directory.
     Contain helper functions to help the game run. Item Types is a helper for the matching card games and Game Context is the context provider (see below).
 
 
-
-
-### Reusable React Components 
-
 ### React Context API
+
+Since most of the game relies on repeated React Components, we needed a way to track which data to populate in each component. We need to track the turn the player is on, and how far through each section of the game they are. 
+
+We did this through a series of counters. 
+
+The context provider CountProvider gives acess to the game's React Context API (information and functions from src/utils/GameContext.js) to all the components within it. 
+
+Uses React Context to track user's place in the game. Creates all Game Counters (custom hooks to access game Context, to track place in game)
+
+#### Game Counters
+
+The function to set all game counters is a combination of 4 Set State functions, one for each aspect of the game. It takes an array of all counters in this order: trivia, game, lesson, slide, and sets each one. Then, it sets those counter values in local storage so user can refresh game without losing their place. 
+
+```
+  const setAllGameState = (counters) => {
+    setTriviaCounter(counters[0]);
+    setGameCounter(counters[1]);
+    setLessonCounter(counters[2]);
+    setSlideCounter(counters[3]);
+
+    localStorage.setItem('allGameCounters', JSON.stringify(counters)); 
+  };
+```
+
+   1. trivia => increments each time user completes trivia / scavenger hunt question
+
+   2. game => increments each time user completes a mini-game
+
+   3. lesson => increments each time user completess a "lesson" slide
+
+   4. overall slide => increments each time the user hits the "next" button, and decrements every time the user hits the back button
 
 
 ### Contributing 
