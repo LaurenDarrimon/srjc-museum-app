@@ -74,7 +74,7 @@ const Instructions = () => {
               </h2>
             </Col>
             <Col xs={{ span: 5 }}>
-              <Link to="/trivia">
+              <Link to="/museum/trivia">
                 <img
                   className="big-round-GO-btn img-fluid pe-3"
                   src={go}

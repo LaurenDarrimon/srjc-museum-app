@@ -71,27 +71,27 @@ function App() {
           <Navigation />
           <Row>
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/museum" element={<Home />} />
 
-                <Route path="/instructions" element={<Instructions />} />
+                <Route path="/museum/instructions" element={<Instructions />} />
 
-                <Route path="/trivia" element={<Trivia />} />
+                <Route path="/museum/trivia" element={<Trivia />} />
 
-                <Route path="/about" element={<About />} />
+                <Route path="/museum/about" element={<About />} />
 
-                <Route path="/theend" element={<TheEnd />} />
+                <Route path="/museum/theend" element={<TheEnd />} />
 
-                <Route path="/california" element={<California />} />
+                <Route path="/museum/california" element={<California />} />
 
-                <Route path="/greatplains" element={<GreatPlains />} />
+                <Route path="/museum/greatplains" element={<GreatPlains />} />
 
-                <Route path="/southwest" element={<Southwest />} />
+                <Route path="/museum/southwest" element={<Southwest />} />
 
-                <Route path="/pacificnw" element={<PacificNW />} />
+                <Route path="/museum/pacificnw" element={<PacificNW />} />
 
-                <Route path="/lesson" element={<Lesson />} />
+                <Route path="/museum/lesson" element={<Lesson />} />
 
-                <Route path="/culturetoday" element={<CultureToday />} />
+                <Route path="/museum/culturetoday" element={<CultureToday />} />
 
               </Routes>
           </Row>

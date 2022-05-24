@@ -14,22 +14,22 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/" className="navigation">
+            <Nav.Link href="/museum" className="navigation">
               Start Over
             </Nav.Link>
             <NavDropdown title="Mini-Games" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/California">California</NavDropdown.Item>
-              <NavDropdown.Item href="/Southwest" >Southwest</NavDropdown.Item>
-              <NavDropdown.Item href="/GreatPlains">Great Plains</NavDropdown.Item>
-              <NavDropdown.Item href="/PacificNW" >Pacific Northwest</NavDropdown.Item>
+              <NavDropdown.Item href="/museum/California">California</NavDropdown.Item>
+              <NavDropdown.Item href="/museum/Southwest" >Southwest</NavDropdown.Item>
+              <NavDropdown.Item href="/museum/GreatPlains">Great Plains</NavDropdown.Item>
+              <NavDropdown.Item href="/museum/PacificNW" >Pacific Northwest</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/culturetoday" className="navigation">
+            <Nav.Link href="/museum/culturetoday" className="navigation">
               Culture Today
             </Nav.Link>
-            <Nav.Link href="/instructions" className="navigation">
+            <Nav.Link href="/museum/instructions" className="navigation">
               Help
             </Nav.Link>
-            <Nav.Link href="/about" className="navigation">
+            <Nav.Link href="/museum/about" className="navigation">
               About
             </Nav.Link>
           </Nav>

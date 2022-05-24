@@ -48,7 +48,7 @@ const Home = () => {
               while exploring the museum!
             </p>
             <div className="w-100 d-block">
-              <Link to="/instructions" >
+              <Link to="/museum/instructions" >
                 <img
                   className="img-fluid next-btn py-3 py-sm-5 "
                   src={next}

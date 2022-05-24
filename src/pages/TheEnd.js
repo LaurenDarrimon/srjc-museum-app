@@ -21,7 +21,7 @@ const TheEnd = () => {
             <img src={pattern} alt="Southwestern Butterfly Pattern" className="mx-auto pt-4 pb-lg-4" />
         </Col>
         <Col xs={12} className="text-center display-2 ">
-            <Link to="/about">
+            <Link to="/museum/about">
                 <Button className="mt-5 btn-primary fs-3">About this Game</Button>
             </Link>
         </Col>
