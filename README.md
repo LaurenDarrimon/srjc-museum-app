@@ -43,7 +43,9 @@ If you're not in the museum you can still play! Take your best guess or skip pas
 
 The lesson slides and the four regional mini-games for each region can be played by anyone, anywhere. Each of the four regions has either a drag and drop game or a memory matching card game. Use the navigation menu to skip to any of these mini-games. 
 
-![Game Start](src/assets/images/documentation-images/matching-mini-game.gif)
+#### Regional Mini-Games: 
+
+![Game Start](src/assets/images/documentation-images/mini-games-banner.png)
 
 ### Installation
 🔧
