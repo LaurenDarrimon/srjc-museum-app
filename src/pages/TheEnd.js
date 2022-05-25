@@ -33,12 +33,12 @@ const TheEnd = () => {
         <Col xs={12} md={6} className="text-center">
           <br></br>
           <br></br>
-          <p>
+          <h4>
             <em>
               Special thanks to the artists whose art, culture, and
               traditions are featured.
             </em>
-          </p>
+          </h4>
           <h2>Thank you.</h2>
         </Col>
       </Row>

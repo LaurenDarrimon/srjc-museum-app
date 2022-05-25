@@ -156,7 +156,7 @@ export const triviaData = [
     mainImage: "contemporary/basket-weaving/clint-mckay-baskets-collage.png",
     options: ["Yana", "Patwin", "Pomo", "Yuki"],
     right_answer: "Pomo",
-    correctMessage: "That's right! This is Clin McKay and his family. Clint is passing on the art of basket making, for which the Pomo are renowned, to his grandchildren!",
+    correctMessage: "That's right! This is Clint McKay and his family. Clint is passing on the art of basket making, for which the Pomo are renowned, to his grandchildren!",
     wrongMessage: "That's not quite right. Try Again!",
   },
   {

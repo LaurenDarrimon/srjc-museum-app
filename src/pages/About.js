@@ -184,6 +184,9 @@ const About = () => {
                     consultation with the museum's curator and the college's
                     Native American Faculty and Staff Association.
                   </p>
+                  <h5 className="h3">Code Repository</h5>
+                  <p> To learn more about this application or build your own, visit the <a href="https://github.com/LaurenDarrimon/srjc-museum-app" target="_blank">code repository on GitHub.</a></p>
+
                 </div>
               </Accordion.Body>
             </Accordion.Item>
@@ -311,7 +314,7 @@ const About = () => {
               <Accordion.Header>Thanks</Accordion.Header>
               <Accordion.Body className="fs-3">
                 <p>
-                  A very special thanks to William McKay for generously sharing
+                  A very special thanks to Clint McKay for generously sharing
                   his family's living tadition of Pomo basket weaving with us.
                 </p>
                 <p>
