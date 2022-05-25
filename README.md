@@ -142,11 +142,11 @@ Lauren Darrimon, Erin Potter, and Wayne Howlett are the authors of this applicat
 
 ## Questions
 ❓💌
-Reach out to Lauren Darrimon, Erin Potter, Wayne Howlett at hello@laurenlalita.com if you have any questions, comments, or if you would like to contribute to the application. 
+Reach out to Lauren Darrimon, Erin Potter, Wayne Howlett at hello@laurenlalita.com if you have any questions, comments, or if you would like to contribute to the application or build your own. 
 
 
 ## Thanks
-- Special thanks to William McKay for generously sharing his family's living tradition of Pomo basket weaving with us. 
+- Special thanks to Clint McKay for generously sharing his family's living tradition of Pomo basket weaving with us. 
 
 - To Rachel Minor, the curator of the musuem, for her wealth of knowledge, endless stream of content, and boundless enthusiasm.
 
